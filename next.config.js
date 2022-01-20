@@ -1,3 +1,18 @@
+const basePath = "";
+
 module.exports = {
-  reactStrictMode: true,
-}
+	async redirects() {
+		return [
+			{
+				source: '/',
+				destination: '/home',
+				permanent: true
+			}
+		]
+	},
+	reactStrictMode: true,
+	env: {
+		basePath: basePath,
+		img: `${basePath}/img`
+	}
+};
