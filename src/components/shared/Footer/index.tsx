@@ -7,7 +7,7 @@ export default function Footer() {
 		<SectionWrapper>
 			<div>
 				<FooterText>
-					kek la kek
+					Guilherme Almeida, 2022
 				</FooterText>
 			</div>
 		</SectionWrapper>

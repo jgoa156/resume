@@ -19,6 +19,6 @@ export const SectionWrapper = styled.footer`
 `;
 
 export const FooterText = styled.div`
-	text-align: right;
+	text-align: center;
 	font-size: 1rem;
 `;

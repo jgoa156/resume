@@ -50,7 +50,7 @@ export const Intro = styled.div`
 		top: calc(500px - (10rem + 100px));
 		
 		h1 {
-			font-size: 4rem;
+			font-size: 3rem;
 		}
 	}
 `;

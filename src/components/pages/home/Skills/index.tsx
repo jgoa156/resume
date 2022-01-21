@@ -1,14 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { useMediaQuery } from "react-responsive";
 
 import { Title } from "components/shared/General";
 import {
 	SectionWrapper,
 	CardsWrapper,
 	SkillCard,
-	Skill
+	Skill,
+
+	ButtonsWrapper,
+	ButtonLeft,
+	ButtonRight
 } from "./components";
 
 export default function Skills() {
+	const isTablet = useMediaQuery({
+		query: "(max-width: 768px)"
+	});
+	const isMobile = useMediaQuery({
+		query: "(max-width: 576px)"
+	});
+	const [displayScrollLeft, setDisplayScrollLeft] = useState(false);
+	const [displayScrollRight, setDisplayScrollRight] = useState(true);
+
+	// Skills object
 	const skills = [
 		{
 			category: "Front-end Development",
@@ -61,7 +76,7 @@ export default function Skills() {
 			category: "Design and Design Tools",
 			tools: [
 				{
-					name: "Adobe Illustrator + Photoshop",
+					name: "Illustrator + Photoshop",
 					proficiency: 90,
 				},
 				{
@@ -137,40 +152,83 @@ export default function Skills() {
 					proficiency: 80,
 				},
 				{
-					name: "Wordpress + Plugin development",
+					name: "Wordpress + Plugins",
 					proficiency: 60,
 				}
 			]
 		}
 	];
 
+	// Slider
+	const skillsRef = useRef<any>(null);
+	const cardWidth = isTablet ? 330 : 380;
+	function cardsInViewport() {
+		return Math.floor(window.innerWidth / cardWidth);
+	}
+
+	function slideLeft() {
+		skillsRef.current.scrollLeft -= cardsInViewport() * cardWidth;
+	}
+	function slideRight() {
+		skillsRef.current.scrollLeft += cardsInViewport() * cardWidth;
+	}
+	useEffect(() => {
+		if (skillsRef && skillsRef.current) {
+			skillsRef.current.addEventListener("scroll", function () {
+				const windowWidth = window.innerWidth;
+				const scroll = windowWidth + skillsRef.current.scrollLeft;
+				const width = skillsRef.current.scrollWidth;
+
+				setDisplayScrollLeft(scroll > windowWidth);
+				setDisplayScrollRight(scroll < width);
+			});
+		}
+	}, [])
+
 	return (
 		<SectionWrapper id="skills">
 			<div>
 				<Title>Skills</Title>
-				<CardsWrapper>
-					{skills.map((skill, index) => {
-						return (
-							<SkillCard key={index}>
-								<div className={"kek"}></div>
-								<h5>{skill.category}</h5>
+				<CardsWrapper ref={skillsRef}>
+					<div>
+						{skills.map((skill, index) => {
+							return (
+								<SkillCard key={index}>
+									<h5>{skill.category}</h5>
 
-								<div>
-									{skill.tools.map((tool, index) => {
-										return (
-											<Skill key={index} proficiency={tool.proficiency}>
-												<div>
-													<label>{tool.name}</label>
-													<span>{tool.proficiency}%</span>
-												</div>
-											</Skill>
-										);
-									})}
-								</div>
-							</SkillCard>
-						);
-					})}
+									<div>
+										{skill.tools.map((tool, index) => {
+											return (
+												<Skill key={index} proficiency={tool.proficiency}>
+													<div>
+														<label>{tool.name}</label>
+														<span>{tool.proficiency}%</span>
+													</div>
+												</Skill>
+											);
+										})}
+									</div>
+								</SkillCard>
+							);
+						})}
+					</div>
 				</CardsWrapper>
+
+				{!isMobile
+					? (
+						<ButtonsWrapper>
+							{displayScrollLeft
+								? <ButtonLeft onClick={() => slideLeft()}><i className={"fas fa-chevron-left"} /></ButtonLeft>
+								: null
+							}
+							{displayScrollRight
+								? <ButtonRight onClick={() => slideRight()}><i className={"fas fa-chevron-right"} /></ButtonRight>
+								: null
+							}
+						</ButtonsWrapper>
+					)
+					: null
+				}
 			</div>
 		</SectionWrapper>
 	);
