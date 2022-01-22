@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.header`
 	justify-content: center;
 	align-items: center;
 
-	background-color: ${props => props.scrolled ? `var(--color-3)` : `transparent` };
+	background-color: ${props => props.scrolled ? `var(--color-3)` : `transparent`};
 	transition: 0.5s;
 
 	nav {
@@ -23,9 +23,6 @@ export const HeaderWrapper = styled.header`
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-
-		font-size: 1.825rem;
-		font-family: "Parkson";
 	}
 `;
 
@@ -40,10 +37,15 @@ export const LinkWrapper = styled.div`
 	height: fit-content;
 	padding: 0 30px;
 
+	ul {
+		margin: 0;
+	}
 	a {
 		padding-bottom: 6px;
 		margin-left: 15px;
 
+		font-size: 1.825rem;
+		font-family: "Parkson";
 		font-weight: bold;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -51,24 +53,34 @@ export const LinkWrapper = styled.div`
 
 		transition: 0.2s;
 
+		&.spy {
+			border-color: var(--primary-color);
+		}
+
 		&, &:visited, &:active, &:focus {
 			color: white;
 		}
 		&:hover {
-			color: var(--primary-color);
-			border-color: var(--primary-color);
+			color: var(--primary-color-2);
+			border-color: var(--primary-color-2);
 		}
 	}
 `;
 
 export const GoToTop = styled.a`
 	position: fixed;
-	bottom: 25px;
-	right: 25px;
+	bottom: 15px;
+	right: 15px;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	transform: translateY(calc(100% + 25px));
 
-	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.7);
 	border: none;
+	border-radius: 50%;
 
 	font-size: 1.2rem;
 	color: var(--primary-color);
@@ -98,4 +110,87 @@ export const GoToTop = styled.a`
 			transform: translateY(calc(100% + 25px));
 		}
 	};
+`;
+
+export const Burger = styled.button`
+	justify-self: flex-end;
+
+	color: white;
+	font-size: 1.4rem;
+	background-color: transparent;
+	border: none;
+
+	transition: 0.3s;
+
+	&:hover {
+		color: var(--primary-color-2);
+	}
+`;
+
+export const Sidenav = styled.div`
+	position: fixed;
+	z-index: 11;
+	top: 0;
+	right: ${props => props.show ? "0" : "-65%"};
+	min-height: 150%;
+	width: 65%;
+
+	background-color: var(--color-3);
+	overflow: hidden;
+	word-wrap: break-word;
+	white-space: nowrap;
+
+	transition: 0.3s;
+
+	& > div {
+		padding: 0 20px;
+	}
+
+	.buttonWrapper {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		height: 50px;
+
+		padding-right: 2px;
+
+		button.close {
+			color: white;
+			font-size: 1.4rem;
+			background-color: transparent;
+			border: none;
+
+			transition: 0.3s;
+
+			&:hover {
+				color: var(--primary-color-2);
+			}
+		}
+	}
+
+	${LinkWrapper} {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		padding: 0;
+
+		a {
+			width: fit-content;
+			margin: 0;
+		}
+	}
+`;
+
+export const SidenavBackground = styled.div`
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	height: 150%;
+	width: 100%;
+
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: ${props => props.show ? 1 : 0};
+
+	transition: 0.3s;
 `;

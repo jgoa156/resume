@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+export const FadeInComponent = styled.div`
+	opacity: ${props => props.show ? 1 : 0};
+	transform: ${props => props.show
+		? "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -60, 0, 1)"
+		: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)"
+	};
+	transition: opacity 1.5s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1.5s cubic-bezier(0.5, 0, 0, 1) 0.2s;
+`;
+
 export const TitleComponent = styled.h2`
 	margin-bottom: 50px;
 	
@@ -10,23 +19,9 @@ export const TitleComponent = styled.h2`
 	white-space: nowrap;
 	overflow: hidden;
 
-	animation: ${props => props.show
-		? "fade-in-text 0.2s linear forwards"
-		: "none"
-	};
-
 	@media (max-width: 768px) {
 		font-size: 2.6rem;
 	}
-
-	@keyframes fade-in-text {
-		0% {
-			transform: translateY(200%);
-		}
-		100% {
-			transform: translateY(0%);
-		}
-	};
 
 	display: flex;
 	flex-direction: column;

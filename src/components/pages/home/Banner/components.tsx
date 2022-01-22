@@ -22,6 +22,10 @@ export const SectionWrapper = styled.section`
 		justify-content: center;
 		align-items: center;
 	}
+
+	@media (max-width: 575px) {
+		height: 450px;
+	}
 `;
 
 export const Background = styled.img`
@@ -96,8 +100,8 @@ export const Link = styled.a`
 	}
 
 	@media (max-width: 768px) {
-		margin-right: 15px;
+		margin-right: 25px;
 
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 	}
 `;

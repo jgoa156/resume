@@ -14,10 +14,10 @@ export const SectionWrapper = styled.section`
 		width: 100%;
 		max-width: 1920px;
 		
-		padding: 100px 50px;
+		padding: 100px 50px 50px;
 
-		@media (max-width: 768px) {
-			padding: 50px;
+		@media (max-width: 1024px) {
+			padding: 50px 20px 0;
 		}
 	}
 `;
@@ -31,13 +31,20 @@ export const InfoWrapper = styled.div`
 	}
 `;
 
-/*First half*/
 export const TextWrapper = styled.div`
 	width: 50%;
+	margin-bottom: 50px;
 
 	${props => props.right || !props.left
 		? "text-align: left; padding-left: 50px;"
 		: "text-align: right; padding-right: 50px;"
+	}
+
+	@media (max-width: 1024px) {
+		${props => props.right || !props.left
+			? "padding-left: 30px;"
+			: "padding-right: 30px;"
+		}
 	}
 
 	@media (max-width: 575px) {
@@ -66,11 +73,12 @@ export const Text = styled.p`
 	
 `;
 
-/*Second half*/
 export const Cards = styled.div`
 	width: 50%;
 	display: flex;
 	justify-content: left;
+
+	margin-bottom: 30px;
 
 	${props => props.right || !props.left
 		? "padding-left: 50px;"
@@ -78,8 +86,12 @@ export const Cards = styled.div`
 	}
 
 	@media (max-width: 575px) {
-		width: 50%;
-		padding: 20px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		padding-top: 20px;
+		padding-bottom: 10px;	
 	}
 `;
 
@@ -99,8 +111,53 @@ export const NumberCard = styled.div`
 		font-size: 3rem;
 		color: var(--primary-color);
 	}
+`;
 
-	p {
+export const ItemWrapper = styled.div`
+`;
 
+export const Item = styled.div`
+	width: 100%;
+	position: relative;
+
+	margin-bottom: 30px;
+`;
+export const ItemTitle = styled.div`
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	color: white;
+
+	transition: 0.3s;
+
+	img {
+		width: 40px;
+		height: auto;
+		transition: 0.2s;
+	}
+	div.textWrapper {
+		width: 100%;
+		margin-left: 25px;
+
+		h5 {
+			font-family: "Parkson";
+			font-size: 1.8rem;
+			display: inline;
+			margin-bottom: 0px;
+			color: var(--primary-color);
+
+			transition: 0.3s;
+		}
+		p {
+			margin-bottom: 0;
+			span {
+				color: #AAA;
+
+				@media (max-width: 576px) {
+					display: block;
+				}
+			}
+		}
 	}
 `;

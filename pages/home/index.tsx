@@ -7,6 +7,12 @@ import WorkExperience from "components/pages/home/WorkExperience";
 import Skills from "components/pages/home/Skills";
 
 export default function Home() {
+	/*const [loaded, setLoaded] = useState(false);
+
+	useEffect(() => {
+		setLoaded(true);
+	}, []);*/
+
 	return (
 		<>
 			<Banner />

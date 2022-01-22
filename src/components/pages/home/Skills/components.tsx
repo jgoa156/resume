@@ -45,7 +45,7 @@ export const CardsWrapper = styled.div`
 		padding: 0 20px;
 
 		& > div {
-			width: calc(330px * 8);
+			width: calc(310px * 8);
 		}
 	}
 `;
@@ -64,7 +64,7 @@ export const SkillCard = styled.div`
 	}
 
 	@media (max-width: 768px) {
-		width: 300px;
+		width: 280px;
 	}
 `;
 

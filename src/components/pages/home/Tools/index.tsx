@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Title } from "components/shared/General";
+import { FadeIn, Title } from "components/shared/General";
 import { SectionWrapper, ItemWrapper, Item } from "./components";
 import * as Icons from "components/shared/Icons";
 
@@ -13,29 +13,32 @@ export default function Tools() {
 		{ title: "PHP", icon: <Icons.IconPHP/>, color: "#8993c1" },
 		{ title: "Python 3", icon: <Icons.IconPython/>, color: "#fbd35a", direction: "bottom" },
 		{ title: "C", icon: <Icons.IconC/>, color: "#3946ac", direction: "bottom" }*/
-		{ title: "React.JS and React Native", icon: <Icons.IconReact/>, color: "#61dbfb", direction: "bottom" },
-		{ title: "Next.JS", icon: <Icons.IconNext/>, color: "#4a5563", direction: "bottom" },
-		{ title: "Node.JS", icon: <Icons.IconNode/>, color: "#539e43", direction: "bottom" },
-		{ title: "Express.JS", icon: <Icons.IconExpress/>, color: "#787878", direction: "bottom" },
-		{ title: "Jest", icon: <Icons.IconJest/>, color: "#9a405b", direction: "bottom" },
-		{ title: "MySQL", icon: <Icons.IconMySQL/>, color: "#5382a1", direction: "bottom" },
-		
+		{ title: "React.JS and React Native", icon: <Icons.IconReact />, color: "#61dbfb", direction: "bottom" },
+		{ title: "Next.JS", icon: <Icons.IconNext />, color: "#4a5563", direction: "bottom" },
+		{ title: "Node.JS", icon: <Icons.IconNode />, color: "#539e43", direction: "bottom" },
+		{ title: "Express.JS", icon: <Icons.IconExpress />, color: "#787878", direction: "bottom" },
+		{ title: "Jest", icon: <Icons.IconJest />, color: "#9a405b", direction: "bottom" },
+		{ title: "MySQL", icon: <Icons.IconMySQL />, color: "#5382a1", direction: "bottom" },
+
 	];
-	
+
 	return (
 		<SectionWrapper>
 			<div>
 				<Title show={true}>Main tools</Title>
-				<ItemWrapper>
-					{tools.map((tool, index) => {
-						return (
-							<Item key={index} color={tool.color} direction={tool.direction ? tool.direction : ""}>
-								{tool.icon}
-								<label>{tool.title}</label>
-							</Item>
-						)
-					})}
-				</ItemWrapper>
+
+				<FadeIn>
+					<ItemWrapper>
+						{tools.map((tool, index) => {
+							return (
+								<Item key={index} color={tool.color} direction={tool.direction ? tool.direction : ""}>
+									{tool.icon}
+									<label>{tool.title}</label>
+								</Item>
+							)
+						})}
+					</ItemWrapper>
+				</FadeIn>
 			</div>
 		</SectionWrapper>
 	);

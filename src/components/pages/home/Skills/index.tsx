@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
-import { Title } from "components/shared/General";
+import { FadeIn, Title } from "components/shared/General";
 import {
 	SectionWrapper,
 	CardsWrapper,
@@ -46,11 +46,11 @@ export default function Skills() {
 			category: "Back-end Development",
 			tools: [
 				{
-					name: "Node + Express",
+					name: "PHP",
 					proficiency: 90,
 				},
 				{
-					name: "PHP",
+					name: "Node + Express",
 					proficiency: 80,
 				},
 				{
@@ -188,31 +188,36 @@ export default function Skills() {
 	return (
 		<SectionWrapper id="skills">
 			<div>
-				<Title>Skills</Title>
-				<CardsWrapper ref={skillsRef}>
-					<div>
-						{skills.map((skill, index) => {
-							return (
-								<SkillCard key={index}>
-									<h5>{skill.category}</h5>
+				<FadeIn>
+					<Title>Skills</Title>
+				</FadeIn>
 
-									<div>
-										{skill.tools.map((tool, index) => {
-											return (
-												<Skill key={index} proficiency={tool.proficiency}>
-													<div>
-														<label>{tool.name}</label>
-														<span>{tool.proficiency}%</span>
-													</div>
-												</Skill>
-											);
-										})}
-									</div>
-								</SkillCard>
-							);
-						})}
-					</div>
-				</CardsWrapper>
+				<FadeIn>
+					<CardsWrapper ref={skillsRef}>
+						<div>
+							{skills.map((skill, index) => {
+								return (
+									<SkillCard key={index}>
+										<h5>{skill.category}</h5>
+
+										<div>
+											{skill.tools.map((tool, index) => {
+												return (
+													<Skill key={index} proficiency={tool.proficiency}>
+														<div>
+															<label>{tool.name}</label>
+															<span>{tool.proficiency}%</span>
+														</div>
+													</Skill>
+												);
+											})}
+										</div>
+									</SkillCard>
+								);
+							})}
+						</div>
+					</CardsWrapper>
+				</FadeIn>
 
 				{!isMobile
 					? (

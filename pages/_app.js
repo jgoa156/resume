@@ -23,7 +23,7 @@ function App(props) {
 					name="viewport"
 					content="width=device-width, initial-scale=1"
 				/>
-				<meta name="theme-color" content="#222222" />
+				<meta name="theme-color" content="#111111" />
 
 				<title>Guilherme Almeida - Developer</title>
 

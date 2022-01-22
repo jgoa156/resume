@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
+import Scrollspy from "react-scrollspy";
 
 import {
 	HeaderWrapper,
 	TitleWrapper,
 	LinkWrapper,
-	GoToTop
+	GoToTop,
+
+	Burger,
+	Sidenav,
+	SidenavBackground
 } from "./components";
 
 export default function Header() {
@@ -14,24 +19,26 @@ export default function Header() {
 	});
 	const [scrolled, setScrolled] = useState(false);
 	const [showGoToTop, setShowGoToTop] = useState(false);
+	const [showSidenav, setShowSidenav] = useState(false);
 
 	const links = [
 		{ title: "About Me", href: "about-me" },
 		{ title: "Work Experience", href: "work-experience" },
-		{ title: "Education", href: "education" },
 		{ title: "Skills", href: "skills" },
 		{ title: "Contact Me", href: "contacts" },
 	];
 
+	// Go to top
+	const bannerHeight = isMobile ? 450 : 500;
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
-			setScrolled(window.scrollY >= 450);
-			setShowGoToTop(window.scrollY >= 550);
+			setScrolled(window.scrollY >= bannerHeight - 50);
+			setShowGoToTop(window.scrollY >= bannerHeight + 50);
 		});
 	}, []);
 
 	return (
-		<HeaderWrapper scrolled={scrolled}>
+		<HeaderWrapper scrolled={scrolled && !showSidenav}>
 			<nav>
 				<TitleWrapper>
 					{/*honestamente n sei oq colocar aqui, mas acho q nem precisa*/}
@@ -40,16 +47,50 @@ export default function Header() {
 				{!isMobile
 					? (
 						<LinkWrapper>
-							{links.map((link, index) => {
-								return <a key={index} href={`#${link.href}`}>{link.title}</a>
-							})}
+							<Scrollspy items={links.map((link) => link.href)} currentClassName={"spy"}>
+								{links.map((link, index) => {
+									return <a key={index} href={`#${link.href}`} data-to-scrollspy-id={link.href}>{link.title}</a>
+								})}
+							</Scrollspy>
 						</LinkWrapper>
 					)
-					: ""
+					: (
+						<Burger onClick={() => setShowSidenav(true)} aria-expanded={showSidenav}>
+							<i className={"fas fa-bars"} />
+						</Burger>
+					)
 				}
 
 				<GoToTop href={"#banner"} showGoToTop={showGoToTop} className={"fas fa-arrow-up"} />
 			</nav>
+
+			{isMobile
+				? (<>
+					<Sidenav show={showSidenav}>
+						<div>
+							<div className={"buttonWrapper"}>
+								<button
+									className={"close"}
+									onClick={() => setShowSidenav(false)}>
+									<i className={"fas fa-times"} />
+								</button>
+							</div>
+
+							<LinkWrapper>
+								{links.map((link, index) => {
+									return <a key={index} href={`#${link.href}`} data-to-scrollspy-id={link.href}>{link.title}</a>
+								})}
+							</LinkWrapper>
+						</div>
+					</Sidenav>
+
+					{showSidenav
+						? <SidenavBackground onClick={() => setShowSidenav(false)} show={showSidenav} />
+						: null
+					}
+				</>)
+				: null
+			}
 		</HeaderWrapper>
 	);
 }

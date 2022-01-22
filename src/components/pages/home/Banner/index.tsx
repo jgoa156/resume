@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 
 import {
 	SectionWrapper,
@@ -12,11 +13,15 @@ import {
 
 export default function Banner() {
 	const [parallaxY, setParallaxY] = useState("50%");
-
+	const isMobile = useMediaQuery({
+		query: "(max-width: 576px)"
+	});
+	
+	const bannerHeight = isMobile ? 450 : 500;
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
-			if (window.scrollY <= 500) {
-				let y = (window.scrollY / 500) * 100;
+			if (window.scrollY <= bannerHeight) {
+				let y = (window.scrollY / bannerHeight) * 100;
 				setParallaxY(`calc(50% - ${y / 2}%)`);
 			}
 		});

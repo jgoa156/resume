@@ -16,8 +16,11 @@ export const SectionWrapper = styled.section`
 		
 		padding: 50px;
 
-		@media (max-width: 768px) {
-			padding: 30px 50px 10px;
+		@media (max-width: 1024px) {
+			padding: 30px 50px 0;
+		}
+		@media (max-width: 576px) {
+			padding: 30px 50px;
 		}
 	}
 `;
@@ -28,10 +31,14 @@ export const ItemWrapper = styled.div`
 	justify-content: center;
 	align-items: center;
 
-	margin-top: 100px;
+	padding-top: 100px;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1024px) {
+		padding-top: 50px;
 		grid-template-columns: repeat(6, 80px);
+	}
+	@media (max-width: 576px) {
+		grid-template-columns: repeat(3, 90px);
 	}
 `;
 
@@ -47,8 +54,9 @@ export const Item = styled.div`
 		height: auto;
 		transition: 0.2s;
 
-		@media (max-width: 768px) {
-			width: 30px;
+		@media (max-width: 1024px) {
+			width: 40px;
+			margin-bottom: 30px;
 		}
 	}
 	div svg:hover {
@@ -60,6 +68,7 @@ export const Item = styled.div`
 		width: max-content;
 		position: absolute;
 		top: calc(100% + 10px);
+		z-index: 1000;
 		opacity: 0;
 		padding: 10px 15px;
 
@@ -67,6 +76,10 @@ export const Item = styled.div`
 		border-radius: 5px;
 
 		transition: 0.2s;
+
+		@media (max-width: 576px) {
+			top: calc(50% + 15px);
+		}
 	}
 	div:hover + label {
 		opacity: 1;
