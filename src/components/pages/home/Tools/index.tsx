@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-import { FadeIn, Title } from "components/shared/General";
+import Title from "components/shared/Atoms/Title";
+import FadeIn from "components/shared/Animations/FadeIn";
 import { SectionWrapper, ItemWrapper, Item } from "./components";
-import * as Icons from "components/shared/Icons";
+import * as Icons from "components/shared/Atoms/Icons";
 
 export default function Tools() {
 	const tools = [
@@ -23,7 +24,7 @@ export default function Tools() {
 	];
 
 	return (
-		<SectionWrapper>
+		<SectionWrapper id="main-tools">
 			<div>
 				<Title show={true}>Main tools</Title>
 

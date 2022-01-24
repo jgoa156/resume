@@ -8,7 +8,9 @@ import {
 	AnimatedTitle,
 
 	Links,
-	Link
+	Link,
+
+	PlaceholderDisclaimer
 } from "./components";
 
 export default function Banner() {
@@ -74,6 +76,7 @@ export default function Banner() {
 			<Background parallaxY={parallaxY} src={`${process.env.img}/components/Banner/bg.jpg`} />
 
 			<div>
+				<PlaceholderDisclaimer>this is just a placeholder image, which btw is an art made by Jacob Bannon</PlaceholderDisclaimer>
 				<Intro>
 					<h1>
 						Hi, I'm Guilherme,

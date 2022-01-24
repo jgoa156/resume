@@ -1,9 +1,9 @@
-import React, { ReactDOM, useState, useEffect, useRef } from "react";
-import _uniqueId from 'lodash/uniqueId';
+import React, { useState, useEffect, useRef } from "react";
+import _uniqueId from "lodash/uniqueId";
 
-import { FadeInComponent, TitleComponent } from "./components";
+import { FadeInComponent } from "./components";
 
-export function FadeIn({ ...props }) {
+export default function FadeIn({ ...props }) {
 	const ref = useRef(Math.random());
 	const [show, setShow] = useState(false);
 
@@ -26,10 +26,4 @@ export function FadeIn({ ...props }) {
 	return <FadeInComponent ref={ref} show={show} {...props}>
 		{props.children}
 	</FadeInComponent>
-}
-
-export function Title({ ...props }) {
-	return <TitleComponent {...props}>
-		{props.children}
-	</TitleComponent>;
 }

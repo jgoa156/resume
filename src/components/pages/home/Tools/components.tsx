@@ -31,10 +31,10 @@ export const ItemWrapper = styled.div`
 	justify-content: center;
 	align-items: center;
 
-	padding-top: 100px;
+	padding-top: 130px;
 
 	@media (max-width: 1024px) {
-		padding-top: 50px;
+		padding-top: 100px;
 		grid-template-columns: repeat(6, 80px);
 	}
 	@media (max-width: 576px) {

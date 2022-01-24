@@ -1,14 +1,5 @@
 import styled from 'styled-components';
 
-export const FadeInComponent = styled.div`
-	opacity: ${props => props.show ? 1 : 0};
-	transform: ${props => props.show
-		? "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -60, 0, 1)"
-		: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)"
-	};
-	transition: opacity 1.5s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1.5s cubic-bezier(0.5, 0, 0, 1) 0.2s;
-`;
-
 export const TitleComponent = styled.h2`
 	margin-bottom: 50px;
 	

@@ -4,8 +4,8 @@ import Head from "next/head";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../public/styles/main.css";
 
-import Header from "components/shared/Header";
-import Footer from "components/shared/Footer";
+import Header from "components/shared/Molecules/Header";
+import Footer from "components/shared/Molecules/Footer";
 
 export default function AppWrapper(props) {
 	return (
@@ -28,14 +28,14 @@ function App(props) {
 				<title>Guilherme Almeida - Developer</title>
 
 				{/*Favicon*/}
-				<link
+				{/*<link
 					rel="apple-touch-icon"
 					href={`${process.env.basePath}/img/logo.png`}
 				/>
 				<link
 					rel="icon"
 					href={`${process.env.basePath}/img/favicon.png`}
-				/>
+				/>*/}
 
 				{/*Font Awesome*/}
 				<link
@@ -50,8 +50,7 @@ function App(props) {
 			</Head>
 
 			<noscript>
-				Você precisa habilitar o JavaScript para poder acessar esta
-				aplicação.
+				You need to turn on JavaScript to see this page
 			</noscript>
 			
 			<Header />

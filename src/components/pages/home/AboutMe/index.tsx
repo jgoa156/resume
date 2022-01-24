@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-import { FadeIn, Title } from "components/shared/General";
+import Title from "components/shared/Atoms/Title";
+import FadeIn from "components/shared/Animations/FadeIn";
 import {
 	SectionWrapper,
 	InfoWrapper,

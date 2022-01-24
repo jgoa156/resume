@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
-import { FadeIn, Title } from "components/shared/General";
+import Title from "components/shared/Atoms/Title";
+import FadeIn from "components/shared/Animations/FadeIn";
 import {
 	SectionWrapper,
 	CardsWrapper,
@@ -30,15 +31,15 @@ export default function Skills() {
 			tools: [
 				{
 					name: "HTML + CSS",
-					proficiency: 100,
+					proficiency: 90,
 				},
 				{
 					name: "React + Next",
-					proficiency: 100,
+					proficiency: 90,
 				},
 				{
 					name: "jQuery",
-					proficiency: 100,
+					proficiency: 80,
 				},
 			]
 		},

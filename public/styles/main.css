@@ -10,6 +10,10 @@
 	--text-default-color: #fff;
 	--text-default-lighter-color: #eee;
 	--muted: #6c757d;
+
+	--success: #246ad4;
+	--warning: #e3bf0e;
+	--danger: #d4244d;
 }
 
 @font-face {
@@ -24,6 +28,7 @@ html {
 
 	scroll-behavior: smooth;
 	overflow-y: overlay;
+	scroll-padding-top: 65px;
 }
 body {
 	background-color: var(--color-1);

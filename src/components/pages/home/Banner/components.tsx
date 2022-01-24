@@ -49,7 +49,7 @@ export const Intro = styled.div`
 		font-family: "Parkson";
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 576px) {
 		left: 50px;
 		top: calc(500px - (10rem + 100px));
 		
@@ -103,5 +103,17 @@ export const Link = styled.a`
 		margin-right: 25px;
 
 		font-size: 1.6rem;
+	}
+`;
+
+export const PlaceholderDisclaimer = styled.div`
+	position: absolute;
+	bottom: -250px;
+	right: 0;
+
+	text-align: right;
+
+	@media (max-width: 576px) {
+		bottom: -280px;
 	}
 `;

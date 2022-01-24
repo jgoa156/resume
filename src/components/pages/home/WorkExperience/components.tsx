@@ -23,6 +23,12 @@ export const SectionWrapper = styled.section`
 `;
 
 export const ItemWrapper = styled.div`
+	width: 75%;
+	margin: auto;
+
+	@media (max-width: 576px) {
+		width: 100%;
+	}
 `;
 
 export const Item = styled.div`
@@ -95,10 +101,23 @@ export const ItemDescription = styled.div`
 
 	border-left: 1px solid var(--primary-color);
 
-	.details {
+	p.details {
 		color: #AAA;
 		margin-bottom: 15px;
 	}
-	.description {
+
+	h6 {
+		color: var(--primary-color);
+	}
+	p:not(.details) {
+		a {
+			color: var(--primary-color);
+			text-decoration: none;
+			transition: 0.3s;
+
+			&:hover {
+				color: var(--primary-color-2);
+			}
+		}
 	}
 `;

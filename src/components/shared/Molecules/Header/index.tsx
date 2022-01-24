@@ -22,10 +22,11 @@ export default function Header() {
 	const [showSidenav, setShowSidenav] = useState(false);
 
 	const links = [
+		{ title: "Main Tools", href: "main-tools" },
 		{ title: "About Me", href: "about-me" },
 		{ title: "Work Experience", href: "work-experience" },
 		{ title: "Skills", href: "skills" },
-		{ title: "Contact Me", href: "contacts" },
+		//{ title: "Contact Me", href: "contact-me" },
 	];
 
 	// Go to top
@@ -41,7 +42,10 @@ export default function Header() {
 		<HeaderWrapper scrolled={scrolled && !showSidenav}>
 			<nav>
 				<TitleWrapper>
-					{/*honestamente n sei oq colocar aqui, mas acho q nem precisa*/}
+					{/*
+					honestamente n sei oq colocar aqui, mas acho q nem precisa
+					se pah eu devo botar um seletor de língua?
+					*/}
 				</TitleWrapper>
 
 				{!isMobile
