@@ -9,6 +9,7 @@ export const SectionWrapper = styled.footer`
 	align-items: center;
 
 	background-color: black;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 
 	& > div {
 		width: 100%;

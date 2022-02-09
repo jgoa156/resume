@@ -1,101 +1,55 @@
-import React, { useState } from "react";
+import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 import Title from "components/shared/Atoms/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
-import Spinner from "components/shared/Atoms/Spinner";
-import TextInput from "components/shared/Atoms/TextInput";
 import {
 	SectionWrapper,
+	Card,
 
-	FormWrapper,
-	Form,
-	Send
+	Or,
+	QR,
+
+	Link
 } from "./components";
 
-export default function AboutMe() {
+export default function ContactMe() {
 	const isMobile = useMediaQuery({
 		query: "(max-width: 576px)"
 	});
-	const [fetching, setFetching] = useState(false);
-	const [sent, setSent] = useState(false);
-	const [success, setSuccess] = useState(false);
 
-	// Name
-	const [name, setName] = useState("");
-	const handleName = value => {
-		setName(value);
-	};
-
-	// Message
-	const [message, setMessage] = useState("");
-	const handleMessage = value => {
-		setMessage(value);
-	};
-
-	// Validating all fields
-	function verifyAll() {
-		return (
-			name.length != 0 &&
-			message.length != 0
-		);
-	}
-	// Reset form
-	function resetForm() {
-		setSent(false);
-		setName("");
-		setMessage("");
-	}
-	// Send
-	function send(e) {
-		e.preventDefault();
-		setSent(true);
-	}
+	// Links
+	const links = [
+		{ icon: "fas fa-envelope", href: "mailto:jgoa156@gmail.com" },
+		{ icon: "fab fa-whatsapp", href: "https://wa.me/5592984656666" },
+		{ icon: "fab fa-linkedin", href: "https://linkedin.com/in/jgoa156" }
+	];
 
 	return (
 		<SectionWrapper id="contact-me">
 			<div>
-				<FadeIn>
-					<Title>Contact Me</Title>
+				<FadeIn style={{ width: "100%" }}>
+					<Card>
+						<Title>Contact Me</Title>
+						<QR src={`${process.env.img}/components/ContactMe/qr.png`}></QR>
+						
+						<Or><span>or</span></Or>
+
+						<div>
+							{links.map((link, index) => {
+								return (
+									<Link
+										key={index}
+										target="_blank"
+										rel="noreferrer"
+										href={link.href}>
+										<i className={link.icon} />
+									</Link>
+								);
+							})}
+						</div>
+					</Card>
 				</FadeIn>
-
-				<FormWrapper>
-					<Form>
-						<TextInput
-							label={"Name*"}
-							name={"name"}
-							value={name}
-							handleValue={handleName}
-							required={true}
-							displayAlert={sent}
-						/>
-						<TextInput
-							label={"Message*"}
-							name={"message"}
-							value={message}
-							handleValue={handleMessage}
-							required={true}
-							displayAlert={sent}
-						/>
-
-						<Send
-							type="button"
-							onClick={(e) => send(e)}
-							disabled={fetching}
-						>
-							{fetching ? (
-								<Spinner
-									style={{ alignSelf: "center" }}
-									size={isMobile ? "16px" : "18px"}
-									color={"var(--bb_color_primary)"}
-									background={"rgba(252, 252, 48, 0.4)"}
-								/>
-							) : (
-								"Enviar"
-							)}
-						</Send>
-					</Form>
-				</FormWrapper>
 			</div>
 		</SectionWrapper>
 	);

@@ -6,6 +6,7 @@ import "../public/styles/main.css";
 
 import Header from "components/shared/Molecules/Header";
 import Footer from "components/shared/Molecules/Footer";
+import Tentacles from "components/shared/Molecules/Tentacles";
 
 export default function AppWrapper(props) {
 	return (
@@ -58,7 +59,7 @@ function App(props) {
 			<main id={"main"} className={"w-100"}>
 				<props.Component {...props.pageProps} />
 			</main>
-
+			
 			<Footer />
 		</section>
 	);

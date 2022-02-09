@@ -56,7 +56,7 @@ export const Toast = styled.div`
 			? colors.success
 			: colors.danger};
 
-		@media only screen and (max-width: 620px) {
+		@media only screen and (max-width: 575px) {
 			font-size: 14px;
 		}
 	}
@@ -64,7 +64,7 @@ export const Toast = styled.div`
 		font-size: 14px;
 		color: white;
 
-		@media only screen and (max-width: 620px) {
+		@media only screen and (max-width: 575px) {
 			font-size: 12px;
 		}
 	}

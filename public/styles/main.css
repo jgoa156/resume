@@ -1,15 +1,18 @@
 /*---------------------- VARIABLES ----------------------*/
 :root {
-	--primary-color: #ff9137;
-	--primary-color-2: #f8572e;
+	--primary-color: #05d4a1;
+	--primary-color-2: #05d466;
 
-	--color-1: #161616;
+	--secondary-color: #bd34eb;
+
+	--color-1: #111;
 	--color-2: #333;
-	--color-3: #111;
+	--color-3: #1A1A1A;
 
 	--text-default-color: #fff;
 	--text-default-lighter-color: #eee;
 	--muted: #6c757d;
+	--muted-hover: #585e64;
 
 	--success: #246ad4;
 	--warning: #e3bf0e;
@@ -54,12 +57,14 @@ body {
 	background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(var(--primary-color), var(--primary-color-2));
+	/*background: linear-gradient(var(--primary-color), var(--primary-color-2));*/
+	background-color: var(--muted);
 	border-radius: 10px;
 	transition: 0.2s;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--primary-color-2);
+	/*background: linear-gradient(var(--primary-color-2), var(--primary-color));*/
+	background-color: var(--muted-hover);
 	cursor: pointer;
 }
 

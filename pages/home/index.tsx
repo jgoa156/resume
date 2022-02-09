@@ -5,7 +5,7 @@ import Tools from "components/pages/home/Tools";
 import AboutMe from "components/pages/home/AboutMe";
 import WorkExperience from "components/pages/home/WorkExperience";
 import Skills from "components/pages/home/Skills";
-//import ContactMe from "components/pages/home/ContactMe";
+import ContactMe from "components/pages/home/ContactMe";
 
 export default function Home() {
 	/*const [loaded, setLoaded] = useState(false);
@@ -21,7 +21,7 @@ export default function Home() {
 			<AboutMe />
 			<WorkExperience />
 			<Skills />
-			{/*<ContactMe />*/}
+			<ContactMe />
 		</>
 	);
 }

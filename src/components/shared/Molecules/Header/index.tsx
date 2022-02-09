@@ -26,7 +26,7 @@ export default function Header() {
 		{ title: "About Me", href: "about-me" },
 		{ title: "Work Experience", href: "work-experience" },
 		{ title: "Skills", href: "skills" },
-		//{ title: "Contact Me", href: "contact-me" },
+		{ title: "Contact Me", href: "contact-me" },
 	];
 
 	// Go to top
@@ -41,17 +41,14 @@ export default function Header() {
 	return (
 		<HeaderWrapper scrolled={scrolled && !showSidenav}>
 			<nav>
-				<TitleWrapper>
-					{/*
-					honestamente n sei oq colocar aqui, mas acho q nem precisa
-					se pah eu devo botar um seletor de língua?
-					*/}
+				<TitleWrapper scrolled={scrolled}>
+					Guilherme
 				</TitleWrapper>
 
 				{!isMobile
 					? (
 						<LinkWrapper>
-							<Scrollspy items={links.map((link) => link.href)} currentClassName={"spy"}>
+							<Scrollspy items={links.map((link) => link.href)} currentClassName={"spy"} offset={-100}>
 								{links.map((link, index) => {
 									return <a key={index} href={`#${link.href}`} data-to-scrollspy-id={link.href}>{link.title}</a>
 								})}

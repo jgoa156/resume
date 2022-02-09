@@ -49,7 +49,7 @@ export const Intro = styled.div`
 		font-family: "Parkson";
 	}
 
-	@media (max-width: 576px) {
+	@media (max-width: 575px) {
 		left: 50px;
 		top: calc(500px - (10rem + 100px));
 		
@@ -62,7 +62,7 @@ export const AnimatedTitle = styled.span`
 	position: absolute;
 	top: 1.2 * (5rem);
 	transform: translateY(0%);
-	color: var(--primary-color-2);
+	color: var(--primary-color);
 
 	transition: 0.3s;
 
@@ -103,17 +103,5 @@ export const Link = styled.a`
 		margin-right: 25px;
 
 		font-size: 1.6rem;
-	}
-`;
-
-export const PlaceholderDisclaimer = styled.div`
-	position: absolute;
-	bottom: -250px;
-	right: 0;
-
-	text-align: right;
-
-	@media (max-width: 576px) {
-		bottom: -280px;
 	}
 `;

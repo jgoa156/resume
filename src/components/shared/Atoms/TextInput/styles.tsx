@@ -70,7 +70,7 @@ export const Input = styled.input`
 
 	transition: 0.2s;
 
-	@media only screen and (max-width: 620px) {
+	@media only screen and (max-width: 575px) {
 		height: 42px;
 	}
 
@@ -94,7 +94,7 @@ export const Input = styled.input`
 		z-index: ${props =>
 			props.focused || (props.value && props.value.length != 0) ? 3 : 1};
 
-		@media only screen and (max-width: 620px) {
+		@media only screen and (max-width: 575px) {
 			font-size: ${props =>
 				props.focused || (props.value && props.value.length != 0)
 					? `12px`
@@ -113,10 +113,8 @@ export const InputWrapper = styled.div`
 	height: 44px;
 	margin-bottom: 30px;
 	z-index: 0;
-
-	color: var(--bb_color_text_secundary);
+	
 	font-size: 16px;
-	font-family: var(--bb_font_titulo_bold);
 
 	&::after {
 		position: absolute;
@@ -132,10 +130,10 @@ export const InputWrapper = styled.div`
 	}
 	&:hover::after {
 		opacity: 1;
-		background-color: var(--bb_color_gelo);
+		background-color: ${background.focused};
 	}
 
-	@media only screen and (max-width: 620px) {
+	@media only screen and (max-width: 575px) {
 		height: 42px;
 		font-size: 14px;
 	}

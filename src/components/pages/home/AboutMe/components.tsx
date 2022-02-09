@@ -105,7 +105,7 @@ export const NumberCard = styled.div`
 	text-align: center;
 	margin-right: 50px;
 	
-	box-shadow: 0px 0px 10px rgba(46, 46, 46, 0.4);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 
 	h2 {
 		font-size: 3rem;

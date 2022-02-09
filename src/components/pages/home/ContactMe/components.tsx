@@ -13,72 +13,91 @@ export const SectionWrapper = styled.section`
 	& > div {
 		width: 100%;
 		max-width: 1920px;
-
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		
+	
 		padding: 100px 50px 50px;
 
 		@media (max-width: 1024px) {
-			padding: 50px 20px 0;
+			padding: 50px 20px 70px;
+		}
+
+		& > div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
 	}
 `;
 
-export const FormWrapper = styled.div`
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 30px 20px;
-
-  background-color: var(--color-3);
-
-  @media only screen and (max-width: 620px) {
-    width: 100%;
-    padding: 15px 20px;
-  }
-`;
-
-export const Form = styled.form`
-	width: 100%;
+export const Card = styled.div`
+	width: 30%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
+
+	margin-top: 10px;
+	padding: 30px 20px;
+	border-radius: 10px;
+
+	background-color: var(--color-3);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+	@media only screen and (max-width: 1024px) {
+		width: 50%;
+	}
+	@media only screen and (max-width: 575px) {
+		width: 100%;
+	}
 `;
 
-export const Send = styled.button`
-  min-width: 40%;
-  width: fit-content;
-  padding: 10px 30px;
-  border-radius: 4px;
+export const Or = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  align-self: flex-end;
-  display: flex;
-  justify-content: center;
+	margin: 20px 0;
 
-  color: var(--bb_color_primary);
-  background-color: var(--bb_color_secundary);
-  border: none;
+	span {
+		padding: 10px 5px;
+		color: var(--muted);
+		font-size: 1.4rem;
+		font-family: "Parkson";
+	}
+	&:before {
+		content: "";
+		width: 30px;
+		height: 1px;
+			
+		background-color: var(--muted);
+	}
+	&:after {
+		content: "";
+		width: 30px;
+		height: 1px;
+		
+		background-color: var(--muted);
+	}
+`;
 
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 0.2px;
-  text-decoration: none;
+export const QR = styled.img`
+	width: 40%;
+	height: auto;
+`;
 
-  cursor: pointer;
-  transition: filter 0.2s;
+export const Link = styled.a`
+	margin: 0 15px;
 
-  &:hover {
-    filter: brightness(90%);
-  }
+	color: white;
+	font-size: 1.8rem;
 
-  @media only screen and (max-width: 620px) {
-    font-size: 14px;
-    width: 100%;
-    align-self: center;
-    margin: 15px 0;
-  }
+	transition: 0.2s;
+
+	&:hover {
+		color: var(--primary-color);
+	}
+
+	@media (max-width: 768px) {
+		margin: 0 12.5px;
+
+		font-size: 1.6rem;
+	}
 `;

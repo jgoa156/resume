@@ -14,10 +14,10 @@ export const SectionWrapper = styled.section`
 		width: 100%;
 		max-width: 1920px;
 		
-		padding: 100px 0;
+		padding: 100px 0 0;
 
 		@media (max-width: 768px) {
-			padding: 50px 0;
+			padding: 50px 0 0;
 		}
 	}
 `;
@@ -75,7 +75,7 @@ export const Skill = styled.div`
 	margin-bottom: 30px;
 	background-color: var(--color-3);
 	border-radius: 8px;
-	box-shadow: 0 0 10px rgba(46, 46, 46, 0.4);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 	
 	div {
 		width: 100%;
@@ -96,7 +96,7 @@ export const Skill = styled.div`
 		height: 3px;
 		width: ${props => `${props.proficiency}%`};
 
-		background-color: var(--primary-color);
+		background-image: linear-gradient(to right, var(--primary-color), var(--primary-color-2));
 		border-bottom-left-radius: 8px;
 		border-bottom-right-radius: 8px;
 	}

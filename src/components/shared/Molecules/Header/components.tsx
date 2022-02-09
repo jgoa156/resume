@@ -13,6 +13,7 @@ export const HeaderWrapper = styled.header`
 
 	background-color: ${props => props.scrolled ? `var(--color-3)` : `transparent`};
 	transition: 0.5s;
+	box-shadow: ${props => props.scrolled ? `0 0 10px rgba(0, 0, 0, 0.4)` : `none`};
 
 	nav {
 		height: fit-content;
@@ -29,8 +30,28 @@ export const HeaderWrapper = styled.header`
 export const TitleWrapper = styled.div`
 	height: fit-content;
 
+	color: ${props => props.scrolled ? `white` : `transparent`};
+	font-family: "Parkson";
+	font-size: 1.825rem;
 	font-weight: bold;
-	text-transform: uppercase;
+
+	transition: 0.3s;
+
+	&:after {
+		color: ${props => props.scrolled ? `white` : `transparent`};
+		content: "_";
+
+		animation: 1s blinking infinite steps(1, end);
+
+		@keyframes blinking {
+			50% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+	}
 `;
 
 export const LinkWrapper = styled.div`

@@ -23,7 +23,7 @@ export const TitleComponent = styled.h2`
 		height: 2px;
 		display: block;
 
-		background-color: var(--primary-color);
+		background-image: linear-gradient(to right, var(--primary-color), var(--primary-color-2));
 		content: "";
 	};
 `;

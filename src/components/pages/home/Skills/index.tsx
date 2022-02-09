@@ -47,12 +47,12 @@ export default function Skills() {
 			category: "Back-end Development",
 			tools: [
 				{
-					name: "PHP",
+					name: "Node + Express",
 					proficiency: 90,
 				},
 				{
-					name: "Node + Express",
-					proficiency: 80,
+					name: "PHP",
+					proficiency: 70,
 				},
 				{
 					name: "Java + Spring",
@@ -154,7 +154,7 @@ export default function Skills() {
 				},
 				{
 					name: "Wordpress + Plugins",
-					proficiency: 60,
+					proficiency: 50,
 				}
 			]
 		}

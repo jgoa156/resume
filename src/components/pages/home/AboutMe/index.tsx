@@ -134,7 +134,7 @@ export default function AboutMe() {
 							</Subtitle>
 
 							<Text>
-								Currently my main interests towards the software industry are front-end web and mobile development, design and API development.
+								Currently my main interests towards the software industry are front-end web and mobile development, UI/UX design and API development.
 								I also resently got into machine learning and data mining, but I do take interest in other fields of technology such as drones and anything involving mechatronics.
 							</Text>
 							<Text>
