@@ -3,7 +3,11 @@ import { useMediaQuery } from "react-responsive";
 
 import {
 	SectionWrapper,
+
+	BackgroundWrapper,
 	Background,
+	Profile,
+
 	Intro,
 	AnimatedTitle,
 
@@ -16,7 +20,7 @@ export default function Banner() {
 	const isMobile = useMediaQuery({
 		query: "(max-width: 576px)"
 	});
-	
+
 	const bannerHeight = isMobile ? 450 : 500;
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
@@ -41,19 +45,19 @@ export default function Banner() {
 				setRole("");
 				setCharIndex(0);
 			}, 500);
-		// Apagando palavra
+			// Apagando palavra
 		} else if (charIndex < 0) {
 			setTimeout(() => {
 				setRole(role.slice(0, -1));
 				setCharIndex(charIndex - 1);
 			}, 10);
-		// Escrevendo palavra
+			// Escrevendo palavra
 		} else if (charIndex < roles[roleIndex].length) {
 			setTimeout(() => {
 				setRole(role + roles[roleIndex][charIndex])
 				setCharIndex(charIndex + 1);
 			}, 30);
-		// Aguardando 1.5s e dando ordem para apagar palavra
+			// Aguardando 1.5s e dando ordem para apagar palavra
 		} else {
 			setTimeout(() => {
 				setCharIndex(-1);
@@ -71,7 +75,10 @@ export default function Banner() {
 
 	return (
 		<SectionWrapper id="banner">
-			<Background parallaxY={parallaxY} src={`${process.env.img}/components/Banner/bg.jpg`} />
+			<BackgroundWrapper>
+				<Background parallaxY={parallaxY} src={`${process.env.img}/components/Banner/bg.jpg`} />
+				<Profile src={`${process.env.img}/components/Banner/profile.jpg`} />
+			</BackgroundWrapper>
 
 			<div>
 				<Intro>

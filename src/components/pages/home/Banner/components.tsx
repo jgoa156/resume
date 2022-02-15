@@ -12,7 +12,7 @@ export const SectionWrapper = styled.section`
 
 	z-index: 5;
 
-	& > div {
+	& > div:nth-child(2) {
 		width: 100%;
 		max-width: 1920px;
 		position: absolute;
@@ -28,6 +28,32 @@ export const SectionWrapper = styled.section`
 	}
 `;
 
+export const BackgroundWrapper = styled.div`
+	position: relative;
+	width: calc(100% - 30px);
+	height: 100%;
+
+	overflow-x: hidden;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 0 0 30px 30px;
+`;
+export const Profile = styled.img`
+	position: absolute;
+	top: 125px;
+	right: 150px;
+
+	width: 350px;
+	height: 350px;
+	object-fit: cover;
+	filter: brightness(70%);
+
+	border-radius: 50%;
+	padding: 7.5px;
+	border: 1px solid var(--muted-hover);
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+
+	transition: 0.8s;
+`;
 export const Background = styled.img`
 	width: 100%;
 	height: 100%;

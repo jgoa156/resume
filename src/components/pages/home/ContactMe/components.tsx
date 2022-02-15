@@ -79,7 +79,7 @@ export const Or = styled.div`
 `;
 
 export const QR = styled.img`
-	width: 40%;
+	width: 150px;
 	height: auto;
 `;
 
