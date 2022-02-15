@@ -23,6 +23,9 @@ export const SectionWrapper = styled.section`
 		align-items: center;
 	}
 
+	@media (max-width: 1024px) {
+		height: 400px;
+	}
 	@media (max-width: 575px) {
 		height: 450px;
 	}
@@ -36,6 +39,10 @@ export const BackgroundWrapper = styled.div`
 	overflow-x: hidden;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 	border-radius: 0 0 30px 30px;
+
+	@media (max-width: 575px) {
+		width: calc(100% - 15px);
+	}
 `;
 export const Profile = styled.img`
 	position: absolute;
@@ -53,6 +60,23 @@ export const Profile = styled.img`
 	box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 
 	transition: 0.8s;
+
+	@media (max-width: 1024px) {
+		top: 150px;
+		right: 30px;
+
+		width: 200px;
+		height: 200px;
+	}
+	@media (max-width: 575px) {
+		position: absolute;
+		
+		top: 50px;
+		right: calc(50% - 93.75px);
+
+		width: 180px;
+		height: 180px;
+	}
 `;
 export const Background = styled.img`
 	width: 100%;
@@ -75,6 +99,14 @@ export const Intro = styled.div`
 		font-family: "Parkson";
 	}
 
+	@media (max-width: 1024px) {
+		left: 50px;
+		top: calc(400px - (10rem + 100px));
+		
+		h1 {
+			font-size: 4rem;
+		}
+	}
 	@media (max-width: 575px) {
 		left: 50px;
 		top: calc(500px - (10rem + 100px));

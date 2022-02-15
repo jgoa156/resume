@@ -17,10 +17,10 @@ export const SectionWrapper = styled.section`
 		padding: 50px;
 
 		@media (max-width: 1024px) {
-			padding: 30px 50px 0;
+			padding: 50px 50px 0;
 		}
 		@media (max-width: 576px) {
-			padding: 30px 50px;
+			padding: 50px;
 		}
 	}
 `;
