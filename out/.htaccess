@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    RewriteCond %{SERVER_PORT} 80
+    #RewriteRule ^(.*)$ https://ouvidoria.crea-am.org.br/%{REQUEST_URI} [R,L]
+    
+    RedirectMatch 302 /$                /index.html
+    RedirectMatch 302 /index$           /index.html
+    RedirectMatch 302 /404$             /404.html
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|php)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </FilesMatch>
+
+    <FilesMatch "\.(ico|pdf|jpg|png|gif|js|css)$">
+        Header set Cache-Control "max-age=172800, public, must-revalidate"
+    </FilesMatch>
+</IfModule>
