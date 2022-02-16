@@ -40,10 +40,10 @@ export default function Header() {
 	}, []);
 
 	// Lock scroll
-	useEffect(() => {
+	/*useEffect(() => {
 		if (showSidenav) disableScroll.on();
 		else disableScroll.off();
-	}, [showSidenav]);
+	}, [showSidenav]);*/
 
 	return (
 		<HeaderWrapper scrolled={scrolled}>
