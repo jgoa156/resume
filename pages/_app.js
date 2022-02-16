@@ -25,7 +25,7 @@ function App(props) {
 				/>
 				<meta name="theme-color" content="#111111" />
 
-				<title>Guilherme Almeida - Developer</title>
+				<title>Guilherme Almeida, Developer</title>
 
 				{/*Favicon*/}
 				{/*<link
