@@ -86,7 +86,7 @@ export default function Banner() {
 			<div>
 				<Intro>
 					<h1>
-						Hi, I'm Guilherme,
+						Hi, I&apos;m Guilherme,
 						<br />
 						a&nbsp;<AnimatedTitle>{role}</AnimatedTitle>
 					</h1>

@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
+import ReactDOM from "react-dom";
 import _uniqueId from "lodash/uniqueId";
 
 import { FadeInComponent } from "./components";
 
 export default function FadeIn({ ...props }) {
-	const ref = useRef(Math.random());
+	const ref = useRef<Element>();
 	const [show, setShow] = useState(false);
 
 	useEffect(() => {

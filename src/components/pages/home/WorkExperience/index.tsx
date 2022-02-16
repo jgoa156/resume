@@ -29,7 +29,7 @@ export default function WorkExperience() {
 					Full Stack Developer working alongside several other developers, designers and product managers in order to deliver high end digital solutions for our clients. Our main client in this company is <a target="_blank" rel="noreferrer" href="https://www.bb.com.br/">Banco do Brasil</a>, which is the second largest bank in all Latin America.
 				</p>
 				<p>
-					My main project while working in this company was Banco do Brasil's <a target="_blank" rel="noreferrer" href="https://www.bb.com.br/uci/investimentos.html">investments page</a>, where I worked mostly as a front-end developer.
+					My main project while working in this company was Banco do Brasil&apos;s <a target="_blank" rel="noreferrer" href="https://www.bb.com.br/uci/investimentos.html">investments page</a>, where I worked mostly as a front-end developer.
 				</p>
 			</>
 		},

@@ -1,7 +1,7 @@
 const basePath = "";
 
 module.exports = {
-	async redirects() {
+	/*async redirects() {
 		return [
 			{
 				source: '/',
@@ -9,7 +9,7 @@ module.exports = {
 				permanent: true
 			}
 		]
-	},
+	},*/
 	reactStrictMode: true,
 	env: {
 		basePath: basePath,
