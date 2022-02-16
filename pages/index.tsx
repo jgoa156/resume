@@ -9,35 +9,33 @@ import Skills from "components/pages/home/Skills";
 import ContactMe from "components/pages/home/ContactMe";
 
 export default function Home() {
-	<NextSeo
-		title="Guilherme Almeida, Developer"
-		description="Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil."
-		canonical="http://jgoa156.vercel.app/"
-		openGraph={{
-			title: "Guilherme Almeida, Developer",
-			description: "Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil.",
-			type: "website",
-			locale: "en_IE",
-			url: "http://jgoa156.vercel.app/",
-			images: [
-				{
-					url: "https://jgoa156.vercel.app/img/SEO/preview.jpg",
-					alt: "Preview Image",
-					width: 1130,
-					height: 484,
-					type: "image/jpeg"
-				}
-			]
-		}}
-		twitter={{
-			handle: "@handle",
-			site: "@site",
-			cardType: "summary_large_image",
-		}}
-	/>
-
 	return (
 		<>
+			<NextSeo
+				title="Guilherme Almeida, Developer"
+				description="Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil."
+				canonical="https://jgoa156.vercel.app/"
+				openGraph={{
+					title: "Guilherme Almeida, Developer",
+					description: "Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil.",
+					type: "website",
+					locale: "en_IE",
+					url: "https://jgoa156.vercel.app/",
+					images: [
+						{
+							url: "/img/SEO/preview.jpg",
+							alt: "Preview Image",
+							type: "image/jpeg"
+						}
+					]
+				}}
+				twitter={{
+					handle: "@handle",
+					site: "@site",
+					cardType: "summary_large_image",
+				}}
+			/>
+
 			<Banner />
 			<Tools />
 			<AboutMe />
