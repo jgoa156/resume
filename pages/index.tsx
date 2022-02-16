@@ -25,7 +25,9 @@ export default function Home() {
 						{
 							url: "/img/SEO/preview.jpg",
 							alt: "Preview Image",
-							type: "image/jpeg"
+							type: "image/jpeg",
+							width: 656,
+							height: 370
 						}
 					]
 				}}
