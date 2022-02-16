@@ -21,14 +21,15 @@ export default function Home() {
 			url: "http://jgoa156.vercel.app/",
 			images: [
 				{
-					url: "/img/SEO/preview.jpg",
+					url: "http://jgoa156.vercel.app/img/SEO/preview.jpg",
+					type: "image/jpeg"
 				}
 			]
 		}}
 		twitter={{
-			handle: '@handle',
-			site: '@site',
-			cardType: 'summary_large_image',
+			handle: "@handle",
+			site: "@site",
+			cardType: "summary_large_image",
 		}}
 	/>
 
