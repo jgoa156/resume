@@ -6,5 +6,5 @@ export const FadeInComponent = styled.div`
 		? "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -60, 0, 1)"
 		: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)"
 	};
-	transition: opacity 1.0s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1.0s cubic-bezier(0.5, 0, 0, 1) 0.2s;
+	transition: opacity 0.7s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 0.7s cubic-bezier(0.5, 0, 0, 1) 0.2s;
 `;

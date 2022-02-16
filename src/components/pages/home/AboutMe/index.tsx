@@ -102,10 +102,10 @@ export default function AboutMe() {
 
 							<Text>
 								I&apos;m a {age}-year-old Full-stack web and mobile developer based in Manaus, Brazil, and currently focused in Front-end development in general.
-								Currently working with React + Next and Node + Express but with knowledge in several other technologies as well.
+								Currently working with React + Next and Node + Express, but with knowledge in several other technologies as well.
 							</Text>
 							<Text>
-								I have a Technical Degree in Informatics with emphasis on Software Engineering and am currently at my {semester}th semester of my Software Engineering Bachelor&apos;s Degree course which I should be finishing by Q2 2022.
+								I have a Technical Degree in Informatics with emphasis on Software Engineering and am currently at my {semester}th semester of my Software Engineering Bachelor&apos;s Degree course, which I should be finishing by Q2 2022.
 							</Text>
 						</FadeIn>
 					</TextWrapper>
@@ -135,7 +135,7 @@ export default function AboutMe() {
 
 							<Text>
 								Currently my main interests towards the software industry are front-end web and mobile development, UI/UX design and API development.
-								I also resently got into machine learning and data mining, but I do take interest in other fields of technology such as drones and anything involving mechatronics.
+								I also recently got into machine learning and data mining, but I do take interest in other fields of technology such as drones and anything involving mechatronics.
 							</Text>
 							<Text>
 								While you are here, you should know I&apos;m also a nerd, goth, rpg and cyberpunk literature aficionado, not to mention I take a lot of interest

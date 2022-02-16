@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import Scrollspy from "react-scrollspy";
+import disableScroll from "disable-scroll";
 
 import {
 	HeaderWrapper,
@@ -38,8 +39,14 @@ export default function Header() {
 		});
 	}, []);
 
+	// Lock scroll
+	useEffect(() => {
+		if (showSidenav) disableScroll.on();
+		else disableScroll.off();
+	}, [showSidenav]);
+
 	return (
-		<HeaderWrapper scrolled={scrolled && !showSidenav}>
+		<HeaderWrapper scrolled={scrolled}>
 			<nav>
 				<TitleWrapper scrolled={scrolled}>
 					Guilherme

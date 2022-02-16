@@ -56,8 +56,8 @@ export const Profile = styled.img`
 
 	border-radius: 50%;
 	padding: 7.5px;
-	border: 1px solid var(--muted-hover);
-	box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+	border: 1px solid white;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 
 	transition: 0.8s;
 

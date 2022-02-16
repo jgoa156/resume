@@ -45,7 +45,7 @@ export default function WorkExperience() {
 					As a intern, I started working both as an I.T support technician and a developer. The I.T support role consisted mostly of maintenance of computers, servers and printers (one of which was a DataCard printer), while my role as a developer was to create new applications for the company, some of them on demand and most of them which me and my supervisor had designed to automate processes and increase productivity of the whole company.
 				</p>
 				<p>
-					The applications were written in several languages and using several different tools, such as CakePHP, React, Node, and even Scapy, with the team having full autonomy to choose which tools to use in each project. For my efforts starting the development division in my department, I got hired as a full-time employee.
+					The applications were written in several languages and used several different tools, such as CakePHP, React, Node, and even Scrapy, with the team having full autonomy to choose which tools to use in each project. For my efforts starting the development division in my department, I got hired as a full-time employee.
 				</p>
 			</>
 		},
