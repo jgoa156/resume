@@ -23,7 +23,7 @@ export default function Home() {
 					url: "https://jgoa156.vercel.app/",
 					images: [
 						{
-							url: "/img/SEO/preview.jpg",
+							url: "https://jgoa156.vercel.app/img/SEO/preview.jpg",
 							alt: "Preview Image",
 							type: "image/jpeg",
 							width: 656,
