@@ -29,7 +29,66 @@ export default function Home() {
 							width: 656,
 							height: 370
 						}
-					]
+					],
+					article: {
+						tags: [
+							"software developer",
+							"software",
+							"programmer",
+							"dev",
+							"developer",
+							"designer",
+							"fullstack",
+							"full-stack",
+							"full stack",
+							"back-end",
+							"back end",
+							"front-end",
+							"front end",
+							"design",
+							"brazil",
+							"brazilian",
+							"remote",
+							"worker",
+
+							"javascript",
+							"js",
+							"java",
+							"python",
+							"php",
+							"cakephp",
+							"laravel",
+							"springboot",
+							"spring",
+							"designer",
+							"ui",
+							"ui designer",
+							"ux",
+							"ux designer",
+							"next",
+							"next.js",
+							"nextjs",
+							"react",
+							"react.js",
+							"reactjs",
+							"node",
+							"node.js",
+							"nodejs",
+							"express",
+							"express.js",
+							"expressjs",
+
+							"mysql",
+							"sequelize",
+							"wordpress",
+							"jquery",
+							"c",
+							"aosp",
+							"figma",
+							"docker",
+							"kubernetes"
+						]
+					}
 				}}
 				twitter={{
 					handle: "@handle",

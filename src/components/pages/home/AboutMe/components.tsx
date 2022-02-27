@@ -152,7 +152,7 @@ export const ItemTitle = styled.div`
 		p {
 			margin-bottom: 0;
 			span {
-				color: #AAA;
+				color: var(--text-default-lighter-color);
 
 				@media (max-width: 576px) {
 					display: block;

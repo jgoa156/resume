@@ -80,7 +80,9 @@ export default function Banner() {
 		<SectionWrapper id="banner">
 			<BackgroundWrapper>
 				<Background parallaxY={parallaxY} src={`${process.env.img}/components/Banner/bg.jpg`} />
-				<Profile src={`${process.env.img}/components/Banner/profile.jpg`} />
+				<div>
+					<Profile src={`${process.env.img}/components/Banner/profile.jpg`} />
+				</div>
 			</BackgroundWrapper>
 
 			<div>

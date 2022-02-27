@@ -32,17 +32,32 @@ export const SectionWrapper = styled.section`
 `;
 
 export const BackgroundWrapper = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	position: relative;
-	width: calc(100% - 30px);
+	width: 100%;
 	height: 100%;
 
 	overflow-x: hidden;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-	border-radius: 0 0 30px 30px;
 
-	@media (max-width: 575px) {
-		width: calc(100% - 15px);
+	& > div:nth-child(2) {
+		width: 100%;
+		max-width: 1920px;
+		position: absolute;
+		top: 0;
 	}
+`;
+export const Background = styled.img`
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% ${props => props.parallaxY};
+	filter: brightness(30%);
+
+	transition: 0.8s;
 `;
 export const Profile = styled.img`
 	position: absolute;
@@ -77,15 +92,6 @@ export const Profile = styled.img`
 		width: 180px;
 		height: 180px;
 	}
-`;
-export const Background = styled.img`
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: 50% ${props => props.parallaxY};
-	filter: brightness(30%);
-
-	transition: 0.8s;
 `;
 
 export const Intro = styled.div`

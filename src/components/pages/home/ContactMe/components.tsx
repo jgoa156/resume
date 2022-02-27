@@ -83,21 +83,31 @@ export const QR = styled.img`
 	height: auto;
 `;
 
-export const Link = styled.a`
-	margin: 0 15px;
+export const Link = styled.div`
+	display: flex;
+	align-items: center;
 
-	color: white;
-	font-size: 1.8rem;
+	a {
+		margin: 0 15px;
+		margin-right: 20px;
 
-	transition: 0.2s;
+		color: white;
+		font-size: 1.8rem;
 
-	&:hover {
-		color: var(--primary-color);
+		transition: 0.2s;
+
+		&:hover {
+			color: var(--primary-color);
+		}
+
+		@media (max-width: 768px) {
+			margin: 0 12.5px;
+
+			font-size: 1.6rem;
+		}
 	}
-
-	@media (max-width: 768px) {
-		margin: 0 12.5px;
-
-		font-size: 1.6rem;
+	
+	span {
+		color: var(--text-default-lighter-color);
 	}
 `;

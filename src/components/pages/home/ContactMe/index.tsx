@@ -20,9 +20,9 @@ export default function ContactMe() {
 
 	// Links
 	const links = [
-		{ icon: "fas fa-envelope", href: "mailto:jgoa156@gmail.com" },
-		{ icon: "fab fa-whatsapp", href: "https://wa.me/5592984656666" },
-		{ icon: "fab fa-linkedin", href: "https://linkedin.com/in/jgoa156" }
+		{ icon: "fas fa-envelope", href: "mailto:jgoa156@gmail.com", content: "jgoa156@gmail.com" },
+		{ icon: "fab fa-whatsapp", href: "https://wa.me/5592984656666", content: "+55 92 98465-6666" },
+		{ icon: "fab fa-linkedin", href: "https://linkedin.com/in/jgoa156", content: "jgoa156" }
 	];
 
 	return (
@@ -32,18 +32,21 @@ export default function ContactMe() {
 					<Card>
 						<Title>Contact Me</Title>
 						<QR src={`${process.env.img}/components/ContactMe/qr.png`}></QR>
-						
+
 						<Or><span>or</span></Or>
 
 						<div>
 							{links.map((link, index) => {
 								return (
-									<Link
-										key={index}
-										target="_blank"
-										rel="noreferrer"
-										href={link.href}>
-										<i className={link.icon} />
+									<Link>
+										<a
+											key={index}
+											target="_blank"
+											rel="noreferrer"
+											href={link.href}>
+											<i className={link.icon} />
+										</a>
+										<span>{link.content}</span>
 									</Link>
 								);
 							})}

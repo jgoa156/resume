@@ -15,11 +15,6 @@ function GenericIcon({ defaultSize, children, ...props }) {
 	);
 }
 
-/*
-Ícones gerados a partir do guia:
-https://stackoverflow.com/questions/11529470/is-there-a-tool-to-create-svg-paths-from-an-svg-file
-*/
-
 export function IconC(props: any) {
 	return (
 		<GenericIcon {...props} defaultSize={[257, 283]}>

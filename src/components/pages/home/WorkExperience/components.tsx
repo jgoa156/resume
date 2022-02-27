@@ -80,7 +80,7 @@ export const ItemTitle = styled.button`
 			margin-bottom: 0;
 			span {
 				padding-left: 10px;
-				color: #AAA;
+				color: var(--text-default-lighter-color);
 			}
 		}
 	}
@@ -102,7 +102,7 @@ export const ItemDescription = styled.div`
 	border-left: 1px solid var(--primary-color);
 
 	p.details {
-		color: #AAA;
+		color: var(--text-default-lighter-color);
 		margin-bottom: 15px;
 	}
 
