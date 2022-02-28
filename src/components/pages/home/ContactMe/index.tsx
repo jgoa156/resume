@@ -38,9 +38,8 @@ export default function ContactMe() {
 						<div>
 							{links.map((link, index) => {
 								return (
-									<Link>
+									<Link key={index}>
 										<a
-											key={index}
 											target="_blank"
 											rel="noreferrer"
 											href={link.href}>
