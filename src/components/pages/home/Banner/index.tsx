@@ -105,7 +105,7 @@ export default function Banner() {
 						})}
 					</Links>
 
-					<Download href={"/files/cv.pdf"} download={"Guilherme Almeida - CV"}>
+					<Download href={"/files/Guilherme Almeida - CV.pdf"} download={"Guilherme Almeida - CV"}>
 						<button>
 							<i className={"fas fa-file-download"} /> Download CV
 						</button>
