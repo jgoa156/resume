@@ -14,16 +14,16 @@ export default function Home() {
 			<NextSeo
 				title="Guilherme Almeida, Developer"
 				description="Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil."
-				canonical="https://jgoa156.vercel.app/"
+				canonical="https://guilherme.vercel.app/"
 				openGraph={{
 					title: "Guilherme Almeida, Developer",
 					description: "Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil.",
 					type: "website",
 					locale: "en_IE",
-					url: "https://jgoa156.vercel.app/",
+					url: "https://guilherme.vercel.app/",
 					images: [
 						{
-							url: "https://jgoa156.vercel.app/img/SEO/preview.jpg",
+							url: "https://guilherme.vercel.app/img/SEO/preview.jpg",
 							alt: "Preview Image",
 							type: "image/jpeg",
 							width: 656,
