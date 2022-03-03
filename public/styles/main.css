@@ -24,6 +24,10 @@
 	font-family: "Parkson";
 	src: url("../fonts/Parkson-Demi.ttf");
 }
+@font-face {
+	font-family: "SF Pro";
+	src: url("../fonts/SF-Pro-Display-Light.otf") format("otf");
+}
 
 /*---------------------- GENERAL ----------------------*/
 html {
@@ -37,7 +41,7 @@ html {
 body {
 	background-color: var(--color-1);
 	color: var(--text-default-color);
-	font-family: "Roboto", sans-serif;
+	font-family: "SF Pro", sans-serif;
 	padding: 0;
 	margin: 0;
 	position: relative !important;
@@ -61,7 +65,7 @@ body {
 	/*background: linear-gradient(var(--primary-color), var(--primary-color-2));*/
 	background-color: var(--muted);
 	border-radius: 10px;
-	transition: 0.2s;
+	transition: 0.3s;
 }
 ::-webkit-scrollbar-thumb:hover {
 	/*background: linear-gradient(var(--primary-color-2), var(--primary-color));*/

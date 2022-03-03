@@ -60,7 +60,7 @@ export const Subtitle = styled.h3`
 `;
 export const Text = styled.p`
 	a {
-		transition: 0.2s;
+		transition: 0.3s;
 		text-decoration: none;
 		
 		&, &:visited, &:active, &:focus {
@@ -108,6 +108,7 @@ export const NumberCard = styled.div`
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 
 	h2 {
+		font-family: "Roboto";
 		font-size: 3rem;
 		color: var(--primary-color);
 	}
@@ -134,7 +135,7 @@ export const ItemTitle = styled.div`
 	img {
 		width: 40px;
 		height: auto;
-		transition: 0.2s;
+		transition: 0.3s;
 	}
 	div.textWrapper {
 		width: 100%;
@@ -154,7 +155,7 @@ export const ItemTitle = styled.div`
 			span {
 				color: var(--text-default-lighter-color);
 
-				@media (max-width: 576px) {
+				@media (max-width: 575px) {
 					display: block;
 				}
 			}

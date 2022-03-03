@@ -19,7 +19,7 @@ export default function Skills() {
 		query: "(max-width: 768px)"
 	});
 	const isMobile = useMediaQuery({
-		query: "(max-width: 576px)"
+		query: "(max-width: 575px)"
 	});
 	const [displayScrollLeft, setDisplayScrollLeft] = useState(false);
 	const [displayScrollRight, setDisplayScrollRight] = useState(true);

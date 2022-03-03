@@ -72,7 +72,7 @@ export const LinkWrapper = styled.div`
 		text-decoration: none;
 		border-bottom: 2px solid transparent;
 
-		transition: 0.2s;
+		transition: 0.3s;
 
 		&.spy {
 			border-color: var(--primary-color);
@@ -106,12 +106,13 @@ export const GoToTop = styled.a`
 	font-size: 1.2rem;
 	color: var(--primary-color);
 	text-decoration: none;
-	transition: 0.2s;
+	transition: 0.3s;
 
 	animation: ${props => props.showGoToTop ? "fade-in 0.1s linear forwards" : "fade-out 0.1s linear forwards"};
 		
 	&:hover {
 		color: var(--primary-color-2);
+		background-color: #161616;
 	}
 
 	@keyframes fade-in {

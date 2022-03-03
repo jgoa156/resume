@@ -16,7 +16,10 @@ import {
 
 export default function Header() {
 	const isMobile = useMediaQuery({
-		query: "(max-width: 576px)"
+		query: "(max-width: 575px)"
+	});
+	const isTablet = useMediaQuery({
+		query: "(max-width: 1024px)"
 	});
 	const [scrolled, setScrolled] = useState(false);
 	const [showGoToTop, setShowGoToTop] = useState(false);
@@ -31,7 +34,7 @@ export default function Header() {
 	];
 
 	// Go to top
-	const bannerHeight = isMobile ? 450 : 500;
+	const bannerHeight = isTablet ? 400 : 500;
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
 			setScrolled(window.scrollY >= bannerHeight - 50);

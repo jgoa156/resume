@@ -112,7 +112,6 @@ export default function AboutMe() {
 
 					<FadeIn>
 						<Cards right={true}>
-
 							<NumberCard>
 								<h2>{academicExp}+</h2>
 								<p>Years of academic experience</p>

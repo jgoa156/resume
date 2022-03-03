@@ -14,7 +14,7 @@ import {
 
 export default function WorkExperience() {
 	const isMobile = useMediaQuery({
-		query: "(max-width: 576px)"
+		query: "(max-width: 575px)"
 	});
 	const jobs = [
 		{

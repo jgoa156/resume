@@ -27,7 +27,7 @@ export const SectionWrapper = styled.section`
 		height: 400px;
 	}
 	@media (max-width: 575px) {
-		height: 450px;
+		height: 500px;
 	}
 `;
 
@@ -67,7 +67,7 @@ export const Profile = styled.img`
 	width: 350px;
 	height: 350px;
 	object-fit: cover;
-	filter: brightness(70%);
+	filter: brightness(85%);
 
 	border-radius: 50%;
 	padding: 7.5px;
@@ -97,7 +97,7 @@ export const Profile = styled.img`
 export const Intro = styled.div`
 	width: 100%;
 	position: relative;
-	top: calc(500px - (10rem + 150px));
+	top: calc(500px - (10rem + 200px));
 	left: 100px;
 	
 	h1 {
@@ -107,7 +107,7 @@ export const Intro = styled.div`
 
 	@media (max-width: 1024px) {
 		left: 50px;
-		top: calc(400px - (10rem + 100px));
+		top: calc(400px - (10rem + 150px));
 		
 		h1 {
 			font-size: 4rem;
@@ -151,21 +151,48 @@ export const Links = styled.div`
 	margin-top: 20px;
 `;
 
+export const Download = styled.a`
+	button {
+		margin-top: 30px;
+
+		padding: 10px 45px;
+		border-radius: 30px;
+
+		background-color: var(--color-3);
+		border: none;
+		outline: none;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+
+		color: white;
+
+		transition: 0.3s;
+
+		i {
+			margin-right: 10px;
+		}
+
+		&:hover {
+			background-color: #222;
+		}
+	}
+	
+`
+
 export const Link = styled.a`
 	margin-right: 30px;
 
-	color: white;
-	font-size: 1.8rem;
+	color: var(--muted);
+	font-size: 1.5rem;
 
-	transition: 0.2s;
+	transition: 0.3s;
 
 	&:hover {
-		color: var(--primary-color);
+		color: var(--text-default-lighter-color);
 	}
 
 	@media (max-width: 768px) {
 		margin-right: 25px;
 
-		font-size: 1.6rem;
+		font-size: 1.3rem;
 	}
 `;

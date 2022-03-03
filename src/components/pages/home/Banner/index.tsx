@@ -12,19 +12,17 @@ import {
 	AnimatedTitle,
 
 	Links,
+	Download,
 	Link
 } from "./components";
 
 export default function Banner() {
 	const [parallaxY, setParallaxY] = useState("50%");
-	const isMobile = useMediaQuery({
-		query: "(max-width: 575px)"
-	});
 	const isTablet = useMediaQuery({
 		query: "(max-width: 1024px)"
 	});
 
-	const bannerHeight = isTablet ? 400 : isMobile ? 450 : 500;
+	const bannerHeight = isTablet ? 400 : 500;
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
 			if (window.scrollY <= bannerHeight) {
@@ -106,6 +104,12 @@ export default function Banner() {
 							);
 						})}
 					</Links>
+
+					<Download href={"/files/cv.pdf"} download={"Guilherme Almeida - CV"}>
+						<button>
+							<i className={"fas fa-file-download"} /> Download CV
+						</button>
+					</Download>
 				</Intro>
 			</div>
 		</SectionWrapper>

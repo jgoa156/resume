@@ -19,7 +19,7 @@ export const SectionWrapper = styled.section`
 		@media (max-width: 1024px) {
 			padding: 50px 50px 0;
 		}
-		@media (max-width: 576px) {
+		@media (max-width: 575px) {
 			padding: 50px;
 		}
 	}
@@ -37,7 +37,7 @@ export const ItemWrapper = styled.div`
 		padding-top: 100px;
 		grid-template-columns: repeat(6, 80px);
 	}
-	@media (max-width: 576px) {
+	@media (max-width: 575px) {
 		grid-template-columns: repeat(3, 90px);
 	}
 `;
@@ -52,7 +52,7 @@ export const Item = styled.div`
 	div {
 		width: 50px;
 		height: auto;
-		transition: 0.2s;
+		transition: 0.3s;
 
 		@media (max-width: 1024px) {
 			width: 40px;
@@ -75,9 +75,9 @@ export const Item = styled.div`
 		background-color: var(--color-3);
 		border-radius: 5px;
 
-		transition: 0.2s;
+		transition: 0.3s;
 
-		@media (max-width: 576px) {
+		@media (max-width: 575px) {
 			top: calc(50% + 15px);
 		}
 	}

@@ -94,7 +94,7 @@ export const Link = styled.div`
 		color: white;
 		font-size: 1.8rem;
 
-		transition: 0.2s;
+		transition: 0.3s;
 
 		&:hover {
 			color: var(--primary-color);

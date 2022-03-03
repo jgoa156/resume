@@ -34,7 +34,7 @@ export const AlertLabel = styled.div`
 
 	font-size: 12px;
 	color: ${text.invalid};
-	transition: 0.2s;
+	transition: 0.3s;
 `;
 
 export const Input = styled.input`
@@ -68,7 +68,7 @@ export const Input = styled.input`
 				? border.focused
 				: border.unfocused};
 
-	transition: 0.2s;
+	transition: 0.3s;
 
 	@media only screen and (max-width: 575px) {
 		height: 42px;
@@ -124,7 +124,7 @@ export const InputWrapper = styled.div`
 		height: 100%;
 		width: 100%;
 
-		transition: 0.2s;
+		transition: 0.3s;
 		content: '';
 		opacity: 0;
 	}

@@ -26,7 +26,7 @@ export const ItemWrapper = styled.div`
 	width: 75%;
 	margin: auto;
 
-	@media (max-width: 576px) {
+	@media (max-width: 575px) {
 		width: 100%;
 	}
 `;
@@ -55,7 +55,7 @@ export const ItemTitle = styled.button`
 	img {
 		width: 40px;
 		height: auto;
-		transition: 0.2s;
+		transition: 0.3s;
 	}
 	div.textWrapper {
 		width: 100%;
