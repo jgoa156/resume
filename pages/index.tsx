@@ -15,6 +15,12 @@ export default function Home() {
 				title="Guilherme Almeida, Developer"
 				description="Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil."
 				canonical="https://guilherme.vercel.app/"
+				additionalMetaTags={[
+					{
+						property: "image",
+						content: "https://guilherme.vercel.app/img/SEO/preview.jpg"
+					}
+				]}
 				openGraph={{
 					title: "Guilherme Almeida, Developer",
 					description: "Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil.",
