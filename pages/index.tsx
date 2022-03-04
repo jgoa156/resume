@@ -30,6 +30,7 @@ export default function Home() {
 					images: [
 						{
 							url: "https://guilherme.vercel.app/img/SEO/preview.jpg",
+							secureUrl: "https://guilherme.vercel.app/img/SEO/preview.jpg",
 							alt: "Preview Image",
 							type: "image/jpeg",
 							width: 1295,
