@@ -174,8 +174,11 @@ export const Download = styled.a`
 		&:hover {
 			background-color: #222;
 		}
+
+		@media (max-width: 575px) {
+			width: calc(100% - 100px);
+		}
 	}
-	
 `
 
 export const Link = styled.a`
