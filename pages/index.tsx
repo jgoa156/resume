@@ -17,7 +17,7 @@ export default function Home() {
 				canonical="https://guilherme.vercel.app/"
 				additionalMetaTags={[
 					{
-						property: "image",
+						name: "image",
 						content: "https://guilherme.vercel.app/img/SEO/preview.jpg"
 					}
 				]}
@@ -32,8 +32,8 @@ export default function Home() {
 							url: "https://guilherme.vercel.app/img/SEO/preview.jpg",
 							alt: "Preview Image",
 							type: "image/jpeg",
-							width: 656,
-							height: 370
+							width: 1295,
+							height: 621
 						}
 					],
 					article: {
