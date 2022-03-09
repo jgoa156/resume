@@ -77,7 +77,7 @@ export default function AboutMe() {
 			type: "Technical Degree",
 			institution: "Matias Machline Foundation",
 			start: "2015",
-			end: "2015",
+			end: "2015 (Incomplete)",
 			icon: "img/components/Education/fmm.png",
 			iconProps: {
 				width: "25px",
