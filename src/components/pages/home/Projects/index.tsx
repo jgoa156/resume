@@ -17,7 +17,7 @@ export default function Projects() {
 		query: "(max-width: 575px)"
 	});
 
-	const imgBaseUrl = "/img/components/projects/";
+	const imgBaseUrl = `${process.env.img}/img/components/Projects/`;
 	const projects = [
 		{
 			name: "BB - Investimentos",
