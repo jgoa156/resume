@@ -29,6 +29,7 @@ export default function Header() {
 		{ title: "Main Tools", href: "main-tools" },
 		{ title: "About Me", href: "about-me" },
 		{ title: "Work Experience", href: "work-experience" },
+		{ title: "Projects", href: "projects" },
 		{ title: "Skills", href: "skills" },
 		{ title: "Contact Me", href: "contact-me" },
 	];
@@ -55,7 +56,7 @@ export default function Header() {
 					Guilherme
 				</TitleWrapper>
 
-				{!isMobile
+				{!isTablet
 					? (
 						<LinkWrapper>
 							<Scrollspy items={links.map((link) => link.href)} currentClassName={"spy"} offset={-100}>
@@ -75,7 +76,7 @@ export default function Header() {
 				<GoToTop href={"#banner"} showGoToTop={showGoToTop} className={"fas fa-arrow-up"} />
 			</nav>
 
-			{isMobile
+			{isTablet
 				? (<>
 					<Sidenav show={showSidenav}>
 						<div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Title from "components/shared/Atoms/Title";
+import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
 import {
 	SectionWrapper,

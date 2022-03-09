@@ -155,7 +155,7 @@ export const Sidenav = styled.div`
 	top: 0;
 	right: ${props => props.show ? "0" : "-65%"};
 	min-height: 150%;
-	width: 65%;
+	width: 45%;
 
 	background-color: var(--color-3);
 	overflow: hidden;
@@ -166,6 +166,10 @@ export const Sidenav = styled.div`
 
 	& > div {
 		padding: 0 20px;
+	}
+
+	@media (max-width: 575px) {
+		width: 65%;
 	}
 
 	.buttonWrapper {

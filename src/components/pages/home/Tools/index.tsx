@@ -1,9 +1,9 @@
 import React from "react";
 
-import Title from "components/shared/Atoms/Title";
+import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
 import { SectionWrapper, ItemWrapper, Item } from "./components";
-import * as Icons from "components/shared/Atoms/Icons";
+import * as Icons from "components/shared/Icons";
 
 export default function Tools() {
 	const tools = [

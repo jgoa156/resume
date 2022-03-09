@@ -4,8 +4,8 @@ import Head from "next/head";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../public/styles/main.css";
 
-import Header from "components/shared/Molecules/Header";
-import Footer from "components/shared/Molecules/Footer";
+import Header from "components/shared/Header";
+import Footer from "components/shared/Footer";
 
 export default function AppWrapper(props) {
 	return (

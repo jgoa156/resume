@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
-import Title from "components/shared/Atoms/Title";
+import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
 import {
 	SectionWrapper,

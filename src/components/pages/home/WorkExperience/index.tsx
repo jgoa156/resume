@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Collapse from "react-bootstrap/Collapse";
 import { useMediaQuery } from "react-responsive";
 
-import Title from "components/shared/Atoms/Title";
+import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
 import {
 	SectionWrapper,

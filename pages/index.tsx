@@ -5,32 +5,40 @@ import Banner from "components/pages/home/Banner";
 import Tools from "components/pages/home/Tools";
 import AboutMe from "components/pages/home/AboutMe";
 import WorkExperience from "components/pages/home/WorkExperience";
+import Projects from "components/pages/home/Projects";
 import Skills from "components/pages/home/Skills";
 import ContactMe from "components/pages/home/ContactMe";
 
 export default function Home() {
+	const SEO = {
+		title: "Guilherme Almeida, Developer",
+		description: "Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil.",
+		url: "https://guilherme.vercel.app",
+		image: "/img/SEO/preview.jpg"
+	};
+
 	return (
 		<>
 			<NextSeo
-				title="Guilherme Almeida, Developer"
-				description="Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil."
-				canonical="https://guilherme.vercel.app/"
+				title={SEO.title}
+				description={SEO.description}
+				canonical={SEO.url}
 				additionalMetaTags={[
 					{
 						name: "image",
-						content: "https://guilherme.vercel.app/img/SEO/preview.jpg"
+						content: `${SEO.url}${SEO.image}`
 					}
 				]}
 				openGraph={{
-					title: "Guilherme Almeida, Developer",
-					description: "Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil.",
+					title: SEO.title,
+					description: SEO.description,
 					type: "website",
 					locale: "en_IE",
-					url: "https://guilherme.vercel.app/",
+					url: SEO.url,
 					images: [
 						{
-							url: "https://guilherme.vercel.app/img/SEO/preview.jpg",
-							secureUrl: "https://guilherme.vercel.app/img/SEO/preview.jpg",
+							url: `${SEO.url}${SEO.image}`,
+							secureUrl: `${SEO.url}${SEO.image}`,
 							alt: "Preview Image",
 							type: "image/jpeg",
 							width: 1295,
@@ -108,6 +116,7 @@ export default function Home() {
 			<Tools />
 			<AboutMe />
 			<WorkExperience />
+			<Projects />
 			<Skills />
 			<ContactMe />
 		</>
