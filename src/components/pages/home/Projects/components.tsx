@@ -63,15 +63,22 @@ export const Item = styled.div`
 	}
 
 	& > div {
+		height: calc(100% - 150px);
+
 		padding: 20px;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-between;
 		text-align: center;
 
 		h4 {
 			color: var(--text-default-color);
 			font-size: 1rem;
+		}
+
+		p {
+			color: var(--muted);
+			font-size: 0.875rem;
 		}
 	}
 

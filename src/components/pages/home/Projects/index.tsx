@@ -22,14 +22,16 @@ export default function Projects() {
 		{
 			name: "BB - Investimentos",
 			image: "bb-investimentos.jpg",
+			description: "Banco do Brasil's landing page for their Investments app which contains all information regarding their platform and their stocks. Developed in 2021.",
 			url: "https://www.bb.com.br/uci/investimentos.html",
 			tags: [
 				"React", "HTML", "CSS", "JS", "Jest", "Jenkins", "Argo CD"
 			]
 		},
 		{
-			name: "CREA-AM - Oportunidades",
+			name: "CREA-AM - Banco de Oportunidades",
 			image: "crea-oportunidades.jpg",
+			description: "CREA-AM's talent pool application designed with the goal to connect engineers to contractors and to publish engineering related jobs. Developed in 2020.",
 			url: "https://oportunidades.crea-am.org.br",
 			tags: [
 				"React", "Next", "PHP", "Node", "Socket.io", "HTML", "CSS", "JS", "Scrapy", "Python"
@@ -38,6 +40,7 @@ export default function Projects() {
 		{
 			name: "CREA-AM - Main page",
 			image: "crea-site.jpg",
+			description: "CREA-AM's main institutional landing page which contains all information regarding the council's activities, documents and other platforms. Developed in 2020.",
 			url: "https://crea-am.org.br",
 			tags: [
 				"Wordpress", "PHP", "HTML", "CSS", "JS", "jQuery"
@@ -51,9 +54,13 @@ export default function Projects() {
 				<Link href={project.url} target="_blank" rel="noreferrer">
 					<Item>
 						<img src={`${imgBaseUrl}${project.image}`} />
-						
+
 						<div>
-							<h4>{project.name}</h4>
+							<div>
+								<h4>{project.name}</h4>
+
+								<p>{project.description}</p>
+							</div>
 
 							<TagWrapper>
 								{project.tags.map((tag, index) => {
