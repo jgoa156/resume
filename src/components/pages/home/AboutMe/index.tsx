@@ -24,7 +24,7 @@ export default function AboutMe() {
 	function calculateSemester() {
 		let years = calculateAge(new Date(2019, 0, 1));
 		let now = new Date();
-		let semester = Math.floor((now.getMonth() + 1) / 2) + 1;
+		let semester = Math.floor(now.getMonth() / 6) + 1;
 
 		return (years * 2) + semester;
 	}
@@ -105,7 +105,7 @@ export default function AboutMe() {
 								Currently working with React + Next and Node + Express, but with knowledge in several other technologies as well.
 							</Text>
 							<Text>
-								I have a Technical Degree in Informatics with emphasis on Software Engineering and am currently at my {semester}th semester of my Software Engineering Bachelor&apos;s Degree course, which I should be finishing by Q2 2022.
+								I have a Technical Degree in Informatics with emphasis on Software Engineering and am currently at my {semester}th semester of my Software Engineering Bachelor&apos;s Degree course, which I should be finishing by Q4 2022.
 							</Text>
 						</FadeIn>
 					</TextWrapper>
