@@ -188,7 +188,6 @@ export const DownloadDropdown = styled(Dropdown.Toggle)`
 export const DownloadDropdownMenu = styled(Dropdown.Menu)`
 	background-color: var(--color-3);
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-	transition: 0.3s;
 `;
 export const DownloadDropdownItem = styled(Dropdown.Item)`
 	color: var(--text-default-color);

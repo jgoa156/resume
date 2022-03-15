@@ -109,9 +109,11 @@ export default function Banner() {
 					</Links>
 
 					<Dropdown align="end">
-						<DownloadDropdown variant="secondary"><i className={"fas fa-download"} /> Download CV</DownloadDropdown>
+						<DownloadDropdown variant="secondary">
+							<i className={"fas fa-download"} /> Download CV
+						</DownloadDropdown>
 
-						<DownloadDropdownMenu>
+						<DownloadDropdownMenu renderOnMount={true}>
 							<DownloadDropdownItem href={"/files/Guilherme Almeida - CV (EN).pdf"} download={"Guilherme Almeida - CV (EN)"}>EN - English</DownloadDropdownItem>
 							<DownloadDropdownItem href={"/files/Guilherme Almeida - CV (PT).pdf"} download={"Guilherme Almeida - CV (PT)"}>BR - Português</DownloadDropdownItem>
 						</DownloadDropdownMenu>
