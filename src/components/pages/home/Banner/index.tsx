@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
+import { Dropdown } from "react-bootstrap";
 
 import {
 	SectionWrapper,
@@ -12,8 +13,10 @@ import {
 	AnimatedTitle,
 
 	Links,
-	Download,
-	Link
+	Link,
+	DownloadDropdown,
+	DownloadDropdownMenu,
+	DownloadDropdownItem
 } from "./components";
 
 export default function Banner() {
@@ -105,11 +108,14 @@ export default function Banner() {
 						})}
 					</Links>
 
-					<Download href={"/files/Guilherme Almeida - CV.pdf"} download={"Guilherme Almeida - CV"}>
-						<button>
-							<i className={"fas fa-file-download"} /> Download CV
-						</button>
-					</Download>
+					<Dropdown align="end">
+						<DownloadDropdown variant="secondary"><i className={"fas fa-download"} /> Download CV</DownloadDropdown>
+
+						<DownloadDropdownMenu>
+							<DownloadDropdownItem href={"/files/Guilherme Almeida - CV (EN).pdf"} download={"Guilherme Almeida - CV (EN)"}>EN - English</DownloadDropdownItem>
+							<DownloadDropdownItem href={"/files/Guilherme Almeida - CV (PT).pdf"} download={"Guilherme Almeida - CV (PT)"}>BR - Português</DownloadDropdownItem>
+						</DownloadDropdownMenu>
+					</Dropdown>
 				</Intro>
 			</div>
 		</SectionWrapper>

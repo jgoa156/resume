@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { Dropdown } from "react-bootstrap";
 
 export const SectionWrapper = styled.section`
 	width: 100%;
@@ -151,35 +152,57 @@ export const Links = styled.div`
 	margin-top: 20px;
 `;
 
-export const Download = styled.a`
-	button {
-		margin-top: 30px;
+export const DownloadDropdown = styled(Dropdown.Toggle)`
+	margin-top: 30px;
 
-		padding: 10px 45px;
-		border-radius: 30px;
+	padding: 10px 45px 10px 45px;
+	border-radius: 30px;
 
-		background-color: var(--color-3);
-		border: none;
-		outline: none;
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	background-color: var(--color-3) !important;
+	border: none;
+	outline: none;
+	color: white;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4) !important;
 
-		color: white;
+	transition: 0.3s;
 
-		transition: 0.3s;
-
-		i {
-			margin-right: 10px;
-		}
-
-		&:hover {
-			background-color: #222;
-		}
-
-		@media (max-width: 575px) {
-			width: calc(100% - 100px);
-		}
+	i {
+		margin-right: 10px;
 	}
-`
+	&:after {
+		margin-left: 10px;
+	}
+
+	&:hover {
+		background-color: #222 !important;
+	}
+	&:focus {
+		background-color: var(--color-2) !important;
+	}
+
+	@media (max-width: 575px) {
+		width: calc(100% - 100px);
+	}
+`;
+
+export const DownloadDropdownMenu = styled(Dropdown.Menu)`
+	background-color: var(--color-3);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+`;
+export const DownloadDropdownItem = styled(Dropdown.Item)`
+	color: var(--text-default-color);
+	transition: 0.3s;
+
+	&:hover {
+		color: var(--text-default-color);
+		background-color: var(--color-2);
+	}
+
+	@media (max-width: 1024px) {
+		padding: 10px 20px;
+	}
+`;
 
 export const Link = styled.a`
 	margin-right: 30px;
