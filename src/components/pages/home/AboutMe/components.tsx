@@ -75,8 +75,11 @@ export const Text = styled.p`
 
 export const Cards = styled.div`
 	width: 50%;
-	display: flex;
-	justify-content: left;
+
+	& > div {
+		display: flex;
+		justify-content: left;
+	}
 
 	margin-bottom: 30px;
 
@@ -85,13 +88,27 @@ export const Cards = styled.div`
 		: "padding-right: 50px;"
 	}
 
+	@media (max-width: 1024px) {
+		${props => props.right || !props.left
+			? "padding-left: 30px;"
+			: "padding-right: 30px;"
+		}
+	}
+
 	@media (max-width: 575px) {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 
+		padding-left: 0;
 		padding-top: 20px;
-		padding-bottom: 10px;	
+		padding-bottom: 10px;
+
+		& > div {
+			display: flex;
+			justify-content: space-between;
+			gap: 30px;
+		}
 	}
 `;
 
@@ -111,6 +128,10 @@ export const NumberCard = styled.div`
 		font-family: "Roboto";
 		font-size: 3rem;
 		color: var(--primary-color);
+	}
+
+	@media (max-width: 575px) {
+		margin: 0;
 	}
 `;
 

@@ -110,8 +110,8 @@ export default function AboutMe() {
 						</FadeIn>
 					</TextWrapper>
 
-					<FadeIn>
-						<Cards right={true}>
+					<Cards right={true}>
+						<FadeIn>
 							<NumberCard>
 								<h2>{academicExp}+</h2>
 								<p>Years of academic experience</p>
@@ -121,8 +121,8 @@ export default function AboutMe() {
 								<h2>{workExp}+</h2>
 								<p>Years of working experience</p>
 							</NumberCard>
-						</Cards>
-					</FadeIn>
+						</FadeIn>
+					</Cards>
 				</InfoWrapper>
 
 				<InfoWrapper>

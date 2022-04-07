@@ -17,6 +17,10 @@ export const SectionWrapper = styled.section`
 		padding: 100px 50px;
 
 		@media (max-width: 1024px) {
+			padding: 50px 65px 50px;
+		}
+
+		@media (max-width: 575px) {
 			padding: 50px 20px 50px;
 		}
 	}
@@ -32,6 +36,7 @@ export const ItemWrapper = styled.div`
 
 	@media (max-width: 1024px) {
 		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	@media (max-width: 575px) {
