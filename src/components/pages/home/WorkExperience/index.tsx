@@ -18,12 +18,25 @@ export default function WorkExperience() {
 	});
 	const jobs = [
 		{
+			name: "Front-end Developer",
+			type: "Full-time (Remote)",
+			company: "Ioasys",
+			icon: "img/components/Work/ioasys.png",
+			start: "April, 2022",
+			end: "Current",
+			description: <>
+				<p>
+					Front-end Developer working alongside other developers, designers and managers to modernize companies who wish to get into the digital era.
+				</p>
+			</>
+		},
+		{
 			name: "Full Stack Developer",
 			type: "Full-time (Remote)",
 			company: "Capgemini",
 			icon: "img/components/Work/capgemini.png",
 			start: "June, 2021",
-			end: "Current",
+			end: "April, 2022",
 			description: <>
 				<p>
 					Full Stack Developer working alongside several other developers, designers and product managers in order to deliver high end digital solutions for our clients. Our main client in this company is <a target="_blank" rel="noreferrer" href="https://www.bb.com.br/">Banco do Brasil</a>, which is the second largest bank in all Latin America.
