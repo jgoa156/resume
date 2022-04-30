@@ -110,3 +110,36 @@ export const Tag = styled.div`
 	border-radius: 4px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 `;
+
+export const DisclaimerWrapper = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& > div {
+		width: 80%;
+
+		@media (max-width: 1024px) {
+			width: 100%;
+		}
+	}
+`;
+export const Disclaimer = styled.div`
+	width: 50%;
+
+	margin-top: 30px;
+
+	color: var(--muted);
+
+	@media (max-width: 1024px) {
+		width: 75%;
+	}
+
+	@media (max-width: 575px) {
+		width: 100%;
+	}
+
+	span {
+		color: var(--text-default-color);
+	}
+`;

@@ -9,7 +9,9 @@ import {
 	Link,
 	Item,
 	TagWrapper,
-	Tag
+	Tag,
+	DisclaimerWrapper,
+	Disclaimer
 } from "./components";
 
 export default function Projects() {
@@ -88,6 +90,16 @@ export default function Projects() {
 						)
 					})}
 				</ItemWrapper>
+
+				<DisclaimerWrapper>
+					<FadeIn>
+						<Disclaimer>
+							<span>*Disclaimer: </span> I <b>do not</b> maintain some of the projects mentioned above,
+							therefore some of those projects may be impacted by posterior work done by people
+							who are still involved with them.
+						</Disclaimer>
+					</FadeIn>
+				</DisclaimerWrapper>
 			</div>
 		</SectionWrapper>
 	);

@@ -27,6 +27,7 @@ export default function WorkExperience() {
 			description: <>
 				<p>
 					Front-end Developer working alongside other developers, designers and managers to modernize companies who wish to get into the digital era.
+					Our clients include fintech <a target="_blank" rel="noreferrer" href="https://www.bancointer.com.br/">Banco Inter</a> and travel company <a target="_blank" rel="noreferrer" href="https://www.cvc.com.br/">CVC</a>.
 				</p>
 			</>
 		},
