@@ -11,6 +11,8 @@ export const SectionWrapper = styled.section`
 	justify-content: center;
 	align-items: center;
 
+  border-bottom: 1px solid var(--color-2);
+
 	z-index: 5;
 
 	& > div:nth-child(2) {
@@ -59,6 +61,10 @@ export const Background = styled.img`
 	filter: brightness(30%);
 
 	transition: 0.8s;
+
+  @media (max-width: 575px) {
+		object-position: 60% ${props => props.parallaxY};
+	}
 `;
 export const Profile = styled.img`
 	position: absolute;
