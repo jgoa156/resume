@@ -30,7 +30,7 @@ export default function WorkExperience() {
           Our clients include fintech <a target="_blank" rel="noreferrer" href="https://www.bancointer.com.br/">Banco Inter</a> and travel company <a target="_blank" rel="noreferrer" href="https://www.cvc.com.br/">CVC</a>.
         </p>
         <p>
-          As a front-end developer, my main projects are CVC's bus ticket platforms <i>Rodofácil</i> and <i>Rodoviário Exclusivo</i>, where I work mostly with TypeScript, React and Jest. Neither of the platforms are available for public use now.
+          As a front-end developer, my main projects are CVC&apos;s bus ticket platforms <i>Rodofácil</i> and <i>Rodoviário Exclusivo</i>, where I work mostly with TypeScript, React and Jest. Neither of the platforms are available for public use now.
         </p>
       </>
     },
