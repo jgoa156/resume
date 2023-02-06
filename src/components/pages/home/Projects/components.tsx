@@ -65,6 +65,7 @@ export const Item = styled.div`
 		border-radius: 8px 8px 0 0;
 		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 		object-fit: cover;
+    object-position: top;
 	}
 
 	& > div {

@@ -23,14 +23,14 @@ export default function WorkExperience() {
       company: "Ioasys",
       icon: "img/components/Work/ioasys.png",
       start: "April, 2022",
-      end: "Current",
+      end: "February, 2023",
       description: <>
         <p>
           Front-end Developer working alongside other developers, designers and managers to modernize companies who wish to get into the digital era.
           Our clients include fintech <a target="_blank" rel="noreferrer" href="https://www.bancointer.com.br/">Banco Inter</a> and travel company <a target="_blank" rel="noreferrer" href="https://www.cvc.com.br/">CVC</a>.
         </p>
         <p>
-          As a front-end developer, my main projects are CVC&apos;s bus ticket platforms <i>Rodofácil</i> and <i>Rodoviário Exclusivo</i>, where I work mostly with TypeScript, React and Jest. Neither of the platforms are available for public use now.
+          As a front-end developer, my main projects are CVC&apos;s bus ticket platforms <i>Rodofácil</i> and <i>Rodoviário Exclusivo</i>, where I work mostly with TypeScript, React and Jest. Neither of the platforms are available for public use now and therefore can't be shown on the <a href="#projects">Projects section</a>.
         </p>
       </>
     },
