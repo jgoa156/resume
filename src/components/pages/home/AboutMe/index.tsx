@@ -201,7 +201,7 @@ export default function AboutMe() {
                 </Subtitle>
 
                 <Text>
-                  I'm a certified member of the Bahia chapter of DEDSEC.
+                  I&apos;m a certified member of the Bahia chapter of DEDSEC.
                 </Text>
               </FadeIn>
             </TextWrapper>
