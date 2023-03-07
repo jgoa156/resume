@@ -29,6 +29,11 @@ export const InfoWrapper = styled.div`
 	@media (max-width: 575px) {
 		display: block;
 	}
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -36,15 +41,15 @@ export const TextWrapper = styled.div`
 	margin-bottom: 50px;
 
 	${props => props.right || !props.left
-		? "text-align: left; padding-left: 50px;"
-		: "text-align: right; padding-right: 50px;"
-	}
+    ? "text-align: left; padding-left: 50px;"
+    : "text-align: right; padding-right: 50px;"
+  }
 
 	@media (max-width: 1024px) {
 		${props => props.right || !props.left
-			? "padding-left: 30px;"
-			: "padding-right: 30px;"
-		}
+    ? "padding-left: 30px;"
+    : "padding-right: 30px;"
+  }
 	}
 
 	@media (max-width: 575px) {
@@ -84,15 +89,15 @@ export const Cards = styled.div`
 	margin-bottom: 30px;
 
 	${props => props.right || !props.left
-		? "padding-left: 50px;"
-		: "padding-right: 50px;"
-	}
+    ? "padding-left: 50px;"
+    : "padding-right: 50px;"
+  }
 
 	@media (max-width: 1024px) {
 		${props => props.right || !props.left
-			? "padding-left: 30px;"
-			: "padding-right: 30px;"
-		}
+    ? "padding-left: 30px;"
+    : "padding-right: 30px;"
+  }
 	}
 
 	@media (max-width: 575px) {

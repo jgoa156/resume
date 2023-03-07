@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
@@ -86,6 +86,26 @@ export default function AboutMe() {
     }
   ];
 
+  // Konami code
+  const [konami, setKonami] = useState<boolean>(false);
+  let key = 0;
+  const code = [38, 38, 40, 40, 37, 39, 37, 39, 65, 66];
+
+  function handleKonami(e) {
+    if (e.keyCode == code[key]) {
+      key++;
+
+      if (key == code.length) {
+        setKonami(true);
+        document.removeEventListener("keydown", handleKonami);
+      }
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleKonami);
+  }, []);
+
   return (
     <SectionWrapper id="about-me">
       <div>
@@ -171,6 +191,32 @@ export default function AboutMe() {
             </FadeIn>
           </TextWrapper>
         </InfoWrapper>
+
+        {konami &&
+          <InfoWrapper>
+            <TextWrapper left={true}>
+              <FadeIn>
+                <Subtitle>
+                  BEWARE
+                </Subtitle>
+
+                <Text>
+                  I'm a certified member of the Bahia chapter of DEDSEC.
+                </Text>
+              </FadeIn>
+            </TextWrapper>
+
+            <TextWrapper>
+              <FadeIn>
+                <Subtitle>
+                  BEWARE
+                </Subtitle>
+
+                <img src={`${process.env.img}/components/About/ch.png`} />
+              </FadeIn>
+            </TextWrapper>
+          </InfoWrapper>
+        }
       </div>
     </SectionWrapper>
   );
