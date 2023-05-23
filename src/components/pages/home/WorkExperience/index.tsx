@@ -31,7 +31,7 @@ export default function WorkExperience() {
 				</p>
 				<p>
 					As a back-end developer, my main project was developing an API for an internal project,
-					where I worked mostly with Java and Spring Boot. The platform isn't available for public use and therefore
+					where I worked mostly with Java and Spring Boot. The platform isn&apos;t available for public use and therefore
 					can&apos;t be shown on the <a href="#projects">Projects section</a>.
 				</p>
 			</>
