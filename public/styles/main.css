@@ -38,6 +38,7 @@ html {
 	overflow-y: overlay;
 	scroll-padding-top: 65px;
 }
+
 body {
 	background-color: var(--color-1);
 	color: var(--text-default-color);
