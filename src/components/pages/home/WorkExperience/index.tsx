@@ -18,25 +18,6 @@ export default function WorkExperience() {
 	});
 	const jobs = [
 		{
-			name: "Full Stack Developer",
-			type: "Full-time (Remote)",
-			company: "Conecthus Institute",
-			icon: "img/components/Work/conecthus.png",
-			start: "March, 2023",
-			end: "May, 2023",
-			description: <>
-				<p>
-					Full Stack developer working mostly as a Back-end developer.
-					Our clients include electronic mega corporation <a target="_blank" rel="noreferrer" href="https://www.foxconn.com/">Foxconn</a> and <a target="_blank" rel="noreferrer" href="https://www.tectoy.com.br/">Tec Toy</a>.
-				</p>
-				<p>
-					As a back-end developer, my main project was developing an API for an internal project,
-					where I worked mostly with Java and Spring Boot. The platform isn&apos;t available for public use and therefore
-					can&apos;t be shown on the <a href="#projects">Projects section</a>.
-				</p>
-			</>
-		},
-		{
 			name: "Front-end Developer",
 			type: "Full-time (Remote)",
 			company: "Ioasys",
