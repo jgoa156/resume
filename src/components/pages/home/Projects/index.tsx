@@ -1,4 +1,3 @@
-import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 import Title from "components/shared/Title";
@@ -28,7 +27,8 @@ export default function Projects() {
       url: "https://mcaig.com",
       tags: [
         "React", "Next", "HTML", "CSS", "JS", "Styled Components"
-      ]
+      ],
+      year: 2022
     },
     {
       name: "BB - Investimentos",
@@ -37,7 +37,8 @@ export default function Projects() {
       url: "https://www.bb.com.br/uci/investimentos.html",
       tags: [
         "React", "Next", "HTML", "CSS", "JS", "Jest", "Jenkins", "Argo CD"
-      ]
+      ],
+      year: 2022
     },
     {
       name: "CREA-AM - Banco de Oportunidades",
@@ -46,7 +47,8 @@ export default function Projects() {
       url: "https://oportunidades.crea-am.org.br",
       tags: [
         "React", "Next", "PHP", "Node", "Socket.io", "HTML", "CSS", "JS", "Scrapy", "Python"
-      ]
+      ],
+      year: 2021
     },
     {
       name: "CREA-AM - Main page",
@@ -55,7 +57,8 @@ export default function Projects() {
       url: "https://crea-am.org.br",
       tags: [
         "Wordpress", "PHP", "HTML", "CSS", "JS", "jQuery"
-      ]
+      ],
+      year: 2020
     }
   ];
 
@@ -68,7 +71,7 @@ export default function Projects() {
 
             <div>
               <div>
-                <h4>{project.name}</h4>
+                <h4><span>{project.year}</span> {project.name}</h4>
 
                 <p>{project.description}</p>
               </div>

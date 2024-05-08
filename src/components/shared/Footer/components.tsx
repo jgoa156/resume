@@ -10,6 +10,7 @@ export const SectionWrapper = styled.footer`
 
 	background-color: black;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-top: 1px solid var(--color-2);
 
 	& > div {
 		width: 100%;

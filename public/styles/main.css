@@ -39,7 +39,7 @@ html {
 	scroll-padding-top: 65px;
 }
 body {
-	background-color: var(--color-1);
+	background-color: black;
 	color: var(--text-default-color);
 	font-family: "SF Pro", sans-serif;
 	padding: 0;
@@ -47,10 +47,21 @@ body {
 	position: relative !important;
 	min-height: 100vh !important;
 
-	background-size: cover;
+	/*background-size: cover;
 	background-attachment: fixed;
-	background-position: center center;
+	background-position: center center;*/
+	background: var(--color-1) url("../img/bg_pattern.png") repeat scroll top left;
+	animation: slide 80s linear infinite;
 	overflow-x: hidden;
+}
+
+@keyframes slide {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 0 100%;
+	}
 }
 
 ::-webkit-scrollbar {

@@ -88,26 +88,33 @@ export const Link = styled.div`
 	align-items: center;
 
 	a {
-		margin: 0 15px;
-		margin-right: 20px;
+    margin: 0 15px 15px;
+    text-decoration: none;
 
-		color: white;
-		font-size: 1.8rem;
+    & > div {
+      display: flex;
+      color: white;
+      transition: 0.3s;
 
-		transition: 0.3s;
+      i { 
+		    margin-right: 20px;
+		    font-size: 1.8rem;
+      }
 
-		&:hover {
-			color: var(--primary-color);
-		}
+      span {
+        font-size: 1rem;
+      }
 
-		@media (max-width: 768px) {
-			margin: 0 12.5px;
+      &:hover {
+        color: var(--primary-color);
+      }
 
-			font-size: 1.6rem;
-		}
-	}
-	
-	span {
-		color: var(--text-default-lighter-color);
+      @media (max-width: 768px) {
+        i {
+          margin: 0 12.5px;
+          font-size: 1.6rem;
+        }
+      }
+    }
 	}
 `;

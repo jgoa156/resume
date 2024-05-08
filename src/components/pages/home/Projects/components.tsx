@@ -78,8 +78,21 @@ export const Item = styled.div`
 		text-align: center;
 
 		h4 {
+      span {
+        padding: 2px 5px;
+        margin-right: 5px;
+        vertical-align: middle;
+
+        border: 1px solid var(--muted);
+        border-radius: 5px;
+        font-size: 0.825rem;
+        color: var(--muted);
+      }
+
 			color: var(--text-default-color);
 			font-size: 1rem;
+      margin-top: 5px;
+      margin-bottom: 1rem;
 		}
 
 		p {

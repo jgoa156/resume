@@ -54,7 +54,7 @@ export default function Header() {
     <HeaderWrapper scrolled={scrolled}>
       <nav>
         <TitleWrapper scrolled={scrolled}>
-          Guilherme
+          <img src={`${process.env.basePath}/img/logo.png`} /> Guilherme
         </TitleWrapper>
 
         {loaded

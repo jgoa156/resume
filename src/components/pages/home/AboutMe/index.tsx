@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
@@ -41,7 +41,7 @@ export default function AboutMe() {
       type: "Bachelor's Degree",
       institution: "Federal University of Amazonas",
       start: "2019",
-      end: "2022 (Estimated)",
+      end: "2024",
       icon: "img/components/Education/ufam.png"
     },
     {
@@ -125,7 +125,7 @@ export default function AboutMe() {
                 Currently working with React + Next and Node + Express, but with knowledge in several other technologies as well.
               </Text>
               <Text>
-                I have a Technical Degree in Informatics with emphasis on Software Engineering and am currently at my {semester}th semester of my Software Engineering Bachelor&apos;s Degree course, which I should be finishing by Q2 2023.
+                I have a technical degree in Informatics with emphasis on Software Engineering and a bachelor&apos;s degree in Software Engineering from the Federal University of Amazonas.
               </Text>
             </FadeIn>
           </TextWrapper>
@@ -153,14 +153,18 @@ export default function AboutMe() {
               </Subtitle>
 
               <Text>
-                Currently my main interests towards the software industry are front-end web and mobile development, UI/UX design and API development.
-                I also recently got into machine learning and data mining, but I do take interest in other fields of technology such as drones and anything involving mechatronics.
+                Currently my main interests towards the software industry are front-end web, back-end and mobile development, as well as UI/UX design.
+                I also take a lot of interest in other fields, such as machine learning, data mining and embedded development, not to mention my heavy interest
+                in DIY culture means I&apos;m into other areas of engineering, such as mechatronics. I&apos;m also considering a second graduation in sound engineering.
               </Text>
               <Text>
                 While you are here, you should know I&apos;m also a nerd, goth, rpg and cyberpunk literature aficionado, not to mention I take a lot of interest
-                in experimental art in general, which covers ground ranging from psychedelic cinema to noise music.<br />
-                Oh and you should seriously check out bands like <a target="_blank" rel="noreferrer" href="https://youtube.com/watch?v=3NZGbD236fw">Lightning Bolt</a>, <a target="_blank" rel="noreferrer" href="https://youtube.com/watch?v=odKf7_sA5HQ">Einsturzende Neubauten</a> and <a target="_blank" rel="noreferrer" href="https://youtube.com/watch?v=vEd8GJcLmnE">Rolo Tomassi</a>.
-                Here&apos;s my <a target="_blank" rel="noreferrer" href="https://last.fm/user/jgoa156">last.fm</a> by the way.
+                in experimental art in general, which covers ground ranging from psychedelic cinema to noise music.
+              </Text>
+              <Text>
+                I&apos;m currently working on several side projects, such as a <a target="_blank" rel="noreferrer" href="https://soundcloud.com/saturnine_music">post-rock project</a>,
+                an unreleased industrial techno project, an <a target="_blank" rel="noreferrer" href="https://www.instagram.com/death.yon/">illustration project</a> and several
+                installation projects involving computer vision, 3D and videomapping. I also make <a target="_blank" rel="noreferrer" href="https://steamcommunity.com/id/flammableman/myworkshopfiles/">some wallpapers</a> for Wallpaper Engine.
               </Text>
             </FadeIn>
           </TextWrapper>

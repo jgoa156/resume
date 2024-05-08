@@ -31,13 +31,14 @@ export const ItemWrapper = styled.div`
 	justify-content: center;
 	align-items: center;
 
-	padding-top: 130px;
+	padding: 100px 0 50px;
 
 	@media (max-width: 1024px) {
-		padding-top: 100px;
+    padding: 100px 0 50px;
 		grid-template-columns: repeat(6, 80px);
 	}
 	@media (max-width: 575px) {
+    padding: 50px 0 0;
 		grid-template-columns: repeat(3, 90px);
 	}
 `;

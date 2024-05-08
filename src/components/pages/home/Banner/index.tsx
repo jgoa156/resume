@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Dropdown } from "react-bootstrap";
 
@@ -80,7 +80,7 @@ export default function Banner() {
   return (
     <SectionWrapper id="banner">
       <BackgroundWrapper>
-        <Background parallaxY={parallaxY} src={`${process.env.img}/components/Banner/bg.jpg`} />
+        <Background parallaxY={parallaxY} src={`${process.env.img}/components/Banner/bg.png`} />
         {/*<div>
 					<Profile src={`${process.env.img}/components/Banner/profile.jpg`} />
 				</div>*/}

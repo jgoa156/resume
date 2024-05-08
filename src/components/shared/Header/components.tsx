@@ -16,6 +16,7 @@ export const HeaderWrapper = styled.header`
 	box-shadow: ${props => props.scrolled ? `0 0 10px rgba(0, 0, 0, 0.4)` : `none`};
 
 	nav {
+    margin-top: -5px;
 		height: fit-content;
 		width: 100%;
 		max-width: 1920px;
@@ -29,13 +30,20 @@ export const HeaderWrapper = styled.header`
 
 export const TitleWrapper = styled.div`
 	height: fit-content;
-
-	color: ${props => props.scrolled ? `white` : `transparent`};
+  opacity: ${props => props.scrolled ? `1` : `0`};
 	font-family: "Parkson";
 	font-size: 1.825rem;
 	font-weight: bold;
 
 	transition: 0.3s;
+
+  img {
+    height: 25px;
+    width: auto;
+    object-fit: cover;
+
+    margin-right: 10px;
+  }
 
 	&:after {
 		color: ${props => props.scrolled ? `white` : `transparent`};

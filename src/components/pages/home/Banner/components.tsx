@@ -52,19 +52,42 @@ export const BackgroundWrapper = styled.div`
 		position: absolute;
 		top: 0;
 	}
+
+  background: black url("../img/bg_pattern2.png") repeat scroll top right;
+	animation: slide 80s linear infinite;
+
+  @keyframes slide {
+    from {
+      background-position: 50% 0;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
 `;
 export const Background = styled.img`
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	object-position: 50% ${props => props.parallaxY};
-	filter: brightness(30%);
+	/* object-position: 50% ${props => props.parallaxY}; */
+	filter: brightness(35%);
 
 	transition: 0.8s;
 
   @media (max-width: 575px) {
-		object-position: 60% ${props => props.parallaxY};
+		/* object-position: 60% ${props => props.parallaxY}; */
 	}
+
+  animation: slide 20s linear infinite;
+
+  @keyframes slide {
+    from {
+      object-position: 0 0;
+    }
+    to {
+      object-position: 0 100%;
+    }
+  }
 `;
 export const Profile = styled.img`
 	position: absolute;
