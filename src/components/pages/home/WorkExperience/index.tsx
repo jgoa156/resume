@@ -137,7 +137,6 @@ export default function WorkExperience() {
             <ItemDescription>
               <p className={"details"}>{job.start} - {job.end}</p>
               <div>
-                <h6>Description</h6>
                 {job.description}
               </div>
             </ItemDescription>
