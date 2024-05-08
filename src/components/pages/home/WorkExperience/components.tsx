@@ -12,18 +12,18 @@ export const SectionWrapper = styled.section`
 
 	& > div {
 		width: 100%;
-		max-width: 1920px;
+		max-width: 1280px;
 		
-		padding: 100px 50px;
+		padding: 50px 50px 0;
 
 		@media (max-width: 768px) {
-			padding: 50px 0;
+			padding: 50px 0 0;
 		}
 	}
 `;
 
 export const ItemWrapper = styled.div`
-	width: 75%;
+	width: 85%;
 	margin: auto;
 
 	@media (max-width: 575px) {

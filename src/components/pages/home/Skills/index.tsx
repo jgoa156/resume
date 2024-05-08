@@ -174,9 +174,11 @@ export default function Skills() {
 
   // Slider
   const skillsRef = useRef<any>(null);
-  const cardWidth = isTablet ? 330 : 380;
+  const cardWidth = isTablet ? 310 : 380;
   function cardsInViewport() {
-    return Math.floor(window.innerWidth / cardWidth);
+    const innerWidth = window.innerWidth;
+    const width = innerWidth >= 1280 ? 1280 : innerWidth;
+    return Math.floor(width / cardWidth);
   }
 
   function slideLeft() {

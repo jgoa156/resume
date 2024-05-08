@@ -12,12 +12,12 @@ export const SectionWrapper = styled.section`
 
 	& > div {
 		width: 100%;
-		max-width: 1920px;
+		max-width: 1280px;
 		
-		padding: 50px;
+		padding: 50px 50px 50px;
 
 		@media (max-width: 1024px) {
-			padding: 50px 50px 0;
+			padding: 50px 50px 30px;
 		}
 		@media (max-width: 575px) {
 			padding: 50px;
@@ -31,10 +31,10 @@ export const ItemWrapper = styled.div`
 	justify-content: center;
 	align-items: center;
 
-	padding: 100px 0 50px;
+	padding: 50px 0 0px;
 
 	@media (max-width: 1024px) {
-    padding: 100px 0 50px;
+    padding: 30px 0 0px;
 		grid-template-columns: repeat(6, 80px);
 	}
 	@media (max-width: 575px) {

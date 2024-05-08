@@ -19,12 +19,16 @@ export const HeaderWrapper = styled.header`
     margin-top: -5px;
 		height: fit-content;
 		width: 100%;
-		max-width: 1920px;
-		padding: 0 20px;
+		max-width: 1280px;
+		padding: 0 50px;
 
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+    @media (max-width: 1024px) {
+      padding: 0 20px;
+    }
 	}
 `;
 
@@ -64,7 +68,7 @@ export const TitleWrapper = styled.div`
 
 export const LinkWrapper = styled.div`
 	height: fit-content;
-	padding: 0 30px;
+	padding-left: 30px;
 
 	ul {
 		margin: 0;

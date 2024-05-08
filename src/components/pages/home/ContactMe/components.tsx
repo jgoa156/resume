@@ -12,7 +12,7 @@ export const SectionWrapper = styled.section`
 
 	& > div {
 		width: 100%;
-		max-width: 1920px;
+		max-width: 1280px;
 	
 		padding: 100px 50px 50px;
 
@@ -29,7 +29,7 @@ export const SectionWrapper = styled.section`
 `;
 
 export const Card = styled.div`
-	width: 30%;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

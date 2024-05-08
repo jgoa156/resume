@@ -12,9 +12,9 @@ export const SectionWrapper = styled.section`
 
 	& > div {
 		width: 100%;
-		max-width: 1920px;
+		max-width: 1280px;
 		
-		padding: 100px 50px 50px;
+		padding: 100px 50px 0;
 
 		@media (max-width: 1024px) {
 			padding: 50px 20px 0;

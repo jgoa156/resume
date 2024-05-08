@@ -163,7 +163,7 @@ export default function AboutMe() {
               </Text>
               <Text>
                 I&apos;m currently working on several side projects, such as a <a target="_blank" rel="noreferrer" href="https://soundcloud.com/saturnine_music">post-rock project</a>,
-                an unreleased industrial techno project, an <a target="_blank" rel="noreferrer" href="https://www.instagram.com/death.yon/">illustration project</a> and several
+                an unreleased industrial techno and dark psy project, an <a target="_blank" rel="noreferrer" href="https://www.instagram.com/death.yon/">illustration project</a> and several
                 installation projects involving computer vision, 3D and videomapping. I also make <a target="_blank" rel="noreferrer" href="https://steamcommunity.com/id/flammableman/myworkshopfiles/">some wallpapers</a> for Wallpaper Engine.
               </Text>
             </FadeIn>

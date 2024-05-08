@@ -12,22 +12,22 @@ export const SectionWrapper = styled.section`
 
 	& > div {
 		width: 100%;
-		max-width: 1920px;
+		max-width: 1280px;
 		
-		padding: 100px 50px;
+		padding: 100px 50px 0;
 
 		@media (max-width: 1024px) {
 			padding: 50px 65px 50px;
 		}
 
 		@media (max-width: 575px) {
-			padding: 50px 20px 50px;
+			padding: 50px 20px 0;
 		}
 	}
 `;
 
 export const ItemWrapper = styled.div`
-	width: 80%;
+	width: 100%;
 	margin: auto;
 
 	display: grid;
@@ -131,11 +131,7 @@ export const DisclaimerWrapper = styled.div`
 	align-items: center;
 
 	& > div {
-		width: 80%;
-
-		@media (max-width: 1024px) {
-			width: 100%;
-		}
+		width: 100%;
 	}
 `;
 export const Disclaimer = styled.div`

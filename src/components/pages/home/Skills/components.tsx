@@ -12,7 +12,7 @@ export const SectionWrapper = styled.section`
 
 	& > div {
 		width: 100%;
-		max-width: 1920px;
+		max-width: 1280px;
 		
 		padding: 100px 0 0;
 
@@ -25,7 +25,7 @@ export const SectionWrapper = styled.section`
 export const CardsWrapper = styled.div`
 	position: relative;
 	overflow-x: hidden;
-	padding: 0 50px;
+	padding: 0 20px;
 	scroll-behavior: smooth;
 
 	/* Hiding scrollbar */
@@ -42,7 +42,6 @@ export const CardsWrapper = styled.div`
 
 	@media (max-width: 768px) {
 		overflow-x: auto;
-		padding: 0 20px;
 
 		& > div {
 			width: calc(310px * 8);
@@ -100,6 +99,10 @@ export const Skill = styled.div`
 		border-bottom-left-radius: 8px;
 		border-bottom-right-radius: 8px;
 	}
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 export const ButtonsWrapper = styled.div`

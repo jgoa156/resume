@@ -17,7 +17,7 @@ export const SectionWrapper = styled.section`
 
 	& > div:nth-child(2) {
 		width: 100%;
-		max-width: 1920px;
+		max-width: 1280px;
 		position: absolute;
 		top: 0;
 
@@ -48,7 +48,7 @@ export const BackgroundWrapper = styled.div`
 
 	& > div:nth-child(2) {
 		width: 100%;
-		max-width: 1920px;
+		max-width: 1280px;
 		position: absolute;
 		top: 0;
 	}

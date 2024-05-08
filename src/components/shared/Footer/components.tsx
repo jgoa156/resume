@@ -14,7 +14,7 @@ export const SectionWrapper = styled.footer`
 
 	& > div {
 		width: 100%;
-		max-width: 1920px;
+		max-width: 1280px;
 		
 		padding: 15px 20px;
 	}
