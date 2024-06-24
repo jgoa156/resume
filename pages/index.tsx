@@ -12,9 +12,9 @@ import ContactMe from "components/pages/home/ContactMe";
 export default function Home() {
   const SEO = {
     title: "Guilherme Almeida, Developer",
-    description: "Hi, I'm Guilherme Almeida, a 22-year-old Full-stack web and mobile developer based in Manaus, Brazil.",
+    description: "Hi, I'm Guilherme Almeida, a 23-year-old full-stack web and mobile developer and UI/UX designer.",
     url: "https://guilherme.vercel.app",
-    image: "/img/SEO/preview-20230206.jpg"
+    image: "/img/SEO/preview-20240624.jpg"
   };
 
   return (
@@ -74,12 +74,15 @@ export default function Home() {
               "cakephp",
               "laravel",
               "springboot",
+              "springmvc",
               "spring",
               "designer",
               "ui",
               "ui designer",
               "ux",
               "ux designer",
+              "nest",
+              "nestjs",
               "next",
               "next.js",
               "nextjs",
@@ -95,6 +98,8 @@ export default function Home() {
 
               "mysql",
               "sequelize",
+              "mongodb",
+              "prisma",
               "wordpress",
               "jquery",
               "c",
