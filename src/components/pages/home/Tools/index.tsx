@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 import Title from "components/shared/Title";
-import FadeIn from "components/shared/Animations/FadeIn";
 import { SectionWrapper, ItemWrapper, Item } from "./components";
 import * as Icons from "components/shared/Icons";
 
 export default function Tools() {
+  const { t, ready } = useTranslation(["main"], { keyPrefix: "tools" });
+
   const tools = [
     /*{ title: "HTML 5", icon: <Icons.IconHTML/>, color: "#ff6614" },
     { title: "CSS 3", icon: <Icons.IconCSS/>, color: "#00ade5" },
@@ -12,7 +14,7 @@ export default function Tools() {
     { title: "PHP", icon: <Icons.IconPHP/>, color: "#8993c1" },
     { title: "Python 3", icon: <Icons.IconPython/>, color: "#fbd35a", direction: "bottom" },
     { title: "C", icon: <Icons.IconC/>, color: "#3946ac", direction: "bottom" }*/
-    { title: "React and React Native", icon: <Icons.IconReact />, color: "#61dbfb", direction: "bottom" },
+    { title: "React, React Native", icon: <Icons.IconReact />, color: "#61dbfb", direction: "bottom" },
     { title: "Next", icon: <Icons.IconNext />, color: "#4a5563", direction: "bottom" },
     { title: "Node", icon: <Icons.IconNode />, color: "#539e43", direction: "bottom" },
     { title: "Nest", icon: <Icons.IconNest />, color: "#e0234e", direction: "bottom" },
@@ -25,7 +27,7 @@ export default function Tools() {
   return (
     <SectionWrapper id="main-tools">
       <div>
-        <Title>Main tools</Title>
+        <Title>{t("title")}</Title>
 
         <ItemWrapper>
           {tools.map((tool, index) => {

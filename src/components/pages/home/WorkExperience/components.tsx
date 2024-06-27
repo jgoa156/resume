@@ -14,10 +14,10 @@ export const SectionWrapper = styled.section`
 		width: 100%;
 		max-width: 1280px;
 		
-		padding: 50px 50px 0;
+		padding: 120px 50px 0;
 
 		@media (max-width: 768px) {
-			padding: 50px 0 0;
+			padding: 120px 0 0;
 		}
 	}
 `;

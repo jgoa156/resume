@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useState, useEffect, useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
@@ -15,6 +16,8 @@ import {
 } from "./components";
 
 export default function Skills() {
+  const { t, ready } = useTranslation(["main"], { keyPrefix: "skills" });
+
   const isTablet = useMediaQuery({
     query: "(max-width: 768px)"
   });
@@ -25,160 +28,18 @@ export default function Skills() {
   const [displayScrollRight, setDisplayScrollRight] = useState(true);
 
   // Skills object
-  const skills = [
-    {
-      category: "Front-end Development",
-      tools: [
-        {
-          name: "React + Next",
-          proficiency: 90,
-        },
-        {
-          name: "HTML + CSS",
-          proficiency: 90,
-        },
-        {
-          name: "jQuery",
-          proficiency: 80,
-        },
-      ]
-    },
-    {
-      category: "Back-end Development",
-      tools: [
-        {
-          name: "Node + Nest + Prisma",
-          proficiency: 90,
-        },
-        {
-          name: "Node + Express + Sequelize",
-          proficiency: 80,
-        },
-        {
-          name: "Java + Spring",
-          proficiency: 60,
-        },
-        {
-          name: "PHP + Laravel",
-          proficiency: 40,
-        },
-        {
-          name: "Python + Django",
-          proficiency: 30,
-        },
-      ]
-    },
-    {
-      category: "Mobile development",
-      tools: [
-        {
-          name: "React Native",
-          proficiency: 70,
-        },
-        {
-          name: "Java/Kotlin Android",
-          proficiency: 40,
-        }
-      ]
-    },
-    {
-      category: "Design and Design Tools",
-      tools: [
-        {
-          name: "Illustrator + Photoshop",
-          proficiency: 90,
-        },
-        {
-          name: "Figma",
-          proficiency: 80,
-        },
-        {
-          name: "UI/UX Design",
-          proficiency: 60,
-        }
-      ]
-    },
-    {
-      category: "Dev Ops",
-      tools: [
-        {
-          name: "Docker",
-          proficiency: 50,
-        },
-        {
-          name: "Argo CD",
-          proficiency: 30,
-        },
-        {
-          name: "Jenkins",
-          proficiency: 30,
-        },
-        {
-          name: "Kubernetes",
-          proficiency: 20,
-        },
-      ]
-    },
-    {
-      category: "Desktop and Embedded development",
-      tools: [
-        {
-          name: "Python",
-          proficiency: 90,
-        },
-        {
-          name: "Java",
-          proficiency: 80,
-        },
-        {
-          name: "C",
-          proficiency: 70,
-        },
-        {
-          name: "AOSP",
-          proficiency: 20,
-        }
-      ]
-    },
-    {
-      category: "Languages",
-      tools: [
-        {
-          name: "Portuguese",
-          proficiency: 100,
-        },
-        {
-          name: "English",
-          proficiency: 100,
-        },
-        {
-          name: "Spanish",
-          proficiency: 40,
-        }
-      ]
-    },
-    {
-      category: "Others",
-      tools: [
-        {
-          name: "Agile Methodologies",
-          proficiency: 80,
-        },
-        {
-          name: "Wordpress + Plugins",
-          proficiency: 50,
-        }
-      ]
-    }
-  ];
+  const skillsNsObject = Array.from(t("skills", { returnObjects: true })) as any[];;
 
   // Slider
   const skillsRef = useRef<any>(null);
   const cardWidth = isTablet ? 310 : 380;
+
+  function getInnerWidth() {
+    return window.innerWidth >= 1280 ? 1280 : window.innerWidth;
+  }
+
   function cardsInViewport() {
-    const innerWidth = window.innerWidth;
-    const width = innerWidth >= 1280 ? 1280 : innerWidth;
-    return Math.floor(width / cardWidth);
+    return Math.floor(getInnerWidth() / cardWidth);
   }
 
   function slideLeft() {
@@ -188,35 +49,38 @@ export default function Skills() {
     skillsRef.current.scrollLeft += cardsInViewport() * cardWidth;
   }
   useEffect(() => {
-    if (skillsRef && skillsRef.current) {
+    if (ready && skillsRef && skillsRef.current) {
       skillsRef.current.addEventListener("scroll", function () {
-        const windowWidth = window.innerWidth;
-        const scroll = windowWidth + skillsRef.current.scrollLeft;
+        const innerWidth = getInnerWidth();
+        const scroll = innerWidth + skillsRef.current.scrollLeft;
         const width = skillsRef.current.scrollWidth;
 
-        setDisplayScrollLeft(scroll > windowWidth);
+        console.log(`${scroll}, ${innerWidth}, ${width}`);
+
+        setDisplayScrollLeft(scroll > innerWidth);
         setDisplayScrollRight(scroll < width);
       });
     }
-  }, [])
+  }, [ready]);
 
+  if (!ready) return null;
   return (
     <SectionWrapper id="skills">
       <div>
         <FadeIn>
-          <Title>Skills</Title>
+          <Title>{t("title")}</Title>
         </FadeIn>
 
         <FadeIn>
           <CardsWrapper ref={skillsRef}>
             <div>
-              {skills.map((skill, index) => {
+              {skillsNsObject?.map((skill, index) => {
                 return (
                   <SkillCard key={index}>
                     <h5>{skill.category}</h5>
 
                     <div>
-                      {skill.tools.map((tool, index) => {
+                      {skill.tools?.map((tool, index) => {
                         return (
                           <Skill key={index} proficiency={tool.proficiency}>
                             <div>

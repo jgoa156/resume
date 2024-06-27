@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Dropdown } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 import {
   SectionWrapper,
@@ -14,12 +15,15 @@ import {
 
   Links,
   Link,
+
   DownloadDropdown,
   DownloadDropdownMenu,
   DownloadDropdownItem
 } from "./components";
 
 export default function Banner() {
+  const { t, ready } = useTranslation(["main"], { keyPrefix: "banner" });
+
   const [parallaxY, setParallaxY] = useState("50%");
   const isTablet = useMediaQuery({
     query: "(max-width: 1024px)"
@@ -39,35 +43,37 @@ export default function Banner() {
   const [role, setRole] = useState("");
   const [charIndex, setCharIndex] = useState(0);
   const [roleIndex, setRoleIndex] = useState(0);
-  const roles = ["Software Engineer", "Front-End Developer", "Back-End Developer", "Designer"];
+  const roles = Array.from(t("roles", { returnObjects: true })) as any[];
 
   useEffect(() => {
-    // Alterando para a próxima palavra
-    if (charIndex == (roles[roleIndex].length + 1) * -1) {
-      setTimeout(() => {
-        setRoleIndex(roleIndex == roles.length - 1 ? 0 : roleIndex + 1);
-        setRole("");
-        setCharIndex(0);
-      }, 500);
-      // Apagando palavra
-    } else if (charIndex < 0) {
-      setTimeout(() => {
-        setRole(role.slice(0, -1));
-        setCharIndex(charIndex - 1);
-      }, 10);
-      // Escrevendo palavra
-    } else if (charIndex < roles[roleIndex].length) {
-      setTimeout(() => {
-        setRole(role + roles[roleIndex][charIndex])
-        setCharIndex(charIndex + 1);
-      }, 30);
-      // Aguardando 1.5s e dando ordem para apagar palavra
-    } else {
-      setTimeout(() => {
-        setCharIndex(-1);
-      }, 1500);
+    // Going to next word
+    if (ready) {
+      if (charIndex == (roles[roleIndex].length + 1) * -1) {
+        setTimeout(() => {
+          setRoleIndex(roleIndex == roles.length - 1 ? 0 : roleIndex + 1);
+          setRole("");
+          setCharIndex(0);
+        }, 500);
+        // Erasing word
+      } else if (charIndex < 0) {
+        setTimeout(() => {
+          setRole(role.slice(0, -1));
+          setCharIndex(charIndex - 1);
+        }, 10);
+        // Writing word
+      } else if (charIndex < roles[roleIndex].length) {
+        setTimeout(() => {
+          setRole(role + roles[roleIndex][charIndex])
+          setCharIndex(charIndex + 1);
+        }, 30);
+        // Waiting 1.5s before erasing word
+      } else {
+        setTimeout(() => {
+          setCharIndex(-1);
+        }, 1500);
+      }
     }
-  }, [charIndex]);
+  }, [ready, charIndex]);
 
   // Links
   const links = [
@@ -77,6 +83,7 @@ export default function Banner() {
     { icon: "fab fa-linkedin", href: "https://linkedin.com/in/jgoa156" }
   ];
 
+  if (!ready) return null;
   return (
     <SectionWrapper id="banner">
       <BackgroundWrapper>
@@ -89,9 +96,9 @@ export default function Banner() {
       <div>
         <Intro>
           <h1>
-            Hi, I&apos;m Guilherme,
+            {t("title")}
             <br />
-            a&nbsp;<AnimatedTitle>{role}</AnimatedTitle>
+            {t("subtitle")}&nbsp;<AnimatedTitle>{role}</AnimatedTitle>
           </h1>
 
           <Links>
@@ -110,12 +117,12 @@ export default function Banner() {
 
           <Dropdown align="end">
             <DownloadDropdown variant="secondary">
-              <i className={"fas fa-download"} /> Download CV
+              <i className={"fas fa-download"} /> {t("download")}
             </DownloadDropdown>
 
             <DownloadDropdownMenu renderOnMount={true}>
-              <DownloadDropdownItem href={"/files/Guilherme Almeida - CV (EN).pdf"} download={"Guilherme Almeida - CV (EN)"}>EN - English</DownloadDropdownItem>
-              <DownloadDropdownItem href={"/files/Guilherme Almeida - CV (PT).pdf"} download={"Guilherme Almeida - CV (PT)"}>BR - Português</DownloadDropdownItem>
+              <DownloadDropdownItem href={"/files/Guilherme Almeida - CV (EN).pdf"} download={"Guilherme Almeida - CV (EN)"}>English</DownloadDropdownItem>
+              <DownloadDropdownItem href={"/files/Guilherme Almeida - CV (PT).pdf"} download={"Guilherme Almeida - CV (PT)"}>Português</DownloadDropdownItem>
             </DownloadDropdownMenu>
           </Dropdown>
         </Intro>

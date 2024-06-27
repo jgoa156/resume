@@ -1,22 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import Scrollspy from "react-scrollspy";
+import { useTranslation } from "react-i18next";
+import { Dropdown } from "react-bootstrap";
 
 import {
   HeaderWrapper,
   TitleWrapper,
+  Group,
   LinkWrapper,
   GoToTop,
 
   Burger,
   Sidenav,
-  SidenavBackground
+  SidenavBackground,
+
+  LanguageDropdown,
+  LanguageDropdownMenu,
+  LanguageDropdownItem
 } from "./components";
 
 export default function Header() {
-  const isMobile = useMediaQuery({
-    query: "(max-width: 575px)"
-  });
+  const { t, ready, i18n } = useTranslation(["main"], { keyPrefix: "options" });
+
   const isTablet = useMediaQuery({
     query: "(max-width: 1024px)"
   });
@@ -25,14 +31,7 @@ export default function Header() {
   const [showGoToTop, setShowGoToTop] = useState(false);
   const [showSidenav, setShowSidenav] = useState(false);
 
-  const links = [
-    { title: "Main Tools", href: "main-tools" },
-    { title: "About Me", href: "about-me" },
-    { title: "Work Experience", href: "work-experience" },
-    { title: "Projects", href: "projects" },
-    { title: "Skills", href: "skills" },
-    { title: "Contact Me", href: "contact-me" },
-  ];
+  const links = Array.from(t("links", { returnObjects: true })) as any[];
 
   // Go to top
   const bannerHeight = isTablet ? 400 : 500;
@@ -44,12 +43,18 @@ export default function Header() {
     });
   }, []);
 
+  // Change language
+  const changeLanguage = (language: string) => {
+    i18n.changeLanguage(language);
+  };
+
   // Lock scroll
   /*useEffect(() => {
     if (showSidenav) disableScroll.on();
     else disableScroll.off();
   }, [showSidenav]);*/
 
+  if (!ready) return null;
   return (
     <HeaderWrapper scrolled={scrolled}>
       <nav>
@@ -57,24 +62,37 @@ export default function Header() {
           <img src={`${process.env.basePath}/img/logo.png`} /> Guilherme
         </TitleWrapper>
 
-        {loaded
-          ? !isTablet
-            ? (
-              <LinkWrapper>
-                <Scrollspy items={links.map((link) => link.href)} currentClassName={"spy"} offset={-100}>
-                  {links.map((link, index) => {
-                    return <a key={index} href={`#${link.href}`} data-to-scrollspy-id={link.href}>{link.title}</a>
-                  })}
-                </Scrollspy>
-              </LinkWrapper>
-            )
-            : (
-              <Burger onClick={() => setShowSidenav(true)} aria-expanded={showSidenav}>
-                <i className={"fas fa-bars"} />
-              </Burger>
-            )
-          : null
-        }
+        <Group>
+          <Dropdown align="end" style={{ width: "fit-content" }}>
+            <LanguageDropdown variant="secondary">
+              <i className={"fas fa-globe"} /> {i18n.language.toUpperCase()}
+            </LanguageDropdown>
+
+            <LanguageDropdownMenu renderOnMount={true}>
+              <LanguageDropdownItem onClick={() => changeLanguage("en")}>EN</LanguageDropdownItem>
+              <LanguageDropdownItem onClick={() => changeLanguage("pt")}>PT</LanguageDropdownItem>
+            </LanguageDropdownMenu>
+          </Dropdown>
+
+          {loaded
+            ? !isTablet
+              ? (
+                <LinkWrapper>
+                  <Scrollspy items={links.map((link) => link.href)} currentClassName={"spy"} offset={-100}>
+                    {links.map((link, index) => {
+                      return <a key={index} href={`#${link.href}`} data-to-scrollspy-id={link.href}>{link.title}</a>
+                    })}
+                  </Scrollspy>
+                </LinkWrapper>
+              )
+              : (
+                <Burger onClick={() => setShowSidenav(true)} aria-expanded={showSidenav}>
+                  <i className={"fas fa-bars"} />
+                </Burger>
+              )
+            : null
+          }
+        </Group>
 
         <GoToTop href={"#banner"} showGoToTop={showGoToTop} className={"fas fa-arrow-up"} />
       </nav>

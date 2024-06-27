@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { Dropdown } from "react-bootstrap";
 
 export const HeaderWrapper = styled.header`
 	width: 100%;
@@ -66,12 +67,19 @@ export const TitleWrapper = styled.div`
 	}
 `;
 
+export const Group = styled.div`
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+`;
+
 export const LinkWrapper = styled.div`
 	height: fit-content;
-	padding-left: 30px;
+	
 
 	ul {
 		margin: 0;
+    padding: 0;
 	}
 	a {
 		padding-bottom: 6px;
@@ -147,6 +155,8 @@ export const GoToTop = styled.a`
 `;
 
 export const Burger = styled.button`
+  margin-top: 5px;
+  padding-left: 15px;
 	justify-self: flex-end;
 
 	color: white;
@@ -231,4 +241,42 @@ export const SidenavBackground = styled.div`
 	opacity: ${props => props.show ? 1 : 0};
 
 	transition: 0.3s;
+`;
+
+export const LanguageDropdown = styled(Dropdown.Toggle)`
+  margin-top: 5px;
+	padding: 5px 10px;
+	border-radius: 5px;
+
+	background-color: var(--color-3) !important;
+	border: 1px solid var(--muted);
+	outline: none;
+	color: var(--muted);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4) !important;
+  font-weight: bold;
+  font-size: 0.825rem;
+
+	transition: 0.3s;
+
+	&:after {
+		display: none;
+	}
+
+	&:hover, &:focus {
+    color: var(--muted);
+	}
+`;
+
+export const LanguageDropdownMenu = styled(Dropdown.Menu)`
+	background-color: var(--color-3);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+`;
+export const LanguageDropdownItem = styled(Dropdown.Item)`
+	color: var(--text-default-color);
+	transition: 0.3s;
+
+	&:hover {
+		color: var(--text-default-color);
+		background-color: var(--color-2);
+	}
 `;

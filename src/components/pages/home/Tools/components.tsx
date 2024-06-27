@@ -14,7 +14,7 @@ export const SectionWrapper = styled.section`
 		width: 100%;
 		max-width: 1280px;
 		
-		padding: 50px 50px 50px;
+		padding: 50px 50px 100px;
 
 		@media (max-width: 1024px) {
 			padding: 50px 50px 30px;

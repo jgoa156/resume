@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation, Trans } from "react-i18next";
 
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
@@ -17,74 +18,13 @@ import {
 } from "./components";
 
 export default function AboutMe() {
+  const { t, ready } = useTranslation(["main"], { keyPrefix: "about" });
+
   function calculateAge(day) {
     let date = new Date(Date.now() - day);
     return Math.abs(date.getUTCFullYear() - 1970);
   }
-  function calculateSemester() {
-    let years = calculateAge(new Date(2019, 0, 1));
-    let now = new Date();
-    let semester = Math.floor(now.getMonth() / 6) + 1;
-
-    return (years * 2) + semester;
-  }
-
-  const age = calculateAge(new Date(2000, 8, 16));
-  const academicExp = calculateAge(new Date(2016, 1, 1));
   const workExp = calculateAge(new Date(2018, 6, 1));
-  const semester = calculateSemester();
-
-  // Education
-  const graduations = [
-    {
-      name: "Software Engineering",
-      type: "Bachelor's Degree",
-      institution: "Federal University of Amazonas",
-      start: "2019",
-      end: "2024",
-      icon: "img/components/Education/ufam.png"
-    },
-    {
-      name: "Embedded Android Development",
-      type: "Certificate Course",
-      institution: "State University of Amazonas",
-      start: "2021",
-      end: "2021",
-      icon: "img/components/Education/uea.png"
-    },
-    {
-      name: "Informatics",
-      type: "Technical Degree",
-      institution: "Federal Institute of Amazonas",
-      start: "2016",
-      end: "2018",
-      icon: "img/components/Education/if.png",
-      iconProps: {
-        width: "25px",
-        margin: "7.5px"
-      }
-    },
-    {
-      name: "Graphic Design",
-      type: "Certificate Course",
-      institution: "GRACOM",
-      start: "2016",
-      end: "2017",
-      icon: "img/components/Education/gracom.png"
-    },
-    {
-      name: "Mechatronics",
-      type: "Technical Degree",
-      institution: "Matias Machline Foundation",
-      start: "2015",
-      end: "2015 (Incomplete)",
-      icon: "img/components/Education/fmm.png",
-      iconProps: {
-        width: "25px",
-        margin: "7.5px"
-      }
-    }
-  ];
 
   // Konami code
   const [konami, setKonami] = useState<boolean>(false);
@@ -99,6 +39,8 @@ export default function AboutMe() {
         setKonami(true);
         document.removeEventListener("keydown", handleKonami);
       }
+    } else {
+      key = 0;
     }
   }
 
@@ -106,40 +48,42 @@ export default function AboutMe() {
     document.addEventListener("keydown", handleKonami);
   }, []);
 
+  // Locales
+  const generalInfoNsObject = Array.from(t("general.content", { returnObjects: true })) as any[];
+  const personalityInfoNsObject = Array.from(t("personality.content", { returnObjects: true })) as any[];
+  const certificatesNsObject = Array.from(t("education.certificates", { returnObjects: true })) as any[];
+
+  console.log(personalityInfoNsObject);
+
+  if (!ready) return null;
   return (
     <SectionWrapper id="about-me">
       <div>
         <FadeIn>
-          <Title>About Me</Title>
+          <Title>{t("title")}</Title>
         </FadeIn>
 
         <InfoWrapper>
           <TextWrapper left={true}>
             <FadeIn>
-              <Subtitle>
-                Who am I?
-              </Subtitle>
+              <Subtitle>{t("general.title")}</Subtitle>
 
-              <Text>
-                I&apos;m a {age}-year-old Full-stack web and mobile developer based in Manaus, Brazil, and currently focused in Front-end development in general.
-                Currently working with React + Next and Node + Express, but with knowledge in several other technologies as well.
-              </Text>
-              <Text>
-                I have a technical degree in Informatics with emphasis on Software Engineering and a bachelor&apos;s degree in Software Engineering from the Federal University of Amazonas.
-              </Text>
+              {generalInfoNsObject.map((info, index) =>
+                <Text key={index}>{info}</Text>
+              )}
             </FadeIn>
           </TextWrapper>
 
           <Cards right={true}>
             <FadeIn>
               <NumberCard>
-                <h2>{academicExp}+</h2>
-                <p>Years of academic experience</p>
+                <h2>8</h2>
+                <p>{t("cards.academic")}</p>
               </NumberCard>
 
               <NumberCard>
                 <h2>{workExp}+</h2>
-                <p>Years of working experience</p>
+                <p>{t("cards.professional")}</p>
               </NumberCard>
             </FadeIn>
           </Cards>
@@ -148,44 +92,39 @@ export default function AboutMe() {
         <InfoWrapper>
           <TextWrapper left={true}>
             <FadeIn>
-              <Subtitle>
-                What do I like?
-              </Subtitle>
+              <Subtitle>{t("personality.title")}</Subtitle>
 
-              <Text>
-                Currently my main interests towards the software industry are front-end web, back-end and mobile development, as well as UI/UX design.
-                I also take a lot of interest in other fields, such as machine learning, data mining and embedded development, not to mention my heavy interest
-                in DIY culture means I&apos;m into other areas of engineering, such as mechatronics. I&apos;m also considering a second graduation in sound engineering.
-              </Text>
-              <Text>
-                While you are here, you should know I&apos;m also a nerd, goth, rpg and cyberpunk literature aficionado, not to mention I take a lot of interest
-                in experimental art in general, which covers ground ranging from psychedelic cinema to noise music.
-              </Text>
-              <Text>
-                I&apos;m currently working on several side projects, such as a <a target="_blank" rel="noreferrer" href="https://soundcloud.com/saturnine_music">post-rock project</a>,
-                an unreleased industrial techno and dark psy project, an <a target="_blank" rel="noreferrer" href="https://www.instagram.com/death.yon/">illustration project</a> and several
-                installation projects involving computer vision, 3D and videomapping. I also make <a target="_blank" rel="noreferrer" href="https://steamcommunity.com/id/flammableman/myworkshopfiles/">some wallpapers</a> for Wallpaper Engine.
-              </Text>
+              {personalityInfoNsObject.map((info, index) =>
+                info.links
+                  ? <Text key={index}>
+                    <Trans
+                      t={t}
+                      defaults={info.content}
+                      components={
+                        Array.from(info.links?.map((link) =>
+                          <a target="_blank" rel="noreferrer" href={link} />))
+                      } />
+                  </Text>
+                  : <Text key={index}>{info.content}</Text>
+              )}
             </FadeIn>
           </TextWrapper>
 
           <TextWrapper>
             <FadeIn>
-              <Subtitle>
-                Education
-              </Subtitle>
+              <Subtitle>{t("education.title")}</Subtitle>
 
               <ItemWrapper>
-                {graduations.map((graduation, index) => {
+                {certificatesNsObject.map((certificate, index) => {
                   return (
                     <Item key={index}>
                       <ItemTitle>
-                        <img src={graduation.icon} style={graduation.iconProps} />
+                        <img src={certificate.icon} style={certificate.iconProps} />
 
                         <div className={"textWrapper"}>
-                          <h5>{graduation.name}</h5>
+                          <h5>{certificate.name}</h5>
 
-                          <p>{graduation.institution} <span>{graduation.type} | {graduation.start} - {graduation.end}</span></p>
+                          <p>{certificate.institution} <span>{certificate.type} | {certificate.start} - {certificate.end}</span></p>
                         </div>
                       </ItemTitle>
                     </Item>

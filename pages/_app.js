@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import "../i18n";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../public/styles/main.css";

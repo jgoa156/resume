@@ -1,0 +1,445 @@
+{
+	"options": {
+		"links": [
+			{ "title": "Main Tools", "href": "main-tools" },
+			{ "title": "About Me", "href": "about-me" },
+			{ "title": "Work Experience", "href": "work-experience" },
+			{ "title": "Projects", "href": "projects" },
+			{ "title": "Skills", "href": "skills" },
+			{ "title": "Contact Me", "href": "contact-me" }
+		]
+	},
+	"banner": {
+		"title": "Hi, I'm Guilherme,",
+		"subtitle": "a",
+		"roles": [
+			"Software Engineer",
+			"Front-End Developer",
+			"Back-End Developer",
+			"Designer"
+		],
+		"download": "Download CV"
+	},
+	"tools": {
+		"title": "Main tools"
+	},
+	"about": {
+		"title": "About Me",
+		"general": {
+			"title": "Who am I?",
+			"content": [
+				"I'm a 23-year-old Full stack web and mobile developer based in Manaus, Brazil. Currently focused on React + Next, Node + Nest and UI/UX design but with knowledge in several other technologies as well.",
+				"I have a Technical Degree in Informatics with emphasis on Software Engineering and a bachelor's degree in Software Engineering from the Federal University of Amazonas, totaling 8 years of academic experience.",
+				"While most of my experience lies in front-end development, I consider myself to be just as good in other fields such as a back-end development and software architecture and am looking for opportunities where I can use more of my knowledge and skills."
+			]
+		},
+		"personality": {
+			"title": "What do I like?",
+			"content": [
+				{
+					"content": "Currently my main interests towards the software industry are front-end web, back-end and mobile development, as well as UI/UX design. I also take a lot of interest in other fields, such as machine learning, data mining and embedded development, not to mention my heavy interest in DIY culture means I'm into other areas of engineering, such as mechatronics. I'm also considering a second graduation in sound engineering."
+				},
+				{
+					"content": "While you are here, you should know I'm also a nerd, goth, rpg and cyberpunk literature aficionado, not to mention I take a lot of interest in experimental art in general, which covers ground ranging from psychedelic cinema to noise music."
+				},
+				{
+					"links": [
+						"https://soundcloud.com/saturnine_music",
+						"https://www.instagram.com/death.yon/",
+						"https://steamcommunity.com/id/flammableman/myworkshopfiles/"
+					],
+					"content": "I'm currently working on several side projects, such as a <0>post-rock project</0>, an unreleased industrial techno and dark psy project, an <1>illustration project</1> and several installation projects involving computer vision, 3D and videomapping. I also make <2>some wallpapers</2> for Wallpaper Engine."
+				}
+			]
+		},
+		"cards": {
+			"academic": "Years of academic experience",
+			"professional": "Years of professional experience"
+		},
+		"education": {
+			"title": "Education",
+			"certificates": [
+				{
+					"name": "Software Engineering",
+					"type": "Bachelor's Degree",
+					"institution": "Federal University of Amazonas",
+					"start": "2019",
+					"end": "2024",
+					"icon": "img/components/Education/ufam.png"
+				},
+				{
+					"name": "Embedded Android Development",
+					"type": "Certificate Course",
+					"institution": "State University of Amazonas",
+					"start": "2021",
+					"end": "2021",
+					"icon": "img/components/Education/uea.png"
+				},
+				{
+					"name": "Informatics",
+					"type": "Technical Degree",
+					"institution": "Federal Institute of Amazonas",
+					"start": "2016",
+					"end": "2018",
+					"icon": "img/components/Education/if.png",
+					"iconProps": {
+						"width": "25px",
+						"margin": "7.5px"
+					}
+				},
+				{
+					"name": "Graphic Design",
+					"type": "Certificate Course",
+					"institution": "GRACOM",
+					"start": "2016",
+					"end": "2017",
+					"icon": "img/components/Education/gracom.png"
+				},
+				{
+					"name": "Mechatronics",
+					"type": "Technical Degree",
+					"institution": "Matias Machline Foundation",
+					"start": "2015",
+					"end": "2015 (Incomplete)",
+					"icon": "img/components/Education/fmm.png",
+					"iconProps": {
+						"width": "25px",
+						"margin": "7.5px"
+					}
+				}
+			]
+		}
+	},
+	"work": {
+		"title": "Work experience",
+		"jobs": [
+			{
+				"name": "Full stack Developer",
+				"type": "Full-time (Remote)",
+				"company": "Betablocks",
+				"icon": "img/components/Work/betablocks.png",
+				"start": "January, 2024",
+				"end": "Current",
+				"description": [
+					{
+						"links": ["https://www.bv.com.br/", "https://www.pelxp.com/"],
+						"content": [
+							"Full Stack Developer in Miami based company working with Web3 technologies such as NFTs, crypto and blockchains. Our main projects mostly revolve around ESG initiatives and rewards programs using Web3 technologies, with clients such as as <0>Banco BV</0> and <1>PelXP</1>."
+						]
+					},
+					{
+						"links": ["https://builder.betablocks.com/login"],
+						"content": [
+							"I worked on several projects for different clients, with my main task being to maintain and add functionalities to our <0>page builder</0>, where I worked mostly as a front-end developer using React, UI/UX designer and back-end developer using Python's Django."
+						]
+					}
+				]
+			},
+			{
+				"name": "Front-end Developer",
+				"type": "Full-time (Remote)",
+				"company": "Ioasys",
+				"icon": "img/components/Work/ioasys.png",
+				"start": "April, 2022",
+				"end": "February, 2023",
+				"description": [
+					{
+						"links": [
+							"https://www.bancointer.com.br/",
+							"https://www.cvc.com.br/"
+						],
+						"content": [
+							"Front-end Developer working alongside other developers, designers and managers to modernize companies who wish to get into the digital era. Our clients include fintech <0>Banco Inter</0> and travel company <1>CVC</1>."
+						]
+					},
+					{
+						"links": ["#projects"],
+						"content": [
+							"As a front-end developer, my main projects were CVC's bus ticket platforms <i>Rodofácil</i> and <i>Rodoviário Exclusivo</i>, where I worked mostly with TypeScript, React and Jest. Neither of the platforms are available for public use now and therefore can't be shown on the <0>projects section</0>."
+						]
+					}
+				]
+			},
+			{
+				"name": "Full stack Developer",
+				"type": "Full-time (Remote)",
+				"company": "Capgemini",
+				"icon": "img/components/Work/capgemini.png",
+				"start": "June, 2021",
+				"end": "April, 2022",
+				"description": [
+					{
+						"links": [
+							"https://www.bb.com.br/",
+							"https://banco.bradesco/",
+							"https://www.itau.com.br/"
+						],
+						"content": [
+							"Full Stack Developer working alongside several other developers, designers and product managers in order to deliver high end digital solutions for our clients. Our main clients in this company include <0>Banco do Brasil</0>, which is the second largest bank in all Latin America, and other banks such as <1>Bradesco</1> and <2>Itaú</2>."
+						]
+					},
+					{
+						"links": ["https://www.bb.com.br/uci/investimentos.html"],
+						"content": [
+							"My main project while working in this company was Banco do Brasil's <0>investments page</0>, where I worked mostly as a front-end developer."
+						]
+					}
+				]
+			},
+			{
+				"name": "Full stack Developer",
+				"type": "Full-time (Local)",
+				"company": "CREA-AM",
+				"icon": "img/components/Work/crea.png",
+				"start": "May, 2019",
+				"end": "June, 2021",
+				"description": [
+					{
+						"content": [
+							"Full Stack Developer working in the I.T department of the Regional Council of Engineering and Agronomy of Amazonas. My main role was to develop and maintain the council's systems, which included a CRM, a document management system and a system to manage the council's events."
+						]
+					},
+					{
+						"content": [
+							"I also worked as an I.T support technician, maintaining the council's computers, servers and printers, and as a designer, creating the council's visual identity and designing the council's website."
+						]
+					}
+				]
+			},
+			{
+				"name": "Software Development Intern",
+				"type": "Internship (Local)",
+				"company": "PRODAM-AM",
+				"icon": "img/components/Work/prodam.png",
+				"start": "June, 2018",
+				"end": "December, 2018",
+				"description": [
+					{
+						"content": [
+							"Software Development Intern working in the I.T department of the State Data Processing Company of Amazonas. My main role was to maintain legacy systems written in Java, CakePHP and Laravel, doing tweaks and implementing new features on demand."
+						]
+					},
+					{
+						"content": [
+							"I also developed tools to automate processes such as mail sending and data mining on excel sheets, most of them which I wrote in Java."
+						]
+					}
+				]
+			}
+		]
+	},
+	"projects": {
+		"title": "Projects",
+		"disclaimer": {
+			"title": "*Disclaimer: ",
+			"content": "I do not maintain some of the projects mentioned above, therefore some of those projects may be impacted by posterior work done by people who are still involved with them."
+		},
+		"projects": [
+			{
+				"name": "MCA International",
+				"image": "mca.jpg",
+				"description": "MCA International's main institutional page, containing informations regarding the company and their main services.",
+				"url": "https://mcaig.com",
+				"tags": ["React", "Next", "HTML", "CSS", "JS", "Styled Components"],
+				"year": 2022
+			},
+			{
+				"name": "BB - Investimentos",
+				"image": "bb-investimentos.jpg",
+				"description": "Banco do Brasil's landing page for their Investments app which contains all information regarding their platform and their stocks. Developed in 2021.",
+				"url": "https://www.bb.com.br/uci/investimentos.html",
+				"tags": [
+					"React",
+					"Next",
+					"HTML",
+					"CSS",
+					"JS",
+					"Jest",
+					"Jenkins",
+					"Argo CD"
+				],
+				"year": 2022
+			},
+			{
+				"name": "CREA-AM - Banco de Oportunidades",
+				"image": "crea-oportunidades.jpg",
+				"description": "CREA-AM's talent pool application designed with the goal to connect engineers to contractors and to publish engineering related jobs. Developed in 2020.",
+				"url": "https://oportunidades.crea-am.org.br",
+				"tags": [
+					"React",
+					"Next",
+					"PHP",
+					"Node",
+					"Socket.io",
+					"HTML",
+					"CSS",
+					"JS",
+					"Scrapy",
+					"Python"
+				],
+				"year": 2021
+			},
+			{
+				"name": "CREA-AM - Main page",
+				"image": "crea-site.jpg",
+				"description": "CREA-AM's main institutional landing page which contains all information regarding the council's activities, documents and other platforms. Developed in 2020.",
+				"url": "https://crea-am.org.br",
+				"tags": ["Wordpress", "PHP", "HTML", "CSS", "JS", "jQuery"],
+				"year": 2020
+			}
+		]
+	},
+	"skills": {
+		"title": "Skills",
+		"skills": [
+			{
+				"category": "Front-end",
+				"tools": [
+					{
+						"name": "React + Next",
+						"proficiency": 90
+					},
+					{
+						"name": "HTML + CSS",
+						"proficiency": 90
+					},
+					{
+						"name": "jQuery",
+						"proficiency": 80
+					}
+				]
+			},
+			{
+				"category": "Back-end",
+				"tools": [
+					{
+						"name": "Node + Nest + Prisma",
+						"proficiency": 90
+					},
+					{
+						"name": "Node + Express + Sequelize",
+						"proficiency": 90
+					},
+					{
+						"name": "Java + Spring",
+						"proficiency": 60
+					},
+					{
+						"name": "PHP + Laravel",
+						"proficiency": 40
+					},
+					{
+						"name": "Python + Django",
+						"proficiency": 30
+					}
+				]
+			},
+			{
+				"category": "Mobile",
+				"tools": [
+					{
+						"name": "React Native",
+						"proficiency": 70
+					},
+					{
+						"name": "Java/Kotlin Android",
+						"proficiency": 40
+					}
+				]
+			},
+			{
+				"category": "Design",
+				"tools": [
+					{
+						"name": "Illustrator + Photoshop",
+						"proficiency": 90
+					},
+					{
+						"name": "Figma",
+						"proficiency": 80
+					},
+					{
+						"name": "UI/UX Design",
+						"proficiency": 60
+					}
+				]
+			},
+			{
+				"category": "Dev Ops",
+				"tools": [
+					{
+						"name": "Docker",
+						"proficiency": 50
+					},
+					{
+						"name": "Argo CD",
+						"proficiency": 30
+					},
+					{
+						"name": "Jenkins",
+						"proficiency": 30
+					},
+					{
+						"name": "Kubernetes",
+						"proficiency": 20
+					}
+				]
+			},
+			{
+				"category": "General",
+				"tools": [
+					{
+						"name": "Python",
+						"proficiency": 90
+					},
+					{
+						"name": "Java",
+						"proficiency": 80
+					},
+					{
+						"name": "C",
+						"proficiency": 70
+					},
+					{
+						"name": "AOSP",
+						"proficiency": 20
+					}
+				]
+			},
+			{
+				"category": "Languages",
+				"tools": [
+					{
+						"name": "Portuguese",
+						"proficiency": 100
+					},
+					{
+						"name": "English",
+						"proficiency": 100
+					},
+					{
+						"name": "Spanish",
+						"proficiency": 40
+					}
+				]
+			},
+			{
+				"category": "Others",
+				"tools": [
+					{
+						"name": "Agile Methodologies",
+						"proficiency": 80
+					},
+					{
+						"name": "Wordpress + Plugins",
+						"proficiency": 50
+					}
+				]
+			}
+		]
+	},
+	"contact": {
+		"title": "Contact me",
+		"or": "or"
+	}
+}

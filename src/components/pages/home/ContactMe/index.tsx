@@ -1,4 +1,4 @@
-import { useMediaQuery } from "react-responsive";
+import { useTranslation } from "react-i18next";
 
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
@@ -13,9 +13,7 @@ import {
 } from "./components";
 
 export default function ContactMe() {
-  const isMobile = useMediaQuery({
-    query: "(max-width: 575px)"
-  });
+  const { t, ready } = useTranslation(["main"], { keyPrefix: "contact" });
 
   // Links
   const links = [
@@ -24,15 +22,16 @@ export default function ContactMe() {
     { icon: "fab fa-linkedin", href: "https://linkedin.com/in/jgoa156", content: "jgoa156" }
   ];
 
+  if (!ready) return null;
   return (
     <SectionWrapper id="contact-me">
       <div>
         <FadeIn style={{ width: "100%" }}>
           <Card>
-            <Title>Contact Me</Title>
+            <Title>{t("title")}</Title>
             <QR src={`${process.env.img}/components/ContactMe/qr.png`}></QR>
 
-            <Or><span>or</span></Or>
+            <Or><span>{t("or")}</span></Or>
 
             <div>
               {links.map((link, index) => {
