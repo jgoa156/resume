@@ -101,8 +101,8 @@ export default function AboutMe() {
                       t={t}
                       defaults={info.content}
                       components={
-                        Array.from(info.links?.map((link) =>
-                          <a target="_blank" rel="noreferrer" href={link} />))
+                        Array.from(info.links?.map((link, index) =>
+                          <a key={index} target="_blank" rel="noreferrer" href={link} />))
                       } />
                   </Text>
                   : <Text key={index}>{info.content}</Text>

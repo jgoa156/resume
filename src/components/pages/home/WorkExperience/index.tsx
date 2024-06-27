@@ -44,8 +44,8 @@ export default function WorkExperience() {
                         t={t}
                         defaults={job.content}
                         components={
-                          Array.from(job.links?.map((link) =>
-                            <a target={link.includes("https") ? "_blank" : "_self"} rel="noreferrer" href={link} />))
+                          Array.from(job.links?.map((link, index) =>
+                            <a key={index} target={link.includes("https") ? "_blank" : "_self"} rel="noreferrer" href={link} />))
                         } />
                     </p>
                     : <p key={index}>{job.content}</p>
