@@ -155,7 +155,7 @@
 					{
 						"links": ["#projects"],
 						"content": [
-							"Como desenvolvedor front-end, meus principais projetos foram as plataformas de venda de passagens de ônibus da CVC <i>Rodofácil</i> e <i>Rodoviário Exclusivo</i>, onde trabalhei principalmente com TypeScript, React e Jest. Nenhuma das plataformas está disponível para uso público agora e, portanto, não podem ser mostradas na <0>seção de projetos</0>."
+							"Como desenvolvedor front-end, meus principais projetos foram as plataformas de venda de passagens de ônibus da CVC <i>Rodofácil</i> e <i>Rodoviário Exclusivo</i>, onde trabalhei principalmente com TypeScript, React e Jest. Ambas as plataformas estão disponíveis na <0>seção de projetos</0>."
 						]
 					}
 				]
@@ -235,6 +235,42 @@
 			"content": "Eu não mantenho alguns dos projetos mencionados acima, consequentemente alguns dos projetos podem ter sido impactados por mudanças feitas por terceiros."
 		},
 		"projects": [
+			{
+				"name": "Betablocks Builder",
+				"image": "betablocks.jpg",
+				"description": "Produto principal da Betablocks, onde eu majoritariamente adicionei novas funcionalidades e arquitetei soluoções customizadas para nossos clientes.",
+				"url": "https://www.betablocks.com/",
+				"tags": [
+					"React",
+					"Next",
+					"HTML",
+					"CSS",
+					"JS",
+					"Tailwind",
+					"Python",
+					"Django",
+					"UI/UX",
+					"Web3"
+				],
+				"year": 2024
+			},
+			{
+				"name": "CVC - Rodofácil/Rodoviário Exclusivo",
+				"image": "rodofacil.jpg",
+				"description": "Plataforma de venda de passagens de ônibus da CVC, onde é possível comprar tanto passagens de ônibus para vários destinos no Brasil, bem como reservar ônibus exclusivos para eventos.",
+				"url": "https://www.cvc.com.br/rodoviario/rodofacil/search",
+				"tags": [
+					"React",
+					"Next",
+					"HTML",
+					"CSS",
+					"JS",
+					"Styled Components",
+					"Jenkins",
+					"UI/UX"
+				],
+				"year": 2023
+			},
 			{
 				"name": "MCA International",
 				"image": "mca.jpg",

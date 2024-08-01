@@ -155,7 +155,7 @@
 					{
 						"links": ["#projects"],
 						"content": [
-							"As a front-end developer, my main projects were CVC's bus ticket platforms <i>Rodofácil</i> and <i>Rodoviário Exclusivo</i>, where I worked mostly with TypeScript, React and Jest. Neither of the platforms are available for public use now and therefore can't be shown on the <0>projects section</0>."
+							"As a front-end developer, my main projects were CVC's bus ticket platforms <i>Rodofácil</i> and <i>Rodoviário Exclusivo</i>, where I worked mostly with TypeScript, React and Jest. Both platforms are available on the <0>projects section</0>."
 						]
 					}
 				]
@@ -236,17 +236,61 @@
 		},
 		"projects": [
 			{
+				"name": "Betablocks Builder",
+				"image": "betablocks.jpg",
+				"description": "Betablocks main product, where I mostly added new functionalities and designed custom solutions for our clients.",
+				"url": "https://www.betablocks.com/",
+				"tags": [
+					"React",
+					"Next",
+					"HTML",
+					"CSS",
+					"JS",
+					"Tailwind",
+					"Python",
+					"Django",
+					"UI/UX",
+					"Web3"
+				],
+				"year": 2024
+			},
+			{
+				"name": "CVC - Rodofácil/Rodoviário Exclusivo",
+				"image": "rodofacil.jpg",
+				"description": "CVC's busing tickets platforms, where you can buy bus tickets for several destinations in Brazil, as well as book exclusive buses for your events.",
+				"url": "https://www.cvc.com.br/rodoviario/rodofacil/search",
+				"tags": [
+					"React",
+					"Next",
+					"HTML",
+					"CSS",
+					"JS",
+					"Styled Components",
+					"Jenkins",
+					"UI/UX"
+				],
+				"year": 2023
+			},
+			{
 				"name": "MCA International",
 				"image": "mca.jpg",
 				"description": "MCA International's main institutional page, containing informations regarding the company and their main services.",
 				"url": "https://mcaig.com",
-				"tags": ["React", "Next", "HTML", "CSS", "JS", "Styled Components"],
+				"tags": [
+					"React",
+					"Next",
+					"HTML",
+					"CSS",
+					"JS",
+					"Styled Components",
+					"UI/UX"
+				],
 				"year": 2022
 			},
 			{
 				"name": "BB - Investimentos",
 				"image": "bb-investimentos.jpg",
-				"description": "Banco do Brasil's landing page for their Investments app which contains all information regarding their platform and their stocks. Developed in 2021.",
+				"description": "Banco do Brasil's landing page for their Investments app which contains all information regarding their platform and their stocks.",
 				"url": "https://www.bb.com.br/uci/investimentos.html",
 				"tags": [
 					"React",
@@ -256,14 +300,15 @@
 					"JS",
 					"Jest",
 					"Jenkins",
-					"Argo CD"
+					"Argo CD",
+					"UI/UX"
 				],
 				"year": 2022
 			},
 			{
 				"name": "CREA-AM - Banco de Oportunidades",
 				"image": "crea-oportunidades.jpg",
-				"description": "CREA-AM's talent pool application designed with the goal to connect engineers to contractors and to publish engineering related jobs. Developed in 2020.",
+				"description": "CREA-AM's talent pool application designed with the goal to connect engineers to contractors and to publish engineering related jobs.",
 				"url": "https://oportunidades.crea-am.org.br",
 				"tags": [
 					"React",
@@ -275,16 +320,17 @@
 					"CSS",
 					"JS",
 					"Scrapy",
-					"Python"
+					"Python",
+					"UI/UX"
 				],
 				"year": 2021
 			},
 			{
 				"name": "CREA-AM - Main page",
 				"image": "crea-site.jpg",
-				"description": "CREA-AM's main institutional landing page which contains all information regarding the council's activities, documents and other platforms. Developed in 2020.",
+				"description": "CREA-AM's main institutional landing page which contains all information regarding the council's activities, documents and other platforms.",
 				"url": "https://crea-am.org.br",
-				"tags": ["Wordpress", "PHP", "HTML", "CSS", "JS", "jQuery"],
+				"tags": ["Wordpress", "PHP", "HTML", "CSS", "JS", "jQuery", "UI/UX"],
 				"year": 2020
 			}
 		]
