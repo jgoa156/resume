@@ -13,6 +13,7 @@ import {
 } from "./components";
 
 export default function WorkExperience() {
+  /* Add languages/frameworks tags, similar to Projects */
   const { t, ready } = useTranslation(["main"], { keyPrefix: "work" });
 
   const jobsNsObject = Array.from(t("jobs", { returnObjects: true })) as any[];

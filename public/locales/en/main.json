@@ -114,7 +114,22 @@
 		"title": "Work experience",
 		"jobs": [
 			{
-				"name": "Full stack Developer",
+				"name": "Front-end Engineer",
+				"type": "Full-time (Hybrid)",
+				"company": "FITEC",
+				"icon": "img/components/Work/fitec.png",
+				"start": "August, 2024",
+				"end": "Current",
+				"description": [
+					{
+						"content": [
+							"Front-end engineer working for R&D company in Manaus's digital district, working mostly with React and Vite and with a focus on front-end architecture and team management. Our main cliente in this company is Acer, which is a multinational company that produces electronics and hardware."
+						]
+					}
+				]
+			},
+			{
+				"name": "Full stack Engineer",
 				"type": "Full-time (Remote)",
 				"company": "Betablocks",
 				"icon": "img/components/Work/betablocks.png",
@@ -124,7 +139,7 @@
 					{
 						"links": ["https://www.bv.com.br/", "https://www.pelxp.com/"],
 						"content": [
-							"Full Stack Developer in Miami based company working with Web3 technologies such as NFTs, crypto and blockchains. Our main projects mostly revolve around ESG initiatives and rewards programs using Web3 technologies, with clients such as as <0>Banco BV</0> and <1>PelXP</1>."
+							"Full stack Engineer in Miami based company working with Web3 technologies such as NFTs, crypto and blockchains. Our main projects mostly revolve around ESG initiatives and rewards programs using Web3 technologies, with clients such as as <0>Banco BV</0> and <1>PelXP</1>."
 						]
 					},
 					{
@@ -236,6 +251,28 @@
 		},
 		"projects": [
 			{
+				"name": "Pyramid",
+				"image": "pyramid.jpg",
+				"description": "UFAM's computing institute (ICOMP) tool for managing students's extracurricular activities. I worked as a full cycle developer/engineer, working on every step since data modelling all the way to deploy.",
+				"url": "https://pyramid.icomp.ufam.edu.br/",
+				"tags": [
+					"React",
+					"Next",
+					"HTML",
+					"CSS",
+					"JS",
+					"Bootstrap",
+					"Styled Components",
+					"Node",
+					"Nest",
+					"Prisma",
+					"UI/UX",
+					"Docker",
+					"NGINX"
+				],
+				"year": 2024
+			},
+			{
 				"name": "Betablocks Builder",
 				"image": "betablocks.jpg",
 				"description": "Betablocks main product, where I mostly added new functionalities and designed custom solutions for our clients.",
@@ -270,22 +307,6 @@
 					"UI/UX"
 				],
 				"year": 2023
-			},
-			{
-				"name": "MCA International",
-				"image": "mca.jpg",
-				"description": "MCA International's main institutional page, containing informations regarding the company and their main services.",
-				"url": "https://mcaig.com",
-				"tags": [
-					"React",
-					"Next",
-					"HTML",
-					"CSS",
-					"JS",
-					"Styled Components",
-					"UI/UX"
-				],
-				"year": 2022
 			},
 			{
 				"name": "BB - Investimentos",
@@ -332,6 +353,24 @@
 				"url": "https://crea-am.org.br",
 				"tags": ["Wordpress", "PHP", "HTML", "CSS", "JS", "jQuery", "UI/UX"],
 				"year": 2020
+			}
+		],
+		"_projects": [
+			{
+				"name": "MCA International",
+				"image": "mca.jpg",
+				"description": "MCA International's main institutional page, containing informations regarding the company and their main services.",
+				"url": "https://mcaig.com",
+				"tags": [
+					"React",
+					"Next",
+					"HTML",
+					"CSS",
+					"JS",
+					"Styled Components",
+					"UI/UX"
+				],
+				"year": 2022
 			}
 		]
 	},
