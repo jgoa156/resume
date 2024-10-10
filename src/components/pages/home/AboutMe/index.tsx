@@ -26,7 +26,7 @@ export default function AboutMe() {
   }
   const workExp = calculateAge(new Date(2018, 6, 1));
 
-  // Konami code
+  /*// Konami code
   const [konami, setKonami] = useState<boolean>(false);
   let key = 0;
   const code = [38, 38, 40, 40, 37, 39, 37, 39, 65, 66];
@@ -46,14 +46,12 @@ export default function AboutMe() {
 
   useEffect(() => {
     document.addEventListener("keydown", handleKonami);
-  }, []);
+  }, []);*/
 
   // Locales
   const generalInfoNsObject = Array.from(t("general.content", { returnObjects: true })) as any[];
   const personalityInfoNsObject = Array.from(t("personality.content", { returnObjects: true })) as any[];
   const certificatesNsObject = Array.from(t("education.certificates", { returnObjects: true })) as any[];
-
-  console.log(personalityInfoNsObject);
 
   if (!ready) return null;
   return (
@@ -135,7 +133,7 @@ export default function AboutMe() {
           </TextWrapper>
         </InfoWrapper>
 
-        {konami &&
+        {/*konami &&
           <InfoWrapper>
             <TextWrapper left={true}>
               <FadeIn>
@@ -159,7 +157,7 @@ export default function AboutMe() {
               </FadeIn>
             </TextWrapper>
           </InfoWrapper>
-        }
+              */}
       </div>
     </SectionWrapper>
   );

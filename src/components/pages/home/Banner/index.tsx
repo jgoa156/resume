@@ -24,6 +24,29 @@ import {
 export default function Banner() {
   const { t, ready } = useTranslation(["main"], { keyPrefix: "banner" });
 
+  // Konami code - TODO: ADD RGB EFFECT
+  const [konami, setKonami] = useState<boolean>(false);
+  let key = 0;
+  const code = [38, 38, 40, 40, 37, 39, 37, 39, 65, 66];
+
+  function handleKonami(e) {
+    if (e.keyCode == code[key]) {
+      key++;
+
+      if (key == code.length) {
+        setKonami(true);
+        document.removeEventListener("keydown", handleKonami);
+      }
+    } else {
+      key = 0;
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleKonami);
+  }, []);
+
+  // Parallax effect
   const [parallaxY, setParallaxY] = useState("50%");
   const isTablet = useMediaQuery({
     query: "(max-width: 1024px)"
@@ -87,7 +110,7 @@ export default function Banner() {
   return (
     <SectionWrapper id="banner">
       <BackgroundWrapper>
-        <Background parallaxY={parallaxY} src={`${process.env.img}/components/Banner/bg.png`} />
+        <Background parallaxY={parallaxY} src={`${process.env.img}/components/Banner/${konami ? "bbbggg" : "bg"}.png`} />
         {/*<div>
 					<Profile src={`${process.env.img}/components/Banner/profile.jpg`} />
 				</div>*/}
