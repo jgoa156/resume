@@ -28,7 +28,7 @@ export default function Skills() {
   const [displayScrollRight, setDisplayScrollRight] = useState(true);
 
   // Skills object
-  const skillsNsObject = Array.from(t("skills", { returnObjects: true })) as any[];;
+  const skillsNsObject = Array.from(t("skills", { returnObjects: true })) as any[];
 
   // Slider
   const skillsRef = useRef<any>(null);

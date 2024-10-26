@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
-import { Dropdown } from "react-bootstrap";
+
 import { useTranslation } from "react-i18next";
 
 import {
@@ -8,7 +8,6 @@ import {
 
   BackgroundWrapper,
   Background,
-  Profile,
 
   Intro,
   AnimatedTitle,
@@ -16,15 +15,17 @@ import {
   Links,
   Link,
 
+  Dropdown,
   DownloadDropdown,
   DownloadDropdownMenu,
   DownloadDropdownItem
 } from "./components";
+import CopyToClipboard from "components/shared/CopyToClipboard";
 
 export default function Banner() {
   const { t, ready } = useTranslation(["main"], { keyPrefix: "banner" });
 
-  // Konami code - TODO: ADD RGB EFFECT
+  // Konami code - TODO: ADD RGB EFFECT 
   const [konami, setKonami] = useState<boolean>(false);
   let key = 0;
   const code = [38, 38, 40, 40, 37, 39, 37, 39, 65, 66];
@@ -111,9 +112,6 @@ export default function Banner() {
     <SectionWrapper id="banner">
       <BackgroundWrapper>
         <Background parallaxY={parallaxY} src={`${process.env.img}/components/Banner/${konami ? "bbbggg" : "bg"}.png`} />
-        {/*<div>
-					<Profile src={`${process.env.img}/components/Banner/profile.jpg`} />
-				</div>*/}
       </BackgroundWrapper>
 
       <div>
@@ -147,6 +145,8 @@ export default function Banner() {
               <DownloadDropdownItem href={"/files/Guilherme Almeida - CV (EN).pdf"} download={"Guilherme Almeida - CV (EN)"}>English</DownloadDropdownItem>
               <DownloadDropdownItem href={"/files/Guilherme Almeida - CV (PT).pdf"} download={"Guilherme Almeida - CV (PT)"}>Português</DownloadDropdownItem>
             </DownloadDropdownMenu>
+
+            <CopyToClipboard text={t("resume.text")} />
           </Dropdown>
         </Intro>
       </div>
