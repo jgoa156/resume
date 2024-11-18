@@ -13,13 +13,13 @@ import {
 import { INodeProps } from "../interfaces";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
-export default function Node({ type, title, years, proficiency, details, icon, imgSrc, childNodes }: INodeProps) {
+export default function Node({ type, title, years, proficiency, details, icon, imgSrc, iconNode, childNodes }: INodeProps) {
   const conduitDirections = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 
   const renderHoverCard = (props) => {
-    const disabled = type === "main" || (!years && !proficiency && !details);
+    const disabled = type === "main";
     if (disabled) return <></>;
-    return <Tooltip {...props}><NodeHoverCard  {...{ type, title, years, proficiency, details, icon, imgSrc }} /></Tooltip>;
+    return <Tooltip {...props}><NodeHoverCard  {...{ type, title, years, proficiency, details, icon, imgSrc, iconNode }} /></Tooltip>;
   }
 
   return (
@@ -32,9 +32,10 @@ export default function Node({ type, title, years, proficiency, details, icon, i
         >
           <NodeContent>
             <div>
+              {(type === "primary" && iconNode) && iconNode}
               {(type === "primary" && icon) && <i className={icon} />}
               {(type === "primary" && imgSrc) && <img src={imgSrc} alt={title} />}
-              {(((type === "primary" && !icon && !imgSrc || type !== "primary")) && title) && <h5>{title}</h5>}
+              {((((type === "primary" && !icon && !imgSrc && !iconNode) || type !== "primary")) && title) && <h5>{title}</h5>}
             </div>
           </NodeContent>
         </OverlayTrigger>

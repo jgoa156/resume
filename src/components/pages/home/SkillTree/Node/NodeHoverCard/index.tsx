@@ -8,17 +8,24 @@ import {
 // Interfaces
 import { INodeProps } from "../../interfaces";
 
-export default function NodeHoverCard({ title, years, proficiency, details, icon, imgSrc }: INodeProps) {
-  function YearsOfExperience() {
-    const message = years === 0 ? "Less than a year of experience" : years === 1 ? "year of experience" : "years of experience";
-    return (<p>{years > 0 && <b>{years}</b>} {message}</p>);
+export default function NodeHoverCard({ title, years, proficiency, details, icon, imgSrc, iconNode }: INodeProps) {
+  function YearsOfExperience({ years }: { years: number }) {
+    const message =
+      years === 1
+        ? `year of experience`
+        : years > 1
+          ? `years of experience`
+          : "Less than a year of experience";
+
+    return (<p>{years > 0 && <b>{years} </b>}{message}</p>);
   }
 
   return (
     <NodeHoverCardWrapper>
       <NodeHoverCardHeader>
-        {(icon || imgSrc) && (
+        {(icon || imgSrc || iconNode) && (
           <div>
+            {iconNode && iconNode}
             {icon && <i className={icon} />}
             {imgSrc && <img src={imgSrc} alt={title} />}
           </div>
@@ -26,12 +33,12 @@ export default function NodeHoverCard({ title, years, proficiency, details, icon
 
         <div>
           <h4>{title}</h4>
-          {years && <YearsOfExperience />}
+          {years !== undefined && <YearsOfExperience years={years} />}
         </div>
       </NodeHoverCardHeader>
 
-      <ProficiencyBar proficiency={proficiency} />
-      {details && <p>{details}</p>}
+      {proficiency && <ProficiencyBar proficiency={proficiency} />}
+      {details && <p className="details">{details}</p>}
     </NodeHoverCardWrapper>
   )
 }

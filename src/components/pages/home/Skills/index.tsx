@@ -55,8 +55,6 @@ export default function Skills() {
         const scroll = innerWidth + skillsRef.current.scrollLeft;
         const width = skillsRef.current.scrollWidth;
 
-        console.log(`${scroll}, ${innerWidth}, ${width}`);
-
         setDisplayScrollLeft(scroll > innerWidth);
         setDisplayScrollRight(scroll < width);
       });

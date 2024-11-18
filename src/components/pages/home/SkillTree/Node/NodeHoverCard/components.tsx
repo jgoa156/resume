@@ -11,28 +11,36 @@ export const NodeHoverCardWrapper = styled.div`
   border-radius: 10px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.4);
 
-  p {
-    margin: 0;
+  p.details {
+    margin: 10px 0 0;
   }
 `;
 
 export const NodeHoverCardHeader = styled.div`
   display: flex;
   gap: 20px;
-  margin-bottom: 10px;
+  align-items: center;
 
   i {
     font-size: 50px;
+  }
+  .svgIcon {
+    width: 50px;
+    height: 50px;
+  }
+  i, .svgIcon {
+    color: var(--primary-color);
     color: var(--primary-color);
   }
 
   h4 {
-    margin-bottom: 0px;
+    margin: 0px;
     font-size: 1.25rem;
     font-weight: bold;
   }
 
   p {
+    margin: 0px;
     font-size: 1.125rem;
     font-weight: 500;
     color: var(--muted);

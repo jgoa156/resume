@@ -22,12 +22,19 @@ export const NodeContent = styled.div`
 
   gap: 8px;
   text-align: center;
-  background: var(--color-3);
+  background-color: var(--color-3);
   border-radius: ${radius};
   color: var(--text-default-color);
 
+  transition: 0.3s;
+
   h5 {
     margin: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-4) !important;
   }
 `;
 
@@ -165,6 +172,10 @@ const nodes = {
         transform: rotate(-45deg);
         color: var(--primary-color);
 
+        svg {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
         i {
           font-size: 2.5rem;
         }

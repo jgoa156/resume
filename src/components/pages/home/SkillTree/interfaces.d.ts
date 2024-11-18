@@ -8,5 +8,6 @@ export interface INodeProps {
 	details?: string | JSX.Element;
 	icon?: string;
 	imgSrc?: string;
+	iconNode?: JSX.Element;
 	childNodes?: INodeProps[];
 }

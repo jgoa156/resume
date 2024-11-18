@@ -4,7 +4,7 @@ export const ProficiencyWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
-  margin-bottom: 10px;
+  margin: 20px 0 0;
 
   & > div {
     width: 100%;
@@ -13,13 +13,12 @@ export const ProficiencyWrapper = styled.div`
 
     &.filled {
       background-color: var(--primary-color);
-      
     }
   }
 
   p {
+    margin: 0;
     grid-column: span 5;
-    // text-align: right;
     font-style: italic;
   }
 `;
