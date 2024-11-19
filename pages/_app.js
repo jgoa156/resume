@@ -45,8 +45,6 @@ function App(props) {
 					rel="stylesheet"
 					href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
 				/>
-
-				<script src="https://unpkg.com/@popperjs/core@2" />
 			</Head>
 
 			<noscript>You need to turn on JavaScript to see this page</noscript>
@@ -61,3 +59,4 @@ function App(props) {
 		</section>
 	);
 }
+
