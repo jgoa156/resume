@@ -23,7 +23,7 @@ function App(props) {
 				<title>Guilherme Almeida, Developer</title>
 				<meta
 					name="description"
-					content="Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil."
+					content="Hi, I'm Guilherme Almeida, a 24-year-old Full Stack web and mobile developer based in Manaus, Brazil."
 				/>
 				<meta
 					name="image"
@@ -45,6 +45,8 @@ function App(props) {
 					rel="stylesheet"
 					href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
 				/>
+
+				<script src="https://unpkg.com/@popperjs/core@2" />
 			</Head>
 
 			<noscript>You need to turn on JavaScript to see this page</noscript>

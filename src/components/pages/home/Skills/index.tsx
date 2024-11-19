@@ -28,7 +28,7 @@ export default function Skills() {
   const [displayScrollRight, setDisplayScrollRight] = useState(true);
 
   // Skills object
-  const skillsNsObject = Array.from(t("skills", { returnObjects: true })) as any[];;
+  const skillsNsObject = Array.from(t("skills", { returnObjects: true })) as any[];
 
   // Slider
   const skillsRef = useRef<any>(null);
@@ -54,8 +54,6 @@ export default function Skills() {
         const innerWidth = getInnerWidth();
         const scroll = innerWidth + skillsRef.current.scrollLeft;
         const width = skillsRef.current.scrollWidth;
-
-        console.log(`${scroll}, ${innerWidth}, ${width}`);
 
         setDisplayScrollLeft(scroll > innerWidth);
         setDisplayScrollRight(scroll < width);

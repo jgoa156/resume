@@ -7,12 +7,13 @@ import AboutMe from "components/pages/home/AboutMe";
 import WorkExperience from "components/pages/home/WorkExperience";
 import Projects from "components/pages/home/Projects";
 import Skills from "components/pages/home/Skills";
+import SkillTree from "components/pages/home/SkillTree";
 import ContactMe from "components/pages/home/ContactMe";
 
 export default function Home() {
   const SEO = {
     title: "Guilherme Almeida, Developer",
-    description: "Hi, I'm Guilherme Almeida, a 23-year-old full-stack web and mobile developer and UI/UX designer.",
+    description: "Hi, I'm Guilherme Almeida, a 24-year-old Full Stack web and mobile developer and UI/UX designer.",
     url: "https://guilherme.vercel.app",
     image: "/img/SEO/preview-20240624.jpg"
   };
@@ -122,7 +123,7 @@ export default function Home() {
       <AboutMe />
       <WorkExperience />
       <Projects />
-      <Skills />
+      <SkillTree />
       <ContactMe />
     </>
   );

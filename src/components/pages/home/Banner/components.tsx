@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Dropdown } from "react-bootstrap";
+import { Dropdown as BootstrapDropdown } from "react-bootstrap";
 
 export const SectionWrapper = styled.section`
 	width: 100%;
@@ -89,40 +89,6 @@ export const Background = styled.img`
     }
   }
 `;
-export const Profile = styled.img`
-	position: absolute;
-	top: 125px;
-	right: 150px;
-
-	width: 350px;
-	height: 350px;
-	object-fit: cover;
-	filter: brightness(85%);
-
-	border-radius: 50%;
-	padding: 7.5px;
-	border: 1px solid white;
-	box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-
-	transition: 0.8s;
-
-	@media (max-width: 1024px) {
-		top: 150px;
-		right: 30px;
-
-		width: 200px;
-		height: 200px;
-	}
-	@media (max-width: 575px) {
-		position: absolute;
-		
-		top: 50px;
-		right: calc(50% - 93.75px);
-
-		width: 180px;
-		height: 180px;
-	}
-`;
 
 export const Intro = styled.div`
 	width: 100%;
@@ -181,9 +147,10 @@ export const Links = styled.div`
 	margin-top: 20px;
 `;
 
-export const DownloadDropdown = styled(Dropdown.Toggle)`
-	margin-top: 30px;
-
+export const Dropdown = styled(BootstrapDropdown)`
+  margin-top: 30px;
+`;
+export const DownloadDropdown = styled(BootstrapDropdown.Toggle)`
 	padding: 10px 45px 10px 45px;
 	border-radius: 30px;
 
@@ -214,11 +181,11 @@ export const DownloadDropdown = styled(Dropdown.Toggle)`
 	}
 `;
 
-export const DownloadDropdownMenu = styled(Dropdown.Menu)`
+export const DownloadDropdownMenu = styled(BootstrapDropdown.Menu)`
 	background-color: var(--color-3);
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 `;
-export const DownloadDropdownItem = styled(Dropdown.Item)`
+export const DownloadDropdownItem = styled(BootstrapDropdown.Item)`
 	color: var(--text-default-color);
 	transition: 0.3s;
 

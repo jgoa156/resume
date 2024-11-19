@@ -16,9 +16,16 @@
 			"Engenheiro de Software",
 			"Desenvolvedor Front-end",
 			"Desenvolvedor Back-end",
-			"Designer"
+			"Designer",
+			"Artista",
+			"Músico"
 		],
-		"download": "Baixar CV"
+		"download": "Baixar CV",
+		"resume": {
+			"copy": "Copiar resumo para a área de transferência",
+			"copied": "Copiado!",
+			"text": "Portfólio: https://guilherme.vercel.app/\n\nOlá, meu nome é Guilherme Almeida, um desenvolvedor web e mobile full stack de 24 anos baseado em Manaus, Brasil. Atualmente focado em React + Next, Node + Nest, Java e design de UI/UX, mas com conhecimento em diversas outras tecnologias também.\n\nSou formado em Engenharia de Software pela Universidade Federal do Amazonas, com graduação em Engenharia de Software pela Universidade Federal do Amazonas, totalizando 8 anos de experiência acadêmica. Embora a maior parte da minha experiência esteja em desenvolvimento front-end, considero-me igualmente bom em outras áreas, como desenvolvimento back-end e arquitetura de software, sem mencionar minha formação artística e paixão genuína por tecnologia.\n\nAtualmente, meus principais interesses na indústria de software são desenvolvimento front-end web, back-end e mobile, bem como design UI/UX. Também tenho muito interesse em outras áreas, como aprendizado de máquina, mineração de dados e desenvolvimento embarcado, sem mencionar que meu grande interesse na cultura DIY significa que estou em outras áreas da engenharia, como mecatrônica. Também estou considerando uma segunda graduação em engenharia de som.\n\nEnquanto você está aqui, você deve saber que também sou um aficionado por literatura nerd, cultura gótica, RPGs e literatura cyberpunk, sem mencionar que tenho muito interesse em arte experimental em geral, o que abrange desde o cinema psicodélico até noise music.\n\nEstou procurando oportunidades onde posso usar mais do meu conhecimento e habilidades e acho que essa oportunidade seria perfeita para mim e para sua empresa."
+		}
 	},
 	"tools": {
 		"title": "Ferramentas"
@@ -28,7 +35,7 @@
 		"general": {
 			"title": "Quem sou eu?",
 			"content": [
-				"Eu sou um desenvolvedor full stack web e mobile de 23 anos, atualmente morando em Manaus, Brasil. Atualmente focado em React + Next, Node + Nest e design UI/UX mas com conhecimento em diversas outras tecnologias.",
+				"Eu sou um desenvolvedor Full Stack web e mobile de 24 anos, atualmente morando em Manaus, Brasil. Atualmente focado em React + Next, Node + Nest, Java e design UI/UX mas com conhecimento em diversas outras tecnologias.",
 				"Eu possuo um Certificado Técnico em Informática com ênfase em Engenharia de Software e uma Graduação em Engenharia de Software pela Universidade Federal do Amazonas, totalizando 8 anos de experiência acadêmica.",
 				"Enquanto boa parte da minha experiência é como desenvolvedor front-end, eu também me considero tão bom quanto em outros campos como desenvolvimento back-end e arquitetura de software e estou buscando oportunidades onde eu consiga usar mais dos meus conhecimentos e habilidades."
 			]
@@ -114,22 +121,26 @@
 		"title": "Experiência",
 		"jobs": [
 			{
-				"name": "Engenheiro Front-end",
-				"type": "Tempo integral (Híbrido)",
-				"company": "FITEC",
-				"icon": "img/components/Work/fitec.png",
-				"start": "Agosto, 2024",
+				"name": "Engenheiro Full Stack Sênior",
+				"type": "Tempo integral (Remoto)",
+				"company": "HCL Tech",
+				"icon": "img/components/Work/hcl.png",
+				"start": "Outubro, 2024",
 				"end": "Atualmente",
 				"description": [
 					{
+						"links": [
+							"https://www.unilever.com/",
+							"https://www.bbcstudios.com/"
+						],
 						"content": [
-							"Engenheiro Front-end trabalhando para empresa de P&D no distrito digital de Manaus, trabalhando principalmente com React e Vite e com foco em arquitetura front-end e gerenciamento de equipe. Nosso principal cliente nesta empresa é a Acer, uma empresa multinacional focada em produção de eletrônicos e hardware."
+							"Engenheiro Full Stack Sênior trabalhando para uma das maiores empresas de consultoria em TI do mundo, trabalhando lado a lado de um time multicultural para entregar soluções digitais de ponta para nossos clientes. Nossos principais clientes incluem a <0>Unilever</0> e <1>Estúdios BBC</1>."
 						]
 					}
 				]
 			},
 			{
-				"name": "Engenheiro Full stack",
+				"name": "Engenheiro Full Stack",
 				"type": "Tempo integral (Remoto)",
 				"company": "Betablocks",
 				"icon": "img/components/Work/betablocks.png",
@@ -139,7 +150,7 @@
 					{
 						"links": ["https://www.bv.com.br/", "https://www.pelxp.com/"],
 						"content": [
-							"Engenheiro Full stack em empresa de Miami trabalhando com tecnologias Web3 como NFTs, criptomoedas e blockchains. Nossos principais projetos giram em torno de iniciativas ESG e programas de recompensas usando tecnologias Web3, com clientes como o <0>Banco BV</0> e a <1>PelXP</1>."
+							"Engenheiro Full Stack em empresa de Miami trabalhando com tecnologias Web3 como NFTs, criptomoedas e blockchains. Nossos principais projetos giram em torno de iniciativas ESG e programas de recompensas usando tecnologias Web3, com clientes como o <0>Banco BV</0> e a <1>PelXP</1>."
 						]
 					},
 					{
@@ -176,7 +187,7 @@
 				]
 			},
 			{
-				"name": "Desenvolvedor Full stack",
+				"name": "Desenvolvedor Full Stack",
 				"type": "Tempo integral (Remoto)",
 				"company": "Capgemini",
 				"icon": "img/components/Work/capgemini.png",
@@ -202,7 +213,7 @@
 				]
 			},
 			{
-				"name": "Desenvolvedor Full stack",
+				"name": "Desenvolvedor Full Stack",
 				"type": "Tempo integral (Local)",
 				"company": "CREA-AM",
 				"icon": "img/components/Work/crea.png",
@@ -365,7 +376,7 @@
 		]
 	},
 	"skills": {
-		"title": "Skills",
+		"title": "Habilidades",
 		"skills": [
 			{
 				"category": "Front-end",
@@ -513,8 +524,27 @@
 			}
 		]
 	},
+	"skillTree": {
+		"title": "Habilidades",
+		"skills": [],
+		"card": {
+			"years": {
+				"year": "ano de experiência",
+				"years": "anos de experiência",
+				"less": "Menos de um ano de experiência"
+			},
+			"proficiency": [
+				"Iniciante",
+				"Moderado",
+				"Avançado",
+				"Proficiente",
+				"Especialista"
+			]
+		}
+	},
 	"contact": {
 		"title": "Contato",
 		"or": "ou"
 	}
 }
+

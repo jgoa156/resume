@@ -132,32 +132,6 @@ export default function AboutMe() {
             </FadeIn>
           </TextWrapper>
         </InfoWrapper>
-
-        {/*konami &&
-          <InfoWrapper>
-            <TextWrapper left={true}>
-              <FadeIn>
-                <Subtitle>
-                  BEWARE
-                </Subtitle>
-
-                <Text>
-                  I&apos;m a certified member of the Bahia chapter of DEDSEC.
-                </Text>
-              </FadeIn>
-            </TextWrapper>
-
-            <TextWrapper>
-              <FadeIn>
-                <Subtitle>
-                  BEWARE
-                </Subtitle>
-
-                <img src={`${process.env.img}/components/About/ch.png`} />
-              </FadeIn>
-            </TextWrapper>
-          </InfoWrapper>
-              */}
       </div>
     </SectionWrapper>
   );

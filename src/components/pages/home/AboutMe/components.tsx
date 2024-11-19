@@ -29,11 +29,6 @@ export const InfoWrapper = styled.div`
 	@media (max-width: 575px) {
 		display: block;
 	}
-
-  img {
-    width: 200px;
-    height: 200px;
-  }
 `;
 
 export const TextWrapper = styled.div`

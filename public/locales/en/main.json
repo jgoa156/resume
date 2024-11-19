@@ -16,9 +16,16 @@
 			"Software Engineer",
 			"Front-End Developer",
 			"Back-End Developer",
-			"Designer"
+			"Designer",
+			"Visual Artist",
+			"Musician"
 		],
-		"download": "Download CV"
+		"download": "Download CV",
+		"resume": {
+			"copy": "Copy resume to clipboard",
+			"copied": "Copied!",
+			"text": "Portfolio: https://guilherme.vercel.app/\n\nHi, I'm Guilherme Almeida, a 24-year-old Full Stack web and mobile developer based in Manaus, Brazil. Currently focused on React + Next, Node + Nest, Java and UI/UX design but with knowledge in several other technologies as well.\n\nI have a Technical Degree in Informatics with emphasis on Software Engineering and a bachelor's degree in Software Engineering from the Federal University of Amazonas, totaling 8 years of academic experience. While most of my experience lies in front-end development, I consider myself to be just as good in other fields such as a back-end development and software architecture, not to mention my artistic background and genuine passion for technology. \n\nCurrently my main interests towards the software industry are front-end web, back-end and mobile development, as well as UI/UX design. I also take a lot of interest in other fields, such as machine learning, data mining and embedded development, not to mention my heavy interest in DIY culture means I'm into other areas of engineering, such as mechatronics. I'm also considering a second graduation in sound engineering.\n\nWhile you are here, you should know I'm also a nerd, goth, rpg and cyberpunk literature aficionado, not to mention I take a lot of interest in experimental art in general, which covers ground ranging from psychedelic cinema to noise music.\n\nI am looking for opportunities where I can use more of my knowledge and skills and I think this opportunity would be perfect for both me and your company."
+		}
 	},
 	"tools": {
 		"title": "Main tools"
@@ -28,7 +35,7 @@
 		"general": {
 			"title": "Who am I?",
 			"content": [
-				"I'm a 23-year-old Full stack web and mobile developer based in Manaus, Brazil. Currently focused on React + Next, Node + Nest and UI/UX design but with knowledge in several other technologies as well.",
+				"I'm a 24-year-old Full Stack web and mobile developer based in Manaus, Brazil. Currently focused on React + Next, Node + Nest, Java and UI/UX design but with knowledge in several other technologies as well.",
 				"I have a Technical Degree in Informatics with emphasis on Software Engineering and a bachelor's degree in Software Engineering from the Federal University of Amazonas, totaling 8 years of academic experience.",
 				"While most of my experience lies in front-end development, I consider myself to be just as good in other fields such as a back-end development and software architecture and am looking for opportunities where I can use more of my knowledge and skills."
 			]
@@ -114,22 +121,26 @@
 		"title": "Work experience",
 		"jobs": [
 			{
-				"name": "Front-end Engineer",
-				"type": "Full-time (Hybrid)",
-				"company": "FITEC",
-				"icon": "img/components/Work/fitec.png",
-				"start": "August, 2024",
+				"name": "Senior Full Stack Engineer",
+				"type": "Full-time (Remote)",
+				"company": "HCL Tech",
+				"icon": "img/components/Work/hcl.png",
+				"start": "October, 2024",
 				"end": "Current",
 				"description": [
 					{
+						"links": [
+							"https://www.unilever.com/",
+							"https://www.bbcstudios.com/"
+						],
 						"content": [
-							"Front-end engineer working for R&D company in Manaus's digital district, working mostly with React and Vite and with a focus on front-end architecture and team management. Our main cliente in this company is Acer, which is a multinational company that produces electronics and hardware."
+							"Senior Full Stack engineer working for one of the biggest IT consulting companies in the world, working alongside a multicultural team to deliver high end digital solutions for our clients. Our main clients include <0>Unilever</0> and <1>BBC Studios</1>."
 						]
 					}
 				]
 			},
 			{
-				"name": "Full stack Engineer",
+				"name": "Full Stack Engineer",
 				"type": "Full-time (Remote)",
 				"company": "Betablocks",
 				"icon": "img/components/Work/betablocks.png",
@@ -139,7 +150,7 @@
 					{
 						"links": ["https://www.bv.com.br/", "https://www.pelxp.com/"],
 						"content": [
-							"Full stack Engineer in Miami based company working with Web3 technologies such as NFTs, crypto and blockchains. Our main projects mostly revolve around ESG initiatives and rewards programs using Web3 technologies, with clients such as as <0>Banco BV</0> and <1>PelXP</1>."
+							"Full Stack Engineer in Miami based company working with Web3 technologies such as NFTs, crypto and blockchains. Our main projects mostly revolve around ESG initiatives and rewards programs using Web3 technologies, with clients such as as <0>Banco BV</0> and <1>PelXP</1>."
 						]
 					},
 					{
@@ -176,7 +187,7 @@
 				]
 			},
 			{
-				"name": "Full stack Developer",
+				"name": "Full Stack Developer",
 				"type": "Full-time (Remote)",
 				"company": "Capgemini",
 				"icon": "img/components/Work/capgemini.png",
@@ -202,7 +213,7 @@
 				]
 			},
 			{
-				"name": "Full stack Developer",
+				"name": "Full Stack Developer",
 				"type": "Full-time (Local)",
 				"company": "CREA-AM",
 				"icon": "img/components/Work/crea.png",
@@ -523,8 +534,27 @@
 			}
 		]
 	},
+	"skillTree": {
+		"title": "Skills",
+		"skills": [],
+		"card": {
+			"years": {
+				"year": "year of experience",
+				"years": "years of experience",
+				"less": "Less than a year of experience"
+			},
+			"proficiency": [
+				"Beginner",
+				"Moderate",
+				"Advanced",
+				"Proficient",
+				"Expert"
+			]
+		}
+	},
 	"contact": {
 		"title": "Contact me",
 		"or": "or"
 	}
 }
+

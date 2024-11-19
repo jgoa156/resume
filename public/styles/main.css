@@ -84,6 +84,17 @@ body {
 	cursor: pointer;
 }
 
+.tooltip-arrow {
+	display: none !important;
+}
+.tooltip-inner {
+	padding: 0;
+	max-width: fit-content;
+	background-color: transparent;
+
+	margin-left: 10px;
+}
+
 /*---------------------- UTILS ----------------------*/
 .invert-color {
 	-webkit-filter: invert(100%);
