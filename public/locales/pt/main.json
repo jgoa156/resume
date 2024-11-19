@@ -376,7 +376,7 @@
 		]
 	},
 	"skills": {
-		"title": "Skills",
+		"title": "Habilidades",
 		"skills": [
 			{
 				"category": "Front-end",
@@ -524,8 +524,27 @@
 			}
 		]
 	},
+	"skillTree": {
+		"title": "Habilidades",
+		"skills": [],
+		"card": {
+			"years": {
+				"year": "ano de experiência",
+				"years": "anos de experiência",
+				"less": "Menos de um ano de experiência"
+			},
+			"proficiency": [
+				"Iniciante",
+				"Moderado",
+				"Avançado",
+				"Proficiente",
+				"Especialista"
+			]
+		}
+	},
 	"contact": {
 		"title": "Contato",
 		"or": "ou"
 	}
 }
+

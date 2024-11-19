@@ -3,17 +3,16 @@ import { ProficiencyWrapper } from "./components";
 
 // Interfaces
 interface IProficiencyBarProps {
+  t?: any;
   proficiency: number;
 }
 
-export default function ProficiencyBar({ proficiency }: IProficiencyBarProps) {
-  const proficiencyDetails = {
-    1: "Beginner",
-    2: "Moderate",
-    3: "Advanced",
-    4: "Proficient",
-    5: "Expert"
-  }
+export default function ProficiencyBar({ t, proficiency }: IProficiencyBarProps) {
+  const proficiencyNsLabels = t("card.proficiency", { returnObjects: true });
+  const proficiencyDetails = proficiencyNsLabels.reduce((acc, label, index) => {
+    acc[index + 1] = label;
+    return acc;
+  }, {});
 
   return (
     <ProficiencyWrapper>

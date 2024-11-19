@@ -536,10 +536,25 @@
 	},
 	"skillTree": {
 		"title": "Skills",
-		"skills": []
+		"skills": [],
+		"card": {
+			"years": {
+				"year": "year of experience",
+				"years": "years of experience",
+				"less": "Less than a year of experience"
+			},
+			"proficiency": [
+				"Beginner",
+				"Moderate",
+				"Advanced",
+				"Proficient",
+				"Expert"
+			]
+		}
 	},
 	"contact": {
 		"title": "Contact me",
 		"or": "or"
 	}
 }
+

@@ -8,14 +8,16 @@ import {
 // Interfaces
 import { INodeProps } from "../../interfaces";
 
-export default function NodeHoverCard({ title, years, proficiency, details, icon, imgSrc, iconNode }: INodeProps) {
+export default function NodeHoverCard({ t, title, years, proficiency, details, icon, imgSrc, iconNode }: INodeProps) {
+  const yearsNsLabels = t("card.years", { returnObjects: true });
+
   function YearsOfExperience({ years }: { years: number }) {
     const message =
       years === 1
-        ? `year of experience`
+        ? yearsNsLabels.year
         : years > 1
-          ? `years of experience`
-          : "Less than a year of experience";
+          ? yearsNsLabels.years
+          : yearsNsLabels.less;
 
     return (<p>{years > 0 && <b>{years} </b>}{message}</p>);
   }
@@ -37,8 +39,8 @@ export default function NodeHoverCard({ title, years, proficiency, details, icon
         </div>
       </NodeHoverCardHeader>
 
-      {proficiency && <ProficiencyBar proficiency={proficiency} />}
-      {details && <p className="details">{details}</p>}
+      {proficiency && <ProficiencyBar t={t} proficiency={proficiency} />}
+      {false && details && <p className="details">{details}</p>}
     </NodeHoverCardWrapper>
   )
 }

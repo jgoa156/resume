@@ -13,13 +13,13 @@ import {
 import { INodeProps } from "../interfaces";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
-export default function Node({ type, title, years, proficiency, details, icon, imgSrc, iconNode, childNodes }: INodeProps) {
+export default function Node({ t, type, title, years, proficiency, details, icon, imgSrc, iconNode, childNodes }: INodeProps) {
   const conduitDirections = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 
   const renderHoverCard = (props) => {
     const disabled = type === "main";
     if (disabled) return <></>;
-    return <Tooltip {...props}><NodeHoverCard  {...{ type, title, years, proficiency, details, icon, imgSrc, iconNode }} /></Tooltip>;
+    return <Tooltip {...props}><NodeHoverCard  {...{ t, type, title, years, proficiency, details, icon, imgSrc, iconNode }} /></Tooltip>;
   }
 
   return (
@@ -52,7 +52,7 @@ export default function Node({ type, title, years, proficiency, details, icon, i
 
       <NodeChildren>
         {childNodes && childNodes.map((child, index) => (
-          <Node key={index} {...child} />
+          <Node key={index} t={t} {...child} />
         ))}
       </NodeChildren>
     </NodeWrapper>
