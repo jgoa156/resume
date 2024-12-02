@@ -23,6 +23,8 @@ export const SectionWrapper = styled.section`
 `;
 
 export const SkillTreeWrapper = styled.div`
+  justify-self: center;
+  width: 75%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;

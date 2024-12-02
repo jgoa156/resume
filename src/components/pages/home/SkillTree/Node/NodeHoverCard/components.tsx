@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const NodeHoverCardWrapper = styled.div`
-  width: 350px;
-  padding: 20px 25px;
+  width: 250px;
+  padding: 10px 15px;
 
   text-align: left;
 
@@ -18,15 +18,15 @@ export const NodeHoverCardWrapper = styled.div`
 
 export const NodeHoverCardHeader = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
 
   i {
-    font-size: 50px;
+    font-size: 40px;
   }
   .svgIcon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   i, .svgIcon {
     color: var(--primary-color);
@@ -35,13 +35,13 @@ export const NodeHoverCardHeader = styled.div`
 
   h4 {
     margin: 0px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
   }
 
   p {
     margin: 0px;
-    font-size: 1.125rem;
+    font-size: 0.875rem;
     font-weight: 500;
     color: var(--muted);
   }
