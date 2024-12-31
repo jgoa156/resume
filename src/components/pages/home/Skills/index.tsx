@@ -48,6 +48,7 @@ export default function Skills() {
   function slideRight() {
     skillsRef.current.scrollLeft += cardsInViewport() * cardWidth;
   }
+
   useEffect(() => {
     if (ready && skillsRef && skillsRef.current) {
       skillsRef.current.addEventListener("scroll", function () {

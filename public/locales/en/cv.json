@@ -1,0 +1,143 @@
+{
+	"summary": {
+		"header": {
+			"name": "Joao Guilherme de Oliveira Almeida"
+		},
+		"bio": {
+			"title": "About me",
+			"content": [
+				"I'm Guilherme Almeida, a 24-year-old Full Stack web and mobile developer based in Manaus, Brazil. Currently focused on React + Next, Node + Nest, Java and UI/UX design but with knowledge in several other technologies as well.",
+				"I have a Technical Degree in Informatics with emphasis on Software Engineering and a bachelor's degree in Software Engineering from the Federal University of Amazonas, totaling 8 years of academic experience.",
+				"While most of my experience lies in front-end development, I consider myself to be just as good in other fields such as a back-end development and software architecture, not to mention my artistic background and genuine passion for technology."
+			]
+		},
+		"contact": {
+			"title": "Contact me",
+			"content": [
+				{
+					"icon": "fas fa-link",
+					"text": "guilherme.vercel.app"
+				},
+				{
+					"icon": "fas fa-envelope",
+					"text": "jgoa156@gmail.com"
+				},
+				{
+					"icon": "fab fa-github",
+					"text": "github.com/jgoa156"
+				},
+				{
+					"icon": "fab fa-whatsapp",
+					"text": "+55 92 99167-1567"
+				},
+				{
+					"icon": "fab fa-linkedin",
+					"text": "linkedin.com/in/jgoa156"
+				}
+			]
+		},
+		"skills": {
+			"title": "Skills",
+			"content": [
+				"Experience with Software Architecture, including MVC, Microservices, Layered and others, and deploys on both FTP and Cloud Services",
+				"6 years experience with HTML + CSS + jQuery",
+				"5 years experience with React + Next",
+				"3 years experience with Node + Express, 1 year with Nest",
+				"2 years experience with Sequelize, 1 with Prisma",
+				"7 years experience with MySQL",
+				"6 years experience with Java, 1 with Spring",
+				"2 years experience with PHP, including CakePHP and Laravel",
+				"1 year experience with Wordpress and Wordpress plugins, including WooCommerce",
+				"Extensive knowledge in general purpose languages such as C, Java, JavaScript and Python",
+				"Experience with Machine Learning and Data Mining using scikit-learn and pandas",
+				"Experience with Web Scraping using Scrapy",
+				"2 years experience with Docker",
+				"Experience with Kubernetes",
+				"3 years experience with CI/CD tools such as Jenkins, Argo CD and GitOps",
+				"1 year experience with React Native",
+				"Experience with Java and Kotlin for Android, including AOSP",
+				"8 years experience with Adobe CC tools, such as Illustrator, Photoshop, Lightroom and others",
+				"4 years experience with UI/UX design, including tools such as Figma",
+				"Experience with agile methodologies"
+			]
+		}
+	},
+	"content": {
+		"education": {
+			"title": "Education",
+			"content": [
+				{
+					"icon": "fmm",
+					"degree": "Technical Degree in Mechatronics",
+					"institution": "Matias Machline Foundation",
+					"date": "January 2015, December 2015 (Incomplete)"
+				},
+				{
+					"icon": "if",
+					"degree": "Technical Degree in Informatics",
+					"institution": "Federal Institute of Amazonas",
+					"date": "February 2016, December 2018"
+				},
+				{
+					"icon": "gracom",
+					"degree": "Certificate Course in Graphic Design",
+					"institution": "Gracom School of Visual Effects",
+					"date": "May 2016, July 2017"
+				},
+				{
+					"icon": "uea",
+					"degree": "Certificate Course in Embedded Android Development",
+					"institution": "State University of Amazonas",
+					"date": "January 2021, May 2021"
+				},
+				{
+					"icon": "ufam",
+					"degree": "Bachelor's Degree in Software Engineering",
+					"institution": "Federal University of Amazonas",
+					"date": "January 2019, March 2024"
+				}
+			]
+		},
+		"work": {
+			"title": "Work experience",
+			"content": [
+				{
+					"icon": "crea",
+					"role": "Full Stack Developer",
+					"institution": "CREA-AM",
+					"date": "May 2019, June 2021",
+					"description": "Created software on demand and automated tasks using React, PHP, Node, Java and Python; designed applications from scratch, including UI/UX design, front-end and back-end development and deployment, mostly using FTP; webscrapping using Python and Scrapy."
+				},
+				{
+					"icon": "capgemini",
+					"role": "Full Stack Developer",
+					"institution": "Capgemini",
+					"date": "June 2021, April 2022",
+					"description": "My main project while working in this company was Banco do Brasil's investments page, where I actuated as a Front-end Developer and worked mostly with React, Next, CI/CD operations and UI/UX designer in some tasks too."
+				},
+				{
+					"icon": "ioasys",
+					"role": "Front-end Developer",
+					"institution": "Ioasys",
+					"date": "April 2022, February 2023",
+					"description": "As a Front-end Developer, my main projects were CVC’s bus ticket platforms Rodofácil and Rodoviário Exclusivo, where I worked mostly with TypeScript, React and Jest."
+				},
+				{
+					"icon": "ioasys",
+					"role": "Full Stack Engineer",
+					"institution": "Ioasys",
+					"date": "January 2024, August 2024",
+					"description": " Developing Web3 based solutions using mostly Python + Django and React while integrating our software with multiple blockchains, crypto payment methods and cloud services. Also working as UI/UX designer on multiple projects."
+				},
+				{
+					"icon": "hcl",
+					"role": "Senior Full Stack Engineer",
+					"institution": "HCL Tech",
+					"date": "October 2024, Current",
+					"description": "Working mostly with front-end engineering while integrating multiple projects with accessibility tools such as screen readers and high contrast displays."
+				}
+			]
+		}
+	}
+}
+

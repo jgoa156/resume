@@ -124,7 +124,7 @@ export const GoToTop = styled.a`
 	border-radius: 50%;
 
 	font-size: 1.2rem;
-	color: var(--primary-color);
+	color: var(--text-color);
 	text-decoration: none;
 	transition: 0.3s;
 
@@ -132,7 +132,7 @@ export const GoToTop = styled.a`
 		
 	&:hover {
 		color: var(--primary-color-2);
-		background-color: #161616;
+		background-color: var(--color-4);
 	}
 
 	@keyframes fade-in {

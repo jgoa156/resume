@@ -21,6 +21,7 @@ import {
   DownloadDropdownItem
 } from "./components";
 import CopyToClipboard from "components/shared/CopyToClipboard";
+import GeneratePDF from "./PDF";
 
 export default function Banner() {
   const { t, ready } = useTranslation(["main"], { keyPrefix: "banner" });
@@ -148,6 +149,8 @@ export default function Banner() {
 
             <CopyToClipboard text={t("resume.text")} />
           </Dropdown>
+
+          {/*<GeneratePDF />*/}
         </Intro>
       </div>
     </SectionWrapper>
