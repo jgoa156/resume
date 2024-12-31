@@ -69,7 +69,6 @@ export const skills: INodeProps[] = [
               "",
           },
           {
-            icon: "fab fa-adobe",
             title: "Adobe CC",
             type: "secondary",
             years: 8,

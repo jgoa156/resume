@@ -48,7 +48,7 @@ export const NodeConduitWrapper = styled.div`
   position: absolute;
   top: -30px;
   width: 200px;
-  height: 140px;
+  height: 130px;
   z-index: -1;
 `;
 
@@ -62,62 +62,77 @@ const nodeConduitBase = `
 `;
 
 // Specific direction node conduit
+const conduitConstants = {
+  first: {
+    top: 35,
+    left: 65,
+    width: 15,
+    rotate: 30
+  },
+  second: {
+    bottom: -8,
+    left: -30,
+    width: 33,
+    rotate: 30
+  }
+}
+
 type IConduitDirections = "topLeft" | "topRight" | "bottomLeft" | "bottomRight";
 const conduitDirections = {
   topLeft: {
     first: `
-      top: 30px;
-      left: 40px;
-      width: 40px;
-      transform: rotate(45deg);
+      top: ${conduitConstants.first.top}px;
+      left: ${conduitConstants.first.left}px;
+      width: ${conduitConstants.first.width}px;
+      transform: rotate(${conduitConstants.first.rotate}deg);
     `,
     second: `
-      bottom: -10px;
-      left: -25px;
-      width: 30px;
-      transform: rotate(-45deg);
+      bottom: ${conduitConstants.second.bottom}px;
+      left: ${conduitConstants.second.left}px;
+      width: ${conduitConstants.second.width}px;
+      transform: rotate(-${conduitConstants.second.rotate}deg);
     `
   },
   topRight: {
     first: `
-      top: 30px;
-      right: 40px;
-      width: 40px;
-      transform: rotate(-45deg);
+      top: ${conduitConstants.first.top}px;
+      right: ${conduitConstants.first.left}px;
+      width: ${conduitConstants.first.width}px;
+      transform: rotate(-${conduitConstants.first.rotate}deg);
     `,
     second: `
-      bottom: -10px;
-      right: -25px;
-      width: 30px;
-      transform: rotate(45deg);
+      bottom: ${conduitConstants.second.bottom}px;
+      right: ${conduitConstants.second.left}px;
+      width: ${conduitConstants.second.width}px;
+      transform: rotate(${conduitConstants.second.rotate}deg);
     `
   },
   bottomLeft: {
     first: `
-      bottom: 30px;
-      left: 40px;
-      width: 40px;
-      transform: rotate(-45deg);
+      bottom: ${conduitConstants.first.top}px;
+      left: ${conduitConstants.first.left}px;
+      width: ${conduitConstants.first.width}px;
+      transform: rotate(-${conduitConstants.first.rotate}deg);
     `,
     second: `
-      top: -10px;
-      left: -25px;
-      width: 30px;
-      transform: rotate(45deg);
+      top: ${conduitConstants.second.bottom}px;
+      left: ${conduitConstants.second.left}px;
+      width: ${conduitConstants.second.width}px;
+      transform: rotate(${conduitConstants.second.rotate}deg);
     `
   },
   bottomRight: {
     first: `
-      bottom: 30px;
-      right: 40px;
-      width: 40px;
-      transform: rotate(45deg);
+      bottom: ${conduitConstants.first.top}px;
+      right: ${conduitConstants.first.left}px;
+      width: ${conduitConstants.first.width}px;
+      transform: rotate(${conduitConstants.first.rotate}deg);
     `,
     second: `
-      top: -10px;
-      right: -25px;
-      width: 30px;
-      transform: rotate(-45deg);
+      top: ${conduitConstants.second.bottom}px;
+      right: ${conduitConstants.second.left}px;
+      width: ${conduitConstants.second.width}px;
+      transform: rotate(-${conduitConstants.second.rotate}deg);
     `
   }
 }
@@ -156,13 +171,13 @@ const nodes = {
   },
   primary: {
     body: `
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
       transform: rotate(45deg);
 
       background: linear-gradient(to right, var(--muted), var(--muted));
 
-      margin-bottom: 150px;
+      margin-bottom: 90px;
       border-radius: 15px;
       z-index: 15;
     `,
@@ -187,22 +202,20 @@ const nodes = {
     `,
     children: `
       position: absolute;
-      top: -30px;
+      top: -10px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 60px 150px;
+      grid-gap: 30px 100px;
     `
   },
   secondary: {
     body: `
-      width: 110px;
-      min-height: 40px;
+      width: 90px;
+      min-height: 30px;
       height: fit-content;
 
       background: linear-gradient(to right, var(--color-2), var(--color-2));
       padding: 2px;
-
-      font-size: 0.75rem;
     `,
     content: `
       padding: 5px 0;
@@ -210,7 +223,7 @@ const nodes = {
 
       & > div {
         h5 {
-          font-size: 0.875rem;
+          font-size: 0.75rem;
           font-weight: bold;
         }
       }
@@ -232,13 +245,14 @@ export const NodeWrapper = styled.div<{ type: INodeType, childrenNumber?: number
       ${({ type }) => nodes[type]?.content}
     }
 
+    // Main/middle conduit
     ${({ type, childrenNumber }) => type === "main" && `
       :after {
         position: absolute;
         margin-top: 2px;
         left: calc(50% - 1.5px);
 
-        height: calc(75px + ${childrenNumber ? childrenNumber * 180 : 0}px);
+        height: calc(75px + ${childrenNumber ? childrenNumber * 120 : 0}px);
         width: 3px;
 
         display: flex;

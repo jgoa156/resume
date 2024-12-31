@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
-export const TitleComponent = styled.h2`
+export const TitleComponent = styled.h2<{ alignLeft?: boolean }>`
 	margin-bottom: 50px;
 	
 	color: white;
 	font-size: 2.625rem;
 	font-family: "Parkson";
-	text-align: center;
 	white-space: nowrap;
 	overflow: hidden;
 
@@ -14,10 +13,14 @@ export const TitleComponent = styled.h2`
 		font-size: 2.6rem;
 	}
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  ${({ alignLeft }) => !alignLeft && `
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  `}
+
 	&:after {
 		width: 50px;
 		height: 2px;

@@ -4,7 +4,7 @@ export const ProficiencyWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
-  margin: 20px 0 0;
+  margin: 15px 0 0;
 
   & > div {
     width: 100%;

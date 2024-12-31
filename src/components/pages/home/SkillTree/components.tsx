@@ -23,9 +23,32 @@ export const SectionWrapper = styled.section`
 `;
 
 export const SkillTreeWrapper = styled.div`
+  justify-self: center;
+  width: 85%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 
-  // margin-top: 32px;
+  @media (max-width: 1024px) {
+    width: 100%;
+    display: block;
+
+    .slick-slide {
+      width: 360px !important;
+
+      & > div {
+        
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .slick-track {
+      margin-left: calc((100vw - 360px) / 2);
+    }
+  }
+`;
+
+export const CarouselDots = styled.div`
+  
 `;
