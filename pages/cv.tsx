@@ -1,6 +1,6 @@
 import React from "react";
 
-import PDF from "components/pages/home/Banner/PDF";
+import PDF from "components/pages/Home/Banner/PDF";
 
 export default function CV() {
   return (

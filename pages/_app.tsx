@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Suspense, useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import "../i18n";
@@ -13,7 +13,11 @@ import Header from "components/shared/Header";
 import Footer from "components/shared/Footer";
 
 export default function AppWrapper(props) {
-  return <App {...props} />;
+  return (
+    <Suspense fallback={<SplashScreen />}>
+      <App {...props} />
+    </Suspense>
+  );
 }
 
 function App(props) {

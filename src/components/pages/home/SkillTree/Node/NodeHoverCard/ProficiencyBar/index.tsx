@@ -1,5 +1,5 @@
 // Custom
-import { ProficiencyWrapper } from "./components";
+import { ProficiencyWrapper } from "./styles";
 
 // Interfaces
 interface IProficiencyBarProps {

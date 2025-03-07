@@ -1,5 +1,5 @@
 // Custom
-import { ExperienceWrapper, Info } from "./components";
+import { ExperienceWrapper, Info } from "./styles";
 
 // Interfaces
 export interface IExperience {

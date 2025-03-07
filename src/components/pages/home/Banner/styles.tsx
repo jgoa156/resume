@@ -1,15 +1,10 @@
 import styled from "styled-components";
 import { Dropdown as BootstrapDropdown } from "react-bootstrap";
+import { SectionWrapper } from "components/shared/Footer/styles";
 
-export const SectionWrapper = styled.section`
-	width: 100%;
+export const BannerWrapper = styled(SectionWrapper)`
 	height: 500px;
-	position: relative;
-
-	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 
   border-bottom: 1px solid var(--color-2);
 

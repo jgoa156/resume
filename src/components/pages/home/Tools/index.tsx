@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Title from "components/shared/Title";
-import { SectionWrapper, ItemWrapper, Item } from "./components";
+import { SectionWrapper, ItemWrapper, Item } from "./styles";
 import * as Icons from "components/shared/Icons";
 
 export default function Tools() {

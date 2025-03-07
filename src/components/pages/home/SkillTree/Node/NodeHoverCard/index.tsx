@@ -3,7 +3,7 @@ import ProficiencyBar from "./ProficiencyBar";
 import {
   NodeHoverCardHeader,
   NodeHoverCardWrapper
-} from "./components";
+} from "./styles";
 
 // Interfaces
 import { INodeProps } from "../../interfaces";

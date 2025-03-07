@@ -18,7 +18,7 @@ import {
   LanguageDropdown,
   LanguageDropdownMenu,
   LanguageDropdownItem
-} from "./components";
+} from "./styles";
 
 export default function Header() {
   const { t, ready, i18n } = useTranslation(["main"], { keyPrefix: "options" });

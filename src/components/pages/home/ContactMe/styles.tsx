@@ -1,19 +1,8 @@
+import { SectionWrapper } from "components/shared/Footer/styles";
 import styled from "styled-components";
 
-export const SectionWrapper = styled.section`
-	width: 100%;
-	height: fit-content;
-	position: relative;
-	overflow: hidden;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
+export const ContactMeWrapper = styled(SectionWrapper)`
 	& > div {
-		width: 100%;
-		max-width: 1280px;
-	
 		padding: 120px 50px 50px;
 
 		@media (max-width: 1024px) {

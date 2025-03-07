@@ -10,7 +10,7 @@ import {
   QR,
 
   Link
-} from "./components";
+} from "./styles";
 
 export default function ContactMe() {
   const { t, ready } = useTranslation(["main"], { keyPrefix: "contact" });

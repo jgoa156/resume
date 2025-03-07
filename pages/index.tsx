@@ -1,14 +1,14 @@
 import React from "react";
 import { NextSeo } from "next-seo";
 
-import Banner from "components/pages/home/Banner";
-import Tools from "components/pages/home/Tools";
-import AboutMe from "components/pages/home/AboutMe";
-import WorkExperience from "components/pages/home/WorkExperience";
-import Projects from "components/pages/home/Projects";
-import Skills from "components/pages/home/Skills";
-import SkillTree from "components/pages/home/SkillTree";
-import ContactMe from "components/pages/home/ContactMe";
+import Banner from "components/pages/Home/Banner";
+import Tools from "components/pages/Home/Tools";
+import AboutMe from "components/pages/Home/AboutMe";
+import WorkExperience from "components/pages/Home/WorkExperience";
+import Projects from "components/pages/Home/Projects";
+import Skills from "components/pages/Home/Skills";
+import SkillTree from "components/pages/Home/SkillTree";
+import ContactMe from "components/pages/Home/ContactMe";
 
 export default function Home() {
   const SEO = {

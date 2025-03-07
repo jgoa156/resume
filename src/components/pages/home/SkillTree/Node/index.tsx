@@ -7,7 +7,7 @@ import {
   NodeConduitWrapper,
   NodeContent,
   NodeWrapper
-} from "./components";
+} from "./styles";
 
 // Interfaces
 import { INodeProps } from "../interfaces";

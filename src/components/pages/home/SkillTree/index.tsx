@@ -4,6 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import Slider from "react-slick";
 
 // Shared
+import SectionWrapper from "components/shared/SectionWrapper";
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
 
@@ -11,10 +12,8 @@ import FadeIn from "components/shared/Animations/FadeIn";
 import Node from "./Node";
 import { skills } from "./skills";
 import {
-  SectionWrapper,
-
-  SkillTreeWrapper,
-} from "./components";
+  SkillTreeNodesWrapper,
+} from "./styles";
 
 // Interfaces
 import { INodeProps } from "./interfaces";
@@ -56,7 +55,7 @@ export default function SkillTree() {
         </FadeIn>
 
         <FadeIn>
-          <SkillTreeWrapper>
+          <SkillTreeNodesWrapper>
             {isTablet
               ? <Slider {...settings}>
                 {skills.map((skill: INodeProps, index: number) => (
@@ -66,7 +65,7 @@ export default function SkillTree() {
               : skills.map((skill: INodeProps, index: number) => (
                 <Node key={index} t={t} {...skill} />
               ))}
-          </SkillTreeWrapper>
+          </SkillTreeNodesWrapper>
         </FadeIn>
       </div>
     </SectionWrapper>

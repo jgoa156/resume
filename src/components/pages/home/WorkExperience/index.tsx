@@ -5,12 +5,12 @@ import { useTranslation, Trans } from "react-i18next";
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
 import {
-  SectionWrapper,
+  WorkExperienceWrapper,
   ItemWrapper,
   Item,
   ItemTitle,
   ItemDescription
-} from "./components";
+} from "./styles";
 
 export default function WorkExperience() {
   /* Add languages/frameworks tags, similar to Projects */
@@ -60,7 +60,7 @@ export default function WorkExperience() {
   }
 
   return (
-    <SectionWrapper id="work-experience">
+    <WorkExperienceWrapper id="work-experience">
       <div>
         <FadeIn>
           <Title>{t("title")}</Title>
@@ -74,6 +74,6 @@ export default function WorkExperience() {
           })}
         </ItemWrapper>
       </div>
-    </SectionWrapper>
+    </WorkExperienceWrapper>
   );
 }

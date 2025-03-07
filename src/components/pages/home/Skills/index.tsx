@@ -13,7 +13,7 @@ import {
   ButtonsWrapper,
   ButtonLeft,
   ButtonRight
-} from "./components";
+} from "./styles";
 
 export default function Skills() {
   const { t, ready } = useTranslation(["main"], { keyPrefix: "skills" });

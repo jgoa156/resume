@@ -1,6 +1,6 @@
 import Title from "components/shared/Title";
 import { ITranslatedCVComponent } from "../../interfaces";
-import { ListWrapper } from "../../../../../../../shared/Experience/components";
+import { ListWrapper } from "../../../../../../../shared/Experience/styles";
 import Experience, { IExperience } from "../../../../../../../shared/Experience";
 
 export default function Education({ t }: ITranslatedCVComponent) {

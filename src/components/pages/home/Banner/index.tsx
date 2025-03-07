@@ -19,7 +19,7 @@ import {
   DownloadDropdown,
   DownloadDropdownMenu,
   DownloadDropdownItem
-} from "./components";
+} from "./styles";
 import CopyToClipboard from "components/shared/CopyToClipboard";
 import GeneratePDF from "./PDF";
 

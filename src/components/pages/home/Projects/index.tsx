@@ -11,7 +11,7 @@ import {
   Tag,
   DisclaimerWrapper,
   Disclaimer
-} from "./components";
+} from "./styles";
 
 export default function Projects() {
   const { t, ready } = useTranslation(["main"], { keyPrefix: "projects" });
