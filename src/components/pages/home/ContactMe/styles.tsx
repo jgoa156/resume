@@ -1,5 +1,5 @@
-import { SectionWrapper } from "components/shared/Footer/styles";
 import styled from "styled-components";
+import SectionWrapper from "components/shared/SectionWrapper";
 
 export const ContactMeWrapper = styled(SectionWrapper)`
 	& > div {

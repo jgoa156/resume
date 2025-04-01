@@ -1,5 +1,5 @@
 import { IconNext, IconWebDesign } from "components/shared/Icons";
-import { INodeProps } from "./interfaces";
+import { INodeProps } from "../interfaces";
 
 export const skills: INodeProps[] = [
   {

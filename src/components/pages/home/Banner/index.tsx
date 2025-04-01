@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
+import useKonamiCode from "hooks/useKonamiCode";
 
-import { useTranslation } from "react-i18next";
+// Shared
+import CopyToClipboard from "components/shared/CopyToClipboard";
 
+// Custom
+import GeneratePDF from "./PDF";
 import {
-  SectionWrapper,
-
+  BannerWrapper,
   BackgroundWrapper,
   Background,
 
@@ -20,33 +23,13 @@ import {
   DownloadDropdownMenu,
   DownloadDropdownItem
 } from "./styles";
-import CopyToClipboard from "components/shared/CopyToClipboard";
-import GeneratePDF from "./PDF";
 
-export default function Banner() {
-  const { t, ready } = useTranslation(["main"], { keyPrefix: "banner" });
+// Interfaces
+import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
 
+export default function Banner({ t, ready }: IDefaultComponentProps) {
   // Konami code - TODO: ADD RGB EFFECT 
-  const [konami, setKonami] = useState<boolean>(false);
-  let key = 0;
-  const code = [38, 38, 40, 40, 37, 39, 37, 39, 65, 66];
-
-  function handleKonami(e) {
-    if (e.keyCode == code[key]) {
-      key++;
-
-      if (key == code.length) {
-        setKonami(true);
-        document.removeEventListener("keydown", handleKonami);
-      }
-    } else {
-      key = 0;
-    }
-  }
-
-  useEffect(() => {
-    document.addEventListener("keydown", handleKonami);
-  }, []);
+  const konami = useKonamiCode();
 
   // Parallax effect
   const [parallaxY, setParallaxY] = useState("50%");
@@ -68,7 +51,7 @@ export default function Banner() {
   const [role, setRole] = useState("");
   const [charIndex, setCharIndex] = useState(0);
   const [roleIndex, setRoleIndex] = useState(0);
-  const roles = Array.from(t("roles", { returnObjects: true })) as any[];
+  const roles = Array.from(t("banner.roles", { returnObjects: true }) as any[]);
 
   useEffect(() => {
     // Going to next word
@@ -108,19 +91,18 @@ export default function Banner() {
     { icon: "fab fa-linkedin", href: "https://linkedin.com/in/jgoa156" }
   ];
 
-  if (!ready) return null;
   return (
-    <SectionWrapper id="banner">
-      <BackgroundWrapper>
+    <BannerWrapper id="banner">
+      <BackgroundWrapper className="no-default-styling">
         <Background parallaxY={parallaxY} src={`${process.env.img}/components/Banner/${konami ? "bbbggg" : "bg"}.png`} />
       </BackgroundWrapper>
 
-      <div>
+      <div className="no-default-styling">
         <Intro>
           <h1>
-            {t("title")}
+            {t("banner.title")}
             <br />
-            {t("subtitle")}&nbsp;<AnimatedTitle>{role}</AnimatedTitle>
+            {t("banner.subtitle")}&nbsp;<AnimatedTitle>{role}</AnimatedTitle>
           </h1>
 
           <Links>
@@ -139,7 +121,7 @@ export default function Banner() {
 
           <Dropdown align="end">
             <DownloadDropdown variant="secondary">
-              <i className={"fas fa-download"} /> {t("download")}
+              <i className={"fas fa-download"} /> {t("banner.download")}
             </DownloadDropdown>
 
             <DownloadDropdownMenu renderOnMount={true}>
@@ -147,12 +129,12 @@ export default function Banner() {
               <DownloadDropdownItem href={"/files/Guilherme Almeida - CV (PT).pdf"} download={"Guilherme Almeida - CV (PT)"}>Português</DownloadDropdownItem>
             </DownloadDropdownMenu>
 
-            <CopyToClipboard text={t("resume.text")} />
+            <CopyToClipboard text={t("banner.resume.text")} />
           </Dropdown>
 
           {/*<GeneratePDF />*/}
         </Intro>
       </div>
-    </SectionWrapper>
+    </BannerWrapper>
   );
 }

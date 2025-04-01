@@ -1,4 +1,13 @@
+import SectionWrapper from 'components/shared/SectionWrapper';
 import styled from 'styled-components';
+
+export const SkillTreeWrapper = styled(SectionWrapper)`
+  & > div {
+    @media (max-width: 1024px) {
+      padding: 120px 0 0 !important;
+    }
+	}
+`;
 
 export const SkillTreeNodesWrapper = styled.div`
   justify-self: center;
@@ -27,6 +36,9 @@ export const SkillTreeNodesWrapper = styled.div`
   }
 `;
 
-export const CarouselDots = styled.div`
-  
+export const CarouselDot = styled.div`
+  background-color: var(--color-2);
+  width: 20px;
+  height: 4px;
+  content: "";
 `;

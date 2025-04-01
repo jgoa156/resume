@@ -114,7 +114,7 @@ export const GoToTop = styled.a`
 	right: 15px;
 	height: 50px;
 	width: 50px;
-	display: flex;
+	display: flex !important;
 	justify-content: center;
 	align-items: center;
 	transform: translateY(calc(100% + 25px));

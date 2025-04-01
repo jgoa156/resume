@@ -1,26 +1,25 @@
 import { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import Slider from "react-slick";
 
 // Shared
-import SectionWrapper from "components/shared/SectionWrapper";
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
 
 // Custom
 import Node from "./Node";
-import { skills } from "./skills";
+import { skills } from "./Skills";
 import {
+  SkillTreeWrapper,
   SkillTreeNodesWrapper,
+  CarouselDot,
 } from "./styles";
 
 // Interfaces
 import { INodeProps } from "./interfaces";
+import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
 
-export default function SkillTree() {
-  const { t, ready } = useTranslation(["main"], { keyPrefix: "skillTree" });
-
+export default function SkillTree({ t }: IDefaultComponentProps) {
   const isMobile = useMediaQuery({
     query: "(max-width: 768px)"
   });
@@ -30,6 +29,7 @@ export default function SkillTree() {
 
   // Carousel settings
   const [settings, setSettings] = useState<any>({
+    customPaging: (i: number) => <a><CarouselDot /></a>,
     dots: true,
     infinite: false,
     speed: 500,
@@ -39,19 +39,17 @@ export default function SkillTree() {
   });
 
   useEffect(() => {
-    console.log(isTablet, isMobile, settings);
     setSettings((prev) => ({
       ...prev,
       slidesToShow: isMobile ? 1 : isTablet ? 2 : 3
     }));
   }, [isTablet, isMobile]);
 
-  if (!ready) return null;
   return (
-    <SectionWrapper id="skills">
+    <SkillTreeWrapper id="skills">
       <div>
         <FadeIn>
-          <Title>{t("title")}</Title>
+          <Title>{t("skillTree.title")}</Title>
         </FadeIn>
 
         <FadeIn>
@@ -68,6 +66,6 @@ export default function SkillTree() {
           </SkillTreeNodesWrapper>
         </FadeIn>
       </div>
-    </SectionWrapper>
+    </SkillTreeWrapper>
   );
 }

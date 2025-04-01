@@ -12,13 +12,11 @@ const SectionWrapper = styled.section`
 
 	& > div {
 		width: 100%;
-		max-width: 1280px;
-		
-		padding: 120px 0 0;
 
-		@media (max-width: 768px) {
-			padding: 120px 0 0;
-		}
+    &:not(.no-default-styling) {
+      max-width: 1280px;
+		  padding: 120px 20px 0;
+    }
 	}
 `;
 

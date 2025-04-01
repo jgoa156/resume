@@ -1,5 +1,5 @@
-import SectionWrapper from 'components/shared/SectionWrapper';
 import styled from 'styled-components';
+import SectionWrapper from 'components/shared/SectionWrapper';
 
 export const ProjectsWrapper = styled(SectionWrapper)`
 	& > div {

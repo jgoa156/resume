@@ -1,9 +1,10 @@
-import { useTranslation } from "react-i18next";
-
+// Shared
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
+
+// Custom
 import {
-  SectionWrapper,
+  ContactMeWrapper,
   Card,
 
   Or,
@@ -12,9 +13,10 @@ import {
   Link
 } from "./styles";
 
-export default function ContactMe() {
-  const { t, ready } = useTranslation(["main"], { keyPrefix: "contact" });
+// Interfaces
+import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
 
+export default function ContactMe({ t }: IDefaultComponentProps) {
   // Links
   const links = [
     { icon: "fas fa-envelope", href: "mailto:jgoa156@gmail.com", content: "jgoa156@gmail.com" },
@@ -22,16 +24,15 @@ export default function ContactMe() {
     { icon: "fab fa-linkedin", href: "https://linkedin.com/in/jgoa156", content: "jgoa156" }
   ];
 
-  if (!ready) return null;
   return (
-    <SectionWrapper id="contact-me">
+    <ContactMeWrapper id="contact-me">
       <div>
         <FadeIn style={{ width: "100%" }}>
           <Card>
-            <Title>{t("title")}</Title>
+            <Title>{t("contact.title")}</Title>
             <QR src={`${process.env.img}/components/ContactMe/qr.png`}></QR>
 
-            <Or><span>{t("or")}</span></Or>
+            <Or><span>{t("contact.or")}</span></Or>
 
             <div>
               {links.map((link, index) => {
@@ -53,6 +54,6 @@ export default function ContactMe() {
           </Card>
         </FadeIn>
       </div>
-    </SectionWrapper>
+    </ContactMeWrapper>
   );
 }

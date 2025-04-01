@@ -1,11 +1,11 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { useState, useEffect, useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
+import SectionWrapper from "components/shared/SectionWrapper";
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
 import {
-  SectionWrapper,
   CardsWrapper,
   SkillCard,
   Skill,
@@ -28,7 +28,7 @@ export default function Skills() {
   const [displayScrollRight, setDisplayScrollRight] = useState(true);
 
   // Skills object
-  const skillsNsObject = Array.from(t("skills", { returnObjects: true })) as any[];
+  const skillsNsObject = Array.from(t("skills", { returnObjects: true }) as any[]);
 
   // Slider
   const skillsRef = useRef<any>(null);

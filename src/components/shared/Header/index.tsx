@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import Scrollspy from "react-scrollspy";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { Dropdown } from "react-bootstrap";
 
 import {
@@ -31,7 +31,7 @@ export default function Header() {
   const [showGoToTop, setShowGoToTop] = useState(false);
   const [showSidenav, setShowSidenav] = useState(false);
 
-  const links = Array.from(t("links", { returnObjects: true })) as any[];
+  const links = Array.from(t("links", { returnObjects: true }) as any[]);
 
   // Go to top
   const bannerHeight = isTablet ? 400 : 500;

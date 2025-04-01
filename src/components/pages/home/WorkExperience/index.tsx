@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Collapse from "react-bootstrap/Collapse";
-import { useTranslation, Trans } from "react-i18next";
+import { Trans } from "next-i18next";
 
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
@@ -12,11 +12,11 @@ import {
   ItemDescription
 } from "./styles";
 
-export default function WorkExperience() {
-  /* Add languages/frameworks tags, similar to Projects */
-  const { t, ready } = useTranslation(["main"], { keyPrefix: "work" });
+// Interfaces
+import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
 
-  const jobsNsObject = Array.from(t("jobs", { returnObjects: true })) as any[];
+export default function WorkExperience({ t }: IDefaultComponentProps) {
+  const jobsNsObject = Array.from(t("work.jobs", { returnObjects: true }) as any[]);
 
   function JobItem({ job, initialCollapseState = false }) {
     const [open, setOpen] = useState(initialCollapseState);
@@ -63,7 +63,7 @@ export default function WorkExperience() {
     <WorkExperienceWrapper id="work-experience">
       <div>
         <FadeIn>
-          <Title>{t("title")}</Title>
+          <Title>{t("work.title")}</Title>
         </FadeIn>
 
         <ItemWrapper>

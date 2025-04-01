@@ -4,6 +4,10 @@ import SectionWrapper from 'components/shared/SectionWrapper';
 export const WorkExperienceWrapper = styled(SectionWrapper)`
 	& > div {
 		padding: 120px 50px 0;
+
+    @media (max-width: 1024px) {
+      padding: 120px 0 0 !important;
+    }
 	}
 `;
 

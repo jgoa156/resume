@@ -1,29 +1,29 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 function useKonamiCode() {
   const [konami, setKonami] = useState<boolean>(false);
-  let key = 0;
   const code = [38, 38, 40, 40, 37, 39, 37, 39, 65, 66];
+  const keyRef = useRef(0);
 
-  function handleKonami(e: KeyboardEvent) {
-    if (e.keyCode === code[key]) {
-      key++;
+  const handleKonami = useCallback((e: KeyboardEvent) => {
+    if (e.keyCode === code[keyRef.current]) {
+      keyRef.current++;
 
-      if (key === code.length) {
+      if (keyRef.current === code.length) {
         setKonami(true);
         document.removeEventListener("keydown", handleKonami);
       }
     } else {
-      key = 0;
+      keyRef.current = 0;
     }
-  }
+  }, [code]);
 
   useEffect(() => {
     document.addEventListener("keydown", handleKonami);
     return () => {
       document.removeEventListener("keydown", handleKonami);
     };
-  }, []);
+  }, [handleKonami]);
 
   return konami;
 }

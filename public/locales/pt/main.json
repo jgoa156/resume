@@ -129,12 +129,9 @@
 				"end": "Atualmente",
 				"description": [
 					{
-						"links": [
-							"https://www.unilever.com/",
-							"https://www.bbcstudios.com/"
-						],
+						"links": ["https://www.sap.com/"],
 						"content": [
-							"Engenheiro Full Stack Sênior trabalhando para uma das maiores empresas de consultoria em TI do mundo, trabalhando lado a lado de um time multicultural para entregar soluções digitais de ponta para nossos clientes. Nossos principais clientes incluem a <0>Unilever</0> e <1>Estúdios BBC</1>."
+							"Trabalhando para a <0>SAP</0> mantendo código legado escrito tanto em JavaScript quanto ASP. Nosso trabalho consiste majoritariamente em correções de débito técnico como violações de CSP, problemas de acessibilidade, problemas de performance e atualizando versões de dependências, o que inclui escrever novos testes unitários."
 						]
 					}
 				]
@@ -547,4 +544,3 @@
 		"or": "ou"
 	}
 }
-

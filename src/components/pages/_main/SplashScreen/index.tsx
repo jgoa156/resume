@@ -1,9 +1,10 @@
-import { SectionWrapper } from "components/shared/Footer/styles";
+import AnimatedLogo from "./AnimatedLogo"
+import { SplashScreenWrapper } from "./styles"
 
 export default function SplashScreen() {
   return (
-    <SectionWrapper>
-      aaaaa
-    </SectionWrapper>
+    <SplashScreenWrapper>
+      <AnimatedLogo />
+    </SplashScreenWrapper>
   )
 }

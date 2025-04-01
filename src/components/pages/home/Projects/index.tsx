@@ -1,9 +1,8 @@
-import { useTranslation } from "react-i18next";
-
+// Shared
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
 import {
-  SectionWrapper,
+  ProjectsWrapper,
   ItemWrapper,
   Link,
   Item,
@@ -13,11 +12,12 @@ import {
   Disclaimer
 } from "./styles";
 
-export default function Projects() {
-  const { t, ready } = useTranslation(["main"], { keyPrefix: "projects" });
+// Interfaces
+import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
 
+export default function Projects({ t }: IDefaultComponentProps) {
   const imgBaseUrl = `${process.env.img}/components/Projects/`;
-  const projectsNsObject = Array.from(t("projects", { returnObjects: true })) as any[];
+  const projectsNsObject = Array.from(t("projects.projects", { returnObjects: true }) as any[]);
 
   function ProjectItem({ project }) {
     return (
@@ -45,12 +45,11 @@ export default function Projects() {
     );
   }
 
-  if (!ready) return null;
   return (
-    <SectionWrapper id="projects">
+    <ProjectsWrapper id="projects">
       <div>
         <FadeIn>
-          <Title>{t("title")}</Title>
+          <Title>{t("projects.title")}</Title>
         </FadeIn>
 
         <ItemWrapper>
@@ -63,10 +62,10 @@ export default function Projects() {
 
         <DisclaimerWrapper>
           <FadeIn>
-            <Disclaimer><span>{t("disclaimer.title")}</span>{t("disclaimer.content")}</Disclaimer>
+            <Disclaimer><span>{t("projects.disclaimer.title")}</span>{t("projects.disclaimer.content")}</Disclaimer>
           </FadeIn>
         </DisclaimerWrapper>
       </div>
-    </SectionWrapper>
+    </ProjectsWrapper>
   );
 }

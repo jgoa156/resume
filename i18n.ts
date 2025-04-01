@@ -10,7 +10,10 @@ i18n
 	.init({
 		debug: true,
 		supportedLngs: ["en", "pt"],
+		lng: "en",
 		fallbackLng: "en",
+		ns: ["main", "cv"],
+		defaultNS: "main",
 		detection: {
 			order: ["cookie", "localStorage", "path", "subdomain"],
 			caches: ["cookie"],

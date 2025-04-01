@@ -1,8 +1,11 @@
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation, Trans } from "next-i18next";
 
+// Shared
 import SectionWrapper from "components/shared/SectionWrapper";
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
+
+// Custom
 import {
   InfoWrapper,
   TextWrapper,
@@ -16,9 +19,10 @@ import {
   ItemTitle
 } from "./styles";
 
-export default function AboutMe() {
-  const { t, ready } = useTranslation(["main"], { keyPrefix: "about" });
+// Interfaces
+import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
 
+export default function AboutMe({ t }: IDefaultComponentProps) {
   function calculateAge(day) {
     let date = new Date(Date.now() - day);
     return Math.abs(date.getUTCFullYear() - 1970);
@@ -26,22 +30,21 @@ export default function AboutMe() {
   const workExp = calculateAge(new Date(2018, 6, 1));
 
   // Locales
-  const generalInfoNsObject = Array.from(t("general.content", { returnObjects: true })) as any[];
-  const personalityInfoNsObject = Array.from(t("personality.content", { returnObjects: true })) as any[];
-  const certificatesNsObject = Array.from(t("education.certificates", { returnObjects: true })) as any[];
+  const generalInfoNsObject = Array.from(t("about.general.content", { returnObjects: true }) as any[]);
+  const personalityInfoNsObject = Array.from(t("about.personality.content", { returnObjects: true }) as any[]);
+  const certificatesNsObject = Array.from(t("about.education.certificates", { returnObjects: true }) as any[]);
 
-  if (!ready) return null;
   return (
     <SectionWrapper id="about-me">
       <div>
         <FadeIn>
-          <Title>{t("title")}</Title>
+          <Title>{t("about.title")}</Title>
         </FadeIn>
 
         <InfoWrapper>
           <TextWrapper left={true}>
             <FadeIn>
-              <Subtitle>{t("general.title")}</Subtitle>
+              <Subtitle>{t("about.general.title")}</Subtitle>
 
               {generalInfoNsObject.map((info, index) =>
                 <Text key={index}>{info}</Text>
@@ -53,12 +56,12 @@ export default function AboutMe() {
             <FadeIn>
               <NumberCard>
                 <h2>8</h2>
-                <p>{t("cards.academic")}</p>
+                <p>{t("about.cards.academic")}</p>
               </NumberCard>
 
               <NumberCard>
                 <h2>{workExp}+</h2>
-                <p>{t("cards.professional")}</p>
+                <p>{t("about.cards.professional")}</p>
               </NumberCard>
             </FadeIn>
           </Cards>
@@ -67,7 +70,7 @@ export default function AboutMe() {
         <InfoWrapper>
           <TextWrapper left={true}>
             <FadeIn>
-              <Subtitle>{t("personality.title")}</Subtitle>
+              <Subtitle>{t("about.personality.title")}</Subtitle>
 
               {personalityInfoNsObject.map((info, index) =>
                 info.links
@@ -87,7 +90,7 @@ export default function AboutMe() {
 
           <TextWrapper>
             <FadeIn>
-              <Subtitle>{t("education.title")}</Subtitle>
+              <Subtitle>{t("about.education.title")}</Subtitle>
 
               <ItemWrapper>
                 {certificatesNsObject.map((certificate, index) => {

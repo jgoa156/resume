@@ -1,7 +1,10 @@
+const { i18n } = require("./next-i18next.config");
+
 const basePath = "";
 
 module.exports = {
-	/*async redirects() {
+  i18n,
+  /*async redirects() {
 		return [
 			{
 				source: '/',
@@ -10,9 +13,9 @@ module.exports = {
 			}
 		]
 	},*/
-	reactStrictMode: true,
-	env: {
-		basePath: basePath,
-		img: `${basePath}/img`
-	}
+  reactStrictMode: true,
+  env: {
+    basePath: basePath,
+    img: `${basePath}/img`,
+  },
 };

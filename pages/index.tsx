@@ -1,16 +1,29 @@
 import React from "react";
 import { NextSeo } from "next-seo";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
+// Custom
 import Banner from "components/pages/Home/Banner";
 import Tools from "components/pages/Home/Tools";
 import AboutMe from "components/pages/Home/AboutMe";
 import WorkExperience from "components/pages/Home/WorkExperience";
 import Projects from "components/pages/Home/Projects";
-import Skills from "components/pages/Home/Skills";
 import SkillTree from "components/pages/Home/SkillTree";
 import ContactMe from "components/pages/Home/ContactMe";
+import SplashScreen from "components/pages/_main/SplashScreen";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["main", 'cv']))
+    },
+  };
+}
 
 export default function Home() {
+  const { t, ready } = useTranslation(["main"]);
+
   const SEO = {
     title: "Guilherme Almeida, Developer",
     description: "Hi, I'm Guilherme Almeida, a 24-year-old Full Stack web and mobile developer and UI/UX designer.",
@@ -118,13 +131,19 @@ export default function Home() {
         }}
       />
 
-      <Banner />
-      <Tools />
-      <AboutMe />
-      <WorkExperience />
-      <Projects />
-      <SkillTree />
-      <ContactMe />
+      {ready ? (
+        <>
+          <Banner t={t} ready={ready} />
+          <Tools t={t} />
+          <AboutMe t={t} />
+          <WorkExperience t={t} />
+          <Projects t={t} />
+          <SkillTree t={t} />
+          <ContactMe t={t} />
+        </>
+      ) : (
+        <SplashScreen />
+      )}
     </>
   );
 }

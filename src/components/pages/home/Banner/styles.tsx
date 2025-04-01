@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Dropdown as BootstrapDropdown } from "react-bootstrap";
-import { SectionWrapper } from "components/shared/Footer/styles";
+import SectionWrapper from "components/shared/SectionWrapper";
 
 export const BannerWrapper = styled(SectionWrapper)`
 	height: 500px;
