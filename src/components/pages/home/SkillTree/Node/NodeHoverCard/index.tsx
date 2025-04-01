@@ -9,7 +9,7 @@ import {
 import { INodeProps } from "../../interfaces";
 
 export default function NodeHoverCard({ t, title, years, proficiency, details, icon, imgSrc, iconNode }: INodeProps) {
-  const yearsNsLabels = t("card.years", { returnObjects: true });
+  const yearsNsLabels = t("skillTree.card.years", { returnObjects: true });
 
   function YearsOfExperience({ years }: { years: number }) {
     const message =

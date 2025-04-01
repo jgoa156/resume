@@ -21,7 +21,9 @@ import {
   Dropdown,
   DownloadDropdown,
   DownloadDropdownMenu,
-  DownloadDropdownItem
+  DownloadDropdownItem,
+  Separator,
+  GoToBottom
 } from "./styles";
 
 // Interfaces
@@ -92,49 +94,57 @@ export default function Banner({ t, ready }: IDefaultComponentProps) {
   ];
 
   return (
-    <BannerWrapper id="banner">
-      <BackgroundWrapper className="no-default-styling">
-        <Background parallaxY={parallaxY} src={`${process.env.img}/components/Banner/${konami ? "bbbggg" : "bg"}.png`} />
-      </BackgroundWrapper>
+    <>
+      <BannerWrapper id="banner">
+        <BackgroundWrapper className="no-default-styling">
+          <Background parallaxY={parallaxY} src={`${process.env.img}/components/Banner/${konami ? "bbbggg" : "bg"}.png`} />
+        </BackgroundWrapper>
 
-      <div className="no-default-styling">
-        <Intro>
-          <h1>
-            {t("banner.title")}
-            <br />
-            {t("banner.subtitle")}&nbsp;<AnimatedTitle>{role}</AnimatedTitle>
-          </h1>
+        <div className="no-default-styling">
+          <Intro>
+            <h1>
+              {t("banner.title")}
+              <br />
+              {t("banner.subtitle")}&nbsp;<AnimatedTitle>{role}</AnimatedTitle>
+            </h1>
 
-          <Links>
-            {links.map((link, index) => {
-              return (
-                <Link
-                  key={index}
-                  target="_blank"
-                  rel="noreferrer"
-                  href={link.href}>
-                  <i className={link.icon} />
-                </Link>
-              );
-            })}
-          </Links>
+            <Links>
+              {links.map((link, index) => {
+                return (
+                  <Link
+                    key={index}
+                    target="_blank"
+                    rel="noreferrer"
+                    href={link.href}>
+                    <i className={link.icon} />
+                  </Link>
+                );
+              })}
+            </Links>
 
-          <Dropdown align="end">
-            <DownloadDropdown variant="secondary">
-              <i className={"fas fa-download"} /> {t("banner.download")}
-            </DownloadDropdown>
+            <Dropdown align="end">
+              <DownloadDropdown variant="secondary">
+                <i className={"fas fa-download"} /> {t("banner.download")}
+              </DownloadDropdown>
 
-            <DownloadDropdownMenu renderOnMount={true}>
-              <DownloadDropdownItem href={"/files/Guilherme Almeida - CV (EN).pdf"} download={"Guilherme Almeida - CV (EN)"}>English</DownloadDropdownItem>
-              <DownloadDropdownItem href={"/files/Guilherme Almeida - CV (PT).pdf"} download={"Guilherme Almeida - CV (PT)"}>Português</DownloadDropdownItem>
-            </DownloadDropdownMenu>
+              <DownloadDropdownMenu renderOnMount={true}>
+                <DownloadDropdownItem href={"/files/Guilherme Almeida - CV (EN).pdf"} download={"Guilherme Almeida - CV (EN)"}>English</DownloadDropdownItem>
+                <DownloadDropdownItem href={"/files/Guilherme Almeida - CV (PT).pdf"} download={"Guilherme Almeida - CV (PT)"}>Português</DownloadDropdownItem>
+              </DownloadDropdownMenu>
 
-            <CopyToClipboard text={t("banner.resume.text")} />
-          </Dropdown>
+              <CopyToClipboard text={t("banner.resume.text")} />
+            </Dropdown>
 
-          {/*<GeneratePDF />*/}
-        </Intro>
-      </div>
-    </BannerWrapper>
+            {/*<GeneratePDF />*/}
+
+            <GoToBottom href={"#main-tools"} display={true} className={"fas fa-arrow-down"} />
+          </Intro>
+        </div>
+      </BannerWrapper>
+
+      {Array(10).fill(0).map((_, index) => (
+        <Separator key={index} />
+      ))}
+    </>
   );
 }

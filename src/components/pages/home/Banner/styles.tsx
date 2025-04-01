@@ -1,12 +1,25 @@
 import styled from "styled-components";
 import { Dropdown as BootstrapDropdown } from "react-bootstrap";
 import SectionWrapper from "components/shared/SectionWrapper";
+import { GoToTop } from "components/shared/Header/styles";
+
+const height = {
+  "desktop": "650px",
+  "tablet": "550px",
+  "mobile": "650px"
+};
+
+const offset = {
+  "desktop": "300px",
+  "tablet": "250px",
+  "mobile": "200px"
+}
 
 export const BannerWrapper = styled(SectionWrapper)`
-	height: 500px;
+	height: ${height.desktop};
 	flex-direction: column;
 
-  border-bottom: 1px solid var(--color-2);
+  // border-bottom: 1px solid var(--color-2);
 
 	z-index: 5;
 
@@ -22,10 +35,10 @@ export const BannerWrapper = styled(SectionWrapper)`
 	}
 
 	@media (max-width: 1024px) {
-		height: 400px;
+		height: ${height.tablet};
 	}
 	@media (max-width: 575px) {
-		height: 500px;
+		height: ${height.mobile};
 	}
 `;
 
@@ -88,8 +101,13 @@ export const Background = styled.img`
 export const Intro = styled.div`
 	width: 100%;
 	position: relative;
-	top: calc(500px - (10rem + 200px));
-	left: 100px;
+	top: calc(${height.desktop} - (10rem + ${offset.desktop}));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 100px;
 	
 	h1 {
 		font-size: 5rem;
@@ -97,16 +115,15 @@ export const Intro = styled.div`
 	}
 
 	@media (max-width: 1024px) {
-		left: 50px;
-		top: calc(400px - (10rem + 150px));
+		padding: 0 50px;
+		top: calc(${height.tablet} - (10rem + ${offset.tablet}));
 		
 		h1 {
 			font-size: 4rem;
 		}
 	}
 	@media (max-width: 575px) {
-		left: 50px;
-		top: calc(500px - (10rem + 100px));
+		top: calc(${height.mobile} - (10rem + ${offset.mobile}));
 		
 		h1 {
 			font-size: 3rem;
@@ -211,4 +228,20 @@ export const Link = styled.a`
 
 		font-size: 1.3rem;
 	}
+`;
+
+export const Separator = styled.div`
+  width: 100%;
+  height: 1px;
+  margin-bottom: 3px;
+
+  background-color: var(--color-2);
+  content: "";
+`;
+
+export const GoToBottom = styled(GoToTop)`
+  position: relative;
+  bottom: -50px;
+  align-self: center;
+  transform: rotate(180deg);
 `;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const ToolsWrapper = styled(SectionWrapper)`
 	& > div {
+    overflow: hidden;
 		padding: 50px 50px 100px;
 
 		@media (max-width: 1024px) {
@@ -16,7 +17,8 @@ export const ToolsWrapper = styled(SectionWrapper)`
 
 export const ItemWrapper = styled.div`
 	display: grid;
-	grid-template-columns: repeat(6, 110px);
+	grid-template-columns: repeat(5, 110px);
+  grid-gap: 50px 0;
 	justify-content: center;
 	align-items: center;
 
@@ -51,27 +53,5 @@ export const Item = styled.div`
 	}
 	div svg:hover {
 		color: ${props => props.color};
-	}
-
-	div + label {
-		font-size: 0.825rem;
-		width: max-content;
-		position: absolute;
-		top: calc(100% + 10px);
-		z-index: 1000;
-		opacity: 0;
-		padding: 10px 15px;
-
-		background-color: var(--color-3);
-		border-radius: 5px;
-
-		transition: 0.3s;
-
-		@media (max-width: 575px) {
-			top: calc(50% + 15px);
-		}
-	}
-	div:hover + label {
-		opacity: 1;
 	}
 `;

@@ -1,3 +1,5 @@
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
+
 // Custom
 import NodeHoverCard from "./NodeHoverCard";
 import {
@@ -11,7 +13,6 @@ import {
 
 // Interfaces
 import { INodeProps } from "../interfaces";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 export default function Node({ t, type, title, years, proficiency, details, icon, imgSrc, iconNode, childNodes }: INodeProps) {
   const conduitDirections = ["topLeft", "topRight", "bottomLeft", "bottomRight"];

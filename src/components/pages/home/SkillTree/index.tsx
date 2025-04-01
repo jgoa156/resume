@@ -12,6 +12,7 @@ import { skills } from "./Skills";
 import {
   SkillTreeWrapper,
   SkillTreeNodesWrapper,
+  CarouselDots,
   CarouselDot,
 } from "./styles";
 
@@ -29,6 +30,7 @@ export default function SkillTree({ t }: IDefaultComponentProps) {
 
   // Carousel settings
   const [settings, setSettings] = useState<any>({
+    appendDots: (dots) => <CarouselDots>{dots}</CarouselDots>,
     customPaging: (i: number) => <a><CarouselDot /></a>,
     dots: true,
     infinite: false,

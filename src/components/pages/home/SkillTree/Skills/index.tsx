@@ -1,4 +1,4 @@
-import { IconNext, IconWebDesign } from "components/shared/Icons";
+import { IconExpress, IconJest, IconNest, IconNext, IconPHP, IconWebDesign } from "components/shared/Icons";
 import { INodeProps } from "../interfaces";
 
 export const skills: INodeProps[] = [
@@ -96,6 +96,7 @@ export const skills: INodeProps[] = [
           "",
         childNodes: [
           {
+            iconNode: <IconJest />,
             title: "Jest",
             type: "secondary",
             years: 2,
@@ -175,6 +176,7 @@ export const skills: INodeProps[] = [
           "",
         childNodes: [
           {
+            iconNode: <IconExpress />,
             title: "Express",
             type: "secondary",
             years: 3,
@@ -191,6 +193,7 @@ export const skills: INodeProps[] = [
               "",
           },
           {
+            iconNode: <IconNest />,
             title: "Nest",
             type: "secondary",
             years: 3,
@@ -279,7 +282,7 @@ export const skills: INodeProps[] = [
         ],
       },
       {
-        icon: "fab fa-php",
+        iconNode: <IconPHP />,
         title: "PHP",
         type: "primary",
         years: 2,

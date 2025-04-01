@@ -94,7 +94,7 @@ export default function Header() {
           }
         </Group>
 
-        <GoToTop href={"#banner"} showGoToTop={showGoToTop} className={"fas fa-arrow-up"} />
+        <GoToTop href={"#banner"} display={showGoToTop} className={"fas fa-arrow-up"} />
       </nav>
 
       {isTablet

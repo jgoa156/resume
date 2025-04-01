@@ -1,4 +1,7 @@
-import { useTranslation, Trans } from "next-i18next";
+import { useState } from "react";
+import { Collapse } from "react-bootstrap";
+import { useMediaQuery } from "react-responsive";
+import { Trans } from "next-i18next";
 
 // Shared
 import SectionWrapper from "components/shared/SectionWrapper";
@@ -23,6 +26,10 @@ import {
 import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
 
 export default function AboutMe({ t }: IDefaultComponentProps) {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 575px)"
+  });
+
   function calculateAge(day) {
     let date = new Date(Date.now() - day);
     return Math.abs(date.getUTCFullYear() - 1970);
@@ -34,6 +41,10 @@ export default function AboutMe({ t }: IDefaultComponentProps) {
   const personalityInfoNsObject = Array.from(t("about.personality.content", { returnObjects: true }) as any[]);
   const certificatesNsObject = Array.from(t("about.education.certificates", { returnObjects: true }) as any[]);
 
+  // Collapses
+  const [openInfo, setOpenInfo] = useState<boolean>(true);
+  const [openPersonality, setOpenPersonality] = useState<boolean>(!isMobile);
+
   return (
     <SectionWrapper id="about-me">
       <div>
@@ -44,11 +55,18 @@ export default function AboutMe({ t }: IDefaultComponentProps) {
         <InfoWrapper>
           <TextWrapper left={true}>
             <FadeIn>
-              <Subtitle>{t("about.general.title")}</Subtitle>
+              <Subtitle onClick={() => setOpenInfo(!openInfo)} aria-expanded={openInfo}>
+                {t("about.general.title")}
+                <i className={`fas fa-chevron-${openInfo ? "up" : "down"}`} />
+              </Subtitle>
 
-              {generalInfoNsObject.map((info, index) =>
-                <Text key={index}>{info}</Text>
-              )}
+              <Collapse in={openInfo}>
+                <div>
+                  {generalInfoNsObject.map((info, index) =>
+                    <Text key={index}>{info}</Text>
+                  )}
+                </div>
+              </Collapse>
             </FadeIn>
           </TextWrapper>
 
@@ -70,21 +88,28 @@ export default function AboutMe({ t }: IDefaultComponentProps) {
         <InfoWrapper>
           <TextWrapper left={true}>
             <FadeIn>
-              <Subtitle>{t("about.personality.title")}</Subtitle>
+              <Subtitle onClick={() => setOpenPersonality(!openPersonality)} aria-expanded={openPersonality}>
+                {t("about.personality.title")}
+                <i className={`fas fa-chevron-${openPersonality ? "up" : "down"}`} />
+              </Subtitle>
 
-              {personalityInfoNsObject.map((info, index) =>
-                info.links
-                  ? <Text key={index}>
-                    <Trans
-                      t={t}
-                      defaults={info.content}
-                      components={
-                        Array.from(info.links?.map((link, index) =>
-                          <a key={index} target="_blank" rel="noreferrer" href={link} />))
-                      } />
-                  </Text>
-                  : <Text key={index}>{info.content}</Text>
-              )}
+              <Collapse in={openPersonality}>
+                <div>
+                  {personalityInfoNsObject.map((info, index) =>
+                    info.links
+                      ? <Text key={index}>
+                        <Trans
+                          t={t}
+                          defaults={info.content}
+                          components={
+                            Array.from(info.links?.map((link, index) =>
+                              <a key={index} target="_blank" rel="noreferrer" href={link} />))
+                          } />
+                      </Text>
+                      : <Text key={index}>{info.content}</Text>
+                  )}
+                </div>
+              </Collapse>
             </FadeIn>
           </TextWrapper>
 

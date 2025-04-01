@@ -8,7 +8,7 @@ interface IProficiencyBarProps {
 }
 
 export default function ProficiencyBar({ t, proficiency }: IProficiencyBarProps) {
-  const proficiencyNsLabels = t("card.proficiency", { returnObjects: true });
+  const proficiencyNsLabels = t("skillTree.card.proficiency", { returnObjects: true });
   const proficiencyDetails = proficiencyNsLabels.reduce((acc, label, index) => {
     acc[index + 1] = label;
     return acc;

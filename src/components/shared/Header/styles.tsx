@@ -128,7 +128,7 @@ export const GoToTop = styled.a`
 	text-decoration: none;
 	transition: 0.3s;
 
-	animation: ${props => props.showGoToTop ? "fade-in 0.1s linear forwards" : "fade-out 0.1s linear forwards"};
+	animation: ${({ display }) => display ? "fade-in 0.1s linear forwards" : "fade-out 0.1s linear forwards"};
 		
 	&:hover {
 		color: var(--primary-color-2);

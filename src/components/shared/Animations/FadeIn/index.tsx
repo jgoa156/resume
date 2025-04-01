@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import ReactDOM from "react-dom";
 import _uniqueId from "lodash/uniqueId";
 
 import { FadeInComponent } from "./styles";

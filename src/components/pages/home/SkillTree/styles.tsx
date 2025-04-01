@@ -10,6 +10,7 @@ export const SkillTreeWrapper = styled(SectionWrapper)`
 `;
 
 export const SkillTreeNodesWrapper = styled.div`
+  position: relative;
   justify-self: center;
   width: 85%;
   display: grid;
@@ -34,11 +35,28 @@ export const SkillTreeNodesWrapper = styled.div`
       margin-left: calc((100vw - 360px) / 2);
     }
   }
+
+  .slick-list {
+    z-index: 1;
+    margin-top: 60px;
+  }
+`;
+
+export const CarouselDots = styled.ul`
+  margin-top: 10px;
+  position: absolute;
+  top: -40px;
+  z-index: 0;
+
+  .slick-active a div {
+    background-color: var(--muted) !important;
+  }
 `;
 
 export const CarouselDot = styled.div`
   background-color: var(--color-2);
-  width: 20px;
+  width: 25px;
   height: 4px;
   content: "";
+  transition: 0.3s;
 `;

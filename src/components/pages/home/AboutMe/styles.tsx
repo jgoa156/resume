@@ -35,6 +35,18 @@ export const Subtitle = styled.h3`
 	font-family: "Parkson";
 	font-size: 2.2rem;
 	color: var(--primary-color);
+
+  i {
+    padding-left: 10px;
+    padding-top: 15px;
+		float: right;
+		font-size: 1rem;
+	}
+
+  &:hover {
+    cursor: pointer;
+    color: var(--primary-color-2);
+  }
 `;
 export const Text = styled.p`
 	a {
