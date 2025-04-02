@@ -1,11 +1,19 @@
-import React from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import PDF from "components/pages/Home/Banner/PDF";
+// Custom
+import GeneratePDF from "components/pages/Home/Banner/PDF";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["main"]))
+    },
+  };
+}
+
 
 export default function CV() {
   return (
-    <>
-      <PDF />
-    </>
+    <GeneratePDF />
   );
 }

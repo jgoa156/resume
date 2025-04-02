@@ -30,7 +30,7 @@ export default function CopyToClipboard({ text }) {
 
   if (!ready) return null;
   return (
-    <OverlayTrigger placement="bottom" overlay={<Tooltip>{`${copied ? t("resume.copied") : t("resume.copy")}`}</Tooltip>}>
+    <OverlayTrigger placement="bottom" overlay={<Tooltip>{`${copied ? t("resume.copied") : t("resume.copy")}`}</Tooltip>} children={<></>}>
       <CopyToClipboardSpan onClick={copyToClipboard}>
         {/*text*/}
         <i className="far fa-clone" />

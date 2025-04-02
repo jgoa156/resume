@@ -242,6 +242,7 @@ export const Separator = styled.div`
 export const GoToBottom = styled(GoToTop)`
   position: relative;
   bottom: -50px;
+  right: 0;
   align-self: center;
   transform: rotate(180deg);
 `;

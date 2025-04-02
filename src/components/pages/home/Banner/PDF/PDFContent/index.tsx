@@ -11,11 +11,12 @@ interface IPDFContent {
 }
 
 export default function PDFContent({ pageRef }: IPDFContent) {
+  const { t, ready } = useTranslation(["main"]);
 
   return (
     <PDFContentWrapper ref={pageRef} id="pdf-content">
-      <Summary />
-      <Content />
+      <Summary t={t} />
+      <Content t={t} />
     </PDFContentWrapper>
   );
 }

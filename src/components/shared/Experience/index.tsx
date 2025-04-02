@@ -3,24 +3,36 @@ import { ExperienceWrapper, Info } from "./styles";
 
 // Interfaces
 export interface IExperience {
+  name: string,
+  type: string,
+  institution?: string,
+  company?: string,
   icon: string,
-  institution: string,
-  role?: string,
-  degree?: string,
-  date: string,
-  description: string
+  iconProps?: any,
+  start: string,
+  end: string,
+  short: string,
+  description: any[]
 }
 
-export default function Experience({ icon, institution, role, degree, date, description }: IExperience) {
+export default function Experience({ name, type, institution, company, icon, iconProps, start, end, short }: IExperience) {
   return (
     <ExperienceWrapper>
-      <img src={`${process.env.img}/components/${role !== undefined ? "Work" : "Education"}/${icon}.png`} />
+      <img src={icon} style={{ ...iconProps }} />
       <Info>
-        <h3>{institution}<span> - {role ? role : degree}</span></h3>
-        <p>{date}</p>
-        {description && <ul>
-          <li><span>{description}</span></li>
-        </ul>}
+        <h3>
+          {company ? company : institution}
+          <label>- {name}</label>
+          <span>- {type}</span>
+        </h3>
+
+        <p>{start} - {end}</p>
+
+        {short && (
+          <ul>
+            <li><span>{short}</span></li>
+          </ul>
+        )}
       </Info>
     </ExperienceWrapper>
   )

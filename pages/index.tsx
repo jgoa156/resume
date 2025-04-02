@@ -1,4 +1,3 @@
-import React from "react";
 import { NextSeo } from "next-seo";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -16,7 +15,7 @@ import SplashScreen from "components/pages/_main/SplashScreen";
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["main", 'cv']))
+      ...(await serverSideTranslations(locale, ["main"]))
     },
   };
 }

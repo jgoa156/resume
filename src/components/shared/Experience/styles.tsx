@@ -27,9 +27,15 @@ export const Info = styled.div`
     font-weight: bold;
     color: var(--primary-color);
 
-    span {
+    label {
+      padding-left: 3px;
       font-weight: normal;
-      color: var(--text-default-color)
+      color: var(--text-default-color);
+    }
+    span {
+      padding-left: 3px;
+      font-weight: normal;
+      color: var(--muted);
     }
   }
 

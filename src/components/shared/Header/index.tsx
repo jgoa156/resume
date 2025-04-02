@@ -63,7 +63,7 @@ export default function Header() {
         </TitleWrapper>
 
         <Group>
-          <Dropdown align="end" style={{ width: "fit-content" }}>
+          <Dropdown align="end" style={{ width: "fit-content" }} children={<></>}>
             <LanguageDropdown variant="secondary">
               <i className={"fas fa-globe"} /> {i18n.language.toUpperCase()}
             </LanguageDropdown>

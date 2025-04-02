@@ -1,5 +1,5 @@
 import "../i18n";
-import React, { Suspense } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import { appWithTranslation } from "next-i18next";
 import Head from "next/head";
@@ -25,7 +25,7 @@ function App(props) {
 
   return (
     <section id="app">
-      <Head>
+      <Head children={<></>}>
         {/*Meta*/}
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

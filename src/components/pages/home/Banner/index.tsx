@@ -6,7 +6,6 @@ import useKonamiCode from "hooks/useKonamiCode";
 import CopyToClipboard from "components/shared/CopyToClipboard";
 
 // Custom
-import GeneratePDF from "./PDF";
 import {
   BannerWrapper,
   BackgroundWrapper,
@@ -122,7 +121,7 @@ export default function Banner({ t, ready }: IDefaultComponentProps) {
               })}
             </Links>
 
-            <Dropdown align="end">
+            <Dropdown align="end" children={<></>}>
               <DownloadDropdown variant="secondary">
                 <i className={"fas fa-download"} /> {t("banner.download")}
               </DownloadDropdown>
@@ -134,8 +133,6 @@ export default function Banner({ t, ready }: IDefaultComponentProps) {
 
               <CopyToClipboard text={t("banner.resume.text")} />
             </Dropdown>
-
-            {/*<GeneratePDF />*/}
 
             <GoToBottom href={"#main-tools"} display={true} className={"fas fa-arrow-down"} />
           </Intro>

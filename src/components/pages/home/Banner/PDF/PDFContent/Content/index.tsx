@@ -1,17 +1,16 @@
-import { useTranslation } from "next-i18next";
-import { ITranslatedCVComponent } from "../interfaces";
+// Custom
 import { ContentWrapper } from "./components";
 import Education from "./Education";
 import Work from "./Work";
 
-export default function Content() {
-  const { t, ready } = useTranslation(["cv"], { keyPrefix: "content" });
+// Interfaces
+import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
 
-  if (!ready) return null;
+export default function Content({ t }: IDefaultComponentProps) {
   return (
     <ContentWrapper>
-      <Education t={t} />
       <Work t={t} />
+      <Education t={t} />
     </ContentWrapper>
   );
 }

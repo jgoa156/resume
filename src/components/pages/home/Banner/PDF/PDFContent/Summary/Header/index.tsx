@@ -2,12 +2,12 @@
 import { HeaderWrapper } from "./components";
 
 // Interfaces
-import { ITranslatedCVComponent } from "../../interfaces";
+import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
 
-export default function Header({ t }: ITranslatedCVComponent) {
+export default function Header({ t }: IDefaultComponentProps) {
   return (
     <HeaderWrapper>
-      <h1>{t("header.name")}</h1>
+      <h1>{t("name")}</h1>
     </HeaderWrapper>
   );
 }

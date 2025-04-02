@@ -1,14 +1,17 @@
+// Shared
 import Title from "components/shared/Title";
-import { ITranslatedCVComponent } from "../../interfaces";
-import { ListWrapper } from "../../../../../../../shared/Experience/styles";
-import Experience, { IExperience } from "../../../../../../../shared/Experience";
+import { ListWrapper } from "components/shared/Experience/styles";
+import Experience, { IExperience } from "components/shared/Experience";
 
-export default function Education({ t }: ITranslatedCVComponent) {
-  const contentNsObject = Array.from(t("education.content", { returnObjects: true })) as IExperience[];
+// Interfaces
+import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+
+export default function Education({ t }: IDefaultComponentProps) {
+  const contentNsObject: IExperience[] = Array.from(t("about.education.certificates", { returnObjects: true }));
 
   return (
     <ListWrapper>
-      <Title alignLeft={true}>{t("education.title")}</Title>
+      <Title alignLeft={true}>{t("about.education.title")}</Title>
 
       <ul>
         {contentNsObject?.map((experience, index) => <li key={index}><Experience {...experience} /></li>)}

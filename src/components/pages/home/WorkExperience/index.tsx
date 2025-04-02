@@ -2,8 +2,12 @@ import { useState } from "react";
 import Collapse from "react-bootstrap/Collapse";
 import { Trans } from "next-i18next";
 
+// Shared
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
+import { TagWrapper, Tag } from "components/shared/Tag";
+
+// Custom
 import {
   WorkExperienceWrapper,
   ItemWrapper,
@@ -18,7 +22,7 @@ import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
 export default function WorkExperience({ t }: IDefaultComponentProps) {
   const jobsNsObject = Array.from(t("work.jobs", { returnObjects: true }) as any[]);
 
-  function JobItem({ job, initialCollapseState = false }) {
+  function JobItem({ key, job, initialCollapseState = false }) {
     const [open, setOpen] = useState(initialCollapseState);
 
     return (
@@ -34,7 +38,7 @@ export default function WorkExperience({ t }: IDefaultComponentProps) {
             </div>
           </ItemTitle>
 
-          <Collapse in={open}>
+          <Collapse in={open} children={<></>}>
             <ItemDescription>
               <p className={"details"}>{job.start} - {job.end}</p>
               <div>
@@ -52,6 +56,12 @@ export default function WorkExperience({ t }: IDefaultComponentProps) {
                     : <p key={index}>{job.content}</p>
                 )}
               </div>
+
+              <TagWrapper>
+                {job.tags?.map((tag, index) => {
+                  return <Tag key={index}>{tag}</Tag>
+                })}
+              </TagWrapper>
             </ItemDescription>
           </Collapse>
         </Item>

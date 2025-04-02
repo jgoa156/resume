@@ -1,17 +1,14 @@
-import { useTranslation } from "next-i18next";
-
-// Components
+// Custom
 import Header from "./Header";
 import Contact from "./Contact";
 import Bio from "./Bio";
 import Skills from "./Skills";
 import { SummaryWrapper } from "./components";
 
+// Interfaces
+import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
 
-export default function Summary() {
-  const { t, ready } = useTranslation(["cv"], { keyPrefix: "summary" });
-
-  if (!ready) return null;
+export default function Summary({ t }: IDefaultComponentProps) {
   return (
     <SummaryWrapper>
       <Header t={t} />

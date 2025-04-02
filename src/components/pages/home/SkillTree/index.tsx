@@ -8,7 +8,6 @@ import FadeIn from "components/shared/Animations/FadeIn";
 
 // Custom
 import Node from "./Node";
-import { skills } from "./Skills";
 import {
   SkillTreeWrapper,
   SkillTreeNodesWrapper,
@@ -46,6 +45,9 @@ export default function SkillTree({ t }: IDefaultComponentProps) {
       slidesToShow: isMobile ? 1 : isTablet ? 2 : 3
     }));
   }, [isTablet, isMobile]);
+
+  // Skills
+  const skills: INodeProps[] = Array.from(t("skillTree.skills", { returnObjects: true }));
 
   return (
     <SkillTreeWrapper id="skills">

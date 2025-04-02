@@ -1,10 +1,13 @@
+// Shared
 import Title from "components/shared/Title";
-import { ITranslatedCVComponent } from "../../interfaces";
-import { ListWrapper } from "../../../../../../../shared/Experience/styles";
-import Experience, { IExperience } from "../../../../../../../shared/Experience";
+import { ListWrapper } from "components/shared/Experience/styles";
+import Experience, { IExperience } from "components/shared/Experience";
 
-export default function Work({ t }: ITranslatedCVComponent) {
-  const contentNsObject = Array.from(t("work.content", { returnObjects: true })) as IExperience[];
+// Interfaces
+import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+
+export default function Work({ t }: IDefaultComponentProps) {
+  const contentNsObject = Array.from(t("work.jobs", { returnObjects: true })) as IExperience[];
 
   return (
     <ListWrapper>

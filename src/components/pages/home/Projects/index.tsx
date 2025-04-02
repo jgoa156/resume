@@ -1,13 +1,14 @@
 // Shared
 import Title from "components/shared/Title";
 import FadeIn from "components/shared/Animations/FadeIn";
+import { TagWrapper, Tag } from "components/shared/Tag";
+
+// Custom
 import {
   ProjectsWrapper,
   ItemWrapper,
   Link,
   Item,
-  TagWrapper,
-  Tag,
   DisclaimerWrapper,
   Disclaimer
 } from "./styles";
@@ -19,7 +20,7 @@ export default function Projects({ t }: IDefaultComponentProps) {
   const imgBaseUrl = `${process.env.img}/components/Projects/`;
   const projectsNsObject = Array.from(t("projects.projects", { returnObjects: true }) as any[]);
 
-  function ProjectItem({ project }) {
+  function ProjectItem({ key, project }) {
     return (
       <FadeIn>
         <Link href={project.url} target="_blank" rel="noreferrer">

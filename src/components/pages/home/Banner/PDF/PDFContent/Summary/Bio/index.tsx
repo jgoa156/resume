@@ -5,15 +5,14 @@ import Title from "components/shared/Title";
 import { BioWrapper } from "./components";
 
 // Interfaces
-import { ITranslatedCVComponent } from "../../interfaces";
+import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
 
-
-export default function Bio({ t }: ITranslatedCVComponent) {
-  const contentNsObject = Array.from(t("bio.content", { returnObjects: true }));
+export default function Bio({ t }: IDefaultComponentProps) {
+  const contentNsObject = Array.from(t("about.general.content", { returnObjects: true }));
 
   return (
     <BioWrapper>
-      <Title alignLeft={true}>{t("bio.title")}</Title>
+      <Title alignLeft={true}>{t("about.title")}</Title>
       {contentNsObject.map((content: string, index: number) => (
         <p key={index}>{content}</p>
       ))}
