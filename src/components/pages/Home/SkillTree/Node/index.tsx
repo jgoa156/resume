@@ -50,7 +50,7 @@ export default function Node({ t, type, title, years, proficiency, details, icon
           placement="right"
           overlay={renderHoverCard}
           delay={{ show: 20, hide: 50 }}
-          children={<></>}
+
         >
           <NodeContent>
             <div>

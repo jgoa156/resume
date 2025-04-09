@@ -44,7 +44,7 @@ export default function Tools({ t }: IDefaultComponentProps) {
         <ItemWrapper>
           {tools.map((tool, index) => {
             return (
-              <OverlayTrigger placement={index < 5 ? "top" : "bottom"} overlay={<Tooltip>{tool.title}</Tooltip>} children={<></>}>
+              <OverlayTrigger placement={index < 5 ? "top" : "bottom"} overlay={<Tooltip>{tool.title}</Tooltip>}>
                 <Item key={index} color={tool.color}>
                   {tool.icon}
                 </Item>

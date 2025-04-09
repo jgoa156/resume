@@ -155,10 +155,6 @@ export const AnimatedTitle = styled.span`
 	}
 `;
 
-export const Links = styled.div`
-	margin-top: 20px;
-`;
-
 export const Dropdown = styled(BootstrapDropdown)`
   margin-top: 30px;
 `;
@@ -187,10 +183,6 @@ export const DownloadDropdown = styled(BootstrapDropdown.Toggle)`
 	&:focus {
 		background-color: var(--color-2) !important;
 	}
-
-	@media (max-width: 575px) {
-		width: calc(100% - 100px);
-	}
 `;
 
 export const DownloadDropdownMenu = styled(BootstrapDropdown.Menu)`
@@ -208,25 +200,6 @@ export const DownloadDropdownItem = styled(BootstrapDropdown.Item)`
 
 	@media (max-width: 1024px) {
 		padding: 10px 20px;
-	}
-`;
-
-export const Link = styled.a`
-	margin-right: 30px;
-
-	color: var(--muted);
-	font-size: 1.5rem;
-
-	transition: 0.3s;
-
-	&:hover {
-		color: var(--text-default-lighter-color);
-	}
-
-	@media (max-width: 768px) {
-		margin-right: 25px;
-
-		font-size: 1.3rem;
 	}
 `;
 

@@ -73,7 +73,7 @@
 					"institution": "Federal University of Amazonas",
 					"start": "January, 2019",
 					"end": "March, 2024",
-					"icon": "img/components/Education/ufam.png"
+					"icon": "components/Education/ufam.png"
 				},
 				{
 					"name": "Embedded Android Development",
@@ -81,7 +81,7 @@
 					"institution": "State University of Amazonas",
 					"start": "January, 2021",
 					"end": "May, 2021",
-					"icon": "img/components/Education/uea.png"
+					"icon": "components/Education/uea.png"
 				},
 				{
 					"name": "Informatics",
@@ -89,7 +89,7 @@
 					"institution": "Federal Institute of Amazonas",
 					"start": "February, 2016",
 					"end": "December, 2018",
-					"icon": "img/components/Education/if.png",
+					"icon": "components/Education/if.png",
 					"iconProps": {
 						"width": "25px",
 						"margin": "7.5px"
@@ -101,7 +101,7 @@
 					"institution": "GRACOM",
 					"start": "May, 2016",
 					"end": "July, 2017",
-					"icon": "img/components/Education/gracom.png"
+					"icon": "components/Education/gracom.png"
 				},
 				{
 					"name": "Mechatronics",
@@ -109,7 +109,7 @@
 					"institution": "Matias Machline Foundation",
 					"start": "January, 2015",
 					"end": "December, 2015 (Incomplete)",
-					"icon": "img/components/Education/fmm.png",
+					"icon": "components/Education/fmm.png",
 					"iconProps": {
 						"width": "25px",
 						"margin": "7.5px"
@@ -125,15 +125,15 @@
 				"name": "Senior Full Stack Engineer",
 				"type": "Full-time (Remote)",
 				"company": "HCL Tech",
-				"icon": "img/components/Work/hcl.png",
+				"icon": "components/Work/hcl.png",
 				"start": "October, 2024",
 				"end": "Current",
-				"short": "Maintaining SAP's legacy codebase (JavaScript & ASP), addressing tech debt, fixing CSP, accessibility, and performance issues, and updating dependencies.",
+				"short": "Worked on SAP's legacy codebase (JavaScript & ASP), addressing tech debt, fixing CSP, accessibility, and performance issues, and updating dependencies.",
 				"description": [
 					{
 						"links": ["https://www.sap.com/"],
 						"content": [
-							"Maintaining a legacy codebase for <0>SAP</0> written in JavaScript and ASP. Responsibilities include addressing technical debt by resolving CSP violations, improving accessibility and performance, updating dependencies, and implementing new unit tests to ensure code reliability and maintainability."
+							"Maintained a legacy codebase for <0>SAP</0> written in JavaScript and ASP. Responsibilities include addressing technical debt by resolving CSP violations, improving accessibility and performance, updating dependencies, and implementing new unit tests to ensure code reliability and maintainability."
 						]
 					}
 				]
@@ -142,10 +142,10 @@
 				"name": "Full Stack Engineer",
 				"type": "Full-time (Remote)",
 				"company": "Betablocks",
-				"icon": "img/components/Work/betablocks.png",
+				"icon": "components/Work/betablocks.png",
 				"start": "January, 2024",
 				"end": "July, 2024",
-				"short": "Building Web3 solutions with Python (Django) and React, integrating blockchains, crypto payments, and cloud services, while also handling UI/UX design.",
+				"short": "Built Web3 solutions with Python (Django) and React, integrating blockchains, crypto payments, and cloud services, while also handling UI/UX design.",
 				"description": [
 					{
 						"links": ["https://www.bv.com.br/", "https://www.pelxp.com/"],
@@ -165,7 +165,7 @@
 				"name": "Front-end developer",
 				"type": "Full-time (Remote)",
 				"company": "Ioasys",
-				"icon": "img/components/Work/ioasys.png",
+				"icon": "components/Work/ioasys.png",
 				"start": "April, 2022",
 				"end": "February, 2023",
 				"short": "Worked on CVC’s bus ticket platforms, Rodofácil and Rodoviário Exclusivo. Tools used include TypeScript, React, Jest and Docker.",
@@ -191,10 +191,10 @@
 				"name": "Full Stack developer",
 				"type": "Full-time (Remote)",
 				"company": "Capgemini",
-				"icon": "img/components/Work/capgemini.png",
+				"icon": "components/Work/capgemini.png",
 				"start": "June, 2021",
 				"end": "April, 2022",
-				"short": "My main project at this company was Banco do Brasil's investments page, where I worked as a front-end developer using React, Next, CI/CD, and contributed to UI/UX design.",
+				"short": "Helped develop Banco do Brasil's investments page, where I worked as a front-end developer using React, Next, CI/CD, and contributed to UI/UX design.",
 				"description": [
 					{
 						"links": [
@@ -218,7 +218,7 @@
 				"name": "Full Stack developer",
 				"type": "Full-time (Local)",
 				"company": "CREA-AM",
-				"icon": "img/components/Work/crea.png",
+				"icon": "components/Work/crea.png",
 				"start": "May, 2019",
 				"end": "June, 2021",
 				"short": "Developed on-demand software and automated tasks with React, PHP, Node, Java, and Python. Designed applications from scratch, handling UI/UX, front-end, back-end, and deployment (mostly via FTP). Also performed web scraping with Python and Scrapy.",
@@ -662,7 +662,7 @@
 								"details": ""
 							},
 							{
-								"title": "Kubernetes",
+								"title": "AWS",
 								"type": "secondary",
 								"years": 1,
 								"proficiency": 1,
@@ -705,21 +705,22 @@
 			},
 			{
 				"icon": "fas fa-envelope",
-				"link": "mailto:jgoa156@gmail.com",
+				"href": "mailto:jgoa156@gmail.com",
 				"text": "jgoa156@gmail.com"
 			},
 			{
 				"icon": "fab fa-github",
+				"href": "https://github.com/jgoa156",
 				"text": "github.com/jgoa156"
 			},
 			{
 				"icon": "fab fa-whatsapp",
-				"link": "https://wa.me/5592984656666",
+				"href": "https://wa.me/5592984656666",
 				"text": "+55 92 98465-6666"
 			},
 			{
 				"icon": "fab fa-linkedin",
-				"link": "https://linkedin.com/in/jgoa156",
+				"href": "https://linkedin.com/in/jgoa156",
 				"text": "linkedin.com/in/jgoa156"
 			}
 		]

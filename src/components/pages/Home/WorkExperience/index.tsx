@@ -29,7 +29,7 @@ export default function WorkExperience({ t }: IDefaultComponentProps) {
       <FadeIn>
         <Item>
           <ItemTitle onClick={() => setOpen(!open)} aria-expanded={open}>
-            <img src={job.icon} />
+            <img src={`img/${job.icon}`} />
 
             <div className={"textWrapper"}>
               <h5>{job.name} <i className={`fas fa-chevron-${open ? "up" : "down"}`} /></h5>
@@ -38,7 +38,7 @@ export default function WorkExperience({ t }: IDefaultComponentProps) {
             </div>
           </ItemTitle>
 
-          <Collapse in={open} children={<></>}>
+          <Collapse in={open}>
             <ItemDescription>
               <p className={"details"}>{job.start} - {job.end}</p>
               <div>

@@ -1,4 +1,4 @@
-import "../i18n";
+import nextI18nextConfig from "../next-i18next.config";
 import React from "react";
 import { useRouter } from "next/router";
 import { appWithTranslation } from "next-i18next";
@@ -25,7 +25,7 @@ function App(props) {
 
   return (
     <section id="app">
-      <Head children={<></>}>
+      <Head>
         {/*Meta*/}
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -70,4 +70,4 @@ function App(props) {
   );
 }
 
-export default appWithTranslation(AppWrapper);
+export default appWithTranslation(AppWrapper, nextI18nextConfig);

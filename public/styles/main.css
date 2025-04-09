@@ -22,11 +22,11 @@
 
 @font-face {
 	font-family: "Parkson";
-	src: url("../fonts/Parkson-Demi.ttf");
+	src: url("/fonts/Parkson-Demi.ttf");
 }
 @font-face {
 	font-family: "SF Pro";
-	src: url("../fonts/SF-Pro-Display-Light.otf") format("otf");
+	src: url("/fonts/SF-Pro-Display-Regular.otf") format("otf");
 }
 
 /*---------------------- GENERAL ----------------------*/
@@ -42,6 +42,7 @@ body {
 	background-color: black;
 	color: var(--text-default-color);
 	font-family: "SF Pro", sans-serif;
+	font-weight: 200;
 	padding: 0;
 	margin: 0;
 	position: relative !important;

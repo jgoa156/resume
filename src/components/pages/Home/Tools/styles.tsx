@@ -26,11 +26,16 @@ export const ItemWrapper = styled.div`
 
 	@media (max-width: 1024px) {
     padding: 30px 0 0px;
-		grid-template-columns: repeat(6, 80px);
+		grid-template-columns: repeat(5, 80px);
+    grid-gap: 0;
 	}
 	@media (max-width: 575px) {
     padding: 50px 0 0;
 		grid-template-columns: repeat(3, 90px);
+
+    & > div:nth-child(10) {
+      grid-column: span 3;
+    }
 	}
 `;
 

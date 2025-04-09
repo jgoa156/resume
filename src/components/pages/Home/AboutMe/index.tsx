@@ -60,7 +60,7 @@ export default function AboutMe({ t }: IDefaultComponentProps) {
                 <i className={`fas fa-chevron-${openInfo ? "up" : "down"}`} />
               </Subtitle>
 
-              <Collapse in={openInfo} children={<></>}>
+              <Collapse in={openInfo}>
                 <div>
                   {generalInfoNsObject.map((info, index) =>
                     <Text key={index}>{info}</Text>
@@ -93,7 +93,7 @@ export default function AboutMe({ t }: IDefaultComponentProps) {
                 <i className={`fas fa-chevron-${openPersonality ? "up" : "down"}`} />
               </Subtitle>
 
-              <Collapse in={openPersonality} children={<></>}>
+              <Collapse in={openPersonality}>
                 <div>
                   {personalityInfoNsObject.map((info, index) =>
                     info.links
@@ -122,7 +122,7 @@ export default function AboutMe({ t }: IDefaultComponentProps) {
                   return (
                     <Item key={index}>
                       <ItemTitle>
-                        <img src={certificate.icon} style={certificate.iconProps} />
+                        <img src={`img/${certificate.icon}`} style={certificate.iconProps} />
 
                         <div className={"textWrapper"}>
                           <h5>{certificate.name}</h5>

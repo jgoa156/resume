@@ -18,7 +18,7 @@ export interface IExperience {
 export default function Experience({ name, type, institution, company, icon, iconProps, start, end, short }: IExperience) {
   return (
     <ExperienceWrapper>
-      <img src={icon} style={{ ...iconProps }} />
+      <img src={`img/${icon}`} style={{ ...iconProps }} />
       <Info>
         <h3>
           {company ? company : institution}

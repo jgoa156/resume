@@ -15,14 +15,11 @@ import {
 
 // Interfaces
 import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { ILink } from "components/shared/Links";
 
 export default function ContactMe({ t }: IDefaultComponentProps) {
-  // Links
-  const links = [
-    { icon: "fas fa-envelope", href: "mailto:jgoa156@gmail.com", content: "jgoa156@gmail.com" },
-    { icon: "fab fa-whatsapp", href: "https://wa.me/5592984656666", content: "+55 92 98465-6666" },
-    { icon: "fab fa-linkedin", href: "https://linkedin.com/in/jgoa156", content: "jgoa156" }
-  ];
+  // Social media links
+  const socialMediaLinks: ILink[] = Array.from(t("contact.content", { returnObjects: true }));
 
   return (
     <ContactMeWrapper id="contact-me">
@@ -35,8 +32,8 @@ export default function ContactMe({ t }: IDefaultComponentProps) {
             <Or><span>{t("contact.or")}</span></Or>
 
             <div>
-              {links.map((link, index) => {
-                return (
+              {socialMediaLinks.map((link, index) => {
+                return (link.href) && (
                   <Link key={index}>
                     <a
                       target="_blank"
@@ -44,7 +41,7 @@ export default function ContactMe({ t }: IDefaultComponentProps) {
                       href={link.href}>
                       <div>
                         <i className={link.icon} />
-                        <span>{link.content}</span>
+                        <span>{link.text}</span>
                       </div>
                     </a>
                   </Link>
