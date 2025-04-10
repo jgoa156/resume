@@ -3,6 +3,7 @@ import { useMediaQuery } from "react-responsive";
 import useKonamiCode from "hooks/useKonamiCode";
 
 // Shared
+import Links, { ILink } from "components/shared/Links";
 import CopyToClipboard from "components/shared/CopyToClipboard";
 
 // Custom
@@ -14,9 +15,6 @@ import {
   Intro,
   AnimatedTitle,
 
-  Links,
-  Link,
-
   Dropdown,
   DownloadDropdown,
   DownloadDropdownMenu,
@@ -26,7 +24,7 @@ import {
 } from "./styles";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 
 export default function Banner({ t, ready }: IDefaultComponentProps) {
   // Konami code - TODO: ADD RGB EFFECT 
@@ -84,13 +82,8 @@ export default function Banner({ t, ready }: IDefaultComponentProps) {
     }
   }, [ready, charIndex]);
 
-  // Links
-  const links = [
-    { icon: "fas fa-envelope", href: "mailto:jgoa156@gmail.com" },
-    { icon: "fab fa-github", href: "https://github.com/jgoa156" },
-    { icon: "fab fa-whatsapp", href: "https://wa.me/5592984656666" },
-    { icon: "fab fa-linkedin", href: "https://linkedin.com/in/jgoa156" }
-  ];
+  // Social media links
+  const socialMediaLinks: ILink[] = Array.from(t("contact.content", { returnObjects: true }));
 
   return (
     <>
@@ -107,21 +100,9 @@ export default function Banner({ t, ready }: IDefaultComponentProps) {
               {t("banner.subtitle")}&nbsp;<AnimatedTitle>{role}</AnimatedTitle>
             </h1>
 
-            <Links>
-              {links.map((link, index) => {
-                return (
-                  <Link
-                    key={index}
-                    target="_blank"
-                    rel="noreferrer"
-                    href={link.href}>
-                    <i className={link.icon} />
-                  </Link>
-                );
-              })}
-            </Links>
+            <Links links={socialMediaLinks} />
 
-            <Dropdown align="end" children={<></>}>
+            <Dropdown align="end">
               <DownloadDropdown variant="secondary">
                 <i className={"fas fa-download"} /> {t("banner.download")}
               </DownloadDropdown>

@@ -14,13 +14,13 @@ import {
 } from "./styles";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 
 export default function Projects({ t }: IDefaultComponentProps) {
   const imgBaseUrl = `${process.env.img}/components/Projects/`;
   const projectsNsObject = Array.from(t("projects.projects", { returnObjects: true }) as any[]);
 
-  function ProjectItem({ key, project }) {
+  function ProjectItem({ project }) {
     return (
       <FadeIn>
         <Link href={project.url} target="_blank" rel="noreferrer">
@@ -54,9 +54,9 @@ export default function Projects({ t }: IDefaultComponentProps) {
         </FadeIn>
 
         <ItemWrapper>
-          {projectsNsObject.map((project, index) => {
+          {projectsNsObject.map((project) => {
             return (
-              <ProjectItem key={index} project={project} />
+              <ProjectItem project={project} />
             )
           })}
         </ItemWrapper>

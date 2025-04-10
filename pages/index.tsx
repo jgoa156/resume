@@ -109,6 +109,7 @@ export default function Home() {
               "express.js",
               "expressjs",
 
+              "aws",
               "mysql",
               "sequelize",
               "mongodb",

@@ -17,19 +17,19 @@ import {
 } from "./styles";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 
 export default function WorkExperience({ t }: IDefaultComponentProps) {
   const jobsNsObject = Array.from(t("work.jobs", { returnObjects: true }) as any[]);
 
-  function JobItem({ key, job, initialCollapseState = false }) {
+  function JobItem({ job, initialCollapseState = false }) {
     const [open, setOpen] = useState(initialCollapseState);
 
     return (
       <FadeIn>
         <Item>
           <ItemTitle onClick={() => setOpen(!open)} aria-expanded={open}>
-            <img src={job.icon} />
+            <img src={`img/${job.icon}`} />
 
             <div className={"textWrapper"}>
               <h5>{job.name} <i className={`fas fa-chevron-${open ? "up" : "down"}`} /></h5>
@@ -79,7 +79,7 @@ export default function WorkExperience({ t }: IDefaultComponentProps) {
         <ItemWrapper>
           {jobsNsObject.map((job, index) => {
             return (
-              <JobItem key={index} job={job} initialCollapseState={index === 0} />
+              <JobItem job={job} initialCollapseState={index === 0} />
             )
           })}
         </ItemWrapper>

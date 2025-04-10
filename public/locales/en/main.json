@@ -25,7 +25,7 @@
 		"resume": {
 			"copy": "Copy resume to clipboard",
 			"copied": "Copied!",
-			"text": "Portfolio: https://guilherme.vercel.app/\n\nHi, I'm Guilherme Almeida, a 24-year-old Full Stack web and mobile developer based in Manaus, Brazil. Currently focused on React + Next, Node + Nest, Java and UI/UX design but with knowledge in several other technologies as well.\n\nI have a Technical Degree in Informatics with emphasis on Software Engineering and a bachelor's degree in Software Engineering from the Federal University of Amazonas, totaling 8 years of academic experience. While most of my experience lies in front-end development, I consider myself to be just as good in other fields such as a back-end development and software architecture, not to mention my artistic background and genuine passion for technology. \n\nCurrently my main interests towards the software industry are front-end web, back-end and mobile development, as well as UI/UX design. I also take a lot of interest in other fields, such as machine learning, data mining and embedded development, not to mention my heavy interest in DIY culture means I'm into other areas of engineering, such as mechatronics. I'm also considering a second graduation in sound engineering.\n\nWhile you are here, you should know I'm also a nerd, goth, rpg and cyberpunk literature aficionado, not to mention I take a lot of interest in experimental art in general, which covers ground ranging from psychedelic cinema to noise music."
+			"text": "Portfolio: https://guilherme.vercel.app/\n\nSenior Software Engineer with 6 years of experience in web development, specializing in React, Next.js, Node.js and Java. Proven track record in front-end optimization and API design with successful projects for Banco do Brasil, CVC and SAP."
 		}
 	},
 	"tools": {
@@ -33,22 +33,47 @@
 	},
 	"about": {
 		"title": "About Me",
+		"altTitle": "Summary",
 		"general": {
 			"title": "Who am I?",
 			"content": [
-				"I'm Guilherme Almeida, a 24-year-old Full Stack web and mobile developer based in Manaus, Brazil. Currently focused on React + Next, Node + Nest, Java and UI/UX design but with knowledge in several other technologies as well.",
-				"I have a Technical Degree in Informatics with emphasis on Software Engineering and a bachelor's degree in Software Engineering from the Federal University of Amazonas, totaling 8 years of academic experience.",
-				"Currently I'm focused on dev ops and back-end development, but my expertise lies in front-end development, UI/UX design and mobile development."
-			]
+				"I'm Guilherme Almeida, a 24-year-old Software Engineer based in Curitiba, Brazil. I'm specialized in React + Next.js, Node.js + NestJS, Java, and UI/UX design, while also having experience with a wide range of other technologies.",
+				"I hold a Bachelor's Degree in Software Engineering from the Federal University of Amazonas, as well as a Technical Degree in Informatics with an emphasis on Software Engineering, totaling 8 years of academic experience and 6 years of work experience.",
+				"At the moment, I'm focused on DevOps and back-end development, though my core expertise lies in front-end engineering, UI/UX design, and mobile development."
+			],
+			"summary": "Senior Software Engineer with 6 years of experience in web development, specializing in React, Next.js, Node.js and Java. Proven track record in front-end optimization and API design with successful projects for Banco do Brasil, CVC and SAP.",
+			"roles": ["Senior Software Engineer", "Web and Mobile Developer"],
+			"languages": {
+				"title": "Languages",
+				"content": [
+					{
+						"name": "English",
+						"level": "Fluent"
+					},
+					{
+						"name": "Portuguese",
+						"level": "Native"
+					}
+				]
+			},
+			"softSkills": {
+				"title": "Soft Skills",
+				"content": [
+					"Creative",
+					"Adaptable",
+					"Problem solver",
+					"Highly communicative"
+				]
+			}
 		},
 		"personality": {
 			"title": "What do I like?",
 			"content": [
 				{
-					"content": "Currently my main interests towards the software industry are front-end web, back-end and mobile development, as well as UI/UX design. I also take a lot of interest in other fields, such as machine learning, data mining and embedded development, not to mention my heavy interest in DIY culture means I'm into other areas of engineering, such as mechatronics. I'm also considering a second graduation in sound engineering."
+					"content": "While my focus lies on web development, I’m also deeply interested in adjacent fields such as machine learning, data mining, and embedded systems. My passion for DIY culture has led me to explore other branches of engineering, including mechatronics. Additionally, I’m considering pursuing a second degree in Sound Engineering to further expand my multidisciplinary skill set."
 				},
 				{
-					"content": "While you are here, you should know I'm also a nerd, goth, rpg and cyberpunk literature aficionado, not to mention I take a lot of interest in experimental art in general, which covers ground ranging from psychedelic cinema to noise music."
+					"content": "Outside of tech, I’m a passionate enthusiast of niche and alternative cultures. I'm an avid fan of RPGs, gothic subculture and cyberpunk literature. I also have a deep appreciation for experimental art, ranging from psychedelic cinema to noise music, which continuously inspires my creative approach to problem-solving and design. My artistic interests often intersect with my technical work, allowing me to bring a unique perspective to both fields."
 				},
 				{
 					"links": [
@@ -56,7 +81,7 @@
 						"https://www.instagram.com/death.yon/",
 						"https://steamcommunity.com/id/flammableman/myworkshopfiles/"
 					],
-					"content": "I'm currently working on several side projects, such as a <0>post-rock project</0>, an unreleased industrial techno and dark psy project, an <1>illustration project</1> and several installation projects involving computer vision, 3D and videomapping. I also make <2>some wallpapers</2> for Wallpaper Engine."
+					"content": "I'm currently working on several side projects, such as a <0>post-rock project</0> and an <1>illustration project</1>. I also make <2>some wallpapers</2> for Wallpaper Engine."
 				}
 			]
 		},
@@ -71,49 +96,37 @@
 					"name": "Software Engineering",
 					"type": "Bachelor's Degree",
 					"institution": "Federal University of Amazonas",
-					"start": "January, 2019",
-					"end": "March, 2024",
-					"icon": "img/components/Education/ufam.png"
-				},
-				{
-					"name": "Embedded Android Development",
-					"type": "Certificate Course",
-					"institution": "State University of Amazonas",
-					"start": "January, 2021",
-					"end": "May, 2021",
-					"icon": "img/components/Education/uea.png"
+					"start": "January 2019",
+					"end": "March 2024",
+					"icon": "components/Education/ufam.png"
 				},
 				{
 					"name": "Informatics",
 					"type": "Technical Degree",
 					"institution": "Federal Institute of Amazonas",
-					"start": "February, 2016",
-					"end": "December, 2018",
-					"icon": "img/components/Education/if.png",
+					"start": "February 2016",
+					"end": "December 2018",
+					"icon": "components/Education/if.png",
 					"iconProps": {
 						"width": "25px",
 						"margin": "7.5px"
 					}
+				},
+				{
+					"name": "Embedded Android Development",
+					"type": "Certificate Course",
+					"institution": "State University of Amazonas",
+					"start": "January 2021",
+					"end": "May 2021",
+					"icon": "components/Education/uea.png"
 				},
 				{
 					"name": "Graphic Design",
 					"type": "Certificate Course",
 					"institution": "GRACOM",
-					"start": "May, 2016",
-					"end": "July, 2017",
-					"icon": "img/components/Education/gracom.png"
-				},
-				{
-					"name": "Mechatronics",
-					"type": "Technical Degree",
-					"institution": "Matias Machline Foundation",
-					"start": "January, 2015",
-					"end": "December, 2015 (Incomplete)",
-					"icon": "img/components/Education/fmm.png",
-					"iconProps": {
-						"width": "25px",
-						"margin": "7.5px"
-					}
+					"start": "May 2016",
+					"end": "July 2017",
+					"icon": "components/Education/gracom.png"
 				}
 			]
 		}
@@ -125,15 +138,21 @@
 				"name": "Senior Full Stack Engineer",
 				"type": "Full-time (Remote)",
 				"company": "HCL Tech",
-				"icon": "img/components/Work/hcl.png",
-				"start": "October, 2024",
-				"end": "Current",
-				"short": "Maintaining SAP's legacy codebase (JavaScript & ASP), addressing tech debt, fixing CSP, accessibility, and performance issues, and updating dependencies.",
+				"icon": "components/Work/hcl.png",
+				"start": "October 2024",
+				"end": "Present",
+				"bullets": [
+					"Maintained SAP’s legacy codebase (JavaScript & ASP)",
+					"Reduced technical debt and fixed CSP issues",
+					"Accessibility and performance corrections",
+					"Updated dependencies",
+					"Worked with international, multicultural team"
+				],
 				"description": [
 					{
 						"links": ["https://www.sap.com/"],
 						"content": [
-							"Maintaining a legacy codebase for <0>SAP</0> written in JavaScript and ASP. Responsibilities include addressing technical debt by resolving CSP violations, improving accessibility and performance, updating dependencies, and implementing new unit tests to ensure code reliability and maintainability."
+							"Maintained a legacy codebase for <0>SAP</0> written in JavaScript and ASP. Responsibilities include addressing technical debt by resolving CSP violations, improving accessibility and performance, updating dependencies, and implementing new unit tests to ensure code reliability and maintainability."
 						]
 					}
 				]
@@ -142,10 +161,14 @@
 				"name": "Full Stack Engineer",
 				"type": "Full-time (Remote)",
 				"company": "Betablocks",
-				"icon": "img/components/Work/betablocks.png",
-				"start": "January, 2024",
-				"end": "July, 2024",
-				"short": "Building Web3 solutions with Python (Django) and React, integrating blockchains, crypto payments, and cloud services, while also handling UI/UX design.",
+				"icon": "components/Work/betablocks.png",
+				"start": "January 2024",
+				"end": "July 2024",
+				"bullets": [
+					"Built Web3 apps with Python (Django) and React",
+					"Integrated blockchains, crypto payments, and cloud services",
+					"Led UI/UX design for seamless user experiences"
+				],
 				"description": [
 					{
 						"links": ["https://www.bv.com.br/", "https://www.pelxp.com/"],
@@ -165,10 +188,14 @@
 				"name": "Front-end developer",
 				"type": "Full-time (Remote)",
 				"company": "Ioasys",
-				"icon": "img/components/Work/ioasys.png",
-				"start": "April, 2022",
-				"end": "February, 2023",
-				"short": "Worked on CVC’s bus ticket platforms, Rodofácil and Rodoviário Exclusivo. Tools used include TypeScript, React, Jest and Docker.",
+				"icon": "components/Work/ioasys.png",
+				"start": "April 2022",
+				"end": "February 2023",
+				"bullets": [
+					"Built CVC’s bus ticket platforms, Rodofácil and Rodoviário Exclusivo",
+					"Used TypeScript, React, Jest, and Docker",
+					"Participated in war room before launch to ensure a smooth release"
+				],
 				"description": [
 					{
 						"links": [
@@ -191,10 +218,14 @@
 				"name": "Full Stack developer",
 				"type": "Full-time (Remote)",
 				"company": "Capgemini",
-				"icon": "img/components/Work/capgemini.png",
-				"start": "June, 2021",
-				"end": "April, 2022",
-				"short": "My main project at this company was Banco do Brasil's investments page, where I worked as a front-end developer using React, Next, CI/CD, and contributed to UI/UX design.",
+				"icon": "components/Work/capgemini.png",
+				"start": "June 2021",
+				"end": "April 2022",
+				"bullets": [
+					"Helped develop Banco do Brasil's investments page",
+					"Worked on front-end using React, Next.js, and CI/CD pipelines",
+					"Contributed to UI/UX design for a better user experience"
+				],
 				"description": [
 					{
 						"links": [
@@ -218,10 +249,14 @@
 				"name": "Full Stack developer",
 				"type": "Full-time (Local)",
 				"company": "CREA-AM",
-				"icon": "img/components/Work/crea.png",
-				"start": "May, 2019",
-				"end": "June, 2021",
-				"short": "Developed on-demand software and automated tasks with React, PHP, Node, Java, and Python. Designed applications from scratch, handling UI/UX, front-end, back-end, and deployment (mostly via FTP). Also performed web scraping with Python and Scrapy.",
+				"icon": "components/Work/crea.png",
+				"start": "May 2019",
+				"end": "June 2021",
+				"bullets": [
+					"Developed on-demand software with React, Wordpress, PHP, Node, Java, and Python",
+					"Designed full-stack apps from scratch, handling UI/UX and deployment (FTP)",
+					"Automated tasks and performed web scraping using Python and Scrapy"
+				],
 				"description": [
 					{
 						"content": [
@@ -370,6 +405,7 @@
 	},
 	"skillTree": {
 		"title": "Skills",
+		"altTitle": "Hard Skills",
 		"skills": [
 			{
 				"title": "Frontend",
@@ -391,7 +427,7 @@
 								"details": ""
 							},
 							{
-								"title": "Next",
+								"title": "Next.js",
 								"type": "secondary",
 								"years": 5,
 								"proficiency": 5,
@@ -415,7 +451,7 @@
 						]
 					},
 					{
-						"title": "Design and Web design",
+						"title": "Design",
 						"type": "primary",
 						"years": 8,
 						"proficiency": 5,
@@ -483,7 +519,7 @@
 						"details": "",
 						"childNodes": [
 							{
-								"title": "Express",
+								"title": "Express.js",
 								"type": "secondary",
 								"years": 3,
 								"proficiency": 4,
@@ -497,7 +533,7 @@
 								"details": ""
 							},
 							{
-								"title": "Nest",
+								"title": "Nest.js",
 								"type": "secondary",
 								"years": 3,
 								"proficiency": 4,
@@ -620,6 +656,13 @@
 						"details": "",
 						"childNodes": [
 							{
+								"title": "Design Patterns",
+								"type": "secondary",
+								"years": 2,
+								"proficiency": 3,
+								"details": ""
+							},
+							{
 								"title": "Atomic Design",
 								"type": "secondary",
 								"years": 4,
@@ -662,7 +705,7 @@
 								"details": ""
 							},
 							{
-								"title": "Kubernetes",
+								"title": "AWS",
 								"type": "secondary",
 								"years": 1,
 								"proficiency": 1,
@@ -700,27 +743,28 @@
 		"or": "or",
 		"content": [
 			{
-				"icon": "fas fa-link",
-				"text": "guilherme.vercel.app"
+				"icon": "fab fa-linkedin",
+				"href": "https://linkedin.com/in/jgoa156",
+				"text": "linkedin.com/in/jgoa156"
 			},
 			{
 				"icon": "fas fa-envelope",
-				"link": "mailto:jgoa156@gmail.com",
+				"href": "mailto:jgoa156@gmail.com",
 				"text": "jgoa156@gmail.com"
 			},
 			{
 				"icon": "fab fa-github",
+				"href": "https://github.com/jgoa156",
 				"text": "github.com/jgoa156"
 			},
 			{
 				"icon": "fab fa-whatsapp",
-				"link": "https://wa.me/5592984656666",
+				"href": "https://wa.me/5592984656666",
 				"text": "+55 92 98465-6666"
 			},
 			{
-				"icon": "fab fa-linkedin",
-				"link": "https://linkedin.com/in/jgoa156",
-				"text": "linkedin.com/in/jgoa156"
+				"icon": "fas fa-link",
+				"text": "guilherme.vercel.app"
 			}
 		]
 	}

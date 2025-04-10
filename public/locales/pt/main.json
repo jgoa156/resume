@@ -1,4 +1,5 @@
 {
+	"name": "Guilherme Almeida",
 	"options": {
 		"links": [
 			{ "title": "Ferramentas", "href": "main-tools" },
@@ -22,32 +23,57 @@
 		],
 		"download": "Baixar CV",
 		"resume": {
-			"copy": "Copiar resumo para a área de transferência",
+			"copy": "Copiar resumo para área de transferência",
 			"copied": "Copiado!",
-			"text": "Portfólio: https://guilherme.vercel.app/\n\nOlá, meu nome é Guilherme Almeida, um desenvolvedor web e mobile full stack de 24 anos baseado em Manaus, Brasil. Atualmente focado em React + Next, Node + Nest, Java e design de UI/UX, mas com conhecimento em diversas outras tecnologias também.\n\nSou formado em Engenharia de Software pela Universidade Federal do Amazonas, com graduação em Engenharia de Software pela Universidade Federal do Amazonas, totalizando 8 anos de experiência acadêmica. Embora a maior parte da minha experiência esteja em desenvolvimento front-end, considero-me igualmente bom em outras áreas, como desenvolvimento back-end e arquitetura de software, sem mencionar minha formação artística e paixão genuína por tecnologia.\n\nAtualmente, meus principais interesses na indústria de software são desenvolvimento front-end web, back-end e mobile, bem como design UI/UX. Também tenho muito interesse em outras áreas, como aprendizado de máquina, mineração de dados e desenvolvimento embarcado, sem mencionar que meu grande interesse na cultura DIY significa que estou em outras áreas da engenharia, como mecatrônica. Também estou considerando uma segunda graduação em engenharia de som.\n\nEnquanto você está aqui, você deve saber que também sou um aficionado por literatura nerd, cultura gótica, RPGs e literatura cyberpunk, sem mencionar que tenho muito interesse em arte experimental em geral, o que abrange desde o cinema psicodélico até noise music."
+			"text": "Portfolio: https://guilherme.vercel.app/\n\nEngenheiro de Software Sênior com 6 anos de experiência em desenvolvimento web, especializado em React, Next.js, Node.js e Java. Possuo histórico comprovado em otimização de front-end e design de APIs, com projetos bem-sucedidos para o Banco do Brasil, CVC e SAP."
 		}
 	},
 	"tools": {
-		"title": "Ferramentas"
+		"title": "Main tools"
 	},
 	"about": {
 		"title": "Sobre",
+		"altTitle": "Resumo",
 		"general": {
 			"title": "Quem sou eu?",
 			"content": [
-				"Eu sou um desenvolvedor Full Stack web e mobile de 24 anos, atualmente morando em Manaus, Brasil. Atualmente focado em React + Next, Node + Nest, Java e design UI/UX mas com conhecimento em diversas outras tecnologias.",
-				"Eu possuo um Certificado Técnico em Informática com ênfase em Engenharia de Software e uma Graduação em Engenharia de Software pela Universidade Federal do Amazonas, totalizando 8 anos de experiência acadêmica.",
-				"Atualmente estou focado em dev ops e desenvolvimento back-end, porém minha expertise é em desenvolvimento front-end."
-			]
+				"Me chamo Guilherme Almeida e sou um Engenheiro de Software de 24 anos atualmente alocado em Curitiba, Brasil. Sou especializado em React + Next.js, Node.js + NestJS, Java, e design UI/UX, também possuindo experiência com uma ampla gama de outras tecnologias.",
+				"Possuo um diploma de graduação em Engenharia de Software pela Universidade Federal do Amazonas, bem como um certificado técnico em Informática com ênfase em Engenharia de Software, totalizando 8 anos de experiência acadêmica e 6 anos de experiência profissional.",
+				"Atualmente estou focado em DevOps e desenvolvimento back-end, porém minhas especialidades são desenvolvimento front-end, mobile e design UI/UX."
+			],
+			"summary": "Engenheiro de Software Sênior com 6 anos de experiência em desenvolvimento web, especializado em React, Next.js, Node.js e Java. Possuo histórico comprovado em otimização de front-end e design de APIs, com projetos bem-sucedidos para o Banco do Brasil, CVC e SAP.",
+			"roles": ["Engenheiro de Software Sênior", "Desenvolvedor Web e Mobile"],
+			"languages": {
+				"title": "Línguas",
+				"content": [
+					{
+						"name": "Inglês",
+						"level": "Fluente"
+					},
+					{
+						"name": "Português",
+						"level": "Nativo"
+					}
+				]
+			},
+			"softSkills": {
+				"title": "Soft Skills",
+				"content": [
+					"Criativo",
+					"Adaptável",
+					"Facilidade com problemas",
+					"Altamente comunicativo"
+				]
+			}
 		},
 		"personality": {
 			"title": "Do que eu gosto?",
 			"content": [
 				{
-					"content": "Atualmente meus principais interesses na indústria de software são desenvolvimento web front-end, back-end e mobile, bem como design UI/UX. Eu também tenho muito interesse em outras áreas, como machine learning, data mining e desenvolvimento embarcado, além de que meu grande interesse na cultura DIY significa que eu também me interesso em outras áreas da engenharia, como mecatrônica. Eu também estou considerando uma segunda graduação em engenharia de som."
+					"content": "Apesar de meu foco ser desenvolvimento web, eu também me interesso muito por campos similares como aprendizagem de máquina, mineração de dados e sistemas embarcados. Minha paixão pela cultura DIY me levou a explorar outros campos da engenharia, incluindo mecatrônica. A propósito, também estou considerando uma segunda graduação em Engenharia de Som para expandir minhas habilidades multidisciplinares."
 				},
 				{
-					"content": "Eu também gostaria de mencionar que eu também sou um nerd, gótico, aficionado por literatura rpg e cyberpunk, sem mencionar que eu tenho muito interesse em arte experimental em geral, que cobre desde cinema psicodélico até noise music."
+					"content": "Fora do mundo tecnológico, eu também sou muito apaixonado por cultura e subculturas alternativas. Sou um fã religioso de RPGs, subcultura gótica e literatura cyberpunk. Também tenho muito apreço por arte experimental, desde cinema psicodélico até noise music, o que constantemente inspira minha abordagem criativa para resolução de problemas e design. Meus interesses artísticos geralmente interagem com meu trabalho técnico, me possibilitando trazer um olhar único para ambos os campos."
 				},
 				{
 					"links": [
@@ -55,7 +81,7 @@
 						"https://www.instagram.com/death.yon/",
 						"https://steamcommunity.com/id/flammableman/myworkshopfiles/"
 					],
-					"content": "Atualmente estou trabalhando em vários projetos paralelos, como um <0>projeto de post-rock</0>, um projeto não lançado de industrial techno e dark psy, um <1>projeto de ilustração</1> e vários projetos de instalação envolvendo visão computacional, 3D e videomapping. Eu também faço <2>alguns wallpapers</2> para o Wallpaper Engine."
+					"content": "Atualmente estou trabalhando em vários projetos paralelos, como um <0>projeto de post-rock</0> e um <1>projeto de ilustração</1>. Eu também faço <2>alguns wallpapers</2> para o Wallpaper Engine."
 				}
 			]
 		},
@@ -70,49 +96,37 @@
 					"name": "Engenheria de Software",
 					"type": "Graduação",
 					"institution": "Universidade Federal do Amazonas",
-					"start": "2019",
-					"end": "2024",
-					"icon": "img/components/Education/ufam.png"
-				},
-				{
-					"name": "Desenvolvimento em Android Embarcado",
-					"type": "Curso com certificado",
-					"institution": "Universidade do Estado do Amazonas",
-					"start": "2021",
-					"end": "2021",
-					"icon": "img/components/Education/uea.png"
+					"start": "Janeiro 2019",
+					"end": "Março 2024",
+					"icon": "components/Education/ufam.png"
 				},
 				{
 					"name": "Informática",
 					"type": "Curso Técnico",
 					"institution": "Instituto Federal do Amazonas",
-					"start": "2016",
-					"end": "2018",
-					"icon": "img/components/Education/if.png",
+					"start": "Fevereiro 2016",
+					"end": "Dezembro 2018",
+					"icon": "components/Education/if.png",
 					"iconProps": {
 						"width": "25px",
 						"margin": "7.5px"
 					}
+				},
+				{
+					"name": "Desenvolvimento em Android Embarcado",
+					"type": "Curso com certificado",
+					"institution": "Universidade do Estado do Amazonas",
+					"start": "Janeiro 2021",
+					"end": "Maio 2021",
+					"icon": "components/Education/uea.png"
 				},
 				{
 					"name": "Design Gráfico",
 					"type": "Curso com certificado",
 					"institution": "GRACOM",
-					"start": "2016",
-					"end": "2017",
-					"icon": "img/components/Education/gracom.png"
-				},
-				{
-					"name": "Mecatrônica",
-					"type": "Curso Técnico",
-					"institution": "Fundação Matias Machline",
-					"start": "2015",
-					"end": "2015 (Incompleto)",
-					"icon": "img/components/Education/fmm.png",
-					"iconProps": {
-						"width": "25px",
-						"margin": "7.5px"
-					}
+					"start": "Maio 2016",
+					"end": "Julho 2017",
+					"icon": "components/Education/gracom.png"
 				}
 			]
 		}
@@ -124,14 +138,21 @@
 				"name": "Engenheiro Full Stack Sênior",
 				"type": "Tempo integral (Remoto)",
 				"company": "HCL Tech",
-				"icon": "img/components/Work/hcl.png",
-				"start": "Outubro, 2024",
+				"icon": "components/Work/hcl.png",
+				"start": "Outubro 2024",
 				"end": "Atualmente",
+				"bullets": [
+					"Manutenção de código legado da SAP (JavaScript e ASP)",
+					"Redução de débito técnico e correção de problemas de CSP",
+					"Correções de acessibilidade e desempenho",
+					"Atualizações de dependências",
+					"Trabalho com uma equipe internacional e multicultural"
+				],
 				"description": [
 					{
 						"links": ["https://www.sap.com/"],
 						"content": [
-							"Trabalhando para a <0>SAP</0> mantendo código legado escrito tanto em JavaScript quanto ASP. Nosso trabalho consiste majoritariamente em correções de débito técnico como violações de CSP, problemas de acessibilidade, problemas de performance e atualizando versões de dependências, o que inclui escrever novos testes unitários."
+							"Manutenção de código legado <0>SAP</0> escrito em JavaScript e ASP. Responsabilidades incluem a mitigação de débito técnico resolvendo violações de CSP, melhorando a acessibilidade e o desempenho, atualizando dependências e implementando novos testes unitários para garantir a confiabilidade e a manutenção do código."
 						]
 					}
 				]
@@ -140,9 +161,14 @@
 				"name": "Engenheiro Full Stack",
 				"type": "Tempo integral (Remoto)",
 				"company": "Betablocks",
-				"icon": "img/components/Work/betablocks.png",
-				"start": "Janeiro, 2024",
-				"end": "Julho, 2024",
+				"icon": "components/Work/betablocks.png",
+				"start": "Janeiro 2024",
+				"end": "Julho 2024",
+				"bullets": [
+					"Criação de aplicativos Web3 com Python (Django) e React",
+					"Integração blockchains, pagamentos com criptomoedas e serviços em nuvem",
+					"Liderei decisões de UI/UX para garantir experiências de usuário fluidas"
+				],
 				"description": [
 					{
 						"links": ["https://www.bv.com.br/", "https://www.pelxp.com/"],
@@ -162,9 +188,14 @@
 				"name": "Desenvolvedor Front-end",
 				"type": "Tempo integral (Remoto)",
 				"company": "Ioasys",
-				"icon": "img/components/Work/ioasys.png",
-				"start": "Abril, 2022",
-				"end": "Fevereiro, 2023",
+				"icon": "components/Work/ioasys.png",
+				"start": "Abril 2022",
+				"end": "Fevereiro 2023",
+				"bullets": [
+					"Construí as plataformas de passagens de ônibus da CVC, Rodofácil e Rodoviário Exclusivo",
+					"Utilizei TypeScript, React, Jest e Docker",
+					"Participei de uma war room antes do lançamento do projeto para garantir um lançamento estável"
+				],
 				"description": [
 					{
 						"links": [
@@ -187,9 +218,14 @@
 				"name": "Desenvolvedor Full Stack",
 				"type": "Tempo integral (Remoto)",
 				"company": "Capgemini",
-				"icon": "img/components/Work/capgemini.png",
-				"start": "Junho, 2021",
-				"end": "Abril, 2022",
+				"icon": "components/Work/capgemini.png",
+				"start": "Junho 2021",
+				"end": "Abril 2022",
+				"bullets": [
+					"Ajudei a desenvolver a página de investimentos do Banco do Brasil",
+					"Trabalhei no front-end usando React, Next.js e pipelines de CI/CD",
+					"Contribuí no design UI/UX para uma melhor experiência de usuário"
+				],
 				"description": [
 					{
 						"links": [
@@ -204,7 +240,7 @@
 					{
 						"links": ["https://www.bb.com.br/uci/investimentos.html"],
 						"content": [
-							"Meu principal projeto enquanto trabalhava nesta empresa foi a <0>página de investimentos</0> do Banco do Brasil, onde trabalhei principalmente como desenvolvedor front-end."
+							"Meu principal projeto enquanto trabalhava nesta empresa foi a <0>página de investimentos</0> do Banco do Brasil, onde trabalhei principalmente como desenvolvedor front-end. Ferramentas usadas incluem TypeScript, React, Jest e Docker."
 						]
 					}
 				]
@@ -213,9 +249,14 @@
 				"name": "Desenvolvedor Full Stack",
 				"type": "Tempo integral (Local)",
 				"company": "CREA-AM",
-				"icon": "img/components/Work/crea.png",
-				"start": "Maio, 2019",
-				"end": "Junho, 2021",
+				"icon": "components/Work/crea.png",
+				"start": "Maio 2019",
+				"end": "Junho 2021",
+				"bullets": [
+					"Desenvolvi aplicações sob demanda com React, Wordpress, PHP, Node, Java e Python",
+					"Projetei aplicativos full-stack do zero, gerenciando UI/UX e implantação (FTP)",
+					"Automatizei tarefas e realizei web scraping usando Python e Scrapy"
+				],
 				"description": [
 					{
 						"content": [
@@ -225,26 +266,6 @@
 					{
 						"content": [
 							"Também trabalhei como técnico de suporte de T.I, mantendo os computadores, servidores e impressoras do conselho, e como designer, criando a identidade visual do conselho e projetando o site do conselho."
-						]
-					}
-				]
-			},
-			{
-				"name": "Estagiário de Desenvolvimento de Software",
-				"type": "Estágio (Local)",
-				"company": "PRODAM-AM",
-				"icon": "img/components/Work/prodam.png",
-				"start": "Junho, 2018",
-				"end": "Dezembro, 2018",
-				"description": [
-					{
-						"content": [
-							"Estagiário de Desenvolvimento de Software trabalhando no departamento de T.I da Empresa de Processamento de Dados do Estado do Amazonas. Meu papel principal era manter sistemas legados escritos em Java, CakePHP e Laravel, fazendo ajustes e implementando novas funcionalidades sob demanda."
-						]
-					},
-					{
-						"content": [
-							"Também desenvolvi ferramentas para automatizar processos como envio de e-mails e mineração de dados em planilhas do excel, a maioria das quais escrevi em Java."
 						]
 					}
 				]
@@ -372,158 +393,326 @@
 			}
 		]
 	},
-	"skills": {
+	"skillTree": {
 		"title": "Habilidades",
+		"altTitle": "Habilidades Técnicas",
 		"skills": [
 			{
-				"category": "Front-end",
-				"tools": [
+				"title": "Frontend",
+				"type": "main",
+				"childNodes": [
 					{
-						"name": "React + Next",
-						"proficiency": 90
+						"icon": "fab fa-react",
+						"title": "React",
+						"type": "primary",
+						"years": 5,
+						"proficiency": 5,
+						"details": "",
+						"childNodes": [
+							{
+								"title": "TypeScript",
+								"type": "secondary",
+								"years": 3,
+								"proficiency": 5,
+								"details": ""
+							},
+							{
+								"title": "Next.js",
+								"type": "secondary",
+								"years": 5,
+								"proficiency": 5,
+								"details": ""
+							},
+							{
+								"title": "Styled Components",
+								"type": "secondary",
+								"years": 3,
+								"proficiency": 5,
+								"details": ""
+							},
+							{
+								"icon": "fab fa-react",
+								"title": "React Native",
+								"type": "secondary",
+								"years": 1,
+								"proficiency": 3,
+								"details": ""
+							}
+						]
 					},
 					{
-						"name": "HTML + CSS",
-						"proficiency": 90
+						"title": "Design",
+						"type": "primary",
+						"years": 8,
+						"proficiency": 5,
+						"details": "",
+						"childNodes": [
+							{
+								"title": "UI/UX design",
+								"type": "secondary",
+								"years": 5,
+								"proficiency": 4,
+								"details": ""
+							},
+							{
+								"title": "Adobe CC",
+								"type": "secondary",
+								"years": 8,
+								"proficiency": 5,
+								"details": ""
+							},
+							{
+								"title": "Figma",
+								"type": "secondary",
+								"years": 3,
+								"proficiency": 4,
+								"details": ""
+							}
+						]
 					},
 					{
-						"name": "jQuery",
-						"proficiency": 80
+						"icon": "fas fa-vial",
+						"title": "Testes unitários",
+						"type": "primary",
+						"years": 2,
+						"proficiency": 3,
+						"details": "",
+						"childNodes": [
+							{
+								"title": "Jest",
+								"type": "secondary",
+								"years": 2,
+								"proficiency": 3,
+								"details": ""
+							},
+							{
+								"title": "JUnit",
+								"type": "secondary",
+								"years": 0,
+								"proficiency": 2,
+								"details": ""
+							}
+						]
 					}
 				]
 			},
 			{
-				"category": "Back-end",
-				"tools": [
+				"title": "Backend",
+				"type": "main",
+				"childNodes": [
 					{
-						"name": "Node + Nest + Prisma",
-						"proficiency": 90
+						"icon": "fab fa-node-js",
+						"title": "Node.js",
+						"type": "primary",
+						"years": 4,
+						"proficiency": 5,
+						"details": "",
+						"childNodes": [
+							{
+								"title": "Express.js",
+								"type": "secondary",
+								"years": 3,
+								"proficiency": 4,
+								"details": ""
+							},
+							{
+								"title": "Sequelize",
+								"type": "secondary",
+								"years": 2,
+								"proficiency": 3,
+								"details": ""
+							},
+							{
+								"title": "Nest.js",
+								"type": "secondary",
+								"years": 3,
+								"proficiency": 4,
+								"details": ""
+							},
+							{
+								"title": "Prisma",
+								"type": "secondary",
+								"years": 2,
+								"proficiency": 4,
+								"details": ""
+							}
+						]
 					},
 					{
-						"name": "Node + Express + Sequelize",
-						"proficiency": 90
+						"icon": "fab fa-python",
+						"title": "Python",
+						"type": "primary",
+						"years": 5,
+						"proficiency": 4,
+						"details": "",
+						"childNodes": [
+							{
+								"title": "Django",
+								"type": "secondary",
+								"years": 1,
+								"proficiency": 3,
+								"details": ""
+							},
+							{
+								"title": "Scrapy",
+								"type": "secondary",
+								"years": 1,
+								"proficiency": 3,
+								"details": ""
+							},
+							{
+								"title": "Pytesseract",
+								"type": "secondary",
+								"years": 0,
+								"proficiency": 1,
+								"details": ""
+							},
+							{
+								"title": "Pandas",
+								"type": "secondary",
+								"years": 1,
+								"proficiency": 2,
+								"details": ""
+							}
+						]
 					},
 					{
-						"name": "Java + Spring",
-						"proficiency": 60
-					},
-					{
-						"name": "PHP + Laravel",
-						"proficiency": 40
-					},
-					{
-						"name": "Python + Django",
-						"proficiency": 30
+						"icon": "fab fa-java",
+						"title": "Java",
+						"type": "primary",
+						"years": 6,
+						"proficiency": 5,
+						"details": "",
+						"childNodes": [
+							{
+								"title": "Spring Boot",
+								"type": "secondary",
+								"years": 1,
+								"proficiency": 3,
+								"details": ""
+							},
+							{
+								"title": "Spring MVC",
+								"type": "secondary",
+								"years": 1,
+								"proficiency": 2,
+								"details": ""
+							}
+						]
 					}
 				]
 			},
 			{
-				"category": "Mobile",
-				"tools": [
+				"title": "Outros",
+				"type": "main",
+				"childNodes": [
 					{
-						"name": "React Native",
-						"proficiency": 70
+						"icon": "fas fa-database",
+						"title": "Databases",
+						"type": "primary",
+						"years": 7,
+						"proficiency": 4,
+						"details": "",
+						"childNodes": [
+							{
+								"title": "MySQL",
+								"type": "secondary",
+								"years": 7,
+								"proficiency": 4,
+								"details": ""
+							},
+							{
+								"title": "PostgreSQL",
+								"type": "secondary",
+								"years": 2,
+								"proficiency": 3,
+								"details": ""
+							},
+							{
+								"title": "MongoDB",
+								"type": "secondary",
+								"years": 1,
+								"proficiency": 3,
+								"details": ""
+							}
+						]
 					},
 					{
-						"name": "Java/Kotlin Android",
-						"proficiency": 40
-					}
-				]
-			},
-			{
-				"category": "Design",
-				"tools": [
-					{
-						"name": "Illustrator + Photoshop",
-						"proficiency": 90
+						"icon": "fas fa-cog",
+						"title": "Arquitetura de Software",
+						"type": "primary",
+						"years": 4,
+						"proficiency": 3,
+						"details": "",
+						"childNodes": [
+							{
+								"title": "Design Patterns",
+								"type": "secondary",
+								"years": 2,
+								"proficiency": 3,
+								"details": ""
+							},
+							{
+								"title": "Atomic Design",
+								"type": "secondary",
+								"years": 4,
+								"proficiency": 4,
+								"details": ""
+							},
+							{
+								"title": "Microsservices",
+								"type": "secondary",
+								"years": 2,
+								"proficiency": 3,
+								"details": ""
+							},
+							{
+								"title": "REST",
+								"type": "secondary",
+								"years": 5,
+								"proficiency": 5,
+								"details": ""
+							}
+						]
 					},
 					{
-						"name": "Figma",
-						"proficiency": 80
-					},
-					{
-						"name": "UI/UX Design",
-						"proficiency": 60
-					}
-				]
-			},
-			{
-				"category": "Dev Ops",
-				"tools": [
-					{
-						"name": "Docker",
-						"proficiency": 50
-					},
-					{
-						"name": "Argo CD",
-						"proficiency": 30
-					},
-					{
-						"name": "Jenkins",
-						"proficiency": 30
-					},
-					{
-						"name": "Kubernetes",
-						"proficiency": 20
-					}
-				]
-			},
-			{
-				"category": "Geral",
-				"tools": [
-					{
-						"name": "Python",
-						"proficiency": 90
-					},
-					{
-						"name": "Java",
-						"proficiency": 80
-					},
-					{
-						"name": "C",
-						"proficiency": 70
-					},
-					{
-						"name": "AOSP",
-						"proficiency": 20
-					}
-				]
-			},
-			{
-				"category": "Línguas",
-				"tools": [
-					{
-						"name": "Português",
-						"proficiency": 100
-					},
-					{
-						"name": "Inglês",
-						"proficiency": 100
-					},
-					{
-						"name": "Espanhol",
-						"proficiency": 40
-					}
-				]
-			},
-			{
-				"category": "Outros",
-				"tools": [
-					{
-						"name": "Metolodogias Ágeis",
-						"proficiency": 80
-					},
-					{
-						"name": "Wordpress + Plugins",
-						"proficiency": 50
+						"icon": "fas fa-ellipsis-h",
+						"title": "Outros",
+						"type": "primary",
+						"childNodes": [
+							{
+								"title": "Metodologias Ágeis",
+								"type": "secondary",
+								"years": 4,
+								"proficiency": 5,
+								"details": ""
+							},
+							{
+								"title": "Docker",
+								"type": "secondary",
+								"years": 2,
+								"proficiency": 3,
+								"details": ""
+							},
+							{
+								"title": "AWS",
+								"type": "secondary",
+								"years": 1,
+								"proficiency": 1,
+								"details": ""
+							},
+							{
+								"title": "CI/CD",
+								"type": "secondary",
+								"years": 3,
+								"proficiency": 3,
+								"details": ""
+							}
+						]
 					}
 				]
 			}
-		]
-	},
-	"skillTree": {
-		"title": "Habilidades",
-		"skills": [],
+		],
 		"card": {
 			"years": {
 				"year": "ano de experiência",
@@ -541,6 +730,32 @@
 	},
 	"contact": {
 		"title": "Contato",
-		"or": "ou"
+		"or": "ou",
+		"content": [
+			{
+				"icon": "fab fa-linkedin",
+				"href": "https://linkedin.com/in/jgoa156",
+				"text": "linkedin.com/in/jgoa156"
+			},
+			{
+				"icon": "fas fa-envelope",
+				"href": "mailto:jgoa156@gmail.com",
+				"text": "jgoa156@gmail.com"
+			},
+			{
+				"icon": "fab fa-github",
+				"href": "https://github.com/jgoa156",
+				"text": "github.com/jgoa156"
+			},
+			{
+				"icon": "fab fa-whatsapp",
+				"href": "https://wa.me/5592984656666",
+				"text": "+55 92 98465-6666"
+			},
+			{
+				"icon": "fas fa-link",
+				"text": "guilherme.vercel.app"
+			}
+		]
 	}
 }

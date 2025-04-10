@@ -22,7 +22,8 @@
 		"**/*.ts",
 		"**/*.tsx",
 		"src",
-		"next-i18next.config.js",
+		"src/interfaces/declarations.d.ts",
+		"next-i18next.config.js"
 	],
 	"exclude": ["node_modules"]
 }

@@ -4,6 +4,10 @@ import Scrollspy from "react-scrollspy";
 import { useTranslation } from "next-i18next";
 import { Dropdown } from "react-bootstrap";
 
+// Shared
+import Links, { ILink } from "components/shared/Links";
+
+// Custom
 import {
   HeaderWrapper,
   TitleWrapper,
@@ -21,7 +25,7 @@ import {
 } from "./styles";
 
 export default function Header() {
-  const { t, ready, i18n } = useTranslation(["main"], { keyPrefix: "options" });
+  const { t, ready, i18n } = useTranslation(["main"]);
 
   const isTablet = useMediaQuery({
     query: "(max-width: 1024px)"
@@ -31,7 +35,7 @@ export default function Header() {
   const [showGoToTop, setShowGoToTop] = useState(false);
   const [showSidenav, setShowSidenav] = useState(false);
 
-  const links = Array.from(t("links", { returnObjects: true }) as any[]);
+  const links = Array.from(t("options.links", { returnObjects: true }) as any[]);
 
   // Go to top
   const bannerHeight = isTablet ? 400 : 500;
@@ -53,6 +57,9 @@ export default function Header() {
     if (showSidenav) disableScroll.on();
     else disableScroll.off();
   }, [showSidenav]);*/
+
+  // Social media links
+  const socialMediaLinks: ILink[] = Array.from(t("contact.content", { returnObjects: true }) as any[]);
 
   if (!ready) return null;
   return (
@@ -114,6 +121,8 @@ export default function Header() {
                   return <a key={index} href={`#${link.href}`} data-to-scrollspy-id={link.href}>{link.title}</a>
                 })}
               </LinkWrapper>
+
+              <Links links={socialMediaLinks} sidenav={true} />
             </div>
           </Sidenav>
 

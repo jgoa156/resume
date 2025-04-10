@@ -12,7 +12,7 @@ import {
 } from "./styles";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 
 export default function Tools({ t }: IDefaultComponentProps) {
   // Tools

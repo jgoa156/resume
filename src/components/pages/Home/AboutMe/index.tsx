@@ -23,7 +23,7 @@ import {
 } from "./styles";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 
 export default function AboutMe({ t }: IDefaultComponentProps) {
   const isMobile = useMediaQuery({
@@ -122,7 +122,7 @@ export default function AboutMe({ t }: IDefaultComponentProps) {
                   return (
                     <Item key={index}>
                       <ItemTitle>
-                        <img src={certificate.icon} style={certificate.iconProps} />
+                        <img src={`img/${certificate.icon}`} style={certificate.iconProps} />
 
                         <div className={"textWrapper"}>
                           <h5>{certificate.name}</h5>
