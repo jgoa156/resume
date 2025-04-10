@@ -23,25 +23,25 @@
 		],
 		"download": "Baixar CV",
 		"resume": {
-			"copy": "Copy resume to clipboard",
-			"copied": "Copied!",
-			"text": "Portfolio: https://guilherme.vercel.app/\n\nSenior Software Engineer with 6 years of experience in web development, specializing in React, Next.js, Node.js and Java. Proven track record in front-end optimization and API design with successful projects for Banco do Brasil, CVC and SAP."
+			"copy": "Copiar resumo para área de transferência",
+			"copied": "Copiado!",
+			"text": "Portfolio: https://guilherme.vercel.app/\n\nEngenheiro de Software Sênior com 6 anos de experiência em desenvolvimento web, especializado em React, Next.js, Node.js e Java. Possuo histórico comprovado em otimização de front-end e design de APIs, com projetos bem-sucedidos para o Banco do Brasil, CVC e SAP."
 		}
 	},
 	"tools": {
 		"title": "Main tools"
 	},
 	"about": {
-		"title": "About Me",
-		"altTitle": "Summary",
+		"title": "Sobre",
+		"altTitle": "Resumo",
 		"general": {
-			"title": "Who am I?",
+			"title": "Quem sou eu?",
 			"content": [
-				"I'm Guilherme Almeida, a 24-year-old Full Stack Web and Mobile Developer based in Curitiba, Brazil. I currently focus on React + Next.js, Node.js + NestJS, Java, and UI/UX design, while also having experience with a wide range of other technologies.",
-				"I hold a Technical Degree in Informatics with an emphasis on Software Engineering, as well as a Bachelor's Degree in Software Engineering from the Federal University of Amazonas—totaling 8 years of academic experience.",
+				"Me chamo Guilherme Almeida e sou um Engenheiro de Software de 24 anos atualmente alocado em Curitiba, Brasil. Sou especializado em React + Next.js, Node.js + NestJS, Java, e design UI/UX, também possuindo experiência com uma ampla gama de outras tecnologias.",
+				"Possuo um diploma de graduação em Engenharia de Software pela Universidade Federal do Amazonas, bem como um certificado técnico em Informática com ênfase em Engenharia de Software, totalizando 8 anos de experiência acadêmica e 6 anos de experiência profissional.",
 				"Atualmente estou focado em DevOps e desenvolvimento back-end, porém minhas especialidades são desenvolvimento front-end, mobile e design UI/UX."
 			],
-			"summary": "Senior Software Engineer with 6 years of experience in web development, specializing in React, Next.js, Node.js and Java. Proven track record in front-end optimization and API design with successful projects for Banco do Brasil, CVC and SAP.",
+			"summary": "Engenheiro de Software Sênior com 6 anos de experiência em desenvolvimento web, especializado em React, Next.js, Node.js e Java. Possuo histórico comprovado em otimização de front-end e design de APIs, com projetos bem-sucedidos para o Banco do Brasil, CVC e SAP.",
 			"roles": ["Engenheiro de Software Sênior", "Desenvolvedor Web e Mobile"],
 			"languages": {
 				"title": "Línguas",
@@ -67,13 +67,13 @@
 			}
 		},
 		"personality": {
-			"title": "What do I like?",
+			"title": "Do que eu gosto?",
 			"content": [
 				{
-					"content": "While my focus lies on web development, I’m also deeply interested in adjacent fields such as machine learning, data mining, and embedded systems. My passion for DIY culture has led me to explore other branches of engineering, including mechatronics. Additionally, I’m considering pursuing a second degree in Sound Engineering to further expand my multidisciplinary skill set."
+					"content": "Apesar de meu foco ser desenvolvimento web, eu também me interesso muito por campos similares como aprendizagem de máquina, mineração de dados e sistemas embarcados. Minha paixão pela cultura DIY me levou a explorar outros campos da engenharia, incluindo mecatrônica. A propósito, também estou considerando uma segunda graduação em Engenharia de Som para expandir minhas habilidades multidisciplinares."
 				},
 				{
-					"content": "Outside of tech, I’m a passionate enthusiast of niche and alternative cultures. I'm an avid fan of RPGs, gothic subculture, and cyberpunk literature. I also have a deep appreciation for experimental art, ranging from psychedelic cinema to noise music, which continuously inspires my creative approach to problem-solving and design. My artistic interests often intersect with my technical work, allowing me to bring a unique perspective to both fields."
+					"content": "Fora do mundo tecnológico, eu também sou muito apaixonado por cultura e subculturas alternativas. Sou um fã religioso de RPGs, subcultura gótica e literatura cyberpunk. Também tenho muito apreço por arte experimental, desde cinema psicodélico até noise music, o que constantemente inspira minha abordagem criativa para resolução de problemas e design. Meus interesses artísticos geralmente interagem com meu trabalho técnico, me possibilitando trazer um olhar único para ambos os campos."
 				},
 				{
 					"links": [
@@ -81,31 +81,31 @@
 						"https://www.instagram.com/death.yon/",
 						"https://steamcommunity.com/id/flammableman/myworkshopfiles/"
 					],
-					"content": "I'm currently working on several side projects, such as a <0>post-rock project</0>, an unreleased industrial techno and dark psy project, an <1>illustration project</1> and several installation projects involving computer vision, 3D and videomapping. I also make <2>some wallpapers</2> for Wallpaper Engine."
+					"content": "Atualmente estou trabalhando em vários projetos paralelos, como um <0>projeto de post-rock</0> e um <1>projeto de ilustração</1>. Eu também faço <2>alguns wallpapers</2> para o Wallpaper Engine."
 				}
 			]
 		},
 		"cards": {
-			"academic": "Years of academic experience",
-			"professional": "Years of professional experience"
+			"academic": "Anos de experiência acadêmica",
+			"professional": "Anos de experiência profissional"
 		},
 		"education": {
-			"title": "Education",
+			"title": "Educação",
 			"certificates": [
 				{
-					"name": "Software Engineering",
-					"type": "Bachelor's Degree",
-					"institution": "Federal University of Amazonas",
-					"start": "January, 2019",
-					"end": "March, 2024",
+					"name": "Engenheria de Software",
+					"type": "Graduação",
+					"institution": "Universidade Federal do Amazonas",
+					"start": "Janeiro 2019",
+					"end": "Março 2024",
 					"icon": "components/Education/ufam.png"
 				},
 				{
-					"name": "Informatics",
-					"type": "Technical Degree",
-					"institution": "Federal Institute of Amazonas",
-					"start": "February, 2016",
-					"end": "December, 2018",
+					"name": "Informática",
+					"type": "Curso Técnico",
+					"institution": "Instituto Federal do Amazonas",
+					"start": "Fevereiro 2016",
+					"end": "Dezembro 2018",
 					"icon": "components/Education/if.png",
 					"iconProps": {
 						"width": "25px",
@@ -113,88 +113,88 @@
 					}
 				},
 				{
-					"name": "Embedded Android Development",
-					"type": "Certificate Course",
-					"institution": "State University of Amazonas",
-					"start": "January, 2021",
-					"end": "May, 2021",
+					"name": "Desenvolvimento em Android Embarcado",
+					"type": "Curso com certificado",
+					"institution": "Universidade do Estado do Amazonas",
+					"start": "Janeiro 2021",
+					"end": "Maio 2021",
 					"icon": "components/Education/uea.png"
 				},
 				{
-					"name": "Graphic Design",
-					"type": "Certificate Course",
+					"name": "Design Gráfico",
+					"type": "Curso com certificado",
 					"institution": "GRACOM",
-					"start": "May, 2016",
-					"end": "July, 2017",
+					"start": "Maio 2016",
+					"end": "Julho 2017",
 					"icon": "components/Education/gracom.png"
 				}
 			]
 		}
 	},
 	"work": {
-		"title": "Work experience",
+		"title": "Experiência",
 		"jobs": [
 			{
-				"name": "Senior Full Stack Engineer",
-				"type": "Full-time (Remote)",
+				"name": "Engenheiro Full Stack Sênior",
+				"type": "Tempo integral (Remoto)",
 				"company": "HCL Tech",
 				"icon": "components/Work/hcl.png",
-				"start": "October 2024",
-				"end": "Present",
+				"start": "Outubro 2024",
+				"end": "Atualmente",
 				"bullets": [
-					"Maintained SAP’s legacy codebase (JavaScript & ASP)",
-					"Reduced technical debt and fixed CSP issues",
-					"Improved accessibility and app performance",
-					"Updated dependencies for stability and security",
-					"Worked with international, multicultural team"
+					"Manutenção de código legado da SAP (JavaScript e ASP)",
+					"Redução de débito técnico e correção de problemas de CSP",
+					"Correções de acessibilidade e desempenho",
+					"Atualizações de dependências",
+					"Trabalho com uma equipe internacional e multicultural"
 				],
 				"description": [
 					{
 						"links": ["https://www.sap.com/"],
 						"content": [
-							"Maintained a legacy codebase for <0>SAP</0> written in JavaScript and ASP. Responsibilities include addressing technical debt by resolving CSP violations, improving accessibility and performance, updating dependencies, and implementing new unit tests to ensure code reliability and maintainability."
+							"Manutenção de código legado <0>SAP</0> escrito em JavaScript e ASP. Responsabilidades incluem a mitigação de débito técnico resolvendo violações de CSP, melhorando a acessibilidade e o desempenho, atualizando dependências e implementando novos testes unitários para garantir a confiabilidade e a manutenção do código."
 						]
 					}
 				]
 			},
 			{
-				"name": "Full Stack Engineer",
-				"type": "Full-time (Remote)",
+				"name": "Engenheiro Full Stack",
+				"type": "Tempo integral (Remoto)",
 				"company": "Betablocks",
 				"icon": "components/Work/betablocks.png",
-				"start": "January 2024",
-				"end": "July 2024",
+				"start": "Janeiro 2024",
+				"end": "Julho 2024",
 				"bullets": [
-					"Built Web3 apps with Python (Django) and React",
-					"Integrated blockchains, crypto payments, and cloud services",
-					"Led UI/UX design for seamless user experiences"
+					"Criação de aplicativos Web3 com Python (Django) e React",
+					"Integração blockchains, pagamentos com criptomoedas e serviços em nuvem",
+					"Liderei decisões de UI/UX para garantir experiências de usuário fluidas"
 				],
 				"description": [
 					{
 						"links": ["https://www.bv.com.br/", "https://www.pelxp.com/"],
 						"content": [
-							"Full Stack Engineer at a Miami-based company specializing in Web3 technologies, including NFTs, crypto, and blockchain. Focused on ESG initiatives and rewards programs for clients such as <0>Banco BV</0> and <1>PelXP</1>."
+							"Engenheiro Full Stack em empresa de Miami trabalhando com tecnologias Web3 como NFTs, criptomoedas e blockchains. Nossos principais projetos giram em torno de iniciativas ESG e programas de recompensas usando tecnologias Web3, com clientes como o <0>Banco BV</0> e a <1>PelXP</1>."
 						]
 					},
 					{
 						"links": ["https://builder.betablocks.com/login"],
 						"content": [
-							"Worked on multiple client projects, primarily maintaining and enhancing the <0>page builder</0>. Responsibilities included front-end development with React, UI/UX design, and back-end development with Django."
+							"Trabalhei em vários projetos para diferentes clientes, com minha principal tarefa sendo manter e adicionar funcionalidades ao nosso <0>construtor de páginas</0>, onde trabalhei principalmente como desenvolvedor front-end usando React, designer UI/UX e desenvolvedor back-end usando Django em Python."
 						]
 					}
 				]
 			},
 			{
-				"name": "Front-end developer",
-				"type": "Full-time (Remote)",
+				"name": "Desenvolvedor Front-end",
+				"type": "Tempo integral (Remoto)",
 				"company": "Ioasys",
 				"icon": "components/Work/ioasys.png",
-				"start": "April 2022",
-				"end": "February 2023",
+				"start": "Abril 2022",
+				"end": "Fevereiro 2023",
 				"bullets": [
-					"Built CVC’s bus ticket platforms, Rodofácil and Rodoviário Exclusivo",
-					"Used TypeScript, React, Jest, and Docker",
-					"Participated in war room before launch to ensure a smooth release"
+					"Construí as plataformas de passagens de ônibus da CVC, Rodofácil e Rodoviário Exclusivo",
+					"Utilizei TypeScript, React, Jest e Docker",
+					"Participei de uma war room antes do lançamento do projeto para garantir um lançamento estável"
 				],
 				"description": [
 					{
@@ -203,28 +203,28 @@
 							"https://www.cvc.com.br/"
 						],
 						"content": [
-							"Front-end developer collaborating with developers, designers, and managers to modernize businesses. Clients include fintech <0>Banco Inter</0> and travel company <1>CVC</1>."
+							"Desenvolvedor Front-end trabalhando ao lado de outros desenvolvedores, designers e gerentes para modernizar empresas que desejam entrar na era digital. Nossos clientes incluem a fintech <0>Banco Inter</0> e a empresa de viagens <1>CVC</1>."
 						]
 					},
 					{
 						"links": ["#projects"],
 						"content": [
-							"As a front-end developer, I worked on CVC's bus ticket platforms, Rodofácil and Rodoviário Exclusivo, using TypeScript, React, and Jest. Both projects are available on <0>projects section</0>."
+							"Como desenvolvedor front-end, meus principais projetos foram as plataformas de venda de passagens de ônibus da CVC <i>Rodofácil</i> e <i>Rodoviário Exclusivo</i>, onde trabalhei principalmente com TypeScript, React e Jest. Ambas as plataformas estão disponíveis na <0>seção de projetos</0>."
 						]
 					}
 				]
 			},
 			{
-				"name": "Full Stack developer",
-				"type": "Full-time (Remote)",
+				"name": "Desenvolvedor Full Stack",
+				"type": "Tempo integral (Remoto)",
 				"company": "Capgemini",
 				"icon": "components/Work/capgemini.png",
-				"start": "June 2021",
-				"end": "April 2022",
+				"start": "Junho 2021",
+				"end": "Abril 2022",
 				"bullets": [
-					"Helped develop Banco do Brasil's investments page",
-					"Worked on front-end using React, Next.js, and CI/CD pipelines",
-					"Contributed to UI/UX design for a better user experience"
+					"Ajudei a desenvolver a página de investimentos do Banco do Brasil",
+					"Trabalhei no front-end usando React, Next.js e pipelines de CI/CD",
+					"Contribuí no design UI/UX para uma melhor experiência de usuário"
 				],
 				"description": [
 					{
@@ -234,38 +234,38 @@
 							"https://www.itau.com.br/"
 						],
 						"content": [
-							"Full Stack developer collaborating with developers, designers, and product managers to deliver high-end digital solutions. Key clients include <0>Banco do Brasil</0>, <1>Bradesco</1>, and <2>Itaú</2>."
+							"Desenvolvedor Full Stack trabalhando ao lado de vários outros desenvolvedores, designers e gerentes de produto para entregar soluções digitais de alta qualidade para nossos clientes. Nossos principais clientes nesta empresa incluem o <0>Banco do Brasil</0>, que é o segundo maior banco da América Latina, e outros bancos como <1>Bradesco</1> e <2>Itaú</2>."
 						]
 					},
 					{
 						"links": ["https://www.bb.com.br/uci/investimentos.html"],
 						"content": [
-							"My main project at this company was Banco do Brasil's <0>investments page</0>, where I primarily worked as a front-end developer. Tools used include TypeScript, React, Jest and Docker."
+							"Meu principal projeto enquanto trabalhava nesta empresa foi a <0>página de investimentos</0> do Banco do Brasil, onde trabalhei principalmente como desenvolvedor front-end. Ferramentas usadas incluem TypeScript, React, Jest e Docker."
 						]
 					}
 				]
 			},
 			{
-				"name": "Full Stack developer",
-				"type": "Full-time (Local)",
+				"name": "Desenvolvedor Full Stack",
+				"type": "Tempo integral (Local)",
 				"company": "CREA-AM",
 				"icon": "components/Work/crea.png",
-				"start": "May 2019",
-				"end": "June 2021",
+				"start": "Maio 2019",
+				"end": "Junho 2021",
 				"bullets": [
-					"Developed on-demand software with React, Wordpress, PHP, Node, Java, and Python",
-					"Designed full-stack apps from scratch, handling UI/UX and deployment (FTP)",
-					"Automated tasks and performed web scraping using Python and Scrapy"
+					"Desenvolvi aplicações sob demanda com React, Wordpress, PHP, Node, Java e Python",
+					"Projetei aplicativos full-stack do zero, gerenciando UI/UX e implantação (FTP)",
+					"Automatizei tarefas e realizei web scraping usando Python e Scrapy"
 				],
 				"description": [
 					{
 						"content": [
-							"Full Stack Developer in the I.T. department of the Regional Council of Engineering and Agronomy of Amazonas, responsible for developing and maintaining systems, including a CRM, document management, and event management platforms."
+							"Desenvolvedor Full Stack trabalhando no departamento de T.I do Conselho Regional de Engenharia e Agronomia do Amazonas. Meu principal papel era desenvolver e manter os sistemas do conselho, que incluíam um CRM, um sistema de gerenciamento de documentos e um sistema para gerenciar os eventos do conselho."
 						]
 					},
 					{
 						"content": [
-							"Also served as an I.T. support technician, maintaining computers, servers, and printers, and as a designer, developing the council's visual identity and website."
+							"Também trabalhei como técnico de suporte de T.I, mantendo os computadores, servidores e impressoras do conselho, e como designer, criando a identidade visual do conselho e projetando o site do conselho."
 						]
 					}
 				]
@@ -273,16 +273,16 @@
 		]
 	},
 	"projects": {
-		"title": "Projects",
+		"title": "Projetos",
 		"disclaimer": {
-			"title": "*Disclaimer: ",
-			"content": "I do not maintain some of the projects mentioned above, therefore some of those projects may be impacted by posterior work done by people who are still involved with them."
+			"title": "*Aviso: ",
+			"content": "Eu não mantenho alguns dos projetos mencionados acima, consequentemente alguns dos projetos podem ter sido impactados por mudanças feitas por terceiros."
 		},
 		"projects": [
 			{
 				"name": "Pyramid",
 				"image": "pyramid.jpg",
-				"description": "UFAM's computing institute (ICOMP) tool for managing students's extracurricular activities. I worked as a full cycle developer/engineer, working on every step since data modelling all the way to deploy.",
+				"description": "Ferramenta do Instituto de Computação da UFAM (ICOMP) para gerenciar atividades extracurriculares dos alunos. Trabalhei como desenvolvedor full cycle, trabalhando em todos os passos desde modelagem de dados até deploy.",
 				"url": "https://pyramid.icomp.ufam.edu.br/",
 				"tags": [
 					"React",
@@ -304,7 +304,7 @@
 			{
 				"name": "Betablocks Builder",
 				"image": "betablocks.jpg",
-				"description": "Betablocks main product, where I mostly added new functionalities and designed custom solutions for our clients.",
+				"description": "Produto principal da Betablocks, onde eu majoritariamente adicionei novas funcionalidades e arquitetei soluoções customizadas para nossos clientes.",
 				"url": "https://www.betablocks.com/",
 				"tags": [
 					"React",
@@ -323,7 +323,7 @@
 			{
 				"name": "CVC - Rodofácil/Rodoviário Exclusivo",
 				"image": "rodofacil.jpg",
-				"description": "CVC's busing tickets platforms, where you can buy bus tickets for several destinations in Brazil, as well as book exclusive buses for your events.",
+				"description": "Plataforma de venda de passagens de ônibus da CVC, onde é possível comprar tanto passagens de ônibus para vários destinos no Brasil, bem como reservar ônibus exclusivos para eventos.",
 				"url": "https://www.cvc.com.br/rodoviario/rodofacil/search",
 				"tags": [
 					"React",
@@ -340,7 +340,7 @@
 			{
 				"name": "BB - Investimentos",
 				"image": "bb-investimentos.jpg",
-				"description": "Banco do Brasil's landing page for their Investments app which contains all information regarding their platform and their stocks.",
+				"description": "Landing page para o aplicativo de Investimentos do Banco do Brasil que contém todas as informações sobre a plataforma e suas ações.",
 				"url": "https://www.bb.com.br/uci/investimentos.html",
 				"tags": [
 					"React",
@@ -350,15 +350,14 @@
 					"JS",
 					"Jest",
 					"Jenkins",
-					"Argo CD",
-					"UI/UX"
+					"Argo CD"
 				],
 				"year": 2022
 			},
 			{
 				"name": "CREA-AM - Banco de Oportunidades",
 				"image": "crea-oportunidades.jpg",
-				"description": "CREA-AM's talent pool application designed with the goal to connect engineers to contractors and to publish engineering related jobs.",
+				"description": "Aplicativo de pool de talentos do CREA-AM projetado com o objetivo de conectar engenheiros a empreiteiros e publicar empregos relacionados à engenharia.",
 				"url": "https://oportunidades.crea-am.org.br",
 				"tags": [
 					"React",
@@ -370,17 +369,16 @@
 					"CSS",
 					"JS",
 					"Scrapy",
-					"Python",
-					"UI/UX"
+					"Python"
 				],
 				"year": 2021
 			},
 			{
 				"name": "CREA-AM - Main page",
 				"image": "crea-site.jpg",
-				"description": "CREA-AM's main institutional landing page which contains all information regarding the council's activities, documents and other platforms.",
+				"description": "Página principal institucional do CREA-AM que contém todas as informações sobre as atividades do conselho, documentos e outras plataformas.",
 				"url": "https://crea-am.org.br",
-				"tags": ["Wordpress", "PHP", "HTML", "CSS", "JS", "jQuery", "UI/UX"],
+				"tags": ["Wordpress", "PHP", "HTML", "CSS", "JS", "jQuery"],
 				"year": 2020
 			}
 		],
@@ -388,24 +386,16 @@
 			{
 				"name": "MCA International",
 				"image": "mca.jpg",
-				"description": "MCA International's main institutional page, containing informations regarding the company and their main services.",
+				"description": "Página institucional principal da MCA International, contendo informações sobre a empresa e seus principais serviços.",
 				"url": "https://mcaig.com",
-				"tags": [
-					"React",
-					"Next",
-					"HTML",
-					"CSS",
-					"JS",
-					"Styled Components",
-					"UI/UX"
-				],
+				"tags": ["React", "Next", "HTML", "CSS", "JS", "Styled Components"],
 				"year": 2022
 			}
 		]
 	},
 	"skillTree": {
-		"title": "Skills",
-		"altTitle": "Hard Skills",
+		"title": "Habilidades",
+		"altTitle": "Habilidades Técnicas",
 		"skills": [
 			{
 				"title": "Frontend",
@@ -482,7 +472,7 @@
 					},
 					{
 						"icon": "fas fa-vial",
-						"title": "Unit Testing",
+						"title": "Testes unitários",
 						"type": "primary",
 						"years": 2,
 						"proficiency": 3,
@@ -613,7 +603,7 @@
 				]
 			},
 			{
-				"title": "Others",
+				"title": "Outros",
 				"type": "main",
 				"childNodes": [
 					{
@@ -649,12 +639,19 @@
 					},
 					{
 						"icon": "fas fa-cog",
-						"title": "Software Architecture",
+						"title": "Arquitetura de Software",
 						"type": "primary",
 						"years": 4,
 						"proficiency": 3,
 						"details": "",
 						"childNodes": [
+							{
+								"title": "Design Patterns",
+								"type": "secondary",
+								"years": 2,
+								"proficiency": 3,
+								"details": ""
+							},
 							{
 								"title": "Atomic Design",
 								"type": "secondary",
@@ -680,11 +677,11 @@
 					},
 					{
 						"icon": "fas fa-ellipsis-h",
-						"title": "Others",
+						"title": "Outros",
 						"type": "primary",
 						"childNodes": [
 							{
-								"title": "Agile Methodologies",
+								"title": "Metodologias Ágeis",
 								"type": "secondary",
 								"years": 4,
 								"proficiency": 5,
@@ -718,22 +715,22 @@
 		],
 		"card": {
 			"years": {
-				"year": "year of experience",
-				"years": "years of experience",
-				"less": "Less than a year of experience"
+				"year": "ano de experiência",
+				"years": "anos de experiência",
+				"less": "Menos de um ano de experiência"
 			},
 			"proficiency": [
-				"Beginner",
-				"Moderate",
-				"Advanced",
-				"Proficient",
-				"Expert"
+				"Iniciante",
+				"Moderado",
+				"Avançado",
+				"Proficiente",
+				"Especialista"
 			]
 		}
 	},
 	"contact": {
-		"title": "Contact me",
-		"or": "or",
+		"title": "Contato",
+		"or": "ou",
 		"content": [
 			{
 				"icon": "fab fa-linkedin",

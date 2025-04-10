@@ -31,7 +31,7 @@ export default function Node({ t, type, title, years, proficiency, details, icon
   function findIcon(skill: string): ReactElement | null {
     const icons = {
       "Next": <IconNext />,
-      "Design and Web design": <IconWebDesign />,
+      "Design": <IconWebDesign />,
       "Jest": <IconJest />,
       "Express": <IconExpress />,
       "Nest": <IconNest />,
@@ -50,7 +50,7 @@ export default function Node({ t, type, title, years, proficiency, details, icon
           placement="right"
           overlay={renderHoverCard}
           delay={{ show: 20, hide: 50 }}
-
+          children={<></>}
         >
           <NodeContent>
             <div>

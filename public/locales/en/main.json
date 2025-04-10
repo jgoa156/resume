@@ -37,8 +37,8 @@
 		"general": {
 			"title": "Who am I?",
 			"content": [
-				"I'm Guilherme Almeida, a 24-year-old Full Stack Web and Mobile Developer based in Curitiba, Brazil. I currently focus on React + Next.js, Node.js + NestJS, Java, and UI/UX design, while also having experience with a wide range of other technologies.",
-				"I hold a Technical Degree in Informatics with an emphasis on Software Engineering, as well as a Bachelor's Degree in Software Engineering from the Federal University of Amazonas—totaling 8 years of academic experience.",
+				"I'm Guilherme Almeida, a 24-year-old Software Engineer based in Curitiba, Brazil. I'm specialized in React + Next.js, Node.js + NestJS, Java, and UI/UX design, while also having experience with a wide range of other technologies.",
+				"I hold a Bachelor's Degree in Software Engineering from the Federal University of Amazonas, as well as a Technical Degree in Informatics with an emphasis on Software Engineering, totaling 8 years of academic experience and 6 years of work experience.",
 				"At the moment, I'm focused on DevOps and back-end development, though my core expertise lies in front-end engineering, UI/UX design, and mobile development."
 			],
 			"summary": "Senior Software Engineer with 6 years of experience in web development, specializing in React, Next.js, Node.js and Java. Proven track record in front-end optimization and API design with successful projects for Banco do Brasil, CVC and SAP.",
@@ -73,7 +73,7 @@
 					"content": "While my focus lies on web development, I’m also deeply interested in adjacent fields such as machine learning, data mining, and embedded systems. My passion for DIY culture has led me to explore other branches of engineering, including mechatronics. Additionally, I’m considering pursuing a second degree in Sound Engineering to further expand my multidisciplinary skill set."
 				},
 				{
-					"content": "Outside of tech, I’m a passionate enthusiast of niche and alternative cultures. I'm an avid fan of RPGs, gothic subculture, and cyberpunk literature. I also have a deep appreciation for experimental art, ranging from psychedelic cinema to noise music, which continuously inspires my creative approach to problem-solving and design. My artistic interests often intersect with my technical work, allowing me to bring a unique perspective to both fields."
+					"content": "Outside of tech, I’m a passionate enthusiast of niche and alternative cultures. I'm an avid fan of RPGs, gothic subculture and cyberpunk literature. I also have a deep appreciation for experimental art, ranging from psychedelic cinema to noise music, which continuously inspires my creative approach to problem-solving and design. My artistic interests often intersect with my technical work, allowing me to bring a unique perspective to both fields."
 				},
 				{
 					"links": [
@@ -81,7 +81,7 @@
 						"https://www.instagram.com/death.yon/",
 						"https://steamcommunity.com/id/flammableman/myworkshopfiles/"
 					],
-					"content": "I'm currently working on several side projects, such as a <0>post-rock project</0>, an unreleased industrial techno and dark psy project, an <1>illustration project</1> and several installation projects involving computer vision, 3D and videomapping. I also make <2>some wallpapers</2> for Wallpaper Engine."
+					"content": "I'm currently working on several side projects, such as a <0>post-rock project</0> and an <1>illustration project</1>. I also make <2>some wallpapers</2> for Wallpaper Engine."
 				}
 			]
 		},
@@ -96,16 +96,16 @@
 					"name": "Software Engineering",
 					"type": "Bachelor's Degree",
 					"institution": "Federal University of Amazonas",
-					"start": "January, 2019",
-					"end": "March, 2024",
+					"start": "January 2019",
+					"end": "March 2024",
 					"icon": "components/Education/ufam.png"
 				},
 				{
 					"name": "Informatics",
 					"type": "Technical Degree",
 					"institution": "Federal Institute of Amazonas",
-					"start": "February, 2016",
-					"end": "December, 2018",
+					"start": "February 2016",
+					"end": "December 2018",
 					"icon": "components/Education/if.png",
 					"iconProps": {
 						"width": "25px",
@@ -116,16 +116,16 @@
 					"name": "Embedded Android Development",
 					"type": "Certificate Course",
 					"institution": "State University of Amazonas",
-					"start": "January, 2021",
-					"end": "May, 2021",
+					"start": "January 2021",
+					"end": "May 2021",
 					"icon": "components/Education/uea.png"
 				},
 				{
 					"name": "Graphic Design",
 					"type": "Certificate Course",
 					"institution": "GRACOM",
-					"start": "May, 2016",
-					"end": "July, 2017",
+					"start": "May 2016",
+					"end": "July 2017",
 					"icon": "components/Education/gracom.png"
 				}
 			]
@@ -144,8 +144,8 @@
 				"bullets": [
 					"Maintained SAP’s legacy codebase (JavaScript & ASP)",
 					"Reduced technical debt and fixed CSP issues",
-					"Improved accessibility and app performance",
-					"Updated dependencies for stability and security",
+					"Accessibility and performance corrections",
+					"Updated dependencies",
 					"Worked with international, multicultural team"
 				],
 				"description": [
@@ -655,6 +655,13 @@
 						"proficiency": 3,
 						"details": "",
 						"childNodes": [
+							{
+								"title": "Design Patterns",
+								"type": "secondary",
+								"years": 2,
+								"proficiency": 3,
+								"details": ""
+							},
 							{
 								"title": "Atomic Design",
 								"type": "secondary",
