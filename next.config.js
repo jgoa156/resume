@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 const { i18n } = require("./next-i18next.config");
 
-const basePath = "";
+const basePath = process.env.BASE;
 
 module.exports = {
 	i18n: {

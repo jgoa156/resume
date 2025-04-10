@@ -17,12 +17,12 @@ import {
 } from "./styles";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 
 export default function WorkExperience({ t }: IDefaultComponentProps) {
   const jobsNsObject = Array.from(t("work.jobs", { returnObjects: true }) as any[]);
 
-  function JobItem({ key, job, initialCollapseState = false }) {
+  function JobItem({ job, initialCollapseState = false }) {
     const [open, setOpen] = useState(initialCollapseState);
 
     return (
@@ -38,7 +38,7 @@ export default function WorkExperience({ t }: IDefaultComponentProps) {
             </div>
           </ItemTitle>
 
-          <Collapse in={open}>
+          <Collapse in={open} children={<></>}>
             <ItemDescription>
               <p className={"details"}>{job.start} - {job.end}</p>
               <div>
@@ -79,7 +79,7 @@ export default function WorkExperience({ t }: IDefaultComponentProps) {
         <ItemWrapper>
           {jobsNsObject.map((job, index) => {
             return (
-              <JobItem key={index} job={job} initialCollapseState={index === 0} />
+              <JobItem job={job} initialCollapseState={index === 0} />
             )
           })}
         </ItemWrapper>

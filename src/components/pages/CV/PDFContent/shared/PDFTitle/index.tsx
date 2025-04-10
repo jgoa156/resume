@@ -1,9 +1,11 @@
 import { Line, Svg, Text, View } from "@react-pdf/renderer";
 
 // Custom
-import styles from "./styles";
+import createStyles from "./styles";
 
-export default function PDFTitle({ title }) {
+export default function PDFTitle({ title, theme }) {
+  const styles = createStyles(theme);
+
   return (
     <View>
       <Text style={styles.title}>
@@ -17,7 +19,7 @@ export default function PDFTitle({ title }) {
           x2="400"
           y2="0"
           strokeWidth={1}
-          stroke="rgb(5, 212, 161)"
+          stroke={theme.primary}
         />
       </Svg>
     </View>

@@ -24,7 +24,7 @@ import {
 } from "./styles";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 
 export default function Banner({ t, ready }: IDefaultComponentProps) {
   // Konami code - TODO: ADD RGB EFFECT 

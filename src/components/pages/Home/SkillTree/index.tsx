@@ -17,7 +17,7 @@ import {
 
 // Interfaces
 import { INodeProps } from "./interfaces";
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 
 export default function SkillTree({ t }: IDefaultComponentProps) {
   const isMobile = useMediaQuery({

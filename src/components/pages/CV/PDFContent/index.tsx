@@ -6,7 +6,7 @@ import Content from './Content';
 import styles from './styles';
 
 // Interfaces
-import { IDefaultComponentProps } from 'interfaces/IDefaultComponent';
+import { IDefaultComponentProps } from 'interfaces';
 
 import sfProNormal from "./shared/fonts/SF-Pro-Display-Regular.otf";
 import sfProSemi from "./shared/fonts/SF-Pro-Display-Semibold.otf";
@@ -16,7 +16,7 @@ Font.register({
   family: "SFPro",
   fonts: [
     { src: sfProNormal, fontWeight: "normal" },
-    { src: sfProSemi, fontWeight: "semibold" },
+    { src: sfProSemi, fontWeight: "bold" },
   ]
 });
 
@@ -25,13 +25,13 @@ Font.register({
   src: parkson,
 });
 
-export default function PDFContent({ t, ready }: IDefaultComponentProps) {
+export default function PDFContent({ t, theme }: IDefaultComponentProps) {
   return (
     <Document>
       <Page size="A4" wrap={false}>
         <View style={styles.page} id="pdf-content">
-          <Summary t={t} />
-          <Content t={t} />
+          <Summary t={t} theme={theme} />
+          <Content t={t} theme={theme} />
         </View>
       </Page>
     </Document>

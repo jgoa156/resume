@@ -7,18 +7,18 @@ import PDFTitle from "../../shared/PDFTitle";
 import PDFExperience from "../../shared/PDFExperience";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
-import { IExperience } from "components/shared/Experience";
+import { IDefaultComponentProps } from "interfaces";
+import { IExperience } from "interfaces";
 
-export default function Work({ t }: IDefaultComponentProps) {
+export default function Work({ t, theme }: IDefaultComponentProps) {
   const contentNsObject: IExperience[] = Array.from(t("work.jobs", { returnObjects: true }));
 
   return (
     <View>
-      <PDFTitle title={t("work.title")} />
+      <PDFTitle title={t("work.title")} theme={theme} />
 
       <View>
-        {contentNsObject?.map((experience) => <PDFExperience {...experience} />)}
+        {contentNsObject?.map((experience) => <PDFExperience {...experience} theme={theme} />)}
       </View>
     </View>
   )

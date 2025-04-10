@@ -1,11 +1,10 @@
 import { StyleSheet } from '@react-pdf/renderer';
 
-const styles = StyleSheet.create({
+const createStyles = (colors) => StyleSheet.create({
   bioParagraph: {
-    color: "white",
+    color: colors["textDefault"],
     fontSize: "10px",
-    marginBottom: "10px",
   },
 });
 
-export default styles;
+export default createStyles;

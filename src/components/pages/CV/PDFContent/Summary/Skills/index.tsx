@@ -4,13 +4,13 @@ import { Text, View } from "@react-pdf/renderer";
 import PDFTitle from "../../shared/PDFTitle";
 
 // Custom
-import styles from "./styles";
+import createStyles from "./styles";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 import { INodeProps } from "components/pages/Home/SkillTree/interfaces";
 
-export default function Skills({ t }: IDefaultComponentProps) {
+export default function Skills({ t, theme }: IDefaultComponentProps) {
   function parseSkillsArray(skills: INodeProps[]): any {
     const categories = {};
 
@@ -30,17 +30,24 @@ export default function Skills({ t }: IDefaultComponentProps) {
   const contentNsObject = Array.from(t("skillTree.skills", { returnObjects: true }));
   const parsedContent = parseSkillsArray(contentNsObject);
 
+  const styles = createStyles(theme);
+
   return (
     <View>
-      <PDFTitle title={t("skillTree.title")} />
+      <PDFTitle title={t("skillTree.altTitle")} theme={theme} />
 
       <View style={styles.list}>
         {parsedContent && Object.keys(parsedContent)?.map((category) => (
-          <View>
+          <View style={styles.categoryWrapper}>
             <Text style={styles.category}>{category}</Text>
             <View>
               {category && parsedContent[category] && Object.keys(parsedContent[category])?.map((skill) => (
-                <Text style={styles.skill}>• {skill}<Text style={styles.subSkill}>: {parsedContent[category][skill].join(", ")}</Text></Text>
+                <View style={styles.skillWrapper}>
+                  <Text style={styles.skill}>• {skill}</Text>
+                  {parsedContent[category][skill].map((subSkill) => (
+                    <Text style={styles.subSkill}><Text style={styles.dot}>•</Text> {subSkill}</Text>
+                  ))}
+                </View>
               ))}
             </View>
           </View>

@@ -3,16 +3,18 @@ import { View } from "@react-pdf/renderer";
 // Custom
 import Education from "./Education";
 import Work from "./Work";
-import styles from "./styles";
+import createStyles from "./styles";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 
-export default function Content({ t }: IDefaultComponentProps) {
+export default function Content({ t, theme }: IDefaultComponentProps) {
+  const styles = createStyles(theme);
+
   return (
     <View style={styles.contentWrapper}>
-      <Work t={t} />
-      <Education t={t} />
+      <Work t={t} theme={theme} />
+      <Education t={t} theme={theme} />
     </View>
   );
 }

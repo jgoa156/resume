@@ -1,12 +1,13 @@
 import { StyleSheet } from '@react-pdf/renderer';
 
-const styles = StyleSheet.create({
+const createStyles = (colors) => StyleSheet.create({
   title: {
     marginBottom: 5,
 
-    color: "white",
+    color: colors["textDefault"],
     fontSize: "24px",
     fontFamily: "Parkson",
+    fontWeight: "bold",
     whiteSpace: "nowrap",
     overflow: "hidden",
   },
@@ -15,4 +16,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default styles;
+export default createStyles;

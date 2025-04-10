@@ -1,41 +1,42 @@
 import { StyleSheet } from '@react-pdf/renderer';
-import colors from '../colors';
 
-const styles = StyleSheet.create({
+const createStyles = (colors) => StyleSheet.create({
   experienceWrapper: {
     display: "flex",
+    flexDirection: "row",
     gap: "0px",
-    marginBottom: "10px",
-  },
-  experienceImage: {
-    width: "30px",
-    height: "auto",
+    marginBottom: "5px",
   },
   infoTitle: {
     fontSize: "10px",
     fontWeight: "bold",
     marginBottom: "5px",
-    color: colors.primary,
+    color: colors["primary"],
   },
   infoTitleLabel: {
     fontWeight: "normal",
     paddingLeft: "3px",
-    color: colors.textDefault
+    color: colors["textDefault"]
   },
   infoTitleSpan: {
-    fontWeight: "normal",
+    fontWeight: "bold",
     paddingLeft: "3px",
-    color: colors.muted
+    color: colors["textDefault"]
   },
   infoDate: {
     fontSize: "10px",
-    color: colors.muted,
-    marginBottom: "5px",
+    fontWeight: "normal",
+    color: colors["muted"],
   },
   infoDescription: {
-    color: colors.textDefault,
+    fontSize: "8px",
+    color: colors["textDefault"],
     marginBottom: "5px",
-  }
+  },
+  dot: {
+    fontWeight: "bold",
+    color: colors["primary"],
+  },
 });
 
-export default styles;
+export default createStyles;

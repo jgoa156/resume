@@ -1,17 +1,21 @@
 import { StyleSheet } from '@react-pdf/renderer';
 
 const createStyles = (colors) => StyleSheet.create({
-  h1: {
-    fontFamily: "Parkson",
-    fontSize: "32px",
-    color: colors["textDefault"],
-    marginBottom: "5px",
+  list: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    flexWrap: "wrap",
   },
-  h2: {
-    fontSize: "12px",
+  dot: {
     fontWeight: "bold",
     color: colors["primary"],
+  },
+  skill: {
+    fontSize: "10px",
+    color: colors["textDefault"],
     marginBottom: "5px",
+    marginRight: "5px",
   },
 });
 

@@ -14,7 +14,7 @@ import {
 } from "./styles";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 import { ILink } from "components/shared/Links";
 
 export default function ContactMe({ t }: IDefaultComponentProps) {

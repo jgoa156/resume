@@ -23,7 +23,7 @@ import {
 } from "./styles";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 
 export default function AboutMe({ t }: IDefaultComponentProps) {
   const isMobile = useMediaQuery({
@@ -60,7 +60,7 @@ export default function AboutMe({ t }: IDefaultComponentProps) {
                 <i className={`fas fa-chevron-${openInfo ? "up" : "down"}`} />
               </Subtitle>
 
-              <Collapse in={openInfo}>
+              <Collapse in={openInfo} children={<></>}>
                 <div>
                   {generalInfoNsObject.map((info, index) =>
                     <Text key={index}>{info}</Text>
@@ -93,7 +93,7 @@ export default function AboutMe({ t }: IDefaultComponentProps) {
                 <i className={`fas fa-chevron-${openPersonality ? "up" : "down"}`} />
               </Subtitle>
 
-              <Collapse in={openPersonality}>
+              <Collapse in={openPersonality} children={<></>}>
                 <div>
                   {personalityInfoNsObject.map((info, index) =>
                     info.links

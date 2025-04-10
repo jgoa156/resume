@@ -1,23 +1,20 @@
 // Shared
-// import Title from "components/shared/Title";
 import PDFTitle from "components/pages/CV/PDFContent/shared/PDFTitle";
 
 // Custom
-import styles from "./styles";
+import createStyles from "./styles";
 
 // Interfaces
-import { IDefaultComponentProps } from "interfaces/IDefaultComponent";
+import { IDefaultComponentProps } from "interfaces";
 import { Text, View } from "@react-pdf/renderer";
 
-export default function Bio({ t }: IDefaultComponentProps) {
-  const contentNsObject = Array.from(t("about.general.content", { returnObjects: true }));
+export default function Bio({ t, theme }: IDefaultComponentProps) {
+  const styles = createStyles(theme);
 
   return (
     <View>
-      <PDFTitle title={t("about.title")} />
-      {contentNsObject.map((content: string) => (
-        <Text style={styles.bioParagraph}>{content}</Text>
-      ))}
+      <PDFTitle title={t("about.altTitle")} theme={theme} />
+      <Text style={styles.bioParagraph}>{t("about.general.summary")}</Text>
     </View>
   );
 }
