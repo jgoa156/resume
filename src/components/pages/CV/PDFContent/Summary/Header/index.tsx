@@ -16,6 +16,7 @@ export default function Header({ t, theme }: IDefaultComponentProps) {
     <View>
       <Text style={styles.h1}>{t("name")}</Text>
       <Text style={styles.h2}>{roles.join(" • ")}</Text>
+      <Text style={styles.h3}>Av. Sete de Setembro, 1830 - Curitiba, PR</Text>
       <Contact t={t} theme={theme} />
     </View>
   );
