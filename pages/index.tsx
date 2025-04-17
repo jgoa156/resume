@@ -11,11 +11,12 @@ import Projects from "components/pages/Home/Projects";
 import SkillTree from "components/pages/Home/SkillTree";
 import ContactMe from "components/pages/Home/ContactMe";
 import SplashScreen from "components/pages/_main/SplashScreen";
+import nextI18nextConfig from "../next-i18next.config";
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["main"]))
+      ...(await serverSideTranslations(locale, ["main"], nextI18nextConfig, nextI18nextConfig.i18n.locales)),
     },
   };
 }
