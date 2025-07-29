@@ -135,12 +135,33 @@
 		"title": "Work experience",
 		"jobs": [
 			{
+				"name": "Senior Front-end Engineer",
+				"type": "Full-time (Remote)",
+				"company": "BeCompliance",
+				"icon": "components/Work/becompliance.png",
+				"start": "May 2025",
+				"end": "Present",
+				"bullets": [
+					"Refactored Vue.js composables to use Promise-based API patterns, standardizing asynchronous logic across modules",
+					"Enhanced code maintainability and consistency by adopting modern Vue 3 and TypeScript best practices",
+					"Contributed to a scalable frontend supporting complex risk audit workflows"
+				],
+				"description": [
+					{
+						"links": ["https://www.becompliance.com/"],
+						"content": [
+							"Senior Front-end Engineer at <0>BeCompliance</0>, a company specializing in compliance solutions. Responsibilities include porting Vue components across versions, optimizing state management and error handling, enhancing code maintainability and consistency, as well as enforcing design patterns."
+						]
+					}
+				]
+			},
+			{
 				"name": "Senior Full Stack Engineer",
 				"type": "Full-time (Remote)",
 				"company": "HCL Tech",
 				"icon": "components/Work/hcl.png",
 				"start": "October 2024",
-				"end": "Present",
+				"end": "May 2025",
 				"bullets": [
 					"Maintained SAP’s legacy codebase (JavaScript & ASP)",
 					"Reduced technical debt and fixed CSP issues",

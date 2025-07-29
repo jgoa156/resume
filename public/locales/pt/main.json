@@ -135,12 +135,34 @@
 		"title": "Experiência",
 		"jobs": [
 			{
+				"name": "Engenheiro Front-end Sênior",
+				"type": "Integral (Remoto)",
+				"company": "BeCompliance",
+				"icon": "components/Work/becompliance.png",
+				"start": "Maio de 2025",
+				"end": "Presente",
+				"bullets": [
+					"Refatorei os composables do Vue.js para usar padrões de API baseados em Promise, padronizando a lógica assíncrona entre os módulos",
+					"Aprimorei a manutenibilidade e a consistência do código adotando as melhores práticas modernas do Vue 3 e do TypeScript",
+					"Contribuí para um front-end escalável que suporta fluxos de trabalho complexos de auditoria de risco"
+				],
+				"description": [
+					{
+						"links": ["https://www.becompliance.com/"],
+						"content": [
+							"Engenheiro Front-end Sênior na <0>BeCompliance</0>, uma empresa especializada em soluções de conformidade. Responsabilidades incluem a portabilidade de componentes do Vue entre versões, a otimização do gerenciamento de estado e do tratamento de erros, o aprimoramento da manutenção e da consistência do código, bem como a aplicação de padrões de design."
+						]
+					}
+				]
+			},
+
+			{
 				"name": "Engenheiro Full Stack Sênior",
 				"type": "Tempo integral (Remoto)",
 				"company": "HCL Tech",
 				"icon": "components/Work/hcl.png",
-				"start": "Outubro 2024",
-				"end": "Atualmente",
+				"start": "Outubro de 2024",
+				"end": "Maio de 2025",
 				"bullets": [
 					"Manutenção de código legado da SAP (JavaScript e ASP)",
 					"Redução de débito técnico e correção de problemas de CSP",
@@ -162,8 +184,8 @@
 				"type": "Tempo integral (Remoto)",
 				"company": "Betablocks",
 				"icon": "components/Work/betablocks.png",
-				"start": "Janeiro 2024",
-				"end": "Julho 2024",
+				"start": "Janeiro de 2024",
+				"end": "Julho de 2024",
 				"bullets": [
 					"Criação de aplicativos Web3 com Python (Django) e React",
 					"Integração blockchains, pagamentos com criptomoedas e serviços em nuvem",
@@ -189,8 +211,8 @@
 				"type": "Tempo integral (Remoto)",
 				"company": "Ioasys",
 				"icon": "components/Work/ioasys.png",
-				"start": "Abril 2022",
-				"end": "Fevereiro 2023",
+				"start": "Abril de 2022",
+				"end": "Fevereiro de 2023",
 				"bullets": [
 					"Construí as plataformas de passagens de ônibus da CVC, Rodofácil e Rodoviário Exclusivo",
 					"Utilizei TypeScript, React, Jest e Docker",
@@ -219,8 +241,8 @@
 				"type": "Tempo integral (Remoto)",
 				"company": "Capgemini",
 				"icon": "components/Work/capgemini.png",
-				"start": "Junho 2021",
-				"end": "Abril 2022",
+				"start": "Junho de 2021",
+				"end": "Abril de 2022",
 				"bullets": [
 					"Ajudei a desenvolver a página de investimentos do Banco do Brasil",
 					"Trabalhei no front-end usando React, Next.js e pipelines de CI/CD",
@@ -250,8 +272,8 @@
 				"type": "Tempo integral (Local)",
 				"company": "CREA-AM",
 				"icon": "components/Work/crea.png",
-				"start": "Maio 2019",
-				"end": "Junho 2021",
+				"start": "Maio de 2019",
+				"end": "Junho de 2021",
 				"bullets": [
 					"Desenvolvi aplicações sob demanda com React, Wordpress, PHP, Node, Java e Python",
 					"Projetei aplicativos full-stack do zero, gerenciando UI/UX e implantação (FTP)",
