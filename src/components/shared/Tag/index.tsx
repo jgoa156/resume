@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const TagWrapper = styled.div`
 	width: 100%;
-	display: flexbox;
+	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 `;
