@@ -29,7 +29,7 @@
 		}
 	},
 	"tools": {
-		"title": "Main tools"
+		"title": "Ferramentas principais"
 	},
 	"about": {
 		"title": "Sobre",
@@ -93,19 +93,27 @@
 			"title": "Educação",
 			"certificates": [
 				{
+					"name": "Arquitetura de Software e Computação em Nuvem",
+					"type": "MBA",
+					"institution": "FIAP",
+					"start": "Setembro de 2025",
+					"end": "Presente",
+					"icon": "components/Education/fiap.png"
+				},
+				{
 					"name": "Engenheria de Software",
 					"type": "Graduação",
 					"institution": "Universidade Federal do Amazonas",
-					"start": "Janeiro 2019",
-					"end": "Março 2024",
+					"start": "Janeiro de 2019",
+					"end": "Março de 2024",
 					"icon": "components/Education/ufam.png"
 				},
 				{
 					"name": "Informática",
 					"type": "Curso Técnico",
 					"institution": "Instituto Federal do Amazonas",
-					"start": "Fevereiro 2016",
-					"end": "Dezembro 2018",
+					"start": "Fevereiro de 2016",
+					"end": "Dezembro de 2018",
 					"icon": "components/Education/if.png",
 					"iconProps": {
 						"width": "25px",
@@ -116,16 +124,16 @@
 					"name": "Desenvolvimento em Android Embarcado",
 					"type": "Curso com certificado",
 					"institution": "Universidade do Estado do Amazonas",
-					"start": "Janeiro 2021",
-					"end": "Maio 2021",
+					"start": "Janeiro de 2021",
+					"end": "Maio de 2021",
 					"icon": "components/Education/uea.png"
 				},
 				{
 					"name": "Design Gráfico",
 					"type": "Curso com certificado",
 					"institution": "GRACOM",
-					"start": "Maio 2016",
-					"end": "Julho 2017",
+					"start": "Maio de 2016",
+					"end": "Julho de 2017",
 					"icon": "components/Education/gracom.png"
 				}
 			]
@@ -135,27 +143,28 @@
 		"title": "Experiência",
 		"jobs": [
 			{
-				"name": "Engenheiro Front-end Sênior",
+				"name": "Engenheiro Full Stack Sênior",
 				"type": "Integral (Remoto)",
-				"company": "BeCompliance",
-				"icon": "components/Work/becompliance.png",
-				"start": "Maio de 2025",
+				"company": "Orchatect",
+				"icon": "components/Work/orchatect.png",
+				"start": "Setembro de 2025",
 				"end": "Presente",
 				"bullets": [
-					"Refatorei os composables do Vue.js para usar padrões de API baseados em Promise, padronizando a lógica assíncrona entre os módulos",
-					"Aprimorei a manutenibilidade e a consistência do código adotando as melhores práticas modernas do Vue 3 e do TypeScript",
-					"Contribuí para um front-end escalável que suporta fluxos de trabalho complexos de auditoria de risco"
+					"Liderei a arquitetura frontend em React e Next.js, criando padrões reutilizáveis e design tokens para entregas rápidas",
+					"Codifiquei padrões de engenharia com linting, testes e fluxos de revisão para elevar a qualidade do código",
+					"Construí jornadas de aprendizado com IA que personalizam a educação imobiliária nos EUA para corretores e clientes",
+					"Lancei módulos do LMS cobrindo preparação para licenciamento, compliance e fluxos de negociação com avaliações adaptativas",
+					"Desenvolvi serviços Python/Django integrando dados de CRM e MLS para conectar compradores a corretores certificados"
 				],
 				"description": [
 					{
-						"links": ["https://www.becompliance.com/"],
+						"links": ["https://www.orchatect.com/"],
 						"content": [
-							"Engenheiro Front-end Sênior na <0>BeCompliance</0>, uma empresa especializada em soluções de conformidade. Responsabilidades incluem a portabilidade de componentes do Vue entre versões, a otimização do gerenciamento de estado e do tratamento de erros, o aprimoramento da manutenção e da consistência do código, bem como a aplicação de padrões de design."
+							"Na <0>Orchatect</0> lidero um LMS com IA para o mercado imobiliário dos EUA, conectando trilhas de aprendizado a matchmaking entre corretores e clientes. Sou responsável pela arquitetura frontend em React/Next.js, defino padrões de engenharia e entrego serviços Python/Django que tornam possíveis jornadas personalizadas e fluxos de corretagem."
 						]
 					}
 				]
 			},
-
 			{
 				"name": "Engenheiro Full Stack Sênior",
 				"type": "Tempo integral (Remoto)",

@@ -93,6 +93,14 @@
 			"title": "Education",
 			"certificates": [
 				{
+					"name": "Software Architecture and Cloud Computing",
+					"type": "MBA",
+					"institution": "FIAP",
+					"start": "September 2025",
+					"end": "Present",
+					"icon": "components/Education/fiap.png"
+				},
+				{
 					"name": "Software Engineering",
 					"type": "Bachelor's Degree",
 					"institution": "Federal University of Amazonas",
@@ -135,22 +143,24 @@
 		"title": "Work experience",
 		"jobs": [
 			{
-				"name": "Senior Front-end Engineer",
+				"name": "Senior Full Stack Engineer",
 				"type": "Full-time (Remote)",
-				"company": "BeCompliance",
-				"icon": "components/Work/becompliance.png",
-				"start": "May 2025",
+				"company": "Orchatect",
+				"icon": "components/Work/orchatect.png",
+				"start": "September 2025",
 				"end": "Present",
 				"bullets": [
-					"Refactored Vue.js composables to use Promise-based API patterns, standardizing asynchronous logic across modules",
-					"Enhanced code maintainability and consistency by adopting modern Vue 3 and TypeScript best practices",
-					"Contributed to a scalable frontend supporting complex risk audit workflows"
+					"Led the React and Next.js frontend architecture, designing reusable patterns and design tokens for rapid delivery",
+					"Codified engineering standards with linting, testing, and review workflows to uplift code quality",
+					"Built AI-powered learning journeys that personalize U.S. real estate education for brokers and clients",
+					"Launched LMS modules covering licensing prep, compliance, and deal workflows with adaptive assessments",
+					"Developed Python/Django services integrating CRM and MLS data to connect prospective buyers with certified brokers"
 				],
 				"description": [
 					{
-						"links": ["https://www.becompliance.com/"],
+						"links": ["https://www.orchatect.com/"],
 						"content": [
-							"Senior Front-end Engineer at <0>BeCompliance</0>, a company specializing in compliance solutions. Responsibilities include porting Vue components across versions, optimizing state management and error handling, enhancing code maintainability and consistency, as well as enforcing design patterns."
+							"At <0>Orchatect</0> I lead an AI-powered LMS for the U.S. real estate market, marrying tailored coursework with brokerage matchmaking. I own the React/Next.js frontend architecture, uphold engineering standards, and ship Python/Django services that enable personalized learning and broker-client workflows."
 						]
 					}
 				]
