@@ -41,7 +41,7 @@
 				"I hold a Bachelor's Degree in Software Engineering from the Federal University of Amazonas, as well as a Technical Degree in Informatics with an emphasis on Software Engineering, totaling 8 years of academic experience and 6 years of work experience.",
 				"At the moment, I'm focused on DevOps and back-end development, though my core expertise lies in front-end engineering, UI/UX design, and mobile development."
 			],
-			"summary": "Senior Software Engineer with 6 years of experience in web development, specializing in React, Next.js, Node.js and Java. Proven track record in front-end optimization and API design with successful projects for Banco do Brasil, CVC and SAP.",
+			"summary": "Senior Software Engineer with 6 years of experience in web development, specializing in React, Next.js, Node.js and Java. Proven track record in front-end optimization and API design with successful projects for Banco do Brasil, CVC and SAP, as well as multiple US companies.",
 			"roles": ["Senior Software Engineer", "Web and Mobile Developer"],
 			"languages": {
 				"title": "Languages",
@@ -145,22 +145,29 @@
 			{
 				"name": "Senior Full Stack Engineer",
 				"type": "Full-time (Remote)",
-				"company": "Orchatect",
-				"icon": "components/Work/orchatect.png",
+				"company": "Saiborne",
+				"icon": "components/Work/saiborne.png",
 				"start": "September 2025",
 				"end": "Present",
 				"bullets": [
-					"Led the React and Next.js frontend architecture, designing reusable patterns and design tokens for rapid delivery",
-					"Codified engineering standards with linting, testing, and review workflows to uplift code quality",
-					"Built AI-powered learning journeys that personalize U.S. real estate education for brokers and clients",
-					"Launched LMS modules covering licensing prep, compliance, and deal workflows with adaptive assessments",
-					"Developed Python/Django services integrating CRM and MLS data to connect prospective buyers with certified brokers"
+					"Led React/Next.js frontend architecture and design system implementation",
+					"Standardized engineering workflows through automated linting and testing",
+					"Integrated AI-driven personalized education for the real estate sector",
+					"Deployed adaptive LMS modules",
+					"Built Python/Django backend services and integrations",
+					"Worked on C#/.NET project aimed towards database monitoring",
+					"Analyzed and corrected bugs, as well as implemented new features in desktop applications"
 				],
 				"description": [
 					{
-						"links": ["https://www.orchatect.com/"],
+						"links": [
+							"https://www.saiborne.com/",
+							"https://orchatect.com/",
+							"https://www.idera.com/"
+						],
 						"content": [
-							"At <0>Orchatect</0> I lead an AI-powered LMS for the U.S. real estate market, marrying tailored coursework with brokerage matchmaking. I own the React/Next.js frontend architecture, uphold engineering standards, and ship Python/Django services that enable personalized learning and broker-client workflows."
+							"At <0>Saiborne</0> I worked for two different clients, with different stacks and in different segments: in <1>Orchatect</1>, I led the front-end development of an AI-powered LMS for the U.S. real estate market, marrying tailored coursework with brokerage matchmaking. I own the React/Next.js frontend architecture, uphold engineering standards, and ship Python/Django services that enable personalized learning and broker-client workflows.",
+							"With <2>Idera</2>, I worked on a C#/.NET desktop application for database monitoring, analyzing and correcting bugs, as well as implementing new features."
 						]
 					}
 				]

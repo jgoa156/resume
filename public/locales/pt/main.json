@@ -25,7 +25,7 @@
 		"resume": {
 			"copy": "Copiar resumo para área de transferência",
 			"copied": "Copiado!",
-			"text": "Portfolio: https://guilherme.vercel.app/\n\nEngenheiro de Software Sênior com 6 anos de experiência em desenvolvimento web, especializado em React, Next.js, Node.js e Java. Possuo histórico comprovado em otimização de front-end e design de APIs, com projetos bem-sucedidos para o Banco do Brasil, CVC e SAP."
+			"text": "Portfolio: https://guilherme.vercel.app/\n\nEngenheiro de Software Sênior com 6 anos de experiência em desenvolvimento web, especializado em React, Next.js, Node.js e Java. Possuo histórico comprovado em otimização de front-end e design de APIs, com projetos bem-sucedidos para o Banco do Brasil, CVC e SAP, bem como múltiplas empresas nos Estados Unidos."
 		}
 	},
 	"tools": {
@@ -145,22 +145,29 @@
 			{
 				"name": "Engenheiro Full Stack Sênior",
 				"type": "Integral (Remoto)",
-				"company": "Orchatect",
-				"icon": "components/Work/orchatect.png",
+				"company": "Saiborne",
+				"icon": "components/Work/saiborne.png",
 				"start": "Setembro de 2025",
 				"end": "Presente",
 				"bullets": [
-					"Liderei a arquitetura frontend em React e Next.js, criando padrões reutilizáveis e design tokens para entregas rápidas",
-					"Codifiquei padrões de engenharia com linting, testes e fluxos de revisão para elevar a qualidade do código",
-					"Construí jornadas de aprendizado com IA que personalizam a educação imobiliária nos EUA para corretores e clientes",
-					"Lancei módulos do LMS cobrindo preparação para licenciamento, compliance e fluxos de negociação com avaliações adaptativas",
-					"Desenvolvi serviços Python/Django integrando dados de CRM e MLS para conectar compradores a corretores certificados"
+					"Liderei a arquitetura frontend em React/Next.js e implementação de design system",
+					"Padronizei fluxos de engenharia através de linting e testes automatizados",
+					"Integrei educação personalizada com IA para o setor imobiliário",
+					"Implementei módulos adaptativos de LMS",
+					"Construí serviços backend em Python/Django e integrações",
+					"Atuei em projeto C#/.NET voltado para monitoramento de banco de dados",
+					"Analisei e corrigi bugs, bem como implementei novas funcionalidades em aplicações desktop"
 				],
 				"description": [
 					{
-						"links": ["https://www.orchatect.com/"],
+						"links": [
+							"https://www.saiborne.com/",
+							"https://orchatect.com/",
+							"https://www.idera.com/"
+						],
 						"content": [
-							"Na <0>Orchatect</0> lidero um LMS com IA para o mercado imobiliário dos EUA, conectando trilhas de aprendizado a matchmaking entre corretores e clientes. Sou responsável pela arquitetura frontend em React/Next.js, defino padrões de engenharia e entrego serviços Python/Django que tornam possíveis jornadas personalizadas e fluxos de corretagem."
+							"Na <0>Saiborne</0> trabalhei para dois clientes diferentes, com stacks diferentes e em segmentos diferentes: na <1>Orchatect</1>, liderei o desenvolvimento front-end de um LMS com IA para o mercado imobiliário dos EUA, conectando trilhas de aprendizado personalizadas com matchmaking de corretores. Sou responsável pela arquitetura frontend em React/Next.js, defino padrões de engenharia e entrego serviços Python/Django que possibilitam aprendizado personalizado e fluxos entre corretores e clientes.",
+							"Com a <2>Idera</2>, trabalhei em uma aplicação desktop C#/.NET para monitoramento de banco de dados, analisando e corrigindo bugs, bem como implementando novas funcionalidades."
 						]
 					}
 				]
