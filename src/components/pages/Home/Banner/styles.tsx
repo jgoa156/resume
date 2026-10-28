@@ -61,7 +61,7 @@ export const BackgroundWrapper = styled.div`
 		top: 0;
 	}
 
-  background: black url("../img/bg_pattern2.png") repeat scroll top right;
+  background: black repeating-linear-gradient(45deg, #242424 0 0.71px, transparent 0.71px 3.54px) top right / 5px 5px repeat scroll;   /* was bg_pattern2.png (5x5 "\" lines), now vector */
 	animation: slide 80s linear infinite;
 
   @keyframes slide {

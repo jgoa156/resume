@@ -51,9 +51,36 @@ body {
 	/*background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;*/
-	background: var(--color-1) url("../img/bg_pattern.png") repeat scroll top left;
+	background: var(--color-1) repeating-linear-gradient(135deg, #242424 0 0.71px, transparent 0.71px 3.54px) top left / 5px 5px repeat scroll;   /* was bg_pattern.png (5x5 "/" lines): drawn as vector so it stays crisp at any zoom / display scale */
 	animation: slide 80s linear infinite;
 	overflow-x: hidden;
+}
+
+/* the ASCII drawing behind the whole page (light ink on the dark background, kept faint so the content stays readable) */
+body::before {
+	content: "";
+	position: absolute;   /* on the page itself: it scrolls with the content */
+	inset: 0;
+	top: 690px;   /* starts right below the hero and the thin lines under it (650px + 40px) */
+	z-index: -1;
+	pointer-events: none;
+	background: url("../img/bg_ascii.png") center top / 100% auto no-repeat;   /* once, across the page width */
+	opacity: 0.06;
+}
+@media (max-width: 1024px) {
+	body::before {
+		top: 590px;   /* the hero is 550px tall here */
+	}
+}
+@media (max-width: 575px) {
+	body::before {
+		top: 690px;   /* the hero is 650px tall again on phones */
+	}
+}
+@media (orientation: portrait) {
+	body::before {
+		background-size: auto 100%;   /* mobile: fits the page height, width in proportion */
+	}
 }
 
 @keyframes slide {
