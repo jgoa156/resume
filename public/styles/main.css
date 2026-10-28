@@ -77,11 +77,6 @@ body::before {
 		top: 690px;   /* the hero is 650px tall again on phones */
 	}
 }
-@media (orientation: portrait) {
-	body::before {
-		background-size: auto 100%;   /* mobile: fits the page height, width in proportion */
-	}
-}
 
 @keyframes slide {
 	from {
